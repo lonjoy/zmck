@@ -3,10 +3,10 @@
 return array (
 	'default' => array (
 		'hostname' => 'localhost',
-		'database' => 'phpcms',
-		'username' => '',
-		'password' => '',
-		'tablepre' => 'v9_',
+		'database' => 'zmck',
+		'username' => 'root',
+		'password' => '111111',
+		'tablepre' => 'zm_',
 		'charset' => 'utf8',
 		'type' => 'mysql',
 		'debug' => true,

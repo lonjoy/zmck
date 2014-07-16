@@ -38,20 +38,9 @@ var pc_hash = '<?php echo $_SESSION['pc_hash']?>'
 </style>
 </head>
 <body scroll="no" class="objbody">
-<div class="btns btns2" id="btnx">
-<div class="bg_btn"></div>
-<?php $model_types = pc_base::load_config('model_config');?>
-<h6><?php echo L('panel_switch');?></h6>
-<ul id="Site_model" class="pd4">
-		<li onclick="_Site_M();" class="ac"><span><?php echo L('full_menu')?></span></li>
-		<?php if (is_array($model_types)) { foreach ($model_types as $mt => $mn) {?>
-		<li onclick="_Site_M('<?php echo $mt;?>');"><span><?php echo $mn;?></span></li>
-		<?php } }?>
-	</ul>
-</div>
 
 <div class="header">
-	<div class="logo lf"><a href="<?php echo $currentsite['domain']?>" target="_blank"><span class="invisible"><?php echo L('phpcms_title')?></span></a></div>
+	<!--<div class="logo lf"><a href="<?php echo $currentsite['domain']?>" target="_blank"><span class="invisible"><?php echo L('phpcms_title')?></span></a></div>-->
     <div class="rt-col">
     	<div class="tab_style white cut_line text-r">
         <!-- here is the right div may show some tag-->
@@ -61,13 +50,12 @@ var pc_hash = '<?php echo $_SESSION['pc_hash']?>'
     	<div class="log white cut_line"><?php echo L('hello'),$admin_username?>  [<?php echo $rolename?>]<span>|</span><a href="?m=admin&c=index&a=public_logout">[<?php echo L('exit')?>]</a><span>|</span>
     		<a href="<?php echo $currentsite['domain']?>" target="_blank" id="site_homepage"><?php echo L('site_homepage')?></a><span>|</span>
     		<a href="?m=member" target="_blank"><?php echo L('member_center')?></a><span>|</span>
-    		<a href="?m=search" target="_blank" id="site_search"><?php echo L('search')?></a>
     	</div>
         <ul class="nav white" id="top_menu">
         <?php
         $array = admin::admin_menu(0);
         foreach($array as $_value) {
-        	if($_value['id']==10) {
+        	if($_value['id']==1) {
         		echo '<li id="_M'.$_value['id'].'" class="on top_menu"><a href="javascript:_M('.$_value['id'].',\'?m='.$_value['m'].'&c='.$_value['c'].'&a='.$_value['a'].'\')" hidefocus="true" style="outline:none;">'.L($_value['name']).'</a></li>';
         		
         	} else {
@@ -75,7 +63,7 @@ var pc_hash = '<?php echo $_SESSION['pc_hash']?>'
         	}      	
         }
         ?>
-            <li class="tab_web"><a href="javascript:;"><span><?php echo $currentsite['name']?></span></a></li>
+            <!-- <li class="tab_web"><a href="javascript:;"><span><?php echo $currentsite['name']?></span></a></li> -->
         </ul>
     </div>
 </div>
@@ -107,6 +95,7 @@ var pc_hash = '<?php echo $_SESSION['pc_hash']?>'
         </div>
     </div>
 </div>
+<!--
 <div class="tab-web-panel hidden" style="position:absolute; z-index:999; background:#fff">
 <ul>
 <?php foreach ($sitelist as $key=>$v):?>
@@ -114,6 +103,7 @@ var pc_hash = '<?php echo $_SESSION['pc_hash']?>'
 <?php endforeach;?>
 </ul>
 </div>
+-->
 <div class="scroll"><a href="javascript:;" class="per" title="使用鼠标滚轴滚动侧栏" onclick="menuScroll(1);"></a><a href="javascript:;" class="next" title="使用鼠标滚轴滚动侧栏" onclick="menuScroll(2);"></a></div>
 <script type="text/javascript"> 
 if(!Array.prototype.map)
@@ -192,14 +182,8 @@ $(function(){
 	$(".tab_web span").mouseout(function(){hidden_site_list_1()});
 	$(".tab-web-panel").mouseover(function(){clearh();$('.tab_web a').addClass('on')}).mouseout(function(){hidden_site_list_1();$('.tab_web a').removeClass('on')});
 	//默认载入左侧菜单
-	$("#leftMain").load("?m=admin&c=index&a=public_menu_left&menuid=10");
+	$("#leftMain").load("?m=admin&c=index&a=public_menu_left&menuid=1");
 
-	//面板切换
-	$("#btnx").removeClass("btns2");
-	$("#Site_model,#btnx h6").css("display","none");
-	$("#btnx").hover(function(){$("#Site_model,#btnx h6").css("display","block");$(this).addClass("btns2");$(".bg_btn").hide();},function(){$("#Site_model,#btnx h6").css("display","none");$(this).removeClass("btns2");$(".bg_btn").show();});
-	$("#Site_model li").hover(function(){$(this).toggleClass("hvs");},function(){$(this).toggleClass("hvs");});
-	$("#Site_model li").click(function(){$("#Site_model li").removeClass("ac"); $(this).addClass("ac");});
 })
 //站点选择
 function site_select(id,name, domain, siteid) {

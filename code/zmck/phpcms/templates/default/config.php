@@ -156,16 +156,6 @@
       'index.html' => '首页',
       'list.html' => '列表页',
     ),
-    'templates|default|formguide' => 
-    array (
-      'index.html' => '表单列表页模板',
-      'show.html' => '表单详情页模板',
-      'show_js.html' => '表单js调用模板',
-    ),
-    'templates|default|mood' => 
-    array (
-      'index.html' => '新闻心情',
-    ),
     'templates|default|yp' => 
     array (
       'com_default' => '企业默认模板',
