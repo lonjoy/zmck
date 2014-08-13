@@ -120,3 +120,4 @@
 <?php exit;?>07-15 00:07:00 | 2048 | Only variables should be passed by reference | phpcms\modules\member\index.php | 232
 <?php exit;?>07-15 00:07:20 | 2048 | Only variables should be passed by reference | phpcms\modules\member\index.php | 232
 <?php exit;?>07-15 00:08:08 | 2048 | Only variables should be passed by reference | phpcms\modules\member\index.php | 232
+<?php exit;?>07-19 14:18:27 | 2 | Illegal string offset 'enablehits' | phpcms\modules\poster\index.php | 104
