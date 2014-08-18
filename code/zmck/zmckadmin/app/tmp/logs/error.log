@@ -1,0 +1,2750 @@
+2014-08-16 09:22:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/css/main.min.css
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:22:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/css/page.min.css
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:22:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/css/style.css
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:22:36 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/js/jquery.min.js
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:22:36 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/js/common.js
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:22:36 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/js/login.js
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:22:36 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/js/js.js
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:22:36 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/p1.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:22:36 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/p2.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:22:36 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/p5.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:22:36 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/p4.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:22:36 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/add.png
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:22:36 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/qq1.png
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:22:36 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/p3.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:22:37 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/qq2.png
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:22:37 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/p6.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:23:51 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/js/jquery.min.js
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:23:51 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/js/common.js
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:23:51 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/p4.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:23:51 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/p2.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:23:51 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/p3.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:23:51 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/js/login.js
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:23:51 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/p1.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:23:51 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/p6.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:23:51 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/p5.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:23:51 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/js/js.js
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:23:52 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/logo.png
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:23:52 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/add.png
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:23:52 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/qq2.png
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:23:52 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/qq1.png
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:24:52 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/js/jquery.min.js
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:24:52 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/p1.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:24:52 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/js/login.js
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:24:53 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/p4.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:24:53 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/js/common.js
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:24:53 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/p2.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:24:53 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/p5.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:24:53 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/js/js.js
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:24:53 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/qq2.png
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:24:53 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/p6.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:24:53 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/qq1.png
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:24:53 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/p3.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:24:53 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/add.png
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:24:53 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/logo.png
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:26:40 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/p1.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:26:40 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/p4.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:26:40 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/p2.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:26:40 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/logo.png
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:26:40 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/add.png
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:26:40 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/p6.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:26:40 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/p3.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:26:40 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/p5.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:26:41 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/qq2.png
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:26:41 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/qq1.png
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:26:41 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/p4.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:26:41 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/p1.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:27:15 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/p3.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:27:15 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/p2.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:27:15 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/p5.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:27:15 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/add.png
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:27:15 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/p1.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:27:15 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/logo.png
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:27:15 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/p4.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:27:16 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/p6.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:27:16 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/qq2.png
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:27:16 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/qq1.png
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:27:16 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/p5.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:27:16 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/p2.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:28:07 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/logo.png
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 09:29:15 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/logo.png
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 10:12:25 Error: [MissingControllerException] Controller class HtmlController could not be found.
+Exception Attributes: array (
+  'class' => 'HtmlController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/html/1home.html
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 11:16:43 Error: [MissingControllerException] Controller class HtmlController could not be found.
+Exception Attributes: array (
+  'class' => 'HtmlController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/html/1home.html
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 11:20:36 Error: [MissingControllerException] Controller class HtmlController could not be found.
+Exception Attributes: array (
+  'class' => 'HtmlController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/html/1home.html
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 11:25:20 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/bgz.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 11:25:20 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/xg_bg2.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 11:25:21 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/tt_bg.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 11:25:21 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/dw_2.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 11:25:21 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/gz.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 11:27:44 Error: [MissingControllerException] Controller class Imgproject1.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Imgproject1.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/imgproject_1.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 11:27:44 Error: [MissingControllerException] Controller class .imgController could not be found.
+Exception Attributes: array (
+  'class' => '.imgController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/.img/project_3.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 11:28:26 Error: [MissingControllerException] Controller class .imgController could not be found.
+Exception Attributes: array (
+  'class' => '.imgController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/.img/project_3.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 11:28:26 Error: [MissingControllerException] Controller class Imgproject1.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Imgproject1.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/imgproject_1.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 11:28:26 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/bgz.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 11:28:26 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/gz.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 11:28:26 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/tt_bg.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 11:28:26 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/xg_bg2.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 11:28:26 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/dw_2.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 11:28:46 Error: [MissingControllerException] Controller class Imgproject1.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Imgproject1.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/imgproject_1.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 11:36:26 Error: [MissingControllerException] Controller class 1home.htmlController could not be found.
+Exception Attributes: array (
+  'class' => '1home.htmlController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/1home.html
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 11:43:16 Error: [MissingControllerException] Controller class HtmlController could not be found.
+Exception Attributes: array (
+  'class' => 'HtmlController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/html/1home.html
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 11:43:16 Error: [MissingControllerException] Controller class HtmlController could not be found.
+Exception Attributes: array (
+  'class' => 'HtmlController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/html/css/style.css
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 11:43:16 Error: [MissingControllerException] Controller class HtmlController could not be found.
+Exception Attributes: array (
+  'class' => 'HtmlController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/html/img/logo.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 11:43:16 Error: [MissingControllerException] Controller class HtmlController could not be found.
+Exception Attributes: array (
+  'class' => 'HtmlController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/html/css/global.css
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 11:48:05 Error: [MissingControllerException] Controller class DefaultController could not be found.
+Exception Attributes: array (
+  'class' => 'DefaultController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/default
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 11:48:27 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/fy.png
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 11:48:27 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/images/sj.png
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:12:48 Error: [MissingControllerException] Controller class 2partner.htmlController could not be found.
+Exception Attributes: array (
+  'class' => '2partner.htmlController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/2partner.html
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:33:40 Error: [MissingControllerException] Controller class 2partner.htmlController could not be found.
+Exception Attributes: array (
+  'class' => '2partner.htmlController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/2partner.html
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:35:06 Error: [MissingControllerException] Controller class 2partner.htmlController could not be found.
+Exception Attributes: array (
+  'class' => '2partner.htmlController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/2partner.html
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:35:13 Error: [MissingControllerException] Controller class 2partner.htmlController could not be found.
+Exception Attributes: array (
+  'class' => '2partner.htmlController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/2partner.html
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:35:17 Error: [MissingComponentException] Component class UserAuthComponent could not be found.
+Exception Attributes: array (
+  'class' => 'UserAuthComponent',
+  'plugin' => false,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/default
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\Controller\AppController.php(48): ComponentCollection->load('UserAuth')
+#1 [internal function]: AppController->beforeFilter(Object(CakeEvent))
+#2 F:\Github\zmck\code\zmck\cakephp-2.5.3\lib\Cake\Event\CakeEventManager.php(242): call_user_func(Array, Object(CakeEvent))
+#3 F:\Github\zmck\code\zmck\cakephp-2.5.3\lib\Cake\Controller\Controller.php(674): CakeEventManager->dispatch(Object(CakeEvent))
+#4 F:\Github\zmck\code\zmck\cakephp-2.5.3\lib\Cake\Routing\Dispatcher.php(187): Controller->startupProcess()
+#5 F:\Github\zmck\code\zmck\cakephp-2.5.3\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(DefaultController), Object(CakeRequest))
+#6 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-08-16 12:35:57 Error: [MissingControllerException] Controller class 1home.htmlController could not be found.
+Exception Attributes: array (
+  'class' => '1home.htmlController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/1home.html
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:41:05 Error: [MissingControllerException] Controller class 2partner.htmlController could not be found.
+Exception Attributes: array (
+  'class' => '2partner.htmlController',
+  'plugin' => NULL,
+)
+Request URL: /zmck/code/zmck/cakephp-2.5.3/2partner.html
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\cakephp-2.5.3\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:47:40 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/sj.png
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:47:40 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/tx.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:47:40 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/fy.png
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:47:43 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/tx.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:49:08 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/tx.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:49:10 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/tt_bg.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:49:11 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/gz.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:49:11 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/bgz.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:49:11 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/dw_2.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:49:11 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/xg_bg2.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:49:13 Error: [MissingControllerException] Controller class CompanyController could not be found.
+Exception Attributes: array (
+  'class' => 'CompanyController',
+  'plugin' => NULL,
+)
+Request URL: /company
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:51:32 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/tx.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:51:36 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/tx.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:54:54 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/wz.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:54:54 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/lxr_bg.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:54:54 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/xc_bg.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:54:54 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/xg_bg2.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:54:55 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/tx.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:57:06 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/tx.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:57:49 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/tx.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:59:19 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/circle5_1.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:59:19 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/circle5_2.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:59:19 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/tx.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:59:35 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/tx.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:59:37 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/tx.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:59:44 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/tx.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:59:46 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/tx.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:59:46 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/circle5_2.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:59:46 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/tx.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:59:46 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/circle5_1.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 12:59:48 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/tx.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 13:00:01 Error: [MissingControllerException] Controller class 2partner.htmlController could not be found.
+Exception Attributes: array (
+  'class' => '2partner.htmlController',
+  'plugin' => NULL,
+)
+Request URL: /2partner.html
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 13:02:56 Error: [MissingControllerException] Controller class Page.doController could not be found.
+Exception Attributes: array (
+  'class' => 'Page.doController',
+  'plugin' => NULL,
+)
+Request URL: /page.do?keyfrom=plogin.login&method=open&__rnd=1408194175886
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 13:03:07 Error: [MissingControllerException] Controller class Page.doController could not be found.
+Exception Attributes: array (
+  'class' => 'Page.doController',
+  'plugin' => NULL,
+)
+Request URL: /page.do?keyfrom=plogin.login&method=open&__rnd=1408194187662
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 13:03:10 Error: [MissingControllerException] Controller class Page.doController could not be found.
+Exception Attributes: array (
+  'class' => 'Page.doController',
+  'plugin' => NULL,
+)
+Request URL: /page.do?keyfrom=plogin.login&method=open&__rnd=1408194190069
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 13:03:12 Error: [MissingControllerException] Controller class Page.doController could not be found.
+Exception Attributes: array (
+  'class' => 'Page.doController',
+  'plugin' => NULL,
+)
+Request URL: /page.do?keyfrom=plogin.login&method=open&__rnd=1408194192100
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 13:03:14 Error: [MissingControllerException] Controller class Page.doController could not be found.
+Exception Attributes: array (
+  'class' => 'Page.doController',
+  'plugin' => NULL,
+)
+Request URL: /page.do?keyfrom=plogin.login&method=open&__rnd=1408194194225
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 13:03:20 Error: [MissingControllerException] Controller class Page.doController could not be found.
+Exception Attributes: array (
+  'class' => 'Page.doController',
+  'plugin' => NULL,
+)
+Request URL: /page.do?keyfrom=plogin.login&method=open&__rnd=1408194200047
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 13:03:55 Error: [MissingControllerException] Controller class Page.doController could not be found.
+Exception Attributes: array (
+  'class' => 'Page.doController',
+  'plugin' => NULL,
+)
+Request URL: /page.do?keyfrom=plogin.login&method=open&__rnd=1408194235102
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 13:03:56 Error: [MissingControllerException] Controller class Page.doController could not be found.
+Exception Attributes: array (
+  'class' => 'Page.doController',
+  'plugin' => NULL,
+)
+Request URL: /page.do?keyfrom=plogin.login&method=open&__rnd=1408194236575
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 13:03:59 Error: [MissingControllerException] Controller class Page.doController could not be found.
+Exception Attributes: array (
+  'class' => 'Page.doController',
+  'plugin' => NULL,
+)
+Request URL: /page.do?keyfrom=plogin.login&method=open&__rnd=1408194239058
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 13:04:00 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/tx.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 13:10:39 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/tx.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 13:13:10 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/tx.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 13:13:11 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/tx.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 13:13:11 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/circle5_1.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 13:13:11 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/circle5_2.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 13:13:18 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/circle5_1.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 13:13:18 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/tx.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 13:13:18 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/circle5_2.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 13:24:03 Error: [MissingControllerException] Controller class Page.doController could not be found.
+Exception Attributes: array (
+  'class' => 'Page.doController',
+  'plugin' => NULL,
+)
+Request URL: /page.do?keyfrom=plogin.login&method=open&__rnd=1408195443670
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 13:24:06 Error: [MissingControllerException] Controller class Page.doController could not be found.
+Exception Attributes: array (
+  'class' => 'Page.doController',
+  'plugin' => NULL,
+)
+Request URL: /page.do?keyfrom=plogin.login&method=open&__rnd=1408195446814
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 13:24:08 Error: [MissingControllerException] Controller class Page.doController could not be found.
+Exception Attributes: array (
+  'class' => 'Page.doController',
+  'plugin' => NULL,
+)
+Request URL: /page.do?keyfrom=plogin.login&method=open&__rnd=1408195448653
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 13:34:27 Error: [MissingControllerException] Controller class Page.doController could not be found.
+Exception Attributes: array (
+  'class' => 'Page.doController',
+  'plugin' => NULL,
+)
+Request URL: /page.do?keyfrom=plogin.login&method=open&__rnd=1408196067270
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-16 15:42:17 Error: [MissingActionException] Action MenuController::publicMenuLeft&menuid=10() could not be found.
+Exception Attributes: array (
+  'controller' => 'MenuController',
+  'action' => 'publicMenuLeft&menuid=10',
+)
+Request URL: /menu/publicMenuLeft&menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-16 15:42:24 Error: [MissingActionException] Action MenuController::publicMenuLeft&menuid=10() could not be found.
+Exception Attributes: array (
+  'controller' => 'MenuController',
+  'action' => 'publicMenuLeft&menuid=10',
+)
+Request URL: /menu/publicMenuLeft&menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-16 15:42:58 Error: [MissingActionException] Action MenuController::publicMenuLeft&menuid=10() could not be found.
+Exception Attributes: array (
+  'controller' => 'MenuController',
+  'action' => 'publicMenuLeft&menuid=10',
+)
+Request URL: /menu/publicMenuLeft&menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-16 15:43:27 Error: [MissingActionException] Action MenuController::publicMenuLeft&menuid=10() could not be found.
+Exception Attributes: array (
+  'controller' => 'MenuController',
+  'action' => 'publicMenuLeft&menuid=10',
+)
+Request URL: /menu/publicMenuLeft&menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-16 15:43:28 Error: [MissingActionException] Action MenuController::publicMenuLeft&menuid=10() could not be found.
+Exception Attributes: array (
+  'controller' => 'MenuController',
+  'action' => 'publicMenuLeft&menuid=10',
+)
+Request URL: /menu/publicMenuLeft&menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-16 15:43:51 Error: [MissingActionException] Action MenuController::publicMenuLeft&menuid=10() could not be found.
+Exception Attributes: array (
+  'controller' => 'MenuController',
+  'action' => 'publicMenuLeft&menuid=10',
+)
+Request URL: /menu/publicMenuLeft&menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-16 15:45:58 Error: [MissingActionException] Action MenuController::publicMenuLeft&menuid=10() could not be found.
+Exception Attributes: array (
+  'controller' => 'MenuController',
+  'action' => 'publicMenuLeft&menuid=10',
+)
+Request URL: /menu/publicMenuLeft&menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-16 15:45:58 Error: [MissingActionException] Action MenuController::publicMenuLeft&menuid=10() could not be found.
+Exception Attributes: array (
+  'controller' => 'MenuController',
+  'action' => 'publicMenuLeft&menuid=10',
+)
+Request URL: /menu/publicMenuLeft&menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-16 15:46:03 Error: Fatal Error (1): Class 'admin' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\MenuController.php, line 43]
+2014-08-16 15:46:03 Error: [FatalErrorException] Class 'admin' not found
+Request URL: /menu/publicMenuLeft?menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'admin' n...', 'F:\Github\zmck\...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'admin' n...', 'F:\Github\zmck\...', 43, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'admin' n...', 'F:\Github\zmck\...', 43, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-16 15:46:04 Error: [MissingActionException] Action MenuController::publicMenuLeft&menuid=10() could not be found.
+Exception Attributes: array (
+  'controller' => 'MenuController',
+  'action' => 'publicMenuLeft&menuid=10',
+)
+Request URL: /menu/publicMenuLeft&menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-16 15:50:55 Error: [MissingActionException] Action MenuController::publicMenuLeft&menuid=10() could not be found.
+Exception Attributes: array (
+  'controller' => 'MenuController',
+  'action' => 'publicMenuLeft&menuid=10',
+)
+Request URL: /menu/publicMenuLeft&menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-16 15:50:57 Error: Fatal Error (1): Class 'admin' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\MenuController.php, line 43]
+2014-08-16 15:50:57 Error: [FatalErrorException] Class 'admin' not found
+Request URL: /menu/publicMenuLeft?menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'admin' n...', 'F:\Github\zmck\...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'admin' n...', 'F:\Github\zmck\...', 43, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'admin' n...', 'F:\Github\zmck\...', 43, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-16 15:50:57 Error: [MissingActionException] Action MenuController::publicMenuLeft&menuid=10() could not be found.
+Exception Attributes: array (
+  'controller' => 'MenuController',
+  'action' => 'publicMenuLeft&menuid=10',
+)
+Request URL: /menu/publicMenuLeft&menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-16 15:51:01 Error: Fatal Error (1): Class 'admin' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\MenuController.php, line 43]
+2014-08-16 15:51:01 Error: [FatalErrorException] Class 'admin' not found
+Request URL: /menu/publicMenuLeft
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'admin' n...', 'F:\Github\zmck\...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'admin' n...', 'F:\Github\zmck\...', 43, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'admin' n...', 'F:\Github\zmck\...', 43, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-16 15:51:02 Error: [MissingActionException] Action MenuController::publicMenuLeft&menuid=10() could not be found.
+Exception Attributes: array (
+  'controller' => 'MenuController',
+  'action' => 'publicMenuLeft&menuid=10',
+)
+Request URL: /menu/publicMenuLeft&menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-16 16:01:40 Error: [MissingActionException] Action MenuController::publicMenuLeft&menuid=10() could not be found.
+Exception Attributes: array (
+  'controller' => 'MenuController',
+  'action' => 'publicMenuLeft&menuid=10',
+)
+Request URL: /menu/publicMenuLeft&menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-16 16:04:27 Error: [MissingActionException] Action MenuController::publicMenuLeft&menuid=10() could not be found.
+Exception Attributes: array (
+  'controller' => 'MenuController',
+  'action' => 'publicMenuLeft&menuid=10',
+)
+Request URL: /menu/publicMenuLeft&menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-16 16:04:34 Error: Fatal Error (1): Call to undefined method MenuController::admin_tpl() in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\MenuController.php, line 54]
+2014-08-16 16:04:34 Error: [FatalErrorException] Call to undefined method MenuController::admin_tpl()
+Request URL: /menu/publicMenuLeft?menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\Github\zmck\...', 54)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\Github\zmck\...', 54, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\Github\zmck\...', 54, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-16 16:04:34 Error: [MissingActionException] Action MenuController::publicMenuLeft&menuid=10() could not be found.
+Exception Attributes: array (
+  'controller' => 'MenuController',
+  'action' => 'publicMenuLeft&menuid=10',
+)
+Request URL: /menu/publicMenuLeft&menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-16 16:04:49 Error: Fatal Error (1): Call to undefined method MenuController::admin_tpl() in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\MenuController.php, line 54]
+2014-08-16 16:04:49 Error: [FatalErrorException] Call to undefined method MenuController::admin_tpl()
+Request URL: /menu/publicMenuLeft?menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\Github\zmck\...', 54)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\Github\zmck\...', 54, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\Github\zmck\...', 54, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-16 16:04:49 Error: [MissingActionException] Action MenuController::publicMenuLeft&menuid=10() could not be found.
+Exception Attributes: array (
+  'controller' => 'MenuController',
+  'action' => 'publicMenuLeft&menuid=10',
+)
+Request URL: /menu/publicMenuLeft&menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-16 16:04:53 Error: Fatal Error (1): Call to undefined method MenuController::admin_tpl() in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\MenuController.php, line 54]
+2014-08-16 16:04:53 Error: [FatalErrorException] Call to undefined method MenuController::admin_tpl()
+Request URL: /menu/publicMenuLeft?menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\Github\zmck\...', 54)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\Github\zmck\...', 54, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\Github\zmck\...', 54, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-16 16:04:53 Error: [MissingActionException] Action MenuController::publicMenuLeft&menuid=10() could not be found.
+Exception Attributes: array (
+  'controller' => 'MenuController',
+  'action' => 'publicMenuLeft&menuid=10',
+)
+Request URL: /menu/publicMenuLeft&menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-16 16:16:10 Error: Fatal Error (1): Call to undefined method MenuController::admin_tpl() in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\MenuController.php, line 56]
+2014-08-16 16:16:10 Error: [FatalErrorException] Call to undefined method MenuController::admin_tpl()
+Request URL: /menu/publicMenuLeft?menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\Github\zmck\...', 56)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\Github\zmck\...', 56, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\Github\zmck\...', 56, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-16 16:16:11 Error: [MissingActionException] Action MenuController::publicMenuLeft&menuid=10() could not be found.
+Exception Attributes: array (
+  'controller' => 'MenuController',
+  'action' => 'publicMenuLeft&menuid=10',
+)
+Request URL: /menu/publicMenuLeft&menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-16 16:17:05 Error: [MissingViewException] View file "F:\Github\zmck\code\zmck\zmckadmin\app\View\Menu\.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\Github\\zmck\\code\\zmck\\zmckadmin\\app\\View\\Menu\\.ctp',
+)
+Request URL: /menu/publicMenuLeft?menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\View\View.php(468): View->_getViewFileName('')
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(954): View->render('', NULL)
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\Controller\MenuController.php(56): Controller->render('')
+#3 [internal function]: MenuController->publicMenuLeft()
+#4 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MenuController), Array)
+#5 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#7 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-08-16 16:17:06 Error: [MissingActionException] Action MenuController::publicMenuLeft&menuid=10() could not be found.
+Exception Attributes: array (
+  'controller' => 'MenuController',
+  'action' => 'publicMenuLeft&menuid=10',
+)
+Request URL: /menu/publicMenuLeft&menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-16 16:17:43 Error: [MissingViewException] View file "F:\Github\zmck\code\zmck\zmckadmin\app\View\Menu\error.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\Github\\zmck\\code\\zmck\\zmckadmin\\app\\View\\Menu\\error.ctp',
+)
+Request URL: /menu/publicMenuLeft?menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\View\View.php(468): View->_getViewFileName('error')
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(954): View->render('error', NULL)
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\Controller\MenuController.php(56): Controller->render('error')
+#3 [internal function]: MenuController->publicMenuLeft()
+#4 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MenuController), Array)
+#5 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#7 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-08-16 16:17:44 Error: [MissingActionException] Action MenuController::publicMenuLeft&menuid=10() could not be found.
+Exception Attributes: array (
+  'controller' => 'MenuController',
+  'action' => 'publicMenuLeft&menuid=10',
+)
+Request URL: /menu/publicMenuLeft&menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-17 03:45:05 Error: [MissingViewException] View file "F:\Github\zmck\code\zmck\zmckadmin\app\View\Menu\error.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\Github\\zmck\\code\\zmck\\zmckadmin\\app\\View\\Menu\\error.ctp',
+)
+Request URL: /menu/publicMenuLeft?menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\View\View.php(468): View->_getViewFileName('error')
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(954): View->render('error', NULL)
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\Controller\MenuController.php(56): Controller->render('error')
+#3 [internal function]: MenuController->publicMenuLeft()
+#4 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MenuController), Array)
+#5 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#7 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-08-17 03:45:05 Error: [MissingActionException] Action MenuController::publicMenuLeft&menuid=10() could not be found.
+Exception Attributes: array (
+  'controller' => 'MenuController',
+  'action' => 'publicMenuLeft&menuid=10',
+)
+Request URL: /menu/publicMenuLeft&menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-17 03:49:21 Error: [MissingViewException] View file "F:\Github\zmck\code\zmck\zmckadmin\app\View\Menu\public_menu_left.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\Github\\zmck\\code\\zmck\\zmckadmin\\app\\View\\Menu\\public_menu_left.ctp',
+)
+Request URL: /menu/publicMenuLeft?menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#4 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-17 03:49:21 Error: [MissingActionException] Action MenuController::publicMenuLeft&menuid=10() could not be found.
+Exception Attributes: array (
+  'controller' => 'MenuController',
+  'action' => 'publicMenuLeft&menuid=10',
+)
+Request URL: /menu/publicMenuLeft&menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-17 03:51:04 Error: [MissingViewException] View file "F:\Github\zmck\code\zmck\zmckadmin\app\View\Menu\error.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\Github\\zmck\\code\\zmck\\zmckadmin\\app\\View\\Menu\\error.ctp',
+)
+Request URL: /menu/publicMenuLeft?menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\View\View.php(468): View->_getViewFileName('error')
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(954): View->render('error', NULL)
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\Controller\MenuController.php(56): Controller->render('error')
+#3 [internal function]: MenuController->publicMenuLeft()
+#4 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MenuController), Array)
+#5 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#7 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-08-17 03:51:04 Error: [MissingActionException] Action MenuController::publicMenuLeft&menuid=10() could not be found.
+Exception Attributes: array (
+  'controller' => 'MenuController',
+  'action' => 'publicMenuLeft&menuid=10',
+)
+Request URL: /menu/publicMenuLeft&menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-17 03:51:42 Error: [MissingViewException] View file "F:\Github\zmck\code\zmck\zmckadmin\app\View\Menu\public_menu_left.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\Github\\zmck\\code\\zmck\\zmckadmin\\app\\View\\Menu\\public_menu_left.ctp',
+)
+Request URL: /menu/publicMenuLeft?menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#4 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-17 03:51:42 Error: [MissingActionException] Action MenuController::publicMenuLeft&menuid=10() could not be found.
+Exception Attributes: array (
+  'controller' => 'MenuController',
+  'action' => 'publicMenuLeft&menuid=10',
+)
+Request URL: /menu/publicMenuLeft&menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-17 03:52:00 Error: [MissingActionException] Action MenuController::publicMenuLeft&menuid=10() could not be found.
+Exception Attributes: array (
+  'controller' => 'MenuController',
+  'action' => 'publicMenuLeft&menuid=10',
+)
+Request URL: /menu/publicMenuLeft&menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-17 03:52:01 Error: [MissingActionException] Action MenuController::publicMenuLeft&menuid=10() could not be found.
+Exception Attributes: array (
+  'controller' => 'MenuController',
+  'action' => 'publicMenuLeft&menuid=10',
+)
+Request URL: /menu/publicMenuLeft&menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-17 05:50:14 Error: [MissingViewException] View file "F:\Github\zmck\code\zmck\zmckadmin\app\View\Menu\public_menu_left.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\Github\\zmck\\code\\zmck\\zmckadmin\\app\\View\\Menu\\public_menu_left.ctp',
+)
+Request URL: /menu/publicMenuLeft?m=admin&c=index&a=public_current_pos&menuid=4
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#4 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-17 05:50:14 Error: [MissingViewException] View file "F:\Github\zmck\code\zmck\zmckadmin\app\View\Menu\public_menu_left.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\Github\\zmck\\code\\zmck\\zmckadmin\\app\\View\\Menu\\public_menu_left.ctp',
+)
+Request URL: /menu/publicMenuLeft?m=admin&c=index&a=public_menu_left&menuid=4
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#4 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-17 05:50:15 Error: [MissingViewException] View file "F:\Github\zmck\code\zmck\zmckadmin\app\View\Menu\public_menu_left.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\Github\\zmck\\code\\zmck\\zmckadmin\\app\\View\\Menu\\public_menu_left.ctp',
+)
+Request URL: /menu/publicMenuLeft?m=admin&c=index&a=public_current_pos&menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#4 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-17 05:50:15 Error: [MissingViewException] View file "F:\Github\zmck\code\zmck\zmckadmin\app\View\Menu\public_menu_left.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\Github\\zmck\\code\\zmck\\zmckadmin\\app\\View\\Menu\\public_menu_left.ctp',
+)
+Request URL: /menu/publicMenuLeft?m=admin&c=index&a=public_menu_left&menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#4 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-17 05:50:16 Error: [MissingViewException] View file "F:\Github\zmck\code\zmck\zmckadmin\app\View\Menu\public_menu_left.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\Github\\zmck\\code\\zmck\\zmckadmin\\app\\View\\Menu\\public_menu_left.ctp',
+)
+Request URL: /menu/publicMenuLeft?m=admin&c=index&a=public_menu_left&menuid=1
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#4 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-17 05:50:16 Error: [MissingViewException] View file "F:\Github\zmck\code\zmck\zmckadmin\app\View\Menu\public_menu_left.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\Github\\zmck\\code\\zmck\\zmckadmin\\app\\View\\Menu\\public_menu_left.ctp',
+)
+Request URL: /menu/publicMenuLeft?m=admin&c=index&a=public_current_pos&menuid=1
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#4 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-17 06:32:15 Error: Fatal Error (1): Call to undefined function L() in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\MenuController.php, line 57]
+2014-08-17 06:32:15 Error: [FatalErrorException] Call to undefined function L()
+Request URL: /menu/publicMenuLeft?menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\Github\zmck\...', 57)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\Github\zmck\...', 57, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\Github\zmck\...', 57, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-17 06:32:15 Error: [MissingActionException] Action MenuController::publicMenuLeft&menuid=10() could not be found.
+Exception Attributes: array (
+  'controller' => 'MenuController',
+  'action' => 'publicMenuLeft&menuid=10',
+)
+Request URL: /menu/publicMenuLeft&menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-17 06:59:43 Error: Fatal Error (1): Call to undefined function L() in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\MenuController.php, line 57]
+2014-08-17 06:59:43 Error: [FatalErrorException] Call to undefined function L()
+Request URL: /menu/publicMenuLeft?menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\Github\zmck\...', 57)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\Github\zmck\...', 57, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\Github\zmck\...', 57, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-17 06:59:44 Error: [MissingActionException] Action MenuController::publicMenuLeft&menuid=10() could not be found.
+Exception Attributes: array (
+  'controller' => 'MenuController',
+  'action' => 'publicMenuLeft&menuid=10',
+)
+Request URL: /menu/publicMenuLeft&menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-17 06:59:49 Error: Fatal Error (1): Call to undefined function L() in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\MenuController.php, line 57]
+2014-08-17 06:59:49 Error: [FatalErrorException] Call to undefined function L()
+Request URL: /menu/publicMenuLeft?menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\Github\zmck\...', 57)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\Github\zmck\...', 57, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\Github\zmck\...', 57, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-17 06:59:50 Error: [MissingActionException] Action MenuController::publicMenuLeft&menuid=10() could not be found.
+Exception Attributes: array (
+  'controller' => 'MenuController',
+  'action' => 'publicMenuLeft&menuid=10',
+)
+Request URL: /menu/publicMenuLeft&menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-17 07:00:25 Error: Fatal Error (1): Call to undefined function L() in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\MenuController.php, line 57]
+2014-08-17 07:00:25 Error: [FatalErrorException] Call to undefined function L()
+Request URL: /menu/publicMenuLeft?menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\Github\zmck\...', 57)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\Github\zmck\...', 57, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\Github\zmck\...', 57, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-17 07:00:25 Error: [MissingActionException] Action MenuController::publicMenuLeft&menuid=10() could not be found.
+Exception Attributes: array (
+  'controller' => 'MenuController',
+  'action' => 'publicMenuLeft&menuid=10',
+)
+Request URL: /menu/publicMenuLeft&menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-17 07:02:40 Error: Fatal Error (1): Call to undefined function L() in [F:\Github\zmck\code\zmck\zmckadmin\app\View\Menu\left.ctp, line 3]
+2014-08-17 07:02:40 Error: [FatalErrorException] Call to undefined function L()
+Request URL: /menu/publicMenuLeft?menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\Github\zmck\...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\Github\zmck\...', 3, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\Github\zmck\...', 3, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-17 07:02:41 Error: [MissingActionException] Action MenuController::publicMenuLeft&menuid=10() could not be found.
+Exception Attributes: array (
+  'controller' => 'MenuController',
+  'action' => 'publicMenuLeft&menuid=10',
+)
+Request URL: /menu/publicMenuLeft&menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MenuController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-17 07:04:16 Error: Fatal Error (1): Call to undefined function L() in [F:\Github\zmck\code\zmck\zmckadmin\app\View\Menu\left.ctp, line 3]
+2014-08-17 07:04:16 Error: [FatalErrorException] Call to undefined function L()
+Request URL: /menu/publicMenuLeft?menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\Github\zmck\...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\Github\zmck\...', 3, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\Github\zmck\...', 3, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-17 07:04:17 Error: Fatal Error (1): Call to undefined function L() in [F:\Github\zmck\code\zmck\zmckadmin\app\View\Menu\left.ctp, line 3]
+2014-08-17 07:04:17 Error: [FatalErrorException] Call to undefined function L()
+Request URL: /menu/publicMenuLeft?menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\Github\zmck\...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\Github\zmck\...', 3, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\Github\zmck\...', 3, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-17 07:04:40 Error: Fatal Error (1): Call to undefined function L() in [F:\Github\zmck\code\zmck\zmckadmin\app\View\Menu\left.ctp, line 3]
+2014-08-17 07:04:40 Error: [FatalErrorException] Call to undefined function L()
+Request URL: /menu/publicMenuLeft?menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\Github\zmck\...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\Github\zmck\...', 3, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\Github\zmck\...', 3, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-17 07:04:40 Error: Fatal Error (1): Call to undefined function L() in [F:\Github\zmck\code\zmck\zmckadmin\app\View\Menu\left.ctp, line 3]
+2014-08-17 07:04:40 Error: [FatalErrorException] Call to undefined function L()
+Request URL: /menu/publicMenuLeft?menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\Github\zmck\...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\Github\zmck\...', 3, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\Github\zmck\...', 3, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-17 07:04:56 Error: Fatal Error (1): Call to undefined function L() in [F:\Github\zmck\code\zmck\zmckadmin\app\View\Menu\left.ctp, line 3]
+2014-08-17 07:04:56 Error: [FatalErrorException] Call to undefined function L()
+Request URL: /menu/publicMenuLeft?menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\Github\zmck\...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\Github\zmck\...', 3, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\Github\zmck\...', 3, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-17 07:04:57 Error: Fatal Error (1): Call to undefined function L() in [F:\Github\zmck\code\zmck\zmckadmin\app\View\Menu\left.ctp, line 3]
+2014-08-17 07:04:57 Error: [FatalErrorException] Call to undefined function L()
+Request URL: /menu/publicMenuLeft?menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\Github\zmck\...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\Github\zmck\...', 3, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\Github\zmck\...', 3, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-17 07:05:06 Error: Fatal Error (1): Call to undefined function L() in [F:\Github\zmck\code\zmck\zmckadmin\app\View\Menu\left.ctp, line 3]
+2014-08-17 07:05:06 Error: [FatalErrorException] Call to undefined function L()
+Request URL: /menu/publicMenuLeft?menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\Github\zmck\...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\Github\zmck\...', 3, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\Github\zmck\...', 3, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-17 07:05:06 Error: Fatal Error (1): Call to undefined function L() in [F:\Github\zmck\code\zmck\zmckadmin\app\View\Menu\left.ctp, line 3]
+2014-08-17 07:05:06 Error: [FatalErrorException] Call to undefined function L()
+Request URL: /menu/publicMenuLeft?menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\Github\zmck\...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\Github\zmck\...', 3, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\Github\zmck\...', 3, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-17 07:28:59 Error: Fatal Error (1): Call to undefined function L() in [F:\Github\zmck\code\zmck\zmckadmin\app\View\Menu\left.ctp, line 14]
+2014-08-17 07:28:59 Error: [FatalErrorException] Call to undefined function L()
+Request URL: /menu/publicMenuLeft?menuid=10
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\Github\zmck\...', 14)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\Github\zmck\...', 14, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\Github\zmck\...', 14, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-17 07:30:40 Error: [MissingControllerException] Controller class Index.php&menuid=2&pcHash=aw8sc8Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Index.php&menuid=2&pcHash=aw8sc8Controller',
+  'plugin' => NULL,
+)
+Request URL: /index.php&menuid=2&pc_hash=aw8sc8
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-17 07:30:42 Error: [MissingControllerException] Controller class Index.php&menuid=2&pcHash=aw8sc8Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Index.php&menuid=2&pcHash=aw8sc8Controller',
+  'plugin' => NULL,
+)
+Request URL: /index.php&menuid=2&pc_hash=aw8sc8
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-17 07:30:48 Error: [MissingControllerException] Controller class Index.php&menuid=2&pcHash=aw8sc8Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Index.php&menuid=2&pcHash=aw8sc8Controller',
+  'plugin' => NULL,
+)
+Request URL: /index.php&menuid=2&pc_hash=aw8sc8
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-17 07:30:50 Error: [MissingControllerException] Controller class Index.php&menuid=2&pcHash=aw8sc8Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Index.php&menuid=2&pcHash=aw8sc8Controller',
+  'plugin' => NULL,
+)
+Request URL: /index.php&menuid=2&pc_hash=aw8sc8
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-17 07:30:56 Error: [MissingControllerException] Controller class Index.php&menuid=2&pcHash=aw8sc8Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Index.php&menuid=2&pcHash=aw8sc8Controller',
+  'plugin' => NULL,
+)
+Request URL: /index.php&menuid=2&pc_hash=aw8sc8
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-17 07:33:46 Error: [MissingControllerException] Controller class Index.php&menuid=2&pcHash=aw8sc8Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Index.php&menuid=2&pcHash=aw8sc8Controller',
+  'plugin' => NULL,
+)
+Request URL: /index.php&menuid=2&pc_hash=aw8sc8
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-17 07:33:56 Error: [MissingControllerException] Controller class Index.php&menuid=2&pcHash=aw8sc8Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Index.php&menuid=2&pcHash=aw8sc8Controller',
+  'plugin' => NULL,
+)
+Request URL: /index.php&menuid=2&pc_hash=aw8sc8
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-17 07:40:39 Error: Fatal Error (4): syntax error, unexpected '22222222222222222222' (T_DNUMBER) in [F:\Github\zmck\code\zmck\zmckadmin\app\View\User\index.ctp, line 2]
+2014-08-17 07:40:39 Error: [FatalErrorException] syntax error, unexpected '22222222222222222222' (T_DNUMBER)
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'F:\Github\zmck\...', 2)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'F:\Github\zmck\...', 2, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'F:\Github\zmck\...', 2, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-17 07:40:42 Error: Fatal Error (4): syntax error, unexpected '22222222222222222222' (T_DNUMBER) in [F:\Github\zmck\code\zmck\zmckadmin\app\View\User\index.ctp, line 2]
+2014-08-17 07:40:42 Error: [FatalErrorException] syntax error, unexpected '22222222222222222222' (T_DNUMBER)
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'F:\Github\zmck\...', 2)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'F:\Github\zmck\...', 2, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'F:\Github\zmck\...', 2, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-17 07:40:43 Error: Fatal Error (4): syntax error, unexpected '22222222222222222222' (T_DNUMBER) in [F:\Github\zmck\code\zmck\zmckadmin\app\View\User\index.ctp, line 2]
+2014-08-17 07:40:43 Error: [FatalErrorException] syntax error, unexpected '22222222222222222222' (T_DNUMBER)
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'F:\Github\zmck\...', 2)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'F:\Github\zmck\...', 2, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'F:\Github\zmck\...', 2, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-17 07:44:04 Error: Fatal Error (1): Call to undefined function L() in [F:\Github\zmck\code\zmck\zmckadmin\app\View\User\index.ctp, line 13]
+2014-08-17 07:44:04 Error: [FatalErrorException] Call to undefined function L()
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\Github\zmck\...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\Github\zmck\...', 13, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\Github\zmck\...', 13, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-17 07:44:10 Error: Fatal Error (1): Call to undefined function L() in [F:\Github\zmck\code\zmck\zmckadmin\app\View\User\index.ctp, line 13]
+2014-08-17 07:44:10 Error: [FatalErrorException] Call to undefined function L()
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\Github\zmck\...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\Github\zmck\...', 13, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\Github\zmck\...', 13, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-17 07:47:32 Error: Fatal Error (1): Call to undefined function L() in [F:\Github\zmck\code\zmck\zmckadmin\app\View\User\index.ctp, line 77]
+2014-08-17 07:47:32 Error: [FatalErrorException] Call to undefined function L()
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\Github\zmck\...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\Github\zmck\...', 77, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\Github\zmck\...', 77, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-17 07:48:05 Error: Fatal Error (1): Call to undefined function L() in [F:\Github\zmck\code\zmck\zmckadmin\app\View\User\index.ctp, line 77]
+2014-08-17 07:48:05 Error: [FatalErrorException] Call to undefined function L()
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\Github\zmck\...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\Github\zmck\...', 77, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\Github\zmck\...', 77, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-17 07:50:21 Error: Fatal Error (1): Call to undefined function L() in [F:\Github\zmck\code\zmck\zmckadmin\app\View\User\index.ctp, line 77]
+2014-08-17 07:50:21 Error: [FatalErrorException] Call to undefined function L()
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\Github\zmck\...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\Github\zmck\...', 77, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\Github\zmck\...', 77, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-17 07:50:25 Error: Fatal Error (1): Call to undefined function L() in [F:\Github\zmck\code\zmck\zmckadmin\app\View\User\index.ctp, line 77]
+2014-08-17 07:50:25 Error: [FatalErrorException] Call to undefined function L()
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\Github\zmck\...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\Github\zmck\...', 77, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\Github\zmck\...', 77, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-17 07:50:30 Error: Fatal Error (1): Call to undefined function L() in [F:\Github\zmck\code\zmck\zmckadmin\app\View\User\index.ctp, line 77]
+2014-08-17 07:50:30 Error: [FatalErrorException] Call to undefined function L()
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\Github\zmck\...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\Github\zmck\...', 77, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\Github\zmck\...', 77, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-17 07:51:18 Error: Fatal Error (1): Call to undefined function L() in [F:\Github\zmck\code\zmck\zmckadmin\app\View\User\index.ctp, line 52]
+2014-08-17 07:51:18 Error: [FatalErrorException] Call to undefined function L()
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\Github\zmck\...', 52)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\Github\zmck\...', 52, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\Github\zmck\...', 52, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-17 07:57:49 Error: [MissingLayoutException] Layout file "F:\Github\zmck\code\zmck\zmckadmin\app\View\Layouts\layout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\Github\\zmck\\code\\zmck\\zmckadmin\\app\\View\\Layouts\\layout.ctp',
+)
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\View\View.php(510): View->_getLayoutFileName('layout')
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\View\View.php(479): View->renderLayout('', 'layout')
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#4 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UserController), Object(CakeRequest))
+#5 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-08-17 07:57:55 Error: [MissingLayoutException] Layout file "F:\Github\zmck\code\zmck\zmckadmin\app\View\Layouts\layout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\Github\\zmck\\code\\zmck\\zmckadmin\\app\\View\\Layouts\\layout.ctp',
+)
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\View\View.php(510): View->_getLayoutFileName('layout')
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\View\View.php(479): View->renderLayout('', 'layout')
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#4 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UserController), Object(CakeRequest))
+#5 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-08-17 07:58:30 Error: [MissingLayoutException] Layout file "F:\Github\zmck\code\zmck\zmckadmin\app\View\Layouts\layout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\Github\\zmck\\code\\zmck\\zmckadmin\\app\\View\\Layouts\\layout.ctp',
+)
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\View\View.php(510): View->_getLayoutFileName('layout')
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\View\View.php(479): View->renderLayout('', 'layout')
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#4 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UserController), Object(CakeRequest))
+#5 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-08-17 07:59:03 Error: [MissingLayoutException] Layout file "F:\Github\zmck\code\zmck\zmckadmin\app\View\Layouts\layout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\Github\\zmck\\code\\zmck\\zmckadmin\\app\\View\\Layouts\\layout.ctp',
+)
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\View\View.php(510): View->_getLayoutFileName('layout')
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\View\View.php(479): View->renderLayout('', 'layout')
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#4 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UserController), Object(CakeRequest))
+#5 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-08-17 15:49:40 Error: Fatal Error (1): Call to undefined function L() in [F:\Github\zmck\code\zmck\zmckadmin\app\View\User\add_user.ctp, line 59]
+2014-08-17 15:49:40 Error: [FatalErrorException] Call to undefined function L()
+Request URL: /user/addUser?pc_hash=TA6w2O
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\Github\zmck\...', 59)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\Github\zmck\...', 59, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\Github\zmck\...', 59, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-17 16:13:46 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'filterData' at line 1
+Request URL: /user/addUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('filterData', Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('filterData', Array, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('filterData', Array, Array)
+#4 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Model.php(808): DboSource->query('filterData', Array, Object(User))
+#5 F:\Github\zmck\code\zmck\zmckadmin\app\Model\User.php(36): Model->__call('filterData', Array)
+#6 F:\Github\zmck\code\zmck\zmckadmin\app\Model\User.php(36): User->filterData(Array)
+#7 F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php(58): User->addUser(Array)
+#8 [internal function]: UserController->addUser()
+#9 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#10 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UserController), Object(CakeRequest))
+#12 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-08-17 16:16:38 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'filterData' at line 1
+Request URL: /user/addUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('filterData', Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('filterData', Array, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('filterData', Array, Array)
+#4 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Model.php(808): DboSource->query('filterData', Array, Object(User))
+#5 F:\Github\zmck\code\zmck\zmckadmin\app\Model\User.php(36): Model->__call('filterData', Array)
+#6 F:\Github\zmck\code\zmck\zmckadmin\app\Model\User.php(36): User->filterData(Array)
+#7 F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php(60): User->addUser(Array)
+#8 [internal function]: UserController->addUser()
+#9 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#10 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UserController), Object(CakeRequest))
+#12 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-08-17 16:21:42 Error: Fatal Error (1): Call to undefined function L() in [F:\Github\zmck\code\zmck\zmckadmin\app\View\User\index.ctp, line 63]
+2014-08-17 16:21:42 Error: [FatalErrorException] Call to undefined function L()
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\Github\zmck\...', 63)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\Github\zmck\...', 63, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\Github\zmck\...', 63, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-17 16:22:24 Error: Fatal Error (1): Call to undefined function L() in [F:\Github\zmck\code\zmck\zmckadmin\app\View\User\index.ctp, line 63]
+2014-08-17 16:22:24 Error: [FatalErrorException] Call to undefined function L()
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\Github\zmck\...', 63)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\Github\zmck\...', 63, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\Github\zmck\...', 63, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-17 16:49:39 Error: [MissingActionException] Action UserController::editUser() could not be found.
+Exception Attributes: array (
+  'controller' => 'UserController',
+  'action' => 'editUser',
+)
+Request URL: /user/editUser?pc_hash=TA6w2O
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UserController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-17 16:50:33 Error: [MissingViewException] View file "F:\Github\zmck\code\zmck\zmckadmin\app\View\User\edit_user.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\Github\\zmck\\code\\zmck\\zmckadmin\\app\\View\\User\\edit_user.ctp',
+)
+Request URL: /user/editUser?pc_hash=TA6w2O
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UserController), Object(CakeRequest))
+#4 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-17 16:50:41 Error: [MissingViewException] View file "F:\Github\zmck\code\zmck\zmckadmin\app\View\User\edit_user.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\Github\\zmck\\code\\zmck\\zmckadmin\\app\\View\\User\\edit_user.ctp',
+)
+Request URL: /user/editUser?pc_hash=TA6w2O
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UserController), Object(CakeRequest))
+#4 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-17 16:51:27 Error: [MissingViewException] View file "F:\Github\zmck\code\zmck\zmckadmin\app\View\User\edit_user.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\Github\\zmck\\code\\zmck\\zmckadmin\\app\\View\\User\\edit_user.ctp',
+)
+Request URL: /user/editUser?pc_hash=TA6w2O
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UserController), Object(CakeRequest))
+#4 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-17 16:52:06 Error: [MissingViewException] View file "F:\Github\zmck\code\zmck\zmckadmin\app\View\User\edit_user.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\Github\\zmck\\code\\zmck\\zmckadmin\\app\\View\\User\\edit_user.ctp',
+)
+Request URL: /user/editUser?pc_hash=TA6w2O
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UserController), Object(CakeRequest))
+#4 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-18 15:24:45 Error: [MissingActionException] Action UserController::role() could not be found.
+Exception Attributes: array (
+  'controller' => 'UserController',
+  'action' => 'role',
+)
+Request URL: /user/role?menuid=3
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UserController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-18 15:33:48 Error: [MissingActionException] Action UserController::role() could not be found.
+Exception Attributes: array (
+  'controller' => 'UserController',
+  'action' => 'role',
+)
+Request URL: /user/role?menuid=3
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UserController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-18 15:34:03 Error: [MissingActionException] Action UserController::role() could not be found.
+Exception Attributes: array (
+  'controller' => 'UserController',
+  'action' => 'role',
+)
+Request URL: /user/role?menuid=3
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UserController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-18 15:34:06 Error: Fatal Error (64): Cannot redeclare class User in [F:\Github\zmck\code\zmck\zmckadmin\app\Model\Role.php, line 40]
+2014-08-18 15:34:06 Error: [FatalErrorException] Cannot redeclare class User
+Request URL: /user/roles?menuid=3
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'F:\Github\zmck\...', 40)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'F:\Github\zmck\...', 40, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'F:\Github\zmck\...', 40, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-18 15:41:11 Error: [MissingActionException] Action UserController::addRole() could not be found.
+Exception Attributes: array (
+  'controller' => 'UserController',
+  'action' => 'addRole',
+)
+Request URL: /user/addRole?pc_hash=TA6w2O
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UserController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-18 15:43:06 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'name' cannot be null
+Request URL: /user/addRole
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `zm...', Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `zm...')
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Model.php(1850): DboSource->create(Object(Role), Array, Array)
+#4 F:\Github\zmck\code\zmck\zmckadmin\app\Model\Role.php(36): Model->save(Array)
+#5 F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php(99): Role->addRole(Array)
+#6 [internal function]: UserController->addRole()
+#7 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#8 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UserController), Object(CakeRequest))
+#10 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-08-18 16:09:24 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@qq.com, `User`.`role` = 1, `User`.`gender` = 1, `User`.`agerange` = 1, `User`.`' at line 1
+Request URL: /user/editUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('UPDATE `zmck`.`...', Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\Database\Mysql.php(411): DboSource->execute('UPDATE `zmck`.`...')
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Model.php(2559): Mysql->update(Object(User), Array, NULL, Array)
+#4 F:\Github\zmck\code\zmck\zmckadmin\app\Model\User.php(51): Model->updateAll(Array, Array)
+#5 F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php(84): User->updateUser(Array, Array)
+#6 [internal function]: UserController->editUser()
+#7 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#8 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UserController), Object(CakeRequest))
+#10 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-08-18 16:11:03 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@qq.com, `User`.`role` = 1, `User`.`gender` = 1, `User`.`agerange` = 1, `User`.`' at line 1
+Request URL: /user/editUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('UPDATE `zmck`.`...', Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\Database\Mysql.php(411): DboSource->execute('UPDATE `zmck`.`...')
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Model.php(2559): Mysql->update(Object(User), Array, NULL, Array)
+#4 F:\Github\zmck\code\zmck\zmckadmin\app\Model\User.php(51): Model->updateAll(Array, Array)
+#5 F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php(82): User->updateUser(Array, Array)
+#6 [internal function]: UserController->editUser()
+#7 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#8 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UserController), Object(CakeRequest))
+#10 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-08-18 16:12:36 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@qq.com, `User`.`nickname` = 凤飞飞, `User`.`role` = 1, `User`.`gen' at line 1
+Request URL: /user/editUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('UPDATE `zmck`.`...', Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\Database\Mysql.php(411): DboSource->execute('UPDATE `zmck`.`...')
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Model.php(2559): Mysql->update(Object(User), Array, NULL, Array)
+#4 F:\Github\zmck\code\zmck\zmckadmin\app\Model\User.php(51): Model->updateAll(Array, Array)
+#5 F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php(84): User->updateUser(Array, Array)
+#6 [internal function]: UserController->editUser()
+#7 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#8 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UserController), Object(CakeRequest))
+#10 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-08-18 16:13:10 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@qq.com, `User`.`nickname` = 唐甜甜, `User`.`role` = 1, `User`.`g' at line 1
+Request URL: /user/editUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('UPDATE `zmck`.`...', Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\Database\Mysql.php(411): DboSource->execute('UPDATE `zmck`.`...')
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Model.php(2559): Mysql->update(Object(User), Array, NULL, Array)
+#4 F:\Github\zmck\code\zmck\zmckadmin\app\Model\User.php(51): Model->updateAll(Array, Array)
+#5 F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php(84): User->updateUser(Array, Array)
+#6 [internal function]: UserController->editUser()
+#7 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#8 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UserController), Object(CakeRequest))
+#10 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-08-18 16:13:43 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@qq.com, `User`.`nickname` = , `User`.`role` = 1, `User`.`gender` = 1, `User`.`a' at line 1
+Request URL: /user/editUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('UPDATE `zmck`.`...', Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\Database\Mysql.php(411): DboSource->execute('UPDATE `zmck`.`...')
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Model.php(2559): Mysql->update(Object(User), Array, NULL, Array)
+#4 F:\Github\zmck\code\zmck\zmckadmin\app\Model\User.php(51): Model->updateAll(Array, Array)
+#5 F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php(84): User->updateUser(Array, Array)
+#6 [internal function]: UserController->editUser()
+#7 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#8 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UserController), Object(CakeRequest))
+#10 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-08-18 16:16:56 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@qq.com, `User`.`nickname` = 唐甜甜, `User`.`role` = 1, `User`.`g' at line 1
+Request URL: /user/editUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('UPDATE `zmck`.`...', Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\Database\Mysql.php(411): DboSource->execute('UPDATE `zmck`.`...')
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Model.php(2559): Mysql->update(Object(User), Array, NULL, Array)
+#4 F:\Github\zmck\code\zmck\zmckadmin\app\Model\User.php(51): Model->updateAll(Array, Array)
+#5 F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php(84): User->updateUser(Array, Array)
+#6 [internal function]: UserController->editUser()
+#7 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#8 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UserController), Object(CakeRequest))
+#10 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-08-18 16:19:50 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@qq.com, `User`.`nickname` = 天天, `User`.`role` = 1, `User`.`gender` = ' at line 1
+Request URL: /user/editUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('UPDATE `zmck`.`...', Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\Database\Mysql.php(411): DboSource->execute('UPDATE `zmck`.`...')
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Model.php(2559): Mysql->update(Object(User), Array, NULL, Array)
+#4 F:\Github\zmck\code\zmck\zmckadmin\app\Model\User.php(51): Model->updateAll(Array, Array)
+#5 F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php(84): User->updateUser(Array, Array)
+#6 [internal function]: UserController->editUser()
+#7 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#8 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UserController), Object(CakeRequest))
+#10 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-08-18 16:23:23 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@qq.com, `User`.`nickname` = 天天, `User`.`role` = 1, `User`.`gender` = ' at line 1
+Request URL: /user/editUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('UPDATE `zmck`.`...', Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\Database\Mysql.php(411): DboSource->execute('UPDATE `zmck`.`...')
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Model.php(2559): Mysql->update(Object(User), Array, NULL, Array)
+#4 F:\Github\zmck\code\zmck\zmckadmin\app\Model\User.php(51): Model->updateAll(Array, Array)
+#5 F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php(84): User->updateUser(Array, Array)
+#6 [internal function]: UserController->editUser()
+#7 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#8 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UserController), Object(CakeRequest))
+#10 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-08-18 16:25:38 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@qq.com, `User`.`nickname` = 单独, `User`.`role` = 1, `User`.`gender` ' at line 1
+Request URL: /user/editUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('UPDATE `zmck`.`...', Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\Database\Mysql.php(411): DboSource->execute('UPDATE `zmck`.`...')
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Model.php(2559): Mysql->update(Object(User), Array, NULL, Array)
+#4 F:\Github\zmck\code\zmck\zmckadmin\app\Model\User.php(51): Model->updateAll(Array, Array)
+#5 F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php(84): User->updateUser(Array, Array)
+#6 [internal function]: UserController->editUser()
+#7 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#8 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UserController), Object(CakeRequest))
+#10 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-08-18 16:28:43 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@qq.com, `User`.`nickname` = 唐甜甜, `User`.`role` = 1, `User`.`g' at line 1
+Request URL: /user/editUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('UPDATE `zmck`.`...', Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\Database\Mysql.php(411): DboSource->execute('UPDATE `zmck`.`...')
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Model.php(2559): Mysql->update(Object(User), Array, NULL, Array)
+#4 F:\Github\zmck\code\zmck\zmckadmin\app\Model\User.php(51): Model->updateAll(Array, Array)
+#5 F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php(84): User->updateUser(Array, Array)
+#6 [internal function]: UserController->editUser()
+#7 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#8 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UserController), Object(CakeRequest))
+#10 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-08-18 16:29:12 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '��天, `User`.`role` = 1, `User`.`gender` = 1, `User`.`agerange` = 1, `User' at line 1
+Request URL: /user/editUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('UPDATE `zmck`.`...', Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\Database\Mysql.php(411): DboSource->execute('UPDATE `zmck`.`...')
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Model.php(2559): Mysql->update(Object(User), Array, NULL, Array)
+#4 F:\Github\zmck\code\zmck\zmckadmin\app\Model\User.php(51): Model->updateAll(Array, Array)
+#5 F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php(84): User->updateUser(Array, Array)
+#6 [internal function]: UserController->editUser()
+#7 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#8 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UserController), Object(CakeRequest))
+#10 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-08-18 16:39:04 Error: Fatal Error (4): syntax error, unexpected '}', expecting ',' or ';' in [F:\Github\zmck\code\zmck\zmckadmin\app\View\User\edit_user.ctp, line 38]
+2014-08-18 16:39:04 Error: [FatalErrorException] syntax error, unexpected '}', expecting ',' or ';'
+Request URL: /user/editUser?id=1&pc_hash=TA6w2O
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'F:\Github\zmck\...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'F:\Github\zmck\...', 38, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'F:\Github\zmck\...', 38, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-18 16:39:08 Error: Fatal Error (4): syntax error, unexpected '}', expecting ',' or ';' in [F:\Github\zmck\code\zmck\zmckadmin\app\View\User\edit_user.ctp, line 38]
+2014-08-18 16:39:08 Error: [FatalErrorException] syntax error, unexpected '}', expecting ',' or ';'
+Request URL: /user/editUser?id=1&pc_hash=TA6w2O
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'F:\Github\zmck\...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'F:\Github\zmck\...', 38, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'F:\Github\zmck\...', 38, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-18 16:39:32 Error: Fatal Error (4): syntax error, unexpected '}', expecting ',' or ';' in [F:\Github\zmck\code\zmck\zmckadmin\app\View\User\edit_user.ctp, line 38]
+2014-08-18 16:39:32 Error: [FatalErrorException] syntax error, unexpected '}', expecting ',' or ';'
+Request URL: /user/editUser?id=1&pc_hash=TA6w2O
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'F:\Github\zmck\...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'F:\Github\zmck\...', 38, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'F:\Github\zmck\...', 38, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-18 16:40:47 Error: [MissingViewException] View file "F:\Github\zmck\code\zmck\zmckadmin\app\View\User\edit_role.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\Github\\zmck\\code\\zmck\\zmckadmin\\app\\View\\User\\edit_role.ctp',
+)
+Request URL: /user/editRole?pc_hash=TA6w2O
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UserController), Object(CakeRequest))
+#4 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
