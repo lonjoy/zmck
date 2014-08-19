@@ -28,6 +28,7 @@ class UserController extends AppController {
     */
     public $layout='layout';
     public $uses = array('User', 'Role');
+    public $components = array('Upload');
 
     /**
     * Displays a view
@@ -47,19 +48,25 @@ class UserController extends AppController {
 
     public function addUser(){
         if(isset($_POST['dosubmit'])){
-            extract($_POST);
 
             $params = array(
-            'email' => $email,
-            'password' => md5($password),
-            'role' => intval($role),
-            'gender' => intval($gender),
-            'agerange' => intval($agerange),
-            'workyears' => intval($workyears),
+            'email' => $_POST['email'],
+            'password' => md5($_POST['password']),
+            'nickname' => addslashes($_POST['nickname']),
+            'role' => intval($_POST['role']),
+            'gender' => intval($_POST['gender']),
+            'intro' => addslashes($_POST['intro']),
+            'agerange' => intval($_POST['agerange']),
+            'workyears' => intval($_POST['workyears']),
             'regtime' => time(),
             );
 
-            $this->User->addUser($params);
+            $id = $this->User->addUser($params);
+            if(isset($_FILES['avatar']) && !empty($_FILES['avatar'])){
+                $id = str_pad($id,9,0,STR_PAD_LEFT);
+                $tmp=preg_replace("/^(\d{3})(\d{2})(\d{2})(\d{2,})/i","\\1/\\2/\\3/\\4",$id);
+                $ret = $this->Upload->uploadedFile($_FILES['avatar'], AVATAR_PATH.$tmp);
+            }
             $this->redirect('/user/');
         }
         //
@@ -76,6 +83,7 @@ class UserController extends AppController {
             'nickname' => "'".$_POST['nickname']."'",
             'role' => intval($role),
             'gender' => intval($gender),
+            'intro' => "'".addslashes($intro)."'",
             'agerange' => intval($agerange),
             'workyears' => intval($workyears),
             );

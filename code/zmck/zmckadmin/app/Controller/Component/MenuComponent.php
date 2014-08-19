@@ -17,7 +17,6 @@ class MenuComponent extends BaseComponent {
      */
     public function getMenu($parentid, $with_self = 0)
     {
-        var_dump(122);die;
         $conditions = array('parentid'=>$parentid);
         $limit = 1000;
         $order = 'listorder ASC';

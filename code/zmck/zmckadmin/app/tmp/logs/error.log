@@ -2748,3 +2748,310 @@ Stack Trace:
 #3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UserController), Object(CakeRequest))
 #4 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2014-08-19 15:30:50 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tttttttttttttt' in 'field list'
+Request URL: /user/editUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('UPDATE `zmck`.`...', Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Datasource\Database\Mysql.php(411): DboSource->execute('UPDATE `zmck`.`...')
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Model.php(2559): Mysql->update(Object(User), Array, NULL, Array)
+#4 F:\Github\zmck\code\zmck\zmckadmin\app\Model\User.php(51): Model->updateAll(Array, Array)
+#5 F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php(86): User->updateUser(Array, Array)
+#6 [internal function]: UserController->editUser()
+#7 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#8 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UserController), Object(CakeRequest))
+#10 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-08-19 16:11:42 Error: Fatal Error (1): Class 'File_Upload' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php, line 51]
+2014-08-19 16:11:42 Error: [FatalErrorException] Class 'File_Upload' not found
+Request URL: /user/addUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'File_Upl...', 'F:\Github\zmck\...', 51)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'File_Upl...', 'F:\Github\zmck\...', 51, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'File_Upl...', 'F:\Github\zmck\...', 51, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-19 16:12:52 Error: Fatal Error (1): Class 'File_Upload' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php, line 51]
+2014-08-19 16:12:52 Error: [FatalErrorException] Class 'File_Upload' not found
+Request URL: /user/addUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'File_Upl...', 'F:\Github\zmck\...', 51)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'File_Upl...', 'F:\Github\zmck\...', 51, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'File_Upl...', 'F:\Github\zmck\...', 51, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-19 16:15:33 Error: Fatal Error (1): Class 'File_Upload' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php, line 51]
+2014-08-19 16:15:33 Error: [FatalErrorException] Class 'File_Upload' not found
+Request URL: /user/addUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'File_Upl...', 'F:\Github\zmck\...', 51)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'File_Upl...', 'F:\Github\zmck\...', 51, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'File_Upl...', 'F:\Github\zmck\...', 51, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-19 16:16:20 Error: Fatal Error (1): Class 'File_Upload' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php, line 51]
+2014-08-19 16:16:20 Error: [FatalErrorException] Class 'File_Upload' not found
+Request URL: /user/addUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'File_Upl...', 'F:\Github\zmck\...', 51)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'File_Upl...', 'F:\Github\zmck\...', 51, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'File_Upl...', 'F:\Github\zmck\...', 51, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-19 16:17:14 Error: Fatal Error (1): Class 'File_Upload' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php, line 51]
+2014-08-19 16:17:14 Error: [FatalErrorException] Class 'File_Upload' not found
+Request URL: /user/addUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'File_Upl...', 'F:\Github\zmck\...', 51)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'File_Upl...', 'F:\Github\zmck\...', 51, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'File_Upl...', 'F:\Github\zmck\...', 51, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-19 16:19:50 Error: Fatal Error (1): Class 'File_Upload' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php, line 51]
+2014-08-19 16:19:50 Error: [FatalErrorException] Class 'File_Upload' not found
+Request URL: /user/addUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'File_Upl...', 'F:\Github\zmck\...', 51)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'File_Upl...', 'F:\Github\zmck\...', 51, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'File_Upl...', 'F:\Github\zmck\...', 51, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-19 16:24:59 Error: Fatal Error (1): Class 'File_Upload' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php, line 51]
+2014-08-19 16:24:59 Error: [FatalErrorException] Class 'File_Upload' not found
+Request URL: /user/addUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'File_Upl...', 'F:\Github\zmck\...', 51)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'File_Upl...', 'F:\Github\zmck\...', 51, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'File_Upl...', 'F:\Github\zmck\...', 51, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-19 16:25:29 Error: Fatal Error (1): Class 'File_Upload' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php, line 52]
+2014-08-19 16:25:29 Error: [FatalErrorException] Class 'File_Upload' not found
+Request URL: /user/addUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'File_Upl...', 'F:\Github\zmck\...', 52)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'File_Upl...', 'F:\Github\zmck\...', 52, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'File_Upl...', 'F:\Github\zmck\...', 52, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-19 16:37:44 Error: Fatal Error (1): Class 'File_Upload' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php, line 52]
+2014-08-19 16:37:44 Error: [FatalErrorException] Class 'File_Upload' not found
+Request URL: /user/addUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'File_Upl...', 'F:\Github\zmck\...', 52)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'File_Upl...', 'F:\Github\zmck\...', 52, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'File_Upl...', 'F:\Github\zmck\...', 52, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-19 16:38:28 Error: Fatal Error (1): Class 'File_Upload' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php, line 52]
+2014-08-19 16:38:28 Error: [FatalErrorException] Class 'File_Upload' not found
+Request URL: /user/addUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'File_Upl...', 'F:\Github\zmck\...', 52)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'File_Upl...', 'F:\Github\zmck\...', 52, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'File_Upl...', 'F:\Github\zmck\...', 52, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-19 16:38:45 Error: Fatal Error (1): Class 'File_Upload' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php, line 52]
+2014-08-19 16:38:45 Error: [FatalErrorException] Class 'File_Upload' not found
+Request URL: /user/addUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'File_Upl...', 'F:\Github\zmck\...', 52)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'File_Upl...', 'F:\Github\zmck\...', 52, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'File_Upl...', 'F:\Github\zmck\...', 52, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-19 16:44:18 Error: [MissingTableException] Table zm_uploads for model Upload was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'zm_uploads',
+  'class' => 'Upload',
+  'ds' => 'default',
+)
+Request URL: /user/addUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Model.php(3525): Model->setSource('uploads')
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Model.php(808): Model->getDataSource()
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php(52): Model->__call('uploadedFile', Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php(52): AppModel->uploadedFile('F:\wamp\tmp\php...', 'F:\Github\zmck\...')
+#4 [internal function]: UserController->addUser()
+#5 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#6 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UserController), Object(CakeRequest))
+#8 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-08-19 16:46:07 Error: [MissingTableException] Table zm_uploads for model Upload was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'zm_uploads',
+  'class' => 'Upload',
+  'ds' => 'default',
+)
+Request URL: /user/addUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Model.php(3525): Model->setSource('uploads')
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Model.php(808): Model->getDataSource()
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php(51): Model->__call('uploadedFile', Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php(51): AppModel->uploadedFile('F:\wamp\tmp\php...', 'F:\Github\zmck\...')
+#4 [internal function]: UserController->addUser()
+#5 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#6 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UserController), Object(CakeRequest))
+#8 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-08-19 16:46:29 Error: [MissingTableException] Table zm_uploads for model Upload was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'zm_uploads',
+  'class' => 'Upload',
+  'ds' => 'default',
+)
+Request URL: /user/addUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Model.php(3525): Model->setSource('uploads')
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Model.php(808): Model->getDataSource()
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php(51): Model->__call('uploadedFile', Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php(51): AppModel->uploadedFile('F:\wamp\tmp\php...', 'F:\Github\zmck\...')
+#4 [internal function]: UserController->addUser()
+#5 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#6 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UserController), Object(CakeRequest))
+#8 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-08-19 16:47:35 Error: [MissingTableException] Table zm_uploads for model Upload was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'zm_uploads',
+  'class' => 'Upload',
+  'ds' => 'default',
+)
+Request URL: /user/addUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Model.php(3525): Model->setSource('uploads')
+#1 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Model\Model.php(808): Model->getDataSource()
+#2 F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php(51): Model->__call('uploadedFile', Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php(51): AppModel->uploadedFile('F:\wamp\tmp\php...', 'F:\Github\zmck\...')
+#4 [internal function]: UserController->addUser()
+#5 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#6 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UserController), Object(CakeRequest))
+#8 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-08-19 16:49:03 Error: Fatal Error (1): Class 'BaseComponent' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\Component\UploadComponent.php, line 12]
+2014-08-19 16:49:03 Error: [FatalErrorException] Class 'BaseComponent' not found
+Request URL: /user/addUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'BaseComp...', 'F:\Github\zmck\...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'BaseComp...', 'F:\Github\zmck\...', 12, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'BaseComp...', 'F:\Github\zmck\...', 12, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-19 16:51:32 Error: Fatal Error (1): Class 'BaseComponent' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\Component\UploadComponent.php, line 12]
+2014-08-19 16:51:32 Error: [FatalErrorException] Class 'BaseComponent' not found
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'BaseComp...', 'F:\Github\zmck\...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'BaseComp...', 'F:\Github\zmck\...', 12, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'BaseComp...', 'F:\Github\zmck\...', 12, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-19 16:51:35 Error: Fatal Error (1): Class 'BaseComponent' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\Component\UploadComponent.php, line 12]
+2014-08-19 16:51:35 Error: [FatalErrorException] Class 'BaseComponent' not found
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'BaseComp...', 'F:\Github\zmck\...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'BaseComp...', 'F:\Github\zmck\...', 12, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'BaseComp...', 'F:\Github\zmck\...', 12, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-19 16:55:47 Error: Fatal Error (1): Class 'Config_ErrorCode' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\Component\UploadComponent.php, line 65]
+2014-08-19 16:55:47 Error: [FatalErrorException] Class 'Config_ErrorCode' not found
+Request URL: /user/addUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Config_E...', 'F:\Github\zmck\...', 65)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Config_E...', 'F:\Github\zmck\...', 65, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Config_E...', 'F:\Github\zmck\...', 65, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-19 17:02:36 Error: Fatal Error (1): Class 'Config_Upload' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\Component\UploadComponent.php, line 229]
+2014-08-19 17:02:36 Error: [FatalErrorException] Class 'Config_Upload' not found
+Request URL: /user/addUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Config_U...', 'F:\Github\zmck\...', 229)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Config_U...', 'F:\Github\zmck\...', 229, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Config_U...', 'F:\Github\zmck\...', 229, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-19 17:03:27 Error: Fatal Error (1): Class 'Config_Upload' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\Component\UploadComponent.php, line 230]
+2014-08-19 17:03:27 Error: [FatalErrorException] Class 'Config_Upload' not found
+Request URL: /user/addUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Config_U...', 'F:\Github\zmck\...', 230)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Config_U...', 'F:\Github\zmck\...', 230, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Config_U...', 'F:\Github\zmck\...', 230, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-19 17:04:10 Error: Fatal Error (1): Class 'Config_Upload' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\Component\UploadComponent.php, line 230]
+2014-08-19 17:04:10 Error: [FatalErrorException] Class 'Config_Upload' not found
+Request URL: /user/addUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Config_U...', 'F:\Github\zmck\...', 230)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Config_U...', 'F:\Github\zmck\...', 230, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Config_U...', 'F:\Github\zmck\...', 230, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-19 17:05:56 Error: Fatal Error (1): Class 'Config_Upload' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\Component\UploadComponent.php, line 230]
+2014-08-19 17:05:56 Error: [FatalErrorException] Class 'Config_Upload' not found
+Request URL: /user/addUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Config_U...', 'F:\Github\zmck\...', 230)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Config_U...', 'F:\Github\zmck\...', 230, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Config_U...', 'F:\Github\zmck\...', 230, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-19 17:07:08 Error: Fatal Error (1): Class 'Config_Upload' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\Component\UploadComponent.php, line 229]
+2014-08-19 17:07:08 Error: [FatalErrorException] Class 'Config_Upload' not found
+Request URL: /user/addUser
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Config_U...', 'F:\Github\zmck\...', 229)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Config_U...', 'F:\Github\zmck\...', 229, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Config_U...', 'F:\Github\zmck\...', 229, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-19 17:17:56 Error: Fatal Error (4): syntax error, unexpected ')' in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php, line 67]
+2014-08-19 17:17:56 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'F:\Github\zmck\...', 67)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'F:\Github\zmck\...', 67, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'F:\Github\zmck\...', 67, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-19 17:17:58 Error: Fatal Error (4): syntax error, unexpected ')' in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php, line 67]
+2014-08-19 17:17:58 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'F:\Github\zmck\...', 67)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'F:\Github\zmck\...', 67, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'F:\Github\zmck\...', 67, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

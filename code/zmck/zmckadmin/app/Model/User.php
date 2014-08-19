@@ -41,7 +41,7 @@ class User extends AppModel {
         }
         //$params = $this->filterData($params);
         $this->save($params);
-        return true;
+        return $this->id;
     }    
     
     public function updateUser($params=array(), $conditions=array()){

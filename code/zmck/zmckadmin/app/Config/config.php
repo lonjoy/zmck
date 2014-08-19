@@ -1,5 +1,6 @@
 <?php
     define('ZMCK_DOMAIN', '.zmck.com:8080');
+    define('AVATAR_PATH', DATA.'avatar'.DS);
     Configure::write('meta', array(
     'title' => '众梦创客',
     'desc'  => '',

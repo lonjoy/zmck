@@ -28,6 +28,12 @@
                 </td>
             </tr>
             <tr>
+                <th width="200">个人介绍：</th>
+                <td>
+                    <textarea cols="50" rows="5" name="intro"><?php echo $data['intro'];?></textarea>
+                </td>
+            </tr>
+            <tr>
                 <th width="200">用户角色：</th>
                 <td>
                     <select name="role">

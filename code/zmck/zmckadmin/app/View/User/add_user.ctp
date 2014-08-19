@@ -4,7 +4,7 @@
         <a href='/user/addUser' class="on"><em>添加用户</em></a>   
     </div>
 </div>
-<form name="adduser" method="post" action="/user/addUser" >
+<form name="adduser" method="post" action="/user/addUser" enctype="multipart/form-data">
     <div id="div_setting_1" class="contentList pad-10">
         <table width="100%" class="table_form ">
             <tr>
@@ -30,6 +30,18 @@
                 <td>
                     <input type="radio" name="gender" value="0" checked="checked">男
                     <input type="radio" name="gender" value="1">女
+                </td>
+            </tr>
+            <tr>
+                <th width="200">个人介绍：</th>
+                <td>
+                    <textarea cols="50" rows="5" name="intro"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th width="200">个人头像：</th>
+                <td>
+                    <input name="avatar" type="file" value="上传">
                 </td>
             </tr>
             <tr>
