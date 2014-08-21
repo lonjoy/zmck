@@ -11,6 +11,7 @@
 
 App::uses('AppController', 'Controller');
 
+
 /**
 * Static content controller
 *
@@ -19,6 +20,7 @@ App::uses('AppController', 'Controller');
 * @package       app.Controller
 * @link http://book.cakephp.org/2.0/en/controllers/pages-controller.html
 */
+App::uses('Url', 'Utility');
 class UserController extends AppController {
 
     /**
@@ -39,6 +41,8 @@ class UserController extends AppController {
     *    or MissingViewException in debug mode.
     */
     public function index() {
+        $ss = Url::getUserPic(array('uid'=>1));
+        echo $ss;die;
 
         $data = $this->User->userList();
 
@@ -88,6 +92,11 @@ class UserController extends AppController {
             'workyears' => intval($workyears),
             );
             $id = intval($_POST['id']);
+            if(isset($_FILES['avatar']) && !empty($_FILES['avatar'])){
+                $id = str_pad($id,9,0,STR_PAD_LEFT);
+                $tmp=preg_replace("/^(\d{3})(\d{2})(\d{2})(\d{2,})/i","\\1/\\2/\\3/\\4",$id);
+                $ret = $this->Upload->uploadedFile($_FILES['avatar'], AVATAR_PATH.$tmp);
+            }
             $conditions = array('id'=>$id);
             $this->User->updateUser($params, $conditions);
             $this->redirect('/user/editUser?id='.$id);

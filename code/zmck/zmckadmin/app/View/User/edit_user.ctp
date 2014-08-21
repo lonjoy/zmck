@@ -34,6 +34,13 @@
                 </td>
             </tr>
             <tr>
+                <th width="200">个人头像：</th>
+                <td>
+                    <?php echo 1;?>
+                    <input name="avatar" type="file" value="上传">
+                </td>
+            </tr>
+            <tr>
                 <th width="200">用户角色：</th>
                 <td>
                     <select name="role">

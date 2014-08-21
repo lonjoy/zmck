@@ -4358,3 +4358,221 @@ Request URL: /images/ring_2.gif
 Stack Trace:
 #0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-08-20 14:59:27 Error: [MissingControllerException] Controller class Page.doController could not be found.
+Exception Attributes: array (
+  'class' => 'Page.doController',
+  'plugin' => NULL,
+)
+Request URL: /page.do?keyfrom=plogin.login&method=open&__rnd=1408546767363
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-20 14:59:28 Error: [MissingControllerException] Controller class Page.doController could not be found.
+Exception Attributes: array (
+  'class' => 'Page.doController',
+  'plugin' => NULL,
+)
+Request URL: /page.do?keyfrom=plogin.login&method=open&__rnd=1408546768672
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-20 14:59:31 Error: [MissingControllerException] Controller class Page.doController could not be found.
+Exception Attributes: array (
+  'class' => 'Page.doController',
+  'plugin' => NULL,
+)
+Request URL: /page.do?keyfrom=plogin.login&method=open&__rnd=1408546771283
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-20 16:13:52 Error: [MissingControllerException] Controller class DataController could not be found.
+Exception Attributes: array (
+  'class' => 'DataController',
+  'plugin' => NULL,
+)
+Request URL: /data
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-20 16:14:06 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /data//avatar/000/00/00/09.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-20 16:14:10 Error: [MissingControllerException] Controller class DataController could not be found.
+Exception Attributes: array (
+  'class' => 'DataController',
+  'plugin' => NULL,
+)
+Request URL: /data/avatar/000/00/00/09.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-20 16:15:14 Error: [MissingControllerException] Controller class DataController could not be found.
+Exception Attributes: array (
+  'class' => 'DataController',
+  'plugin' => NULL,
+)
+Request URL: /data/avatar/000/00/00/09.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-20 16:15:54 Error: [MissingControllerException] Controller class DataController could not be found.
+Exception Attributes: array (
+  'class' => 'DataController',
+  'plugin' => NULL,
+)
+Request URL: /data/avatar/000/00/00/09.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-20 16:15:56 Error: [MissingControllerException] Controller class DataController could not be found.
+Exception Attributes: array (
+  'class' => 'DataController',
+  'plugin' => NULL,
+)
+Request URL: /data/avatar/000/00/00/09.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-20 16:18:06 Error: [MissingControllerException] Controller class DataController could not be found.
+Exception Attributes: array (
+  'class' => 'DataController',
+  'plugin' => NULL,
+)
+Request URL: /data/avatar/000/00/00/09.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-20 16:18:37 Error: [MissingControllerException] Controller class DataController could not be found.
+Exception Attributes: array (
+  'class' => 'DataController',
+  'plugin' => NULL,
+)
+Request URL: /data/avatar/000/00/00/09.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-20 16:18:39 Error: [MissingControllerException] Controller class DataController could not be found.
+Exception Attributes: array (
+  'class' => 'DataController',
+  'plugin' => NULL,
+)
+Request URL: /data/avatar/000/00/00/09.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-20 16:19:23 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/data
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 F:\Github\zmck\code\zmck\zmck\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-20 16:20:56 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/data/
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-20 16:21:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/data/avatar/000/00/00/09.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-20 16:22:15 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/data/avatar/000/00/00/09.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-20 16:22:41 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/tx.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-21 16:02:09 Error: [MissingControllerException] Controller class Page.doController could not be found.
+Exception Attributes: array (
+  'class' => 'Page.doController',
+  'plugin' => NULL,
+)
+Request URL: /page.do?keyfrom=plogin.login&method=open&__rnd=1408636929026
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-21 16:02:13 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/tx.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-21 16:03:36 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/tx.gif
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-21 16:16:05 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/basic_infor_1.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-21 16:16:05 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/basic_infor_2.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-21 16:25:59 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/basic_infor_2.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-21 16:25:59 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/basic_infor_1.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmck\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

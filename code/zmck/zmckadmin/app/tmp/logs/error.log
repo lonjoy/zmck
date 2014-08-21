@@ -3055,3 +3055,197 @@ Stack Trace:
 #3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-08-20 15:53:03 Error: Fatal Error (1): Call to undefined method UserController::exists() in [F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Utility\File.php, line 432]
+2014-08-20 15:53:03 Error: [FatalErrorException] Call to undefined method UserController::exists()
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\Github\zmck\...', 432)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\Github\zmck\...', 432, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\Github\zmck\...', 432, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-20 15:53:42 Error: Fatal Error (1): Call to undefined method UserController::exists() in [F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Utility\File.php, line 432]
+2014-08-20 15:53:42 Error: [FatalErrorException] Call to undefined method UserController::exists()
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\Github\zmck\...', 432)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\Github\zmck\...', 432, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\Github\zmck\...', 432, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-20 15:58:44 Error: Fatal Error (1): Class 'Utility_Url' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php, line 43]
+2014-08-20 15:58:44 Error: [FatalErrorException] Class 'Utility_Url' not found
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Utility_...', 'F:\Github\zmck\...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Utility_...', 'F:\Github\zmck\...', 43, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Utility_...', 'F:\Github\zmck\...', 43, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-20 15:59:31 Error: Fatal Error (1): Class 'Utility_Url' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php, line 43]
+2014-08-20 15:59:31 Error: [FatalErrorException] Class 'Utility_Url' not found
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Utility_...', 'F:\Github\zmck\...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Utility_...', 'F:\Github\zmck\...', 43, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Utility_...', 'F:\Github\zmck\...', 43, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-20 15:59:54 Error: Fatal Error (1): Class 'Utility_Url' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php, line 43]
+2014-08-20 15:59:54 Error: [FatalErrorException] Class 'Utility_Url' not found
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Utility_...', 'F:\Github\zmck\...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Utility_...', 'F:\Github\zmck\...', 43, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Utility_...', 'F:\Github\zmck\...', 43, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-20 15:59:58 Error: Fatal Error (1): Class 'Utility_Url' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php, line 43]
+2014-08-20 15:59:58 Error: [FatalErrorException] Class 'Utility_Url' not found
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Utility_...', 'F:\Github\zmck\...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Utility_...', 'F:\Github\zmck\...', 43, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Utility_...', 'F:\Github\zmck\...', 43, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-20 16:00:57 Error: Fatal Error (1): Class 'Utility_Url' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php, line 43]
+2014-08-20 16:00:57 Error: [FatalErrorException] Class 'Utility_Url' not found
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Utility_...', 'F:\Github\zmck\...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Utility_...', 'F:\Github\zmck\...', 43, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Utility_...', 'F:\Github\zmck\...', 43, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-20 16:02:08 Error: Fatal Error (1): Class 'Utility_Url' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php, line 43]
+2014-08-20 16:02:08 Error: [FatalErrorException] Class 'Utility_Url' not found
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Utility_...', 'F:\Github\zmck\...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Utility_...', 'F:\Github\zmck\...', 43, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Utility_...', 'F:\Github\zmck\...', 43, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-20 16:06:10 Error: Fatal Error (1): Class 'Url' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php, line 44]
+2014-08-20 16:06:10 Error: [FatalErrorException] Class 'Url' not found
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Url' not...', 'F:\Github\zmck\...', 44)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Url' not...', 'F:\Github\zmck\...', 44, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Url' not...', 'F:\Github\zmck\...', 44, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-20 16:07:12 Error: Fatal Error (1): Class 'Url' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php, line 44]
+2014-08-20 16:07:12 Error: [FatalErrorException] Class 'Url' not found
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Url' not...', 'F:\Github\zmck\...', 44)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Url' not...', 'F:\Github\zmck\...', 44, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Url' not...', 'F:\Github\zmck\...', 44, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-20 16:07:20 Error: Fatal Error (1): Class 'Url' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php, line 44]
+2014-08-20 16:07:20 Error: [FatalErrorException] Class 'Url' not found
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Url' not...', 'F:\Github\zmck\...', 44)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Url' not...', 'F:\Github\zmck\...', 44, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Url' not...', 'F:\Github\zmck\...', 44, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-20 16:07:32 Error: Fatal Error (1): Class 'Url' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php, line 44]
+2014-08-20 16:07:32 Error: [FatalErrorException] Class 'Url' not found
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Url' not...', 'F:\Github\zmck\...', 44)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Url' not...', 'F:\Github\zmck\...', 44, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Url' not...', 'F:\Github\zmck\...', 44, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-20 16:07:40 Error: Fatal Error (1): Class 'Url' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php, line 44]
+2014-08-20 16:07:40 Error: [FatalErrorException] Class 'Url' not found
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Url' not...', 'F:\Github\zmck\...', 44)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Url' not...', 'F:\Github\zmck\...', 44, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Url' not...', 'F:\Github\zmck\...', 44, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-20 16:08:23 Error: Fatal Error (1): Class 'Url' not found in [F:\Github\zmck\code\zmck\zmckadmin\app\Controller\UserController.php, line 44]
+2014-08-20 16:08:23 Error: [FatalErrorException] Class 'Url' not found
+Request URL: /user/index?menuid=2
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Url' not...', 'F:\Github\zmck\...', 44)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Url' not...', 'F:\Github\zmck\...', 44, Array)
+#2 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Url' not...', 'F:\Github\zmck\...', 44, Array)
+#3 F:\Github\zmck\code\zmck\zmckadmin\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-20 16:22:55 Error: [MissingControllerException] Controller class DataController could not be found.
+Exception Attributes: array (
+  'class' => 'DataController',
+  'plugin' => NULL,
+)
+Request URL: /data/avatar/000/00/00/09.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-20 16:23:05 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/data/avatar/000/00/00/09.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-20 16:23:31 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/data/avatar/000/00/00/09.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-20 16:23:40 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/data/avatar/000/00/00/09.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-20 16:24:07 Error: [MissingControllerException] Controller class DataController could not be found.
+Exception Attributes: array (
+  'class' => 'DataController',
+  'plugin' => NULL,
+)
+Request URL: /data/avatar/000/00/00/09.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-20 16:24:46 Error: [MissingControllerException] Controller class DataController could not be found.
+Exception Attributes: array (
+  'class' => 'DataController',
+  'plugin' => NULL,
+)
+Request URL: /data/avatar/000/00/00/09.jpg
+Stack Trace:
+#0 F:\Github\zmck\code\zmck\zmckadmin\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
