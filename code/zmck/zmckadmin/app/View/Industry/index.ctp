@@ -1,7 +1,7 @@
 <div class="subnav">
     <div class="content-menu ib-a blue line-x">
-        <a href='/user/roles' class="on"><em>类型列表</em></a><span>|</span>
-        <a href='/user/addRole'><em>添加类型</em></a>
+        <a href='/industry/index' class="on"><em>行业列表</em></a><span>|</span>
+        <a href='/industry/add'><em>添加行业</em></a>
     </div>
 </div>
 
@@ -30,9 +30,9 @@
                                 <td align="left"></td>
                                 <td align="left"><?php echo $v['id'];?></td>
                                 <td align="left"><?php echo $v['name'];?></td>
-                                <td align="left"><?php if($v['state']){echo '有效';}else{echo '<font color="red">无效</font>';}?></td>
+                                <td align="left"><?php if(!$v['isdel']){echo '有效';}else{echo '<font color="red">无效</font>';}?></td>
                                 <td align="left">
-                                    <a href="/user/editRole?id=<?php echo $v['id'];?>">[编辑]</a>
+                                    <a href="/industry/edit?id=<?php echo $v['id'];?>">[编辑]</a>
                                 </td>
                             </tr>
                             <?php
@@ -43,7 +43,7 @@
             </table>
 
             <div class="btn">
-                <label for="check_box">全选/取消</label> <input type="submit" class="button" name="dosubmit" value="删除" onclick="return confirm('<?php echo ('sure_delete')?>')"/>
+                <label for="check_box">全选/取消</label> <input type="submit" class="button" name="dosubmit" value="删除" onclick="return confirm('')"/>
             </div>
 
             <div id="pages">pages</div>

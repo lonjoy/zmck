@@ -41,8 +41,6 @@ class UserController extends AppController {
     *    or MissingViewException in debug mode.
     */
     public function index() {
-        $ss = Url::getUserPic(array('uid'=>1));
-        echo $ss;die;
 
         $data = $this->User->userList();
 
@@ -69,7 +67,9 @@ class UserController extends AppController {
             if(isset($_FILES['avatar']) && !empty($_FILES['avatar'])){
                 $id = str_pad($id,9,0,STR_PAD_LEFT);
                 $tmp=preg_replace("/^(\d{3})(\d{2})(\d{2})(\d{2,})/i","\\1/\\2/\\3/\\4",$id);
-                $ret = $this->Upload->uploadedFile($_FILES['avatar'], AVATAR_PATH.$tmp);
+                $ret = $this->Upload->uploadedFile($_FILES['avatar'], AVATAR_PATH.$tmp.'_b'); //大
+                #$ret = $this->Upload->uploadedFile($_FILES['avatar'], AVATAR_PATH.$tmp.'_m'); //中
+                #$ret = $this->Upload->uploadedFile($_FILES['avatar'], AVATAR_PATH.$tmp.'_s'); //小的
             }
             $this->redirect('/user/');
         }
@@ -91,17 +91,23 @@ class UserController extends AppController {
             'agerange' => intval($agerange),
             'workyears' => intval($workyears),
             );
+            
             $id = intval($_POST['id']);
             if(isset($_FILES['avatar']) && !empty($_FILES['avatar'])){
+                $file = $_FILES['avatar'];
                 $id = str_pad($id,9,0,STR_PAD_LEFT);
                 $tmp=preg_replace("/^(\d{3})(\d{2})(\d{2})(\d{2,})/i","\\1/\\2/\\3/\\4",$id);
-                $ret = $this->Upload->uploadedFile($_FILES['avatar'], AVATAR_PATH.$tmp);
+                $ret = $this->Upload->uploadedFile($file, AVATAR_PATH.$tmp.'_b'); //大的
+                #$ret = $this->Upload->uploadedFile($file, AVATAR_PATH.$tmp.'_s'); //小的
+                #$ret = $this->Upload->uploadedFile($file, AVATAR_PATH.$tmp.'_m'); //中的
             }
             $conditions = array('id'=>$id);
             $this->User->updateUser($params, $conditions);
             $this->redirect('/user/editUser?id='.$id);
         }else{
             $id = intval($_GET['id']);
+            $user_avatar = Url::getUserPic(array('uid'=>$id, 'tp'=>'b'));
+            $this->set('user_avatar', $user_avatar);
 
             $roles = $this->Role->getList();
             $this->set('roles', $roles);
@@ -134,13 +140,20 @@ class UserController extends AppController {
 
     public function editRole(){
         if(isset($_POST['dosubmit'])){
+            $id = intval($_POST['id']);
             $params = array(
-            'name' => $_POST['name'],
+            'name' => "'".addslashes($_POST['name'])."'",
             'state' => intval($_POST['state']),
-            'ctime' => time(),
             );
 
-            $this->Role->editRole($params);
+            $this->Role->updateRole($params, array('id'=>$id));
+            $this->redirect('/user/roles');
         }
+        $id = intval($_GET['id']);
+        $conditions = array('id'=>$id);
+        $data =  $this->Role->getRole($conditions);
+        $this->set('id', $id);
+        $this->set('data', $data);
+        
     }
 }

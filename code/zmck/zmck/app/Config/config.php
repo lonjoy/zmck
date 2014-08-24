@@ -7,6 +7,7 @@
     ));
     Configure::write('dm', array(
     'www'     => 'http://www'.ZMCK_DOMAIN.'/',//主页
+    'img'     => 'http://www'.ZMCK_DOMAIN.'/img/',//主页
     ));
 
     Configure::write('db',array(

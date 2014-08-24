@@ -77,7 +77,6 @@ class UploadComponent  extends Component {
                 $errCode = Config_ErrorCode::UPLOAD_FILE_IS_NOT_ERROR;
                 break;
             }
-
             $extension = $this->getExtension($file['name']);
             $fileName = $filePath.".".$extension;
             $isExt = $this->isValidExtension($file['name']);

@@ -47,10 +47,14 @@ class MenuController extends AppController {
         var_dump($datas);die;
         */
         $datas = array(
-            '1'=>array('id'=>1, 'url'=>'', 'name'=>'用户管理', 'sub'=>array(
+            array('id'=>1, 'url'=>'', 'name'=>'用户管理', 'sub'=>array(
             array('id'=>2, 'url'=>'/user/index', 'name'=>'用户列表', 'sub'=>array()),
             array('id'=>3, 'url'=>'/user/roles', 'name'=>'合伙人类型管理', 'sub'=>array()),
-            ))
+            )),
+            array('id'=>4, 'url'=>'', 'name'=>'站点配置', 'sub'=>array(
+                array('id'=>5, 'url'=>'/user/roles', 'name'=>'合伙人类型管理', 'sub'=>array()),
+                array('id'=>6, 'url'=>'/industry/index', 'name'=>'行业管理', 'sub'=>array()),
+            )),
         );
 
         $this->set('datas', $datas);

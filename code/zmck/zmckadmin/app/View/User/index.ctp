@@ -44,7 +44,7 @@
                         <th align="left"></th>
                         <th align="left">ID</th>
                         <th align="left">邮箱</th>
-                        <th align="left">注册IP</th>
+                        <th align="left">昵称</th>
                         <th align="left">操作</th>
                     </tr>
                 </thead>
@@ -58,7 +58,7 @@
                                 <td align="left"></td>
                                 <td align="left"><?php echo $v['id']?></td>
                                 <td align="left"><?php echo $v['email']?></td>
-                                <td align="left"><?php echo $v['regip']?></td>
+                                <td align="left"><?php echo $v['nickname']?></td>
                                 <td align="left">
                                     <a href="/user/editUser?id=<?php echo $v['id'];?>">[编辑]</a>
                                 </td>

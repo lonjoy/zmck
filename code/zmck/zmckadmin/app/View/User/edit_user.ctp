@@ -1,10 +1,11 @@
 <div class="subnav">
     <div class="content-menu ib-a blue line-x">
         <a href='/user/' ><em>用户列表</em></a><span>|</span>
-        <a href='/user/addUser' class="on"><em>添加用户</em></a>   
+        <a href='/user/addUser'><em>添加用户</em></a><span>|</span>
+        <a href='/user/addUser?id=<?php echo $id;?>' class="on"><em>编辑用户</em></a>   
     </div>
 </div>
-<form name="adduser" method="post" action="/user/editUser" >
+<form name="adduser" method="post" action="/user/editUser"  enctype="multipart/form-data">
     <input type="hidden" name="id" value="<?php echo $id;?>">
     <div id="div_setting_1" class="contentList pad-10">
         <table width="100%" class="table_form ">
@@ -36,7 +37,7 @@
             <tr>
                 <th width="200">个人头像：</th>
                 <td>
-                    <?php echo 1;?>
+                    <img src="<?php echo $user_avatar;?>" width="115" height="115"/>
                     <input name="avatar" type="file" value="上传">
                 </td>
             </tr>

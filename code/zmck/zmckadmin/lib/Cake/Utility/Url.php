@@ -30,7 +30,7 @@ class Url
             $pars['gid']=str_pad($pars['gid'],8,0,STR_PAD_LEFT);
             $tmp=preg_replace("/^(\d{2})(\d{2})(\d{2})(\d{2})/i","group/\\1/\\2/\\3/\\4".$tps[$tp],$pars['gid']);
         }
-        $tmp= (file_exists(AVATAR_PATH.$tmp)?$dm['img'].'data/avatar/'.$tmp:$dm['www'].'img/data/avatar/'.$ttmp);
+        empty($pars['fp']) && $tmp= (file_exists(HB_DATA_USER_DIRS.$tmp)?$dm['atth'].'user/'.$tmp:$dm['static'].'img/'.$ttmp);
         return $tmp;
     }
 
