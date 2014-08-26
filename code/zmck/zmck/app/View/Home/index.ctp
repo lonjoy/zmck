@@ -11,8 +11,8 @@
     <meta name="keywords" content="#" />
     <meta name="description" content="#" />
     <title>众梦创客</title>
-    <link rel="stylesheet" href="<?php echo $dm['www'];?>css/main.min.css" />
-    <link rel="stylesheet" href="<?php echo $dm['www'];?>css/page.min.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="css/page.min.css" />
     <link href="css/style.css" rel="stylesheet" />
     <!--[if lt IE 10]><link rel="stylesheet" href="css/hacks.css" /><![endif]-->
     <!--[if lt IE 9]> <script type="text/javascript"> (function (){ var tag = ['section','header','footer','nav','hgroup','article','aside'],i=0; for(i in tag){ document.createElement(tag[i]); } })();</script><![endif]-->
@@ -23,7 +23,7 @@
             <ul class="login-user-list js-userList">
                 <li>
                     <div class="login-user-item js-userItem">
-                        <img src="<?php echo $dm['www'];?>img/p1.jpg" class="js-preview-img" data-src="<?php echo $dm['www'];?>img/p1.jpg" />
+                        <img src="img/p1.jpg" class="js-preview-img" data-src="img/p1.jpg" />
                         <i class="login-user-mask"></i>
                         <a class="login-user-target" href="#" target="_blank"></a>
                         <div class="login-user-info">
@@ -42,7 +42,7 @@
                 </li>
                 <li>
                     <div class="login-user-item js-userItem">
-                        <img src="<?php echo $dm['www'];?>img/p4.jpg" class="js-preview-img" data-src="<?php echo $dm['www'];?>img/p4.jpg" />
+                        <img src="img/p4.jpg" class="js-preview-img" data-src="img/p4.jpg" />
                         <i class="login-user-mask"></i>
                         <a class="login-user-target" href="#" target="_blank"></a>
                         <div class="login-user-info">
@@ -61,7 +61,7 @@
                 </li>
                 <li>
                     <div class="login-user-item js-userItem">
-                        <img src="<?php echo $dm['www'];?>img/p2.jpg" class="js-preview-img" data-src="<?php echo $dm['www'];?>img/p2.jpg" />
+                        <img src="img/p2.jpg" class="js-preview-img" data-src="img/p2.jpg" />
                         <i class="login-user-mask"></i>
                         <a class="login-user-target" href="/147240" target="_blank"></a>
                         <div class="login-user-info">
@@ -80,7 +80,7 @@
                 </li>
                 <li>
                     <div class="login-user-item js-userItem">
-                        <img src="<?php echo $dm['www'];?>img/p5.jpg" class="js-preview-img" data-src="<?php echo $dm['www'];?>img/p5.jpg" />
+                        <img src="img/p5.jpg" class="js-preview-img" data-src="img/p5.jpg" />
                         <i class="login-user-mask"></i>
                         <a class="login-user-target" href="#" target="_blank"></a>
                         <div class="login-user-info">
@@ -99,7 +99,7 @@
                 </li>
                 <li>
                     <div class="login-user-item js-userItem">
-                        <img src="<?php echo $dm['www'];?>img/p3.jpg" class="js-preview-img" data-src="<?php echo $dm['www'];?>img/p3.jpg" />
+                        <img src="img/p3.jpg" class="js-preview-img" data-src="img/p3.jpg" />
                         <i class="login-user-mask"></i>
                         <a class="login-user-target" href="/147240" target="_blank"></a>
                         <div class="login-user-info">
@@ -118,7 +118,7 @@
                 </li>
                 <li>
                     <div class="login-user-item js-userItem">
-                        <img src="<?php echo $dm['www'];?>img/p6.jpg" class="js-preview-img" data-src="<?php echo $dm['www'];?>img/p6.jpg" />
+                        <img src="img/p6.jpg" class="js-preview-img" data-src="img/p6.jpg" />
                         <i class="login-user-mask"></i>
                         <a class="login-user-target" href="/147240" target="_blank"></a>
                         <div class="login-user-info">
@@ -137,7 +137,7 @@
                 </li>
                  <li>
                     <div class="login-user-item js-userItem">
-                        <img src="<?php echo $dm['www'];?>img/p1.jpg" class="js-preview-img" data-src="<?php echo $dm['www'];?>img/p1.jpg" />
+                        <img src="img/p1.jpg" class="js-preview-img" data-src="img/p1.jpg" />
                         <i class="login-user-mask"></i>
                         <a class="login-user-target" href="#" target="_blank"></a>
                         <div class="login-user-info">
@@ -156,7 +156,7 @@
                 </li>
                 <li>
                     <div class="login-user-item js-userItem">
-                        <img src="<?php echo $dm['www'];?>img/p4.jpg" class="js-preview-img" data-src="<?php echo $dm['www'];?>img/p4.jpg" />
+                        <img src="img/p4.jpg" class="js-preview-img" data-src="img/p4.jpg" />
                         <i class="login-user-mask"></i>
                         <a class="login-user-target" href="#" target="_blank"></a>
                         <div class="login-user-info">
@@ -175,7 +175,7 @@
                 </li>
                 <li>
                     <div class="login-user-item js-userItem">
-                        <img src="<?php echo $dm['www'];?>img/p2.jpg" class="js-preview-img" data-src="<?php echo $dm['www'];?>img/p2.jpg" />
+                        <img src="img/p2.jpg" class="js-preview-img" data-src="img/p2.jpg" />
                         <i class="login-user-mask"></i>
                         <a class="login-user-target" href="/147240" target="_blank"></a>
                         <div class="login-user-info">
@@ -194,7 +194,7 @@
                 </li>
                 <li>
                     <div class="login-user-item js-userItem">
-                        <img src="<?php echo $dm['www'];?>img/p5.jpg" class="js-preview-img" data-src="<?php echo $dm['www'];?>img/p5.jpg" />
+                        <img src="img/p5.jpg" class="js-preview-img" data-src="img/p5.jpg" />
                         <i class="login-user-mask"></i>
                         <a class="login-user-target" href="#" target="_blank"></a>
                         <div class="login-user-info">
@@ -213,7 +213,7 @@
                 </li>
                 <li>
                     <div class="login-user-item js-userItem">
-                        <img src="<?php echo $dm['www'];?>img/p3.jpg" class="js-preview-img" data-src="<?php echo $dm['www'];?>img/p3.jpg" />
+                        <img src="img/p3.jpg" class="js-preview-img" data-src="img/p3.jpg" />
                         <i class="login-user-mask"></i>
                         <a class="login-user-target" href="/147240" target="_blank"></a>
                         <div class="login-user-info">
@@ -232,7 +232,7 @@
                 </li>
                 <li>
                     <div class="login-user-item js-userItem">
-                        <img src="<?php echo $dm['www'];?>img/p6.jpg" class="js-preview-img" data-src="<?php echo $dm['www'];?>img/p6.jpg" />
+                        <img src="img/p6.jpg" class="js-preview-img" data-src="img/p6.jpg" />
                         <i class="login-user-mask"></i>
                         <a class="login-user-target" href="/147240" target="_blank"></a>
                         <div class="login-user-info">
@@ -266,14 +266,14 @@
                     <div id="operateBox" class="login-operate-inner">
                         <a data-log="openLogin" class="login-operate-btn current login-trigger" hidefocus="true" href="javascript:;">登录</a>
                         <a data-log="openLogin" class="login-operate-btn register-trigger" hidefocus="true" href="javascript:;">注册</a>
-                        <a class="login-operate-btn login-operate-btn-vistor" target="_blank" href="<?php echo $dm['www'];?>default">游客浏览</a>
+                        <a class="login-operate-btn login-operate-btn-vistor" target="_blank" href="./default">游客浏览</a>
                     </div>
                 </div>
             </div>
             <div class="login-footer">
 
                 <span>众梦版权所有©2014-2019 </span>| <a href="#">商务合作</a> <a href="#">官方博客</a> <a href="#">官方微博</a> <a href="#">
-                    <img src="<?php echo $dm['www'];?>img/add.png" /></a>
+                    <img src="img/add.png" /></a>
 
             </div>
             <div id="wrap" class="login-wrap" style="height: 0px; overflow: hidden">
@@ -329,13 +329,13 @@
                                 <ul class="list-other">
                                     <li>
                                         <a href="#">
-                                            <img src="<?php echo $dm['www'];?>img/qq1.png" />
+                                            <img src="img/qq1.png" />
                                         </a>
 
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <img src="<?php echo $dm['www'];?>img/qq2.png" />
+                                            <img src="img/qq2.png" />
                                         </a>
                                     </li>
                                 </ul>
@@ -396,12 +396,12 @@
                                 <ul class="list-other">
                                     <li>
                                         <a href="#">
-                                            <img src="<?php echo $dm['www'];?>img/qq1.png" />
+                                            <img src="img/qq1.png" />
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <img src="<?php echo $dm['www'];?>img/qq2.png" />
+                                            <img src="img/qq2.png" />
                                         </a>
                                     </li>
                                 </ul>

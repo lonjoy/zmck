@@ -54,6 +54,8 @@ class MenuController extends AppController {
             array('id'=>4, 'url'=>'', 'name'=>'站点配置', 'sub'=>array(
                 array('id'=>5, 'url'=>'/user/roles', 'name'=>'合伙人类型管理', 'sub'=>array()),
                 array('id'=>6, 'url'=>'/industry/index', 'name'=>'行业管理', 'sub'=>array()),
+                array('id'=>7, 'url'=>'/salary/index', 'name'=>'薪酬体系配置', 'sub'=>array()),
+                array('id'=>8, 'url'=>'/salary/index', 'name'=>'站点配置', 'sub'=>array()),
             )),
         );
 

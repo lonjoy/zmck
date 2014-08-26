@@ -22,18 +22,15 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
         <title>众梦创客 - 后台管理中心</title>
-        <link href="http://localhost/phpcms/statics/css/reset.css" rel="stylesheet" type="text/css" />
-        <link href="http://localhost/phpcms/statics/css/zh-cn-system.css" rel="stylesheet" type="text/css" />
-        <link href="http://localhost/phpcms/statics/css/dialog.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" type="text/css" href="http://localhost/phpcms/statics/css/style/zh-cn-styles1.css" title="styles1" media="screen" />
-        <link rel="alternate stylesheet" type="text/css" href="http://localhost/phpcms/statics/css/style/zh-cn-styles2.css" title="styles2" media="screen" />
-        <link rel="alternate stylesheet" type="text/css" href="http://localhost/phpcms/statics/css/style/zh-cn-styles3.css" title="styles3" media="screen" />
-        <link rel="alternate stylesheet" type="text/css" href="http://localhost/phpcms/statics/css/style/zh-cn-styles4.css" title="styles4" media="screen" />
-        <script language="javascript" type="text/javascript" src="http://localhost/phpcms/statics/js/jquery.min.js"></script>
-        <script language="javascript" type="text/javascript" src="http://localhost/phpcms/statics/js/styleswitch.js"></script>
-        <script language="javascript" type="text/javascript" src="http://localhost/phpcms/statics/js/dialog.js"></script>
-        <script language="javascript" type="text/javascript" src="http://localhost/phpcms/statics/js/hotkeys.js"></script>
-        <script language="javascript" type="text/javascript" src="http://localhost/phpcms/statics/js/jquery.sgallery.js"></script>
+        <link href="<?php echo $dm['www'];?>css/reset.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo $dm['www'];?>css/zh-cn-system.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo $dm['www'];?>css/dialog.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $dm['www'];?>css/zh-cn-styles1.css" title="styles1" media="screen" />
+        <script language="javascript" type="text/javascript" src="<?php echo $dm['www'];?>js/jquery.min.js"></script>
+        <script language="javascript" type="text/javascript" src="<?php echo $dm['www'];?>js/styleswitch.js"></script>
+        <script language="javascript" type="text/javascript" src="<?php echo $dm['www'];?>js/dialog.js"></script>
+        <script language="javascript" type="text/javascript" src="<?php echo $dm['www'];?>js/hotkeys.js"></script>
+        <script language="javascript" type="text/javascript" src="<?php echo $dm['www'];?>js/jquery.sgallery.js"></script>
         <script type="text/javascript">
             var pc_hash = 'aw8sc8'
         </script>
@@ -51,7 +48,7 @@
             .pd{padding:4px;}
             .ac{background-color:#333; color:#fff;}
             .hvs{background-color:#555; cursor: pointer;}
-            .bg_btn{background: url(http://localhost/phpcms/statics/images/admin_img/icon2.jpg) no-repeat; width:32px; height:32px;}
+            .bg_btn{background: url(<?php echo $dm['www'];?>admin_img/icon2.jpg) no-repeat; width:32px; height:32px;}
         </style>
     </head>
     <body scroll="no" class="objbody">

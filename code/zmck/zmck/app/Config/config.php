@@ -1,5 +1,5 @@
 <?php
-    define('ZMCK_DOMAIN', '.zmck.com');
+    define('ZMCK_DOMAIN', '.zmckr.com');
     Configure::write('meta', array(
     'title' => '众梦创客',
     'desc'  => '',
