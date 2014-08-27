@@ -41,13 +41,7 @@ class SiteController extends AppController {
     *    or MissingViewException in debug mode.
     */
     public function index() {
-
-        $data = $this->User->userList();
-
-        $this->set('data', $data);
-    }
-
-    public function editUser(){
+        $data = array();
         if(isset($_POST['dosubmit'])){
             extract($_POST);
 
@@ -73,19 +67,13 @@ class SiteController extends AppController {
             $conditions = array('id'=>$id);
             $this->User->updateUser($params, $conditions);
             $this->redirect('/user/editUser?id='.$id);
-        }else{
-            $id = intval($_GET['id']);
-            $user_avatar = Url::getUserPic(array('uid'=>$id, 'tp'=>'b'));
-            $this->set('user_avatar', $user_avatar);
-
-            $roles = $this->Role->getList();
-            $this->set('roles', $roles);
-
-            $con = array('id' => $id);
-            $data = $this->User->getUserInfo($con);
-            $this->set('data', $data);
-            $this->set('id', $id);
         }
+        
+        $this->set('data', $data);
+    }
+
+    public function broadcasting(){
+
     }
 
 }

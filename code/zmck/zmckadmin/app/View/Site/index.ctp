@@ -1,27 +1,18 @@
 <div class="subnav">
     <div class="content-menu ib-a blue line-x">
-        <a href='/industry/index' ><em>行业列表</em></a><span>|</span>
-        <a href='/industry/add'><em>添加行业</em></a><span>|</span>
-        <a href='/industry/edit?id=<?php echo $id;?>' class="on"><em>编辑行业</em></a>   
+        <a href='/site/index' class="on"><em>站点配置</em></a>   
     </div>
 </div>
-<form name="adduser" method="post" action="/industry/edit" >
-<input type="hidden" name="id" value="<?php echo $id;?>">
+<form name="sitemanage" method="post" action="/site/index" >
     <div id="div_setting_1" class="contentList pad-10">
         <table width="100%" class="table_form ">
             <tr>
-                <th width="200">行业名称：</th>
+                <th width="200">官方微博地址：</th>
                 <td>
-                    <input type="text" name="name" value="<?php echo $data['name'];?>">
+                    <input type="text" name="name" value="">
                 </td>
             </tr>
-            <tr>
-                <th width="200">是否有效：</th>
-                <td>
-                    <input type="radio" name="isdel" value="1" <?php if($data['isdel']=='1'){echo 'checked="checked"';}?>> 隐藏
-                    <input type="radio" name="isdel" value="0" <?php if($data['isdel']=='0'){echo 'checked="checked"';}?>> 显示
-                </td>
-            </tr>
+
         </table>
     </div>
     <div class="bk15"></div>

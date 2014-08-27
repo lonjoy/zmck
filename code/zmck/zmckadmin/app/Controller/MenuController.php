@@ -50,12 +50,15 @@ class MenuController extends AppController {
             array('id'=>1, 'url'=>'', 'name'=>'用户管理', 'sub'=>array(
             array('id'=>2, 'url'=>'/user/index', 'name'=>'用户列表', 'sub'=>array()),
             array('id'=>3, 'url'=>'/user/roles', 'name'=>'合伙人类型管理', 'sub'=>array()),
+            array('id'=>10, 'url'=>'/user/roles', 'name'=>'企业用户管理', 'sub'=>array()),
             )),
             array('id'=>4, 'url'=>'', 'name'=>'站点配置', 'sub'=>array(
-                array('id'=>5, 'url'=>'/user/roles', 'name'=>'合伙人类型管理', 'sub'=>array()),
+                array('id'=>5, 'url'=>'/datacarousel/index', 'name'=>'首页轮播图管理', 'sub'=>array()),
                 array('id'=>6, 'url'=>'/industry/index', 'name'=>'行业管理', 'sub'=>array()),
                 array('id'=>7, 'url'=>'/salary/index', 'name'=>'薪酬体系配置', 'sub'=>array()),
-                array('id'=>8, 'url'=>'/salary/index', 'name'=>'站点配置', 'sub'=>array()),
+                #array('id'=>8, 'url'=>'/site/index', 'name'=>'站点配置', 'sub'=>array()),
+                array('id'=>8, 'url'=>'/site/index', 'name'=>'创业问答管理', 'sub'=>array()),
+                array('id'=>9, 'url'=>'/site/index', 'name'=>'项目管理', 'sub'=>array()),
             )),
         );
 

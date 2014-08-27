@@ -18,7 +18,7 @@ class Url
     */
     public static function getUserPic($pars){
         $dm = Configure::read('dm');
-        
+
         static $tps=array('s'=>'_s.jpg','m'=>'_m.jpg','b'=>'_b.jpg');
         $tp=empty($pars['tp']) ? 's' : $pars['tp'];
         $tmp='nopic'.$tps[$tp];
@@ -34,4 +34,21 @@ class Url
         return $tmp;
     }
 
+
+    /**
+    * 获取首页轮播图片地址
+    * @param unknown_type $pars
+    * @return string
+    */
+    public static function getHomePic($id){
+        $dm = Configure::read('dm');
+
+        $ttmp = 'nopic.jpg';
+        #$id=str_pad($id,9,0,STR_PAD_LEFT);
+        #$tmp=preg_replace("/^(\d{3})(\d{2})(\d{2})(\d{2,})/i","\\1/\\2/\\3/\\4",$id).'.jpg';
+        $tmp=$id.'.jpg';
+
+        $tmp= (file_exists(HOMEPIC_PATH.$tmp)?$dm['img'].'data/homepic/'.$tmp:$dm['www'].'img/data/homepic/'.$ttmp);
+        return $tmp;
+    }
 }
