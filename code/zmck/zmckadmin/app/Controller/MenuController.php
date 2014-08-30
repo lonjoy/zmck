@@ -57,8 +57,9 @@ class MenuController extends AppController {
                 array('id'=>6, 'url'=>'/industry/index', 'name'=>'行业管理', 'sub'=>array()),
                 array('id'=>7, 'url'=>'/salary/index', 'name'=>'薪酬体系配置', 'sub'=>array()),
                 #array('id'=>8, 'url'=>'/site/index', 'name'=>'站点配置', 'sub'=>array()),
-                array('id'=>8, 'url'=>'/site/index', 'name'=>'创业问答管理', 'sub'=>array()),
+                array('id'=>8, 'url'=>'/survey/index', 'name'=>'创业问答管理', 'sub'=>array()),
                 array('id'=>9, 'url'=>'/site/index', 'name'=>'项目管理', 'sub'=>array()),
+                array('id'=>11, 'url'=>'/site/index', 'name'=>'创业问答管理', 'sub'=>array()),
             )),
         );
 
