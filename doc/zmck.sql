@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50528
 File Encoding         : 65001
 
-Date: 2014-08-27 00:53:41
+Date: 2014-08-30 08:47:34
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -32,6 +32,25 @@ CREATE TABLE `zm_company` (
 -- ----------------------------
 -- Records of zm_company
 -- ----------------------------
+
+-- ----------------------------
+-- Table structure for `zm_datacarousels`
+-- ----------------------------
+DROP TABLE IF EXISTS `zm_datacarousels`;
+CREATE TABLE `zm_datacarousels` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(20) NOT NULL,
+  `ctime` int(10) NOT NULL,
+  `order` tinyint(3) NOT NULL DEFAULT '0',
+  `url` varchar(200) NOT NULL DEFAULT '' COMMENT 'url',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of zm_datacarousels
+-- ----------------------------
+INSERT INTO `zm_datacarousels` VALUES ('9', '众梦创客', '1409155815', '22', 'ttt');
+INSERT INTO `zm_datacarousels` VALUES ('10', '众梦创客', '1409159073', '0', '');
 
 -- ----------------------------
 -- Table structure for `zm_followers`
@@ -100,6 +119,124 @@ CREATE TABLE `zm_site_settings` (
 -- ----------------------------
 -- Records of zm_site_settings
 -- ----------------------------
+
+-- ----------------------------
+-- Table structure for `zm_survey`
+-- ----------------------------
+DROP TABLE IF EXISTS `zm_survey`;
+CREATE TABLE `zm_survey` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `title` varchar(100) NOT NULL DEFAULT '',
+  `ctime` int(10) NOT NULL,
+  `enable` tinyint(1) NOT NULL DEFAULT '1' COMMENT '有效无效',
+  `ismultiple` tinyint(1) NOT NULL DEFAULT '0' COMMENT '单选，多选',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of zm_survey
+-- ----------------------------
+INSERT INTO `zm_survey` VALUES ('1', 'test', '1409330688', '1', '0');
+INSERT INTO `zm_survey` VALUES ('2', '天天', '1409330770', '1', '0');
+INSERT INTO `zm_survey` VALUES ('3', '让人', '1409330861', '1', '0');
+INSERT INTO `zm_survey` VALUES ('4', '让人 dsf', '1409330988', '1', '0');
+
+-- ----------------------------
+-- Table structure for `zm_survey_data`
+-- ----------------------------
+DROP TABLE IF EXISTS `zm_survey_data`;
+CREATE TABLE `zm_survey_data` (
+  `id` int(10) NOT NULL,
+  `userid` int(10) NOT NULL,
+  `ctime` int(10) NOT NULL,
+  `ip` char(15) NOT NULL,
+  `data` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of zm_survey_data
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `zm_survey_options`
+-- ----------------------------
+DROP TABLE IF EXISTS `zm_survey_options`;
+CREATE TABLE `zm_survey_options` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `survey_id` int(10) NOT NULL,
+  `name` varchar(200) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=66 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of zm_survey_options
+-- ----------------------------
+INSERT INTO `zm_survey_options` VALUES ('1', '0', '让人');
+INSERT INTO `zm_survey_options` VALUES ('2', '0', '啊啊');
+INSERT INTO `zm_survey_options` VALUES ('3', '0', '方法');
+INSERT INTO `zm_survey_options` VALUES ('4', '4', 'dsfdsa');
+INSERT INTO `zm_survey_options` VALUES ('5', '4', 'dsafdsa');
+INSERT INTO `zm_survey_options` VALUES ('6', '4', 'fdsaf');
+INSERT INTO `zm_survey_options` VALUES ('7', '4', 'dsfdsa');
+INSERT INTO `zm_survey_options` VALUES ('8', '4', 'dsafdsa');
+INSERT INTO `zm_survey_options` VALUES ('9', '4', 'fdsaf');
+INSERT INTO `zm_survey_options` VALUES ('10', '4', '1111');
+INSERT INTO `zm_survey_options` VALUES ('11', '4', 'dsfdsa');
+INSERT INTO `zm_survey_options` VALUES ('12', '4', 'dsafdsa');
+INSERT INTO `zm_survey_options` VALUES ('13', '4', 'fdsaf');
+INSERT INTO `zm_survey_options` VALUES ('14', '4', 'dsfdsa');
+INSERT INTO `zm_survey_options` VALUES ('15', '4', 'dsafdsa');
+INSERT INTO `zm_survey_options` VALUES ('16', '4', 'fdsaf');
+INSERT INTO `zm_survey_options` VALUES ('17', '4', '1111');
+INSERT INTO `zm_survey_options` VALUES ('18', '4', '222');
+INSERT INTO `zm_survey_options` VALUES ('19', '4', 'dsfdsa');
+INSERT INTO `zm_survey_options` VALUES ('20', '4', 'dsafdsa');
+INSERT INTO `zm_survey_options` VALUES ('21', '4', 'fdsaf');
+INSERT INTO `zm_survey_options` VALUES ('22', '4', 'dsfdsa');
+INSERT INTO `zm_survey_options` VALUES ('23', '4', 'dsafdsa');
+INSERT INTO `zm_survey_options` VALUES ('24', '4', 'fdsaf');
+INSERT INTO `zm_survey_options` VALUES ('25', '4', '1111');
+INSERT INTO `zm_survey_options` VALUES ('26', '4', 'dsfdsa');
+INSERT INTO `zm_survey_options` VALUES ('27', '4', 'dsafdsa');
+INSERT INTO `zm_survey_options` VALUES ('28', '4', 'fdsaf');
+INSERT INTO `zm_survey_options` VALUES ('29', '4', 'dsfdsa');
+INSERT INTO `zm_survey_options` VALUES ('30', '4', 'dsafdsa');
+INSERT INTO `zm_survey_options` VALUES ('31', '4', 'fdsaf');
+INSERT INTO `zm_survey_options` VALUES ('32', '4', '1111');
+INSERT INTO `zm_survey_options` VALUES ('33', '4', '222');
+INSERT INTO `zm_survey_options` VALUES ('34', '4', 'dsfdsa');
+INSERT INTO `zm_survey_options` VALUES ('35', '4', 'dsafdsa');
+INSERT INTO `zm_survey_options` VALUES ('36', '4', 'fdsaf');
+INSERT INTO `zm_survey_options` VALUES ('37', '4', 'dsfdsa');
+INSERT INTO `zm_survey_options` VALUES ('38', '4', 'dsafdsa');
+INSERT INTO `zm_survey_options` VALUES ('39', '4', 'fdsaf');
+INSERT INTO `zm_survey_options` VALUES ('40', '4', '1111');
+INSERT INTO `zm_survey_options` VALUES ('41', '4', 'dsfdsa');
+INSERT INTO `zm_survey_options` VALUES ('42', '4', 'dsafdsa');
+INSERT INTO `zm_survey_options` VALUES ('43', '4', 'fdsaf');
+INSERT INTO `zm_survey_options` VALUES ('44', '4', 'dsfdsa');
+INSERT INTO `zm_survey_options` VALUES ('45', '4', 'dsafdsa');
+INSERT INTO `zm_survey_options` VALUES ('46', '4', 'fdsaf');
+INSERT INTO `zm_survey_options` VALUES ('47', '4', '1111');
+INSERT INTO `zm_survey_options` VALUES ('48', '4', '222');
+INSERT INTO `zm_survey_options` VALUES ('49', '4', 'dsfdsa');
+INSERT INTO `zm_survey_options` VALUES ('50', '4', 'dsfdsa');
+INSERT INTO `zm_survey_options` VALUES ('51', '4', 'dsfdsa');
+INSERT INTO `zm_survey_options` VALUES ('52', '4', 'dsafdsa');
+INSERT INTO `zm_survey_options` VALUES ('53', '4', 'fdsaf');
+INSERT INTO `zm_survey_options` VALUES ('54', '4', 'dsfdsa');
+INSERT INTO `zm_survey_options` VALUES ('55', '4', 'dsafdsa');
+INSERT INTO `zm_survey_options` VALUES ('56', '4', 'fdsaf');
+INSERT INTO `zm_survey_options` VALUES ('57', '4', '1111');
+INSERT INTO `zm_survey_options` VALUES ('58', '4', 'dsfdsa');
+INSERT INTO `zm_survey_options` VALUES ('59', '4', 'dsafdsa');
+INSERT INTO `zm_survey_options` VALUES ('60', '4', 'fdsaf');
+INSERT INTO `zm_survey_options` VALUES ('61', '4', 'dsfdsa');
+INSERT INTO `zm_survey_options` VALUES ('62', '4', 'dsafdsa');
+INSERT INTO `zm_survey_options` VALUES ('63', '4', 'fdsaf');
+INSERT INTO `zm_survey_options` VALUES ('64', '4', '1111');
+INSERT INTO `zm_survey_options` VALUES ('65', '4', '222');
 
 -- ----------------------------
 -- Table structure for `zm_user_roles`
