@@ -8,8 +8,8 @@
 
 App::uses('AppModel', 'Model');
 
-class Surveyoptions extends AppModel {
-    public $useTable = 'survey_options';
+class ForumThreads extends AppModel {
+    public $useTable = 'forum_threads';
 
     public $primaryKey = 'id';
 
@@ -55,7 +55,7 @@ class Surveyoptions extends AppModel {
             return false;
         }
         
-        $ret = $this->deleteAll($conditions, false);
+        $ret = $this->deleteAll($conditions);
         return $ret;
     }
 

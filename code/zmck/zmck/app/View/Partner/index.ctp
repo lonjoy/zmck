@@ -62,11 +62,11 @@
             <div class="hhr">
                 <div class="hhr_c">
                     <div class="hhr_tx">
-                        <dl><dt><a href="5partner_det.html"><img src="img/tx.gif" width="90" height="90" /></a></dt><dd>北京-海淀区</dd>
+                        <dl><dt><a href="/partner/detail?id=1"><img src="img/tx.gif" width="90" height="90" /></a></dt><dd>北京-海淀区</dd>
                         </dl>
                     </div>
                     <div class="hhr_nr">
-                        <div class="hhr_hr_mc"><h3><a href="5partner_det.html">奋斗者-创始人-有项目-已在全职创业</a></h3><span><a href="#">在线</a></span></div>
+                        <div class="hhr_hr_mc"><h3><a href="/partner/detail?id=1">奋斗者-创始人-有项目-已在全职创业</a></h3><span><a href="#">在线</a></span></div>
                         <div class="hhr_hr_dj"><h3>80%&nbsp;&nbsp;靠谱</h3></div>
                         <div class="hhr_hr_bq"><a href="#">电商</a> | <a href="#">产品经历</a> | <a href="#">3年创业经历</a> | <a href="#">天使投资人</a> | <a href="#">移动互联网</a> | <a href="#">有人脉有资源</a> | <a href="#">擅长提炼商业模式</a></div>
                         <div class="hhr_hr_ms">从曾经的记者、创业者到投资人，多年关注互联网和移动互联网、IT服

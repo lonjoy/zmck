@@ -31,4 +31,8 @@ class CompanyController extends AppController {
     public function index() {
 
     }
+    
+    public function detail(){
+        
+    }
 }

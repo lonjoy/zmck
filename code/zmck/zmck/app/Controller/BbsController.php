@@ -18,7 +18,7 @@ class BbsController extends AppController {
     *
     * @var array
     */
-    public $uses = array();
+    public $uses = array('Forum', 'ForumPost');
 
     /**
     * Displays a view
@@ -30,5 +30,10 @@ class BbsController extends AppController {
     */
     public function index() {
 
+    }
+
+    public function subject(){
+        $data = $this->ForumPost->getList();
+        $this->set('data', $data);
     }
 }

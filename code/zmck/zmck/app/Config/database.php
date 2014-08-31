@@ -64,25 +64,25 @@
  */
 class DATABASE_CONFIG {
 
-	public $default = array(
-		'datasource' => 'Database/Mysql',
-		'persistent' => false,
-		'host' => 'localhost',
-		'login' => 'root',
-		'password' => '111111',
-		'database' => 'zmck',
-		'prefix' => '',
-		//'encoding' => 'utf8',
-	);
+    public $default = array(
+        'datasource' => 'Database/Mysql',
+        'persistent' => false,
+        'host' => 'localhost',
+        'login' => 'root',
+        'password' => '111111',
+        'database' => 'zmck',
+        'prefix' => 'zm_',
+        'encoding' => 'utf8',
+    );
 
-	public $test = array(
-		'datasource' => 'Database/Mysql',
-		'persistent' => false,
-		'host' => 'localhost',
-		'login' => 'root',
-		'password' => '111111',
-		'database' => 'zmck',
-		'prefix' => '',
-		//'encoding' => 'utf8',
-	);
+    public $test = array(
+        'datasource' => 'Database/Mysql',
+        'persistent' => false,
+        'host' => 'localhost',
+        'login' => 'root',
+        'password' => '111111',
+        'database' => 'zmck',
+        'prefix' => 'zm_',
+        'encoding' => 'utf8',
+    );
 }

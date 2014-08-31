@@ -29,8 +29,7 @@ class SiteController extends AppController {
     * @var array
     */
     public $layout='layout';
-    public $uses = array('User', 'Role');
-    public $components = array('Upload');
+    public $uses = array('Site');
 
     /**
     * Displays a view
@@ -43,36 +42,32 @@ class SiteController extends AppController {
     public function index() {
         $data = array();
         if(isset($_POST['dosubmit'])){
-            extract($_POST);
+            $params = $_POST;
+            unset($params['dosubmit'], $params['pc_hash']);
 
-            $params = array(
-            'email' => '"'.$_POST['email'].'"',
-            'nickname' => "'".$_POST['nickname']."'",
-            'role' => intval($role),
-            'gender' => intval($gender),
-            'intro' => "'".addslashes($intro)."'",
-            'agerange' => intval($agerange),
-            'workyears' => intval($workyears),
-            );
-            
-            $id = intval($_POST['id']);
-            if(isset($_FILES['avatar']) && !empty($_FILES['avatar'])){
-                $file = $_FILES['avatar'];
-                $id = str_pad($id,9,0,STR_PAD_LEFT);
-                $tmp=preg_replace("/^(\d{3})(\d{2})(\d{2})(\d{2,})/i","\\1/\\2/\\3/\\4",$id);
-                $ret = $this->Upload->uploadedFile($file, AVATAR_PATH.$tmp.'_b'); //大的
-                #$ret = $this->Upload->uploadedFile($file, AVATAR_PATH.$tmp.'_s'); //小的
-                #$ret = $this->Upload->uploadedFile($file, AVATAR_PATH.$tmp.'_m'); //中的
+            if(!empty($params)){
+                foreach($params as $key=>$value){
+                    $conditions = array('name'=>$key);
+                    $ret = $this->Site->getOne($conditions);
+                    if($ret){
+                        $this->Site->updateinfo(array('value'=>"'".$value."'"), $conditions);
+                    }else{
+                        $this->Site->addinfo(array('name'=>$key, 'value'=>$value));
+                    }
+                }
             }
-            $conditions = array('id'=>$id);
-            $this->User->updateUser($params, $conditions);
-            $this->redirect('/user/editUser?id='.$id);
+            $this->redirect('/site/index');
         }
-        
+        $rs = $this->Site->getList(array(), 100);
+        if($rs){
+            foreach($rs as $k=>$v){
+                $data[$v['name']] = $v['value'];
+            }
+        }
         $this->set('data', $data);
     }
 
-    public function broadcasting(){
+    public function aboutus(){
 
     }
 

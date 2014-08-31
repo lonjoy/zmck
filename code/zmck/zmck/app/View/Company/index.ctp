@@ -55,7 +55,7 @@
                             </dl>
                         </div>
                         <div class="cygs_nr">
-                            <div class="cygs_bt"><h3><a href="9company_det.html">北京创客科技有限公司</a></h3></div>
+                            <div class="cygs_bt"><h3><a href="/company/detail">北京创客科技有限公司</a></h3></div>
                             <div class="cygs_mc">
                                 <h3>杨博-CEO</h3>
                                 <span><a href="#">在线</a></span></div>

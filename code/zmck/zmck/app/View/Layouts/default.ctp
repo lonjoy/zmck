@@ -48,7 +48,7 @@
                 </div>
                 <div class="grzx">
                     <ul>
-                        <li class="grzx_l"><a href="30care.html">站内信</a></li>
+                        <li class="grzx_l"><a href="/message/">站内信</a></li>
                         <li class="grzx_r"><div class="grzx_r_xl">
                                 <ul>
                                     <li><a href="/user">个人资料</a></li>
@@ -76,11 +76,11 @@
                     <div class="tangc_c">
 
                         <div class="tangc_c_c">
-                            <textarea name="textarea2" class="tangc_c_c_sr"></textarea>
+                            <textarea name="textarea2" class="tangc_c_c_sr" id="suggest_content"></textarea>
                         </div>
                     </div>
                     <div class="tangc_tj">
-                        <input type="button" value="提交" />&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="重置" />
+                        <input type="button" value="提交" onclick="commitsuggest();"/>&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="重置" onclick="resetsuggest();"/>
                     </div>
                 </div>
             </div>
@@ -98,6 +98,21 @@
                 })
 
             })
+            function commitsuggest(){
+                var suggest_content = $("#suggest_content").val();
+                $.ajax({
+                    type: "POST",
+                    url: "/suggest/add",
+                    dataType: 'json',
+                    data: "content="+suggest_content+"&dosubmit=1",
+                    success: function(data){
+                        alert(data.msg);
+                    }
+                });
+            }
+            function resetsuggest(){
+                $("#suggest_content").val('');
+            }
         </script>
         <div class="clear"></div>
         </div>

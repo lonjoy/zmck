@@ -2,6 +2,15 @@
 /**
  * Static content controller.
  *
+ * This file will render views from views/pages/
+ *
+ * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+ * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ *
+ * Licensed under The MIT License
+ * For full copyright and license information, please see the LICENSE.txt
+ * Redistributions of files must retain the above copyright notice.
+ *
  * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
  * @link          http://cakephp.org CakePHP(tm) Project
  * @package       app.Controller
@@ -19,7 +28,7 @@ App::uses('AppController', 'Controller');
  * @package       app.Controller
  * @link http://book.cakephp.org/2.0/en/controllers/pages-controller.html
  */
-class PartnerController extends AppController {
+class MessageController extends AppController {
 
 /**
  * This controller does not use a model
@@ -27,6 +36,7 @@ class PartnerController extends AppController {
  * @var array
  */
     public $uses = array();
+    public $layout = 'default';
 
 /**
  * Displays a view
@@ -37,10 +47,6 @@ class PartnerController extends AppController {
  *    or MissingViewException in debug mode.
  */
     public function index() {
-        
-    }
-    
-    public function detail(){
         
     }
 }

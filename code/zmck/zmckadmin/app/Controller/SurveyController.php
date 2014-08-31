@@ -78,7 +78,7 @@ class SurveyController extends AppController {
             #update survey
             $this->Survey->updateinfo($params, array('id'=>$id));
             #update option
-            $this->Surveyoptions->deleteAll(array('survey_id'=>$id));
+            $this->Surveyoptions->delinfo(array('survey_id'=>$id));
             if(!empty($options)){
                 foreach($options as $val){
                     if($val){
@@ -97,5 +97,14 @@ class SurveyController extends AppController {
         $this->set('id', $id);
         $this->set('data', $data);
 
+    }
+
+    public function del(){
+        $id = intval($_GET['id']);
+        if($id){
+            $this->Survey->delete($id);
+            $this->Surveyoptions->delinfo(array('survey_id'=>$id));
+            $this->redirect('/survey/index');
+        }
     }
 }

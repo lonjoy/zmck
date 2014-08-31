@@ -5,14 +5,14 @@
             <div class="title">
                 <h3>创业圈</h3>
                 <div class="title_circle5">
-                    <a class="btn btn-large theme-login"  href="javascript:;">创建新圈子</a>
+                    <!--<a class="btn btn-large theme-login"  href="javascript:;">创建新圈子</a>-->
                 </div>
             </div>
 
             <div class="circle5">
                 <ul>
                     <li>
-                        <div class="circle5_1"><a href="8topic_det.html"><img src="<?php echo $dm['www'];?>img/circle5_1.jpg" /></a></div>
+                        <div class="circle5_1"><a href="/bbs/subject"><img src="<?php echo $dm['www'];?>img/circle5_1.jpg" /></a></div>
                         <div class="circle5_2"><a href="8topic_det.html">业余创业技术圈子</a><br /><img src="<?php echo $dm['www'];?>img/circle5_2.gif" />1500 个话题</div>
                         <div class="circle5_3">愿意利用业余时间来参与一些感兴趣的创业
                             项目原型开发的技术合伙人，可以要求一定

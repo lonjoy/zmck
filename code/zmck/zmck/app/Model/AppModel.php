@@ -30,4 +30,37 @@ App::uses('Model', 'Model');
  * @package       app.Model
  */
 class AppModel extends Model {
+    
+    public function afterFind($results, $primary=false) {
+
+        $results = $this->getListWithoutModelName($results);
+
+        return $results;
+    }
+
+    /**
+     * 去除find方法返回的结果中的model键值
+     *
+     * @param type $items
+     * @return type
+     */
+    public function getListWithoutModelName($items) {
+        if(!isset($items) || !is_array($items) || empty($items)) {
+            return $items;
+        }
+
+        $modelName = $this->name;
+        if(isset($items[$modelName])) {
+            $items = $items[$modelName];
+            unset($items[$modelName]);
+        }else{
+            foreach ($items as $k => $v) {
+               if(isset($v[$modelName])) {
+                   $items[$k] = $v[$modelName];
+               }
+            }
+        }
+
+        return $items;
+    }
 }

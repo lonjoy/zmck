@@ -58,7 +58,7 @@
 
             </div>
             <div class="col-auto">
-                <div class="log white cut_line">您好！phpcms  [超级管理员]<span>|</span><a href="?m=admin&c=index&a=public_logout">[退出]</a><span>|</span>
+                <div class="log white cut_line">您好！[超级管理员]<span>|</span><a href="?m=admin&c=index&a=public_logout">[退出]</a><span>|</span>
                     <a href="http://www.zmck.com/" target="_blank" id="site_homepage">站点首页</a><span>|</span>
                 </div>
                 

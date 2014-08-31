@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50528
 File Encoding         : 65001
 
-Date: 2014-08-30 08:47:34
+Date: 2014-09-01 00:40:20
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -69,6 +69,64 @@ CREATE TABLE `zm_followers` (
 -- ----------------------------
 
 -- ----------------------------
+-- Table structure for `zm_forum`
+-- ----------------------------
+DROP TABLE IF EXISTS `zm_forum`;
+CREATE TABLE `zm_forum` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `user_id` int(10) NOT NULL DEFAULT '0',
+  `desc` text NOT NULL,
+  `pid` int(10) NOT NULL DEFAULT '0',
+  `posts` int(10) NOT NULL DEFAULT '0',
+  `threads` int(10) NOT NULL DEFAULT '0',
+  `listorder` int(10) NOT NULL DEFAULT '0',
+  `ctime` int(10) NOT NULL,
+  `enable` tinyint(1) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of zm_forum
+-- ----------------------------
+INSERT INTO `zm_forum` VALUES ('2', '业余创业技术圈子', '1', '愿意利用业余时间来参与一些感兴趣的创业 项目原型开发的技术合伙人，可以要求一定 的回报，但不是纯粹为赚钱而要...', '0', '0', '0', '0', '1409483426', '1');
+INSERT INTO `zm_forum` VALUES ('3', '业余创业技术圈子', '1', '多撒范德萨', '0', '0', '0', '1', '1409483443', '1');
+
+-- ----------------------------
+-- Table structure for `zm_forum_posts`
+-- ----------------------------
+DROP TABLE IF EXISTS `zm_forum_posts`;
+CREATE TABLE `zm_forum_posts` (
+  `pid` int(10) NOT NULL AUTO_INCREMENT,
+  `fid` int(10) NOT NULL,
+  `subject` varchar(80) NOT NULL,
+  `author` varchar(15) NOT NULL,
+  `author_id` int(10) NOT NULL,
+  `ctime` int(10) NOT NULL,
+  `content` mediumtext NOT NULL,
+  PRIMARY KEY (`pid`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of zm_forum_posts
+-- ----------------------------
+INSERT INTO `zm_forum_posts` VALUES ('1', '1', 'dsafdsa', 'dsaf', '2', '0', 'dsaf');
+
+-- ----------------------------
+-- Table structure for `zm_forum_threads`
+-- ----------------------------
+DROP TABLE IF EXISTS `zm_forum_threads`;
+CREATE TABLE `zm_forum_threads` (
+  `id` int(10) NOT NULL,
+  `subject` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of zm_forum_threads
+-- ----------------------------
+
+-- ----------------------------
 -- Table structure for `zm_industries`
 -- ----------------------------
 DROP TABLE IF EXISTS `zm_industries`;
@@ -83,8 +141,8 @@ CREATE TABLE `zm_industries` (
 -- Records of zm_industries
 -- ----------------------------
 INSERT INTO `zm_industries` VALUES ('1', '计算机', '0');
-INSERT INTO `zm_industries` VALUES ('2', '', '0');
-INSERT INTO `zm_industries` VALUES ('3', 'yy', '0');
+INSERT INTO `zm_industries` VALUES ('2', '餐饮', '0');
+INSERT INTO `zm_industries` VALUES ('3', '医疗', '0');
 
 -- ----------------------------
 -- Table structure for `zm_salary_system`
@@ -110,15 +168,37 @@ INSERT INTO `zm_salary_system` VALUES ('4', '基本薪资 + 期权', '0');
 -- ----------------------------
 DROP TABLE IF EXISTS `zm_site_settings`;
 CREATE TABLE `zm_site_settings` (
-  `id` int(10) NOT NULL,
+  `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(100) NOT NULL DEFAULT '' COMMENT '名称',
-  `value` varchar(500) NOT NULL DEFAULT '' COMMENT '值',
+  `value` text NOT NULL COMMENT '值',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of zm_site_settings
 -- ----------------------------
+INSERT INTO `zm_site_settings` VALUES ('1', 'weibo', 'tt');
+INSERT INTO `zm_site_settings` VALUES ('2', 'wexin', '天天');
+INSERT INTO `zm_site_settings` VALUES ('3', 'aboutus', '天天唐甜甜');
+INSERT INTO `zm_site_settings` VALUES ('4', 'contactus', 'kkk');
+INSERT INTO `zm_site_settings` VALUES ('5', 'joinus', '谁打分的萨菲司法所');
+
+-- ----------------------------
+-- Table structure for `zm_suggest`
+-- ----------------------------
+DROP TABLE IF EXISTS `zm_suggest`;
+CREATE TABLE `zm_suggest` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `user_id` int(10) NOT NULL DEFAULT '0',
+  `content` text NOT NULL COMMENT '意见内容',
+  `ctime` int(10) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of zm_suggest
+-- ----------------------------
+INSERT INTO `zm_suggest` VALUES ('2', '0', '\'唐甜甜唐甜甜唐甜甜唐甜甜\'', '1409494507');
 
 -- ----------------------------
 -- Table structure for `zm_survey`
@@ -131,32 +211,33 @@ CREATE TABLE `zm_survey` (
   `enable` tinyint(1) NOT NULL DEFAULT '1' COMMENT '有效无效',
   `ismultiple` tinyint(1) NOT NULL DEFAULT '0' COMMENT '单选，多选',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of zm_survey
 -- ----------------------------
-INSERT INTO `zm_survey` VALUES ('1', 'test', '1409330688', '1', '0');
-INSERT INTO `zm_survey` VALUES ('2', '天天', '1409330770', '1', '0');
-INSERT INTO `zm_survey` VALUES ('3', '让人', '1409330861', '1', '0');
-INSERT INTO `zm_survey` VALUES ('4', '让人 dsf', '1409330988', '1', '0');
+INSERT INTO `zm_survey` VALUES ('6', '和别人争吵起来时，你a', '1409499540', '1', '0');
+INSERT INTO `zm_survey` VALUES ('7', '哪种最接近你现在的状态？', '1409499600', '1', '0');
+INSERT INTO `zm_survey` VALUES ('8', '你经常关注国内外的创业项目和报道吗？', '1409499653', '1', '0');
+INSERT INTO `zm_survey` VALUES ('9', '你认为最阻碍创业者成功的个人因素是什么？', '1409499687', '1', '0');
 
 -- ----------------------------
 -- Table structure for `zm_survey_data`
 -- ----------------------------
 DROP TABLE IF EXISTS `zm_survey_data`;
 CREATE TABLE `zm_survey_data` (
-  `id` int(10) NOT NULL,
-  `userid` int(10) NOT NULL,
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `user_id` int(10) NOT NULL,
   `ctime` int(10) NOT NULL,
   `ip` char(15) NOT NULL,
   `data` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of zm_survey_data
 -- ----------------------------
+INSERT INTO `zm_survey_data` VALUES ('1', '1', '1409502921', '', '{\"6\":\"36\"}');
 
 -- ----------------------------
 -- Table structure for `zm_survey_options`
@@ -167,76 +248,25 @@ CREATE TABLE `zm_survey_options` (
   `survey_id` int(10) NOT NULL,
   `name` varchar(200) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=66 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of zm_survey_options
 -- ----------------------------
-INSERT INTO `zm_survey_options` VALUES ('1', '0', '让人');
-INSERT INTO `zm_survey_options` VALUES ('2', '0', '啊啊');
-INSERT INTO `zm_survey_options` VALUES ('3', '0', '方法');
-INSERT INTO `zm_survey_options` VALUES ('4', '4', 'dsfdsa');
-INSERT INTO `zm_survey_options` VALUES ('5', '4', 'dsafdsa');
-INSERT INTO `zm_survey_options` VALUES ('6', '4', 'fdsaf');
-INSERT INTO `zm_survey_options` VALUES ('7', '4', 'dsfdsa');
-INSERT INTO `zm_survey_options` VALUES ('8', '4', 'dsafdsa');
-INSERT INTO `zm_survey_options` VALUES ('9', '4', 'fdsaf');
-INSERT INTO `zm_survey_options` VALUES ('10', '4', '1111');
-INSERT INTO `zm_survey_options` VALUES ('11', '4', 'dsfdsa');
-INSERT INTO `zm_survey_options` VALUES ('12', '4', 'dsafdsa');
-INSERT INTO `zm_survey_options` VALUES ('13', '4', 'fdsaf');
-INSERT INTO `zm_survey_options` VALUES ('14', '4', 'dsfdsa');
-INSERT INTO `zm_survey_options` VALUES ('15', '4', 'dsafdsa');
-INSERT INTO `zm_survey_options` VALUES ('16', '4', 'fdsaf');
-INSERT INTO `zm_survey_options` VALUES ('17', '4', '1111');
-INSERT INTO `zm_survey_options` VALUES ('18', '4', '222');
-INSERT INTO `zm_survey_options` VALUES ('19', '4', 'dsfdsa');
-INSERT INTO `zm_survey_options` VALUES ('20', '4', 'dsafdsa');
-INSERT INTO `zm_survey_options` VALUES ('21', '4', 'fdsaf');
-INSERT INTO `zm_survey_options` VALUES ('22', '4', 'dsfdsa');
-INSERT INTO `zm_survey_options` VALUES ('23', '4', 'dsafdsa');
-INSERT INTO `zm_survey_options` VALUES ('24', '4', 'fdsaf');
-INSERT INTO `zm_survey_options` VALUES ('25', '4', '1111');
-INSERT INTO `zm_survey_options` VALUES ('26', '4', 'dsfdsa');
-INSERT INTO `zm_survey_options` VALUES ('27', '4', 'dsafdsa');
-INSERT INTO `zm_survey_options` VALUES ('28', '4', 'fdsaf');
-INSERT INTO `zm_survey_options` VALUES ('29', '4', 'dsfdsa');
-INSERT INTO `zm_survey_options` VALUES ('30', '4', 'dsafdsa');
-INSERT INTO `zm_survey_options` VALUES ('31', '4', 'fdsaf');
-INSERT INTO `zm_survey_options` VALUES ('32', '4', '1111');
-INSERT INTO `zm_survey_options` VALUES ('33', '4', '222');
-INSERT INTO `zm_survey_options` VALUES ('34', '4', 'dsfdsa');
-INSERT INTO `zm_survey_options` VALUES ('35', '4', 'dsafdsa');
-INSERT INTO `zm_survey_options` VALUES ('36', '4', 'fdsaf');
-INSERT INTO `zm_survey_options` VALUES ('37', '4', 'dsfdsa');
-INSERT INTO `zm_survey_options` VALUES ('38', '4', 'dsafdsa');
-INSERT INTO `zm_survey_options` VALUES ('39', '4', 'fdsaf');
-INSERT INTO `zm_survey_options` VALUES ('40', '4', '1111');
-INSERT INTO `zm_survey_options` VALUES ('41', '4', 'dsfdsa');
-INSERT INTO `zm_survey_options` VALUES ('42', '4', 'dsafdsa');
-INSERT INTO `zm_survey_options` VALUES ('43', '4', 'fdsaf');
-INSERT INTO `zm_survey_options` VALUES ('44', '4', 'dsfdsa');
-INSERT INTO `zm_survey_options` VALUES ('45', '4', 'dsafdsa');
-INSERT INTO `zm_survey_options` VALUES ('46', '4', 'fdsaf');
-INSERT INTO `zm_survey_options` VALUES ('47', '4', '1111');
-INSERT INTO `zm_survey_options` VALUES ('48', '4', '222');
-INSERT INTO `zm_survey_options` VALUES ('49', '4', 'dsfdsa');
-INSERT INTO `zm_survey_options` VALUES ('50', '4', 'dsfdsa');
-INSERT INTO `zm_survey_options` VALUES ('51', '4', 'dsfdsa');
-INSERT INTO `zm_survey_options` VALUES ('52', '4', 'dsafdsa');
-INSERT INTO `zm_survey_options` VALUES ('53', '4', 'fdsaf');
-INSERT INTO `zm_survey_options` VALUES ('54', '4', 'dsfdsa');
-INSERT INTO `zm_survey_options` VALUES ('55', '4', 'dsafdsa');
-INSERT INTO `zm_survey_options` VALUES ('56', '4', 'fdsaf');
-INSERT INTO `zm_survey_options` VALUES ('57', '4', '1111');
-INSERT INTO `zm_survey_options` VALUES ('58', '4', 'dsfdsa');
-INSERT INTO `zm_survey_options` VALUES ('59', '4', 'dsafdsa');
-INSERT INTO `zm_survey_options` VALUES ('60', '4', 'fdsaf');
-INSERT INTO `zm_survey_options` VALUES ('61', '4', 'dsfdsa');
-INSERT INTO `zm_survey_options` VALUES ('62', '4', 'dsafdsa');
-INSERT INTO `zm_survey_options` VALUES ('63', '4', 'fdsaf');
-INSERT INTO `zm_survey_options` VALUES ('64', '4', '1111');
-INSERT INTO `zm_survey_options` VALUES ('65', '4', '222');
+INSERT INTO `zm_survey_options` VALUES ('24', '7', '有想法，想找合伙人探讨 ');
+INSERT INTO `zm_survey_options` VALUES ('25', '7', '有进展中项目，想找合伙人');
+INSERT INTO `zm_survey_options` VALUES ('26', '7', '没有项目，看看有没有靠谱项目参与 ');
+INSERT INTO `zm_survey_options` VALUES ('27', '7', '想多交创业朋友 ');
+INSERT INTO `zm_survey_options` VALUES ('28', '7', '打酱油路过 ');
+INSERT INTO `zm_survey_options` VALUES ('29', '8', '随时关注');
+INSERT INTO `zm_survey_options` VALUES ('30', '8', '偶尔关注');
+INSERT INTO `zm_survey_options` VALUES ('31', '8', '从不关注 ');
+INSERT INTO `zm_survey_options` VALUES ('32', '9', '执行力不强');
+INSERT INTO `zm_survey_options` VALUES ('33', '9', '心胸狭窄 ');
+INSERT INTO `zm_survey_options` VALUES ('34', '9', '韧性不足 ');
+INSERT INTO `zm_survey_options` VALUES ('35', '6', '能够有力的反驳对方');
+INSERT INTO `zm_survey_options` VALUES ('36', '6', '常常语无伦次，事后才想起要如何反驳对方，可是已经晚了 ');
+INSERT INTO `zm_survey_options` VALUES ('37', '6', ' 能够反驳，但是没有多大的力量 ');
 
 -- ----------------------------
 -- Table structure for `zm_user_roles`
@@ -248,14 +278,18 @@ CREATE TABLE `zm_user_roles` (
   `state` tinyint(1) NOT NULL DEFAULT '0',
   `ctime` int(10) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of zm_user_roles
 -- ----------------------------
-INSERT INTO `zm_user_roles` VALUES ('1', 'ss', '1', '1408376644');
-INSERT INTO `zm_user_roles` VALUES ('2', '神奇啊', '1', '1408376996');
-INSERT INTO `zm_user_roles` VALUES ('3', '美女啊', '1', '1408377004');
+INSERT INTO `zm_user_roles` VALUES ('1', '创始人', '1', '1408376644');
+INSERT INTO `zm_user_roles` VALUES ('2', '技术合伙人', '1', '1408376996');
+INSERT INTO `zm_user_roles` VALUES ('3', '营销合伙人', '1', '1408377004');
+INSERT INTO `zm_user_roles` VALUES ('4', '运营合伙人', '1', '1409487798');
+INSERT INTO `zm_user_roles` VALUES ('5', '产品合伙人', '1', '1409487808');
+INSERT INTO `zm_user_roles` VALUES ('6', '设计师', '1', '1409487816');
+INSERT INTO `zm_user_roles` VALUES ('7', '其他', '1', '1409487821');
 
 -- ----------------------------
 -- Table structure for `zm_user_tags`

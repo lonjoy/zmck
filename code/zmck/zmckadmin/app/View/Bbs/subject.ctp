@@ -1,7 +1,6 @@
 <div class="subnav">
     <div class="content-menu ib-a blue line-x">
-        <a href='/survey/index' class="on"><em>问答列表</em></a><span>|</span>
-        <a href='/survey/add'><em>添加问答</em></a>
+        <a href='/bbs/subject' class="on"><em>话题列表</em></a>
     </div>
 </div>
 
@@ -15,7 +14,7 @@
                         <th  align="left" width="20"><input type="checkbox" value="" id="check_box" onclick="selectall('userid[]');"></th>
                         <th align="left"></th>
                         <th align="left">ID</th>
-                        <th align="left">名称</th>
+                        <th align="left">主题</th>
                         <th align="left">操作</th>
                     </tr>
                 </thead>
@@ -25,13 +24,13 @@
                             foreach($data as $k=>$v) {
                             ?>
                             <tr>
-                                <td align="left"><input type="checkbox" value="<?php echo $v['id']?>" name="userid[]"></td>
+                                <td align="left"><input type="checkbox" value="<?php echo $v['pid']?>" name="userid[]"></td>
                                 <td align="left"></td>
-                                <td align="left"><?php echo $v['id'];?></td>
-                                <td align="left"><?php echo $v['title'];?></td>
+                                <td align="left"><?php echo $v['pid'];?></td>
+                                <td align="left"><?php echo $v['subject'];?></td>
                                 <td align="left">
-                                    <a href="/survey/edit?id=<?php echo $v['id'];?>">[编辑]</a>
-                                    <a href="/survey/del?id=<?php echo $v['id'];?>">[删除]</a>
+                                    <a href="/bbs/subjectpreview?pid=<?php echo $v['pid'];?>">[预览]</a>
+                                    <a href="/bbs/subjectdel?pid=<?php echo $v['pid'];?>">[删除]</a>
                                 </td>
                             </tr>
                             <?php

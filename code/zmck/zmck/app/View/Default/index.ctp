@@ -1,5 +1,108 @@
+<style type="text/css">
+.index_banner1{position:relative;height:548px;margin-top:-30px;}
+.index_banner1 li{position:absolute;top:0;left:0;overflow:hidden;width:100%;height:548px;}
+.index_banner1 li.first{background:url(<?php echo $dm['img'];?>data/homepic/1.jpg) center top no-repeat;}
+.index_banner1 li.second{background:url(<?php echo $dm['img'];?>data/homepic/2.jpg) center top no-repeat;}
+.index_banner1 li.third{background:url(<?php echo $dm['img'];?>data/homepic/3.jpg) center top no-repeat;}
+.index_banner1 li a{display:block;margin:0 auto;width:1000px;height:548px;}
+.index_banner1 cite{position:absolute;bottom:10px;left:50%;z-index:999;display:block;margin-left:-34px;width:288px;height:15px;_display:none;}
+.index_banner1 cite span{float:left;display:block;margin:0 4px;width:17px;height:15px;background:url(<?php echo $dm['www'];?>img/ico81.png) no-repeat;text-indent:-999em;opacity:.8;cursor:pointer;}
+.index_banner1 cite span:hover{background:url(<?php echo $dm['www'];?>img/ico82.png) no-repeat;}
+.index_banner1 cite span.cur{background:url(<?php echo $dm['www'];?>img/ico82.png) no-repeat;cursor:default;}
+</style>
 <div id="banner">
-    <div class="mid"><img src="<?php echo $dm['www'];?>img/banner.jpg" /></div>
+    <script type="text/javascript" src="<?php echo $dm['www'];?>js/jcarousellite_index.js"></script>
+    <div class="index_banner1" id="banner_tabs">
+        <ul>
+            <li class="first"><a target="_blank"></a></li>
+            <li class="second"><a  target="_blank"></a></li>      
+            <li class="third"><a  target="_blank"></a></li>    
+        </ul>
+    <cite><span class="cur">1</span><span>2</span><span>3</span></cite> </div>
+    <script type="text/javascript">
+        (function(){
+            if(!Function.prototype.bind){
+                Function.prototype.bind = function(obj){
+                    var owner = this,args = Array.prototype.slice.call(arguments),callobj = Array.prototype.shift.call(args);
+                    return function(e){e=e||top.window.event||window.event;owner.apply(callobj,args.concat([e]));};
+                };
+            }
+        })();
+        var banner_tabs = function(id){
+            this.ctn = document.getElementById(id);
+            this.adLis = null;
+            this.btns = null;
+            this.animStep = 0.2;//动画速度0.1～0.9
+            this.switchSpeed = 6;//自动播放间隔(s)
+            this.defOpacity = 1;
+            this.tmpOpacity = 1;
+            this.crtIndex = 0;
+            this.crtLi = null;
+            this.adLength = 0;
+            this.timerAnim = null;
+            this.timerSwitch = null;
+            this.init();
+        };
+        banner_tabs.prototype = {
+            fnAnim:function(toIndex){
+                if(this.timerAnim){window.clearTimeout(this.timerAnim);}
+                if(this.tmpOpacity <= 0){
+                    this.crtLi.style.opacity = this.tmpOpacity = this.defOpacity;
+                    this.crtLi.style.filter = 'Alpha(Opacity=' + this.defOpacity*100 + ')';
+                    this.crtLi.style.zIndex = 0;
+                    this.crtIndex = toIndex;
+                    return;
+                }
+                this.crtLi.style.opacity = this.tmpOpacity = this.tmpOpacity - this.animStep;
+                this.crtLi.style.filter = 'Alpha(Opacity=' + this.tmpOpacity*100 + ')';
+                this.timerAnim = window.setTimeout(this.fnAnim.bind(this,toIndex),50);
+            },
+            fnNextIndex:function(){
+                return (this.crtIndex >= this.adLength-1)?0:this.crtIndex+1;
+            },
+            fnSwitch:function(toIndex){
+                if(this.crtIndex==toIndex){return;}
+                this.crtLi = this.adLis[this.crtIndex];
+                for(var i=0;i<this.adLength;i++){
+                    this.adLis[i].style.zIndex = 0;
+                }
+                this.crtLi.style.zIndex = 2;
+                this.adLis[toIndex].style.zIndex = 1;
+                for(var i=0;i<this.adLength;i++){
+                    this.btns[i].className = '';
+                }
+                this.btns[toIndex].className = 'cur'
+                this.fnAnim(toIndex);
+            },
+            fnAutoPlay:function(){
+                this.fnSwitch(this.fnNextIndex());
+            },
+            fnPlay:function(){
+                this.timerSwitch = window.setInterval(this.fnAutoPlay.bind(this),this.switchSpeed*1000);
+            },
+            fnStopPlay:function(){
+                window.clearTimeout(this.timerSwitch);
+            },
+            init:function(){
+                this.adLis = this.ctn.getElementsByTagName('li');
+                this.btns = this.ctn.getElementsByTagName('cite')[0].getElementsByTagName('span');
+                this.adLength = this.adLis.length;
+                for(var i=0,l=this.btns.length;i<l;i++){
+                    with({i:i}){
+                        this.btns[i].index = i;
+                        this.btns[i].onclick = this.fnSwitch.bind(this,i);
+                        this.btns[i].onclick = this.fnSwitch.bind(this,i);
+                    }
+                }
+                this.adLis[this.crtIndex].style.zIndex = 2;
+                this.fnPlay();
+                this.ctn.onmouseover = this.fnStopPlay.bind(this);
+                this.ctn.onmouseout = this.fnPlay.bind(this);
+            }
+        };
+        var player1 = new banner_tabs('banner_tabs');
+    </script>
+
 </div>
 <div id="zxhhr">
     <div class="zxhhr mid">

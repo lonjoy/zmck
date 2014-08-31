@@ -18,7 +18,7 @@ class QaController extends AppController {
     *
     * @var array
     */
-    public $uses = array();
+    public $uses = array('Survey', 'Surveyoptions', 'Surveydata');
 
     /**
     * Displays a view
@@ -29,8 +29,45 @@ class QaController extends AppController {
     *    or MissingViewException in debug mode.
     */
     public function index() {
+        $data = $this->Survey->getList();
+        if(!empty($data)){
+            foreach($data as $key=>$val){
+                $options = $this->Surveyoptions->getList(array('survey_id'=>$val['id']));
+                $data[$key]['options'] = $options;
+            }
+        }
 
+        $this->set('data', $data);
     }
 
+    public function add(){
+        if(isset($_POST['dosubmit'])){
+            $options = isset($_POST['options']) ? $_POST['options'] : array();
+            $subject_id = intval($_POST['subject_id']);
+            #查询用户
+            $user_id = 1;
+            $odata = $this->Surveydata->getOne(array('user_id'=>$user_id));
+            if(empty($odata)){
+                $data = array($subject_id=>$options[$subject_id]);
+                $data = json_encode($data);
+                $params = array(
+                'user_id' => $user_id,
+                'data' => $data,
+                'ctime' => time(),
+                );
+                #add survey
+                $id = $this->Surveydata->addinfo($params);
+            }else{
+                $odata_field = json_decode($odata['data'], true);
+                $data[$subject_id] = $options[$subject_id];
+                $data = "'".json_encode($data)."'";
+                $params = array(
+                'data' => $data,
+                );
+                $this->Surveydata->updateinfo($params, array('user_id'=>$user_id));
+            }
 
+            $this->redirect('/qa');
+        }
+    }
 }

@@ -23,7 +23,7 @@
                         <div id="options">
                             <?php foreach($data['options'] as $val){ ?>
 
-                                <div style="margin:3px 0;"><input type="text" name="options[]" value="<?php echo $val['name'];?>" class="input-text"><div></div>
+                                <div style="margin:3px 0;"><input type="text" name="options[]" value="<?php echo $val['name'];?>" class="input-text"></div>
                                 <?php } ?>
                         </div>
                         <?php }else{ ?>

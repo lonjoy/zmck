@@ -12,11 +12,11 @@
 
     Configure::write('db',array(
     'master' => array(
-    'host' => '10.1.2.71',
+    'host' => '192.168.199.129',
     'user' => 'root',
-    'password' => 'root',
-    'database' => 'haibian',
-    'prefix' => 'hb_',
+    'password' => '111111',
+    'database' => 'zmck',
+    'prefix' => 'zm_',
     'encoding' => 'utf8',
     )
 

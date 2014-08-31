@@ -47,20 +47,28 @@ class MenuController extends AppController {
         var_dump($datas);die;
         */
         $datas = array(
-            array('id'=>1, 'url'=>'', 'name'=>'用户管理', 'sub'=>array(
-            array('id'=>2, 'url'=>'/user/index', 'name'=>'用户列表', 'sub'=>array()),
-            array('id'=>3, 'url'=>'/user/roles', 'name'=>'合伙人类型管理', 'sub'=>array()),
-            array('id'=>10, 'url'=>'/user/roles', 'name'=>'企业用户管理', 'sub'=>array()),
-            )),
-            array('id'=>4, 'url'=>'', 'name'=>'站点配置', 'sub'=>array(
-                array('id'=>5, 'url'=>'/datacarousel/index', 'name'=>'首页轮播图管理', 'sub'=>array()),
-                array('id'=>6, 'url'=>'/industry/index', 'name'=>'行业管理', 'sub'=>array()),
-                array('id'=>7, 'url'=>'/salary/index', 'name'=>'薪酬体系配置', 'sub'=>array()),
-                #array('id'=>8, 'url'=>'/site/index', 'name'=>'站点配置', 'sub'=>array()),
-                array('id'=>8, 'url'=>'/survey/index', 'name'=>'创业问答管理', 'sub'=>array()),
-                array('id'=>9, 'url'=>'/site/index', 'name'=>'项目管理', 'sub'=>array()),
-                array('id'=>11, 'url'=>'/site/index', 'name'=>'创业问答管理', 'sub'=>array()),
-            )),
+        array('id'=>1, 'url'=>'', 'name'=>'用户管理', 'sub'=>array(
+        array('id'=>2, 'url'=>'/user/index', 'name'=>'用户列表', 'sub'=>array()),
+        array('id'=>3, 'url'=>'/user/roles', 'name'=>'合伙人类型管理', 'sub'=>array()),
+        )),
+        array('id'=>4, 'url'=>'', 'name'=>'站点配置', 'sub'=>array(
+        array('id'=>5, 'url'=>'/datacarousel/index', 'name'=>'首页轮播图管理', 'sub'=>array()),
+        array('id'=>6, 'url'=>'/industry/index', 'name'=>'行业管理', 'sub'=>array()),
+        array('id'=>7, 'url'=>'/salary/index', 'name'=>'薪酬体系配置', 'sub'=>array()),
+        #array('id'=>8, 'url'=>'/site/index', 'name'=>'站点配置', 'sub'=>array()),
+        array('id'=>8, 'url'=>'/survey/index', 'name'=>'创业问答管理', 'sub'=>array()),
+        array('id'=>9, 'url'=>'/site/index', 'name'=>'项目管理', 'sub'=>array()),
+        array('id'=>11, 'url'=>'/site/index', 'name'=>'相关配置', 'sub'=>array()),
+        array('id'=>18, 'url'=>'/suggest/index', 'name'=>'意见建议', 'sub'=>array()),
+        )),
+        array('id'=>12, 'url'=>'', 'name'=>'企业管理', 'sub'=>array(
+        array('id'=>13, 'url'=>'/user/roles', 'name'=>'企业信息', 'sub'=>array()),
+        array('id'=>14, 'url'=>'/user/roles', 'name'=>'认证信息的审核', 'sub'=>array()),
+        )),
+        array('id'=>15, 'url'=>'', 'name'=>'创业圈管理', 'sub'=>array(
+        array('id'=>16, 'url'=>'/bbs/index', 'name'=>'创业圈管理', 'sub'=>array()),
+        array('id'=>17, 'url'=>'/bbs/subject', 'name'=>'话题管理', 'sub'=>array()),
+        )),
         );
 
         $this->set('datas', $datas);

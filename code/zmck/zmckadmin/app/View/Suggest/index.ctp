@@ -1,7 +1,6 @@
 <div class="subnav">
     <div class="content-menu ib-a blue line-x">
-        <a href='/survey/index' class="on"><em>问答列表</em></a><span>|</span>
-        <a href='/survey/add'><em>添加问答</em></a>
+        <a href='/suggest/index' class="on"><em>建议意见列表</em></a>
     </div>
 </div>
 
@@ -15,7 +14,7 @@
                         <th  align="left" width="20"><input type="checkbox" value="" id="check_box" onclick="selectall('userid[]');"></th>
                         <th align="left"></th>
                         <th align="left">ID</th>
-                        <th align="left">名称</th>
+                        <th align="left">内容</th>
                         <th align="left">操作</th>
                     </tr>
                 </thead>
@@ -28,10 +27,10 @@
                                 <td align="left"><input type="checkbox" value="<?php echo $v['id']?>" name="userid[]"></td>
                                 <td align="left"></td>
                                 <td align="left"><?php echo $v['id'];?></td>
-                                <td align="left"><?php echo $v['title'];?></td>
+                                <td align="left"><?php echo mb_substr($v['content'], 0, 50).'...';?></td>
                                 <td align="left">
-                                    <a href="/survey/edit?id=<?php echo $v['id'];?>">[编辑]</a>
-                                    <a href="/survey/del?id=<?php echo $v['id'];?>">[删除]</a>
+                                    <a href="/suggest/view?id=<?php echo $v['id'];?>">[查看]</a>
+                                    <a href="/suggest/del?id=<?php echo $v['id'];?>">[删除]</a>
                                 </td>
                             </tr>
                             <?php

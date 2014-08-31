@@ -1,210 +1,51 @@
-<script>
-    jQuery(document).ready(function($) {
-        $('.theme-login').click(function(){
-            $('.theme-popover-mask').fadeIn(100);
-            $('.theme-popover').slideDown(200);
-        })
-        $('.theme-poptit .close').click(function(){
-            $('.theme-popover-mask').fadeOut(100);
-            $('.theme-popover').slideUp(200);
-        })
-
-    })
-</script>
-<div class="mid" id="box">
-    <div class="con_l">
-        <div class="box">
-
-            <div class="title">
-                <h3>创业圈</h3>
-                <div class="title_circle5">
-                    <a class="btn btn-large theme-login"  href="javascript:;">创建新圈子</a>
-                </div>
-            </div>
-
-            <div class="circle5">
-                <ul>
-                    <li>
-                        <div class="circle5_1"><a href="8topic_det.html"><img src="../images/circle5_1.jpg" /></a></div>
-                        <div class="circle5_2"><a href="8topic_det.html">业余创业技术圈子</a><br /><img src="../images/circle5_2.gif" />1500 个话题</div>
-                        <div class="circle5_3">愿意利用业余时间来参与一些感兴趣的创业
-                            项目原型开发的技术合伙人，可以要求一定
-                            的回报，但不是纯粹为赚钱而要...</div>
-                    </li>
-                    <li>
-                        <div class="circle5_1"><a href="#"><img src="../images/circle5_1.jpg" /></a></div>
-                        <div class="circle5_2"><a href="#">业余创业技术圈子</a><br /><img src="../images/circle5_2.gif" />1500 个话题</div>
-                        <div class="circle5_3">愿意利用业余时间来参与一些感兴趣的创业
-                            项目原型开发的技术合伙人，可以要求一定
-                            的回报，但不是纯粹为赚钱而要...</div>
-                    </li>
-                    <li>
-                        <div class="circle5_1"><a href="#"><img src="../images/circle5_1.jpg" /></a></div>
-                        <div class="circle5_2"><a href="#">业余创业技术圈子</a><br /><img src="../images/circle5_2.gif" />1500 个话题</div>
-                        <div class="circle5_3">愿意利用业余时间来参与一些感兴趣的创业
-                            项目原型开发的技术合伙人，可以要求一定
-                            的回报，但不是纯粹为赚钱而要...</div>
-                    </li>
-                    <li>
-                        <div class="circle5_1"><a href="#"><img src="../images/circle5_1.jpg" /></a></div>
-                        <div class="circle5_2"><a href="#">业余创业技术圈子</a><br /><img src="../images/circle5_2.gif" />1500 个话题</div>
-                        <div class="circle5_3">愿意利用业余时间来参与一些感兴趣的创业
-                            项目原型开发的技术合伙人，可以要求一定
-                            的回报，但不是纯粹为赚钱而要...</div>
-                    </li>
-                    <li>
-                        <div class="circle5_1"><a href="#"><img src="../images/circle5_1.jpg" /></a></div>
-                        <div class="circle5_2"><a href="#">业余创业技术圈子</a><br /><img src="../images/circle5_2.gif" />1500 个话题</div>
-                        <div class="circle5_3">愿意利用业余时间来参与一些感兴趣的创业
-                            项目原型开发的技术合伙人，可以要求一定
-                            的回报，但不是纯粹为赚钱而要...</div>
-                    </li>
-                    <li>
-                        <div class="circle5_1"><a href="#"><img src="../images/circle5_1.jpg" /></a></div>
-                        <div class="circle5_2"><a href="#">业余创业技术圈子</a><br /><img src="../images/circle5_2.gif" />1500 个话题</div>
-                        <div class="circle5_3">愿意利用业余时间来参与一些感兴趣的创业
-                            项目原型开发的技术合伙人，可以要求一定
-                            的回报，但不是纯粹为赚钱而要...</div>
-                    </li>
-                    <li>
-                        <div class="circle5_1"><a href="#"><img src="../images/circle5_1.jpg" /></a></div>
-                        <div class="circle5_2"><a href="#">业余创业技术圈子</a><br /><img src="../images/circle5_2.gif" />1500 个话题</div>
-                        <div class="circle5_3">愿意利用业余时间来参与一些感兴趣的创业
-                            项目原型开发的技术合伙人，可以要求一定
-                            的回报，但不是纯粹为赚钱而要...</div>
-                    </li>
-                    <li>
-                        <div class="circle5_1"><a href="#"><img src="../images/circle5_1.jpg" /></a></div>
-                        <div class="circle5_2"><a href="#">业余创业技术圈子</a><br /><img src="../images/circle5_2.gif" />1500 个话题</div>
-                        <div class="circle5_3">愿意利用业余时间来参与一些感兴趣的创业
-                            项目原型开发的技术合伙人，可以要求一定
-                            的回报，但不是纯粹为赚钱而要...</div>
-                    </li>
-                    <li>
-                        <div class="circle5_1"><a href="#"><img src="../images/circle5_1.jpg" /></a></div>
-                        <div class="circle5_2"><a href="#">业余创业技术圈子</a><br /><img src="../images/circle5_2.gif" />1500 个话题</div>
-                        <div class="circle5_3">愿意利用业余时间来参与一些感兴趣的创业
-                            项目原型开发的技术合伙人，可以要求一定
-                            的回报，但不是纯粹为赚钱而要...</div>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="clear"></div>
-        </div>
+<div class="subnav">
+    <div class="content-menu ib-a blue line-x">
+        <a href='/bbs/index' class="on"><em>创业圈管理</em></a><span>|</span>
+        <a href='/bbs/add'><em>添加创业圈</em></a>
     </div>
+</div>
 
 
+<div class="pad-lr-10">
+    <form name="myform" action="#" method="post" onsubmit="checkuid();return false;">
+        <div class="table-list">
+            <table width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th  align="left" width="20"><input type="checkbox" value="" id="check_box" onclick="selectall('userid[]');"></th>
+                        <th align="left"></th>
+                        <th align="left">ID</th>
+                        <th align="left">圈子标题</th>
+                        <th align="left">操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                        if(!empty($data) && is_array($data)){
+                            foreach($data as $k=>$v) {
+                            ?>
+                            <tr>
+                                <td align="left"><input type="checkbox" value="<?php echo $v['id']?>" name="userid[]"></td>
+                                <td align="left"></td>
+                                <td align="left"><?php echo $v['id'];?></td>
+                                <td align="left"><?php echo $v['name'];?></td>
+                                <td align="left">
+                                    <a href="/bbs/edit?id=<?php echo $v['id'];?>">[编辑]</a>
+                                    <a href="/bbs/del?id=<?php echo $v['id'];?>">[删除]</a>
+                                </td>
+                            </tr>
+                            <?php
+                            }
+                        }
+                    ?>
+                </tbody>
+            </table>
 
-    <div class="con_r">
-        <div class="grxx">
-            <div class="grxx_nr">
-                <div class="grxx_nr1"><img src="../images/tx.gif" height="60" width="60" /></div>
-                <div class="grxx_nr2">
-                    <div class="grxx_nr_bj"><a href="#">编辑</a></div>
-                    <div class="grxx_nr2_c"><a href="#">奋斗者</a></div>
-                    <div class="grxx_dj"><h3>80%&nbsp;&nbsp;靠谱</h3></div>
-                </div>
-                </dd>
+            <div class="btn">
+                <label for="check_box">全选/取消</label> <input type="submit" class="button" name="dosubmit" value="删除" onclick="return confirm('')"/>
             </div>
-            <div class="gz_bgz">
-                <div class="gz_bgz_gz">关注：&nbsp;&nbsp;&nbsp;<span>1580</span>人</div>
-                <div class="gz_bgz_bgz">被关注：&nbsp;&nbsp;&nbsp;<span>1580</span>人</div>
-            </div>
+
+            <div id="pages">pages</div>
         </div>
-        <div class="box">
-            <div class="title">
-                <h3>热门话题</h3>
-            </div>
-            <div class="huati">
-
-
-                <div class="ht_list">
-                    <dl>
-                        <dt><img src="../images/tx.gif" width="50" height="50" /></dt>
-                        <dd><h3><a href="#">苏北地区帅小伙</a></h3>
-                            <div class="ht_list_c">扶个体助小微 税收优惠政策解读...</div>
-                            <div class="ht_list_sj">
-                                <ul>
-                                    <li class="bg1">2014-07-15</li>
-                                    <li class="bg2">2014-07-15</li>
-                                </ul>
-                            </div>
-                        </dd>
-                    </dl>
-                    <div class="clear"></div>
-                </div>
-
-
-
-                <div class="ht_list">
-                    <dl>
-                        <dt><img src="../images/tx.gif" width="50" height="50" /></dt>
-                        <dd><h3><a href="#">苏北地区帅小伙</a></h3>
-                            <div class="ht_list_c">扶个体助小微 税收优惠政策解读...</div>
-                            <div class="ht_list_sj">
-                                <ul>
-                                    <li class="bg1">2014-07-15</li>
-                                    <li class="bg2">2014-07-15</li>
-                                </ul>
-                            </div>
-                        </dd>
-                    </dl>
-                    <div class="clear"></div>
-                </div>
-
-
-                <div class="ht_list">
-                    <dl>
-                        <dt><img src="../images/tx.gif" width="50" height="50" /></dt>
-                        <dd><h3><a href="#">苏北地区帅小伙</a></h3>
-                            <div class="ht_list_c">扶个体助小微 税收优惠政策解读...</div>
-                            <div class="ht_list_sj">
-                                <ul>
-                                    <li class="bg1">2014-07-15</li>
-                                    <li class="bg2">2014-07-15</li>
-                                </ul>
-                            </div>
-                        </dd>
-                    </dl>
-                    <div class="clear"></div>
-                </div>
-
-
-                <div class="ht_list" >
-                    <dl>
-                        <dt><img src="../images/tx.gif" width="50" height="50" /></dt>
-                        <dd><h3><a href="#">苏北地区帅小伙</a></h3>
-                            <div class="ht_list_c">扶个体助小微 税收优惠政策解读...</div>
-                            <div class="ht_list_sj">
-                                <ul>
-                                    <li class="bg1">2014-07-15</li>
-                                    <li class="bg2">2014-07-15</li>
-                                </ul>
-                            </div>
-                        </dd>
-                    </dl>
-                    <div class="clear"></div>
-                </div>
-
-
-                <div class="ht_list">
-                    <dl>
-                        <dt><img src="../images/tx.gif" width="50" height="50" /></dt>
-                        <dd><h3><a href="#">苏北地区帅小伙</a></h3>
-                            <div class="ht_list_c">扶个体助小微 税收优惠政策解读...</div>
-                            <div class="ht_list_sj">
-                                <ul>
-                                    <li class="bg1">2014-07-15</li>
-                                    <li class="bg2">2014-07-15</li>
-                                </ul>
-                            </div>
-                        </dd>
-                    </dl>
-                    <div class="clear"></div>
-                </div>
-                <div class="clear"></div>
-            </div>
-        </div>
-    </div>
-        </div>
+    </form>
+</div>
