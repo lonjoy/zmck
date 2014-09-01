@@ -24,8 +24,8 @@
             <tr>
                 <th width="200">性别：</th>
                 <td>
-                    <input type="radio" name="gender" value="0" <?php if($data['gender']==0){echo 'checked="checked"';}?>>男
-                    <input type="radio" name="gender" value="1" <?php if($data['gender']==1){echo 'checked="checked"';}?>>女
+                    <input type="radio" name="gender" value="1" <?php if($data['gender']==1){echo 'checked="checked"';}?>>男
+                    <input type="radio" name="gender" value="2" <?php if($data['gender']==2){echo 'checked="checked"';}?>>女
                 </td>
             </tr>
             <tr>

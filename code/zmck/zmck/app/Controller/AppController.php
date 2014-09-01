@@ -43,6 +43,26 @@ class AppController extends Controller {
 
         $this->set('dm', $this->dm);
         $this->set('meta', $this->meta);
+        
+        $this->age = Configure::read('age');
+        $this->workyears   = Configure::read('workyears');
+
+        $this->set('age', $this->age);
+        $this->set('workyears', $this->workyears);
+        
+        
+        /*初始化登录状态
+        $this->UserAuth = $this->Components->load('UserAuth');
+        $this->UserAuth->loginInit();
+        $this->userIsLogin = $this->UserAuth->userIsLogin;
+
+        $user_info = $this->UserAuth->userInfo;
+        $this->userInfo    = $user_info;
+        //用户映射到view
+        $this->set('userIsLogin', $this->userIsLogin);
+        $this->set('userInfo', $this->userInfo);
+        */
+
 
 
     }

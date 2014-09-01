@@ -2,8 +2,8 @@
     define('ZMCK_DOMAIN', '.zmckr.com:8080');
     define('AVATAR_PATH', WWW_ROOT.'img'.DS.'data'.DS.'avatar'.DS);
     define('HOMEPIC_PATH', WWW_ROOT.'img'.DS.'data'.DS.'homepic'.DS);
-    
-    
+
+
     Configure::write('meta', array(
     'title' => '众梦创客',
     'desc'  => '',
@@ -27,4 +27,22 @@
 
     define('SITE_NAME','众梦创客');//站点名字
 
+    Configure::write('age', array(
+    1=>'<25',
+    2=>'25-30',
+    3=>'30-35',
+    4=>'35-40',
+    5=>'>40',
+    ));
+    
+    Configure::write('workyears', array(
+    '无工作经验',
+    '1年以内',
+    '1年-2年',
+    '3年左右',
+    '5年到8年',
+    '8年到12年',
+    '12年到20年',
+    '20年+',
+    ));
 ?>

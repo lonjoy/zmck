@@ -10,36 +10,36 @@
                 </div>
             </div>
             <div class="sx">
-                <div class="hhr_dw">
-                    <h3 class="bg">条件:</h3>
-                    <ul>
-                        <li><a href="#">创始人</a></li>
-                        <li><a href="#"> 技术合伙人</a></li>
-                        <li><a href="#">营销合伙人</a></li>
-                        <li><a href="#">运营合伙人</a></li>
-                        <li><a href="#">产品合伙人</a></li>
-                        <li><a href="#">设计师</a></li>
-                        <li><a href="#">其他</a></li>
-                    </ul>
-                </div>
+                <?php if(!empty($roleList)){ ?>
+                    <div class="hhr_dw">
+                        <h3 class="bg">条件:</h3>
+                        <ul>
+                            <?php foreach($roleList as $val){ ?>
+                                <li><a href="<?php echo $val['id'];?>"><?php echo $val['name'];?></a></li>
+                                <?php } ?>
+                        </ul>
+                    </div>
+                    <?php } ?>
                 <div class="sx_tt">
                     <h3 class="bg">条件:</h3>
                     <ul>
                         <li><select name="" class="xl">
-                                <option>北京</option>
+                                <option>地理位置</option>
                             </select></li>
                         <li><select name="" class="xl">
-                                <option>北京</option>
+                                <option>方向</option>
                             </select></li>
                         <li><select name="" class="xl">
-                                <option>北京</option>
+                                <option>心态</option>
                             </select></li>
                         <li><select name="" class="xl">
-                                <option>北京</option>
+                                <option>状态</option>
                             </select></li>
-                        <li><select name="" class="xl">
-                                <option>北京</option>
-                            </select></li>
+                        <li>
+                            <select name="" class="xl">
+                                <option>年龄</option>
+                            </select>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -51,11 +51,11 @@
                     <ul>
                         <li><input name="" type="checkbox" value="" />当前在线</li>
                         <li><input name="" type="checkbox" value="" />有项目</li>
-                        <li><input name="" type="checkbox" value="" />回复率</li>
-                        <li><input name="" type="checkbox" value="" />用户等级</li>
+                        <!--<li><input name="" type="checkbox" value="" />回复率</li>
+                        <li><input name="" type="checkbox" value="" />用户等级</li>-->
                         <li><input name="" type="checkbox" value="" />认证用户 </li>
                         <li><input name="" type="checkbox" value="" />最新注册</li>
-                        <li><input name="" type="checkbox" value="" />信息完善</li>
+                        <!--<li><input name="" type="checkbox" value="" />信息完善</li>-->
                     </ul>
                 </div>
             </div>
@@ -68,17 +68,19 @@
                     <div class="hhr_nr">
                         <div class="hhr_hr_mc"><h3><a href="/partner/detail?id=1">奋斗者-创始人-有项目-已在全职创业</a></h3><span><a href="#">在线</a></span></div>
                         <div class="hhr_hr_dj"><h3>80%&nbsp;&nbsp;靠谱</h3></div>
-                        <div class="hhr_hr_bq"><a href="#">电商</a> | <a href="#">产品经历</a> | <a href="#">3年创业经历</a> | <a href="#">天使投资人</a> | <a href="#">移动互联网</a> | <a href="#">有人脉有资源</a> | <a href="#">擅长提炼商业模式</a></div>
+                        <div class="hhr_hr_bq"><span href="#">电商</span> | <a href="#">产品经历</a> | <a href="#">3年创业经历</a> | <a href="#">天使投资人</a> | <a href="#">移动互联网</a> | <a href="#">有人脉有资源</a> | <a href="#">擅长提炼商业模式</a></div>
                         <div class="hhr_hr_ms">从曾经的记者、创业者到投资人，多年关注互联网和移动互联网、IT服
                             务领域，为多家创业公司和风险投资机构服务，2010开...</div>
+                        <!--
                         <div class="hhr_hr_tp">
-                            <ul>
-                                <li><img src="img/tx.gif" width="51" height="51" /></li>
-                                <li><img src="img/tx.gif" width="51" height="51" /></li>
-                                <li><img src="img/tx.gif" width="51" height="51" /></li>
-                                <li><img src="img/tx.gif" width="51" height="51" /></li><li><img src="img/tx.gif" width="51" height="51" /></li>
-                            </ul>
+                        <ul>
+                        <li><img src="img/tx.gif" width="51" height="51" /></li>
+                        <li><img src="img/tx.gif" width="51" height="51" /></li>
+                        <li><img src="img/tx.gif" width="51" height="51" /></li>
+                        <li><img src="img/tx.gif" width="51" height="51" /></li><li><img src="img/tx.gif" width="51" height="51" /></li>
+                        </ul>
                         </div>
+                        -->
                     </div>
                     <div class="hhr_ty">
                         <ul>
@@ -89,129 +91,16 @@
                     </div>
                     <div class="clear"></div>
                 </div>
-                <div class="hhr_c">
-                    <div class="hhr_tx">
-                        <dl><dt><img src="img/tx.gif" width="90" height="90" /></dt><dd>北京-海淀区</dd>
-                        </dl>
-                    </div>
-                    <div class="hhr_nr">
-                        <div class="hhr_hr_mc"><h3>奋斗者-创始人-有项目-已在全职创业</h3><span><a href="#">在线</a></span></div>
-                        <div class="hhr_hr_dj"><h3>80%&nbsp;&nbsp;靠谱</h3></div>
-                        <div class="hhr_hr_bq"><a href="#">电商</a> | <a href="#">产品经历</a> | <a href="#">3年创业经历</a> | <a href="#">天使投资人</a> | <a href="#">移动互联网</a> | <a href="#">有人脉有资源</a> | <a href="#">擅长提炼商业模式</a></div>
-                        <div class="hhr_hr_ms">从曾经的记者、创业者到投资人，多年关注互联网和移动互联网、IT服
-                            务领域，为多家创业公司和风险投资机构服务，2010开...</div>
-                        <div class="hhr_hr_tp">
-                            <ul>
-                                <li><img src="img/tx.gif" width="51" height="51" /></li>
-                                <li><img src="img/tx.gif" width="51" height="51" /></li>
-                                <li><img src="img/tx.gif" width="51" height="51" /></li>
-                                <li><img src="img/tx.gif" width="51" height="51" /></li><li><img src="img/tx.gif" width="51" height="51" /></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="hhr_ty">
-                        <ul>
-                            <li><a href="#">约谈</a></li>
-                            <li><a href="#">关注</a></li>
-                            <li><a href="#">屏蔽</a></li>
-                        </ul>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-                <div class="hhr_c">
-                    <div class="hhr_tx">
-                        <dl><dt><img src="img/tx.gif" width="90" height="90" /></dt><dd>北京-海淀区</dd>
-                        </dl>
-                    </div>
-                    <div class="hhr_nr">
-                        <div class="hhr_hr_mc"><h3>奋斗者-创始人-有项目-已在全职创业</h3><span><a href="#">在线</a></span></div>
-                        <div class="hhr_hr_dj"><h3>80%&nbsp;&nbsp;靠谱</h3></div>
-                        <div class="hhr_hr_bq"><a href="#">电商</a> | <a href="#">产品经历</a> | <a href="#">3年创业经历</a> | <a href="#">天使投资人</a> | <a href="#">移动互联网</a> | <a href="#">有人脉有资源</a> | <a href="#">擅长提炼商业模式</a></div>
-                        <div class="hhr_hr_ms">从曾经的记者、创业者到投资人，多年关注互联网和移动互联网、IT服
-                            务领域，为多家创业公司和风险投资机构服务，2010开...</div>
-                        <div class="hhr_hr_tp">
-                            <ul>
-                                <li><img src="img/tx.gif" width="51" height="51" /></li>
-                                <li><img src="img/tx.gif" width="51" height="51" /></li>
-                                <li><img src="img/tx.gif" width="51" height="51" /></li>
-                                <li><img src="img/tx.gif" width="51" height="51" /></li><li><img src="img/tx.gif" width="51" height="51" /></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="hhr_ty">
-                        <ul>
-                            <li><a href="#">约谈</a></li>
-                            <li><a href="#">关注</a></li>
-                            <li><a href="#">屏蔽</a></li>
-                        </ul>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-                <div class="hhr_c">
-                    <div class="hhr_tx">
-                        <dl><dt><img src="img/tx.gif" width="90" height="90" /></dt><dd>北京-海淀区</dd>
-                        </dl>
-                    </div>
-                    <div class="hhr_nr">
-                        <div class="hhr_hr_mc"><h3>奋斗者-创始人-有项目-已在全职创业</h3><span><a href="#">在线</a></span></div>
-                        <div class="hhr_hr_dj"><h3>80%&nbsp;&nbsp;靠谱</h3></div>
-                        <div class="hhr_hr_bq"><a href="#">电商</a> | <a href="#">产品经历</a> | <a href="#">3年创业经历</a> | <a href="#">天使投资人</a> | <a href="#">移动互联网</a> | <a href="#">有人脉有资源</a> | <a href="#">擅长提炼商业模式</a></div>
-                        <div class="hhr_hr_ms">从曾经的记者、创业者到投资人，多年关注互联网和移动互联网、IT服
-                            务领域，为多家创业公司和风险投资机构服务，2010开...</div>
-                        <div class="hhr_hr_tp">
-                            <ul>
-                                <li><img src="img/tx.gif" width="51" height="51" /></li>
-                                <li><img src="img/tx.gif" width="51" height="51" /></li>
-                                <li><img src="img/tx.gif" width="51" height="51" /></li>
-                                <li><img src="img/tx.gif" width="51" height="51" /></li><li><img src="img/tx.gif" width="51" height="51" /></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="hhr_ty">
-                        <ul>
-                            <li><a href="#">约谈</a></li>
-                            <li><a href="#">关注</a></li>
-                            <li><a href="#">屏蔽</a></li>
-                        </ul>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-                <div class="hhr_c">
-                    <div class="hhr_tx">
-                        <dl><dt><img src="img/tx.gif" width="90" height="90" /></dt><dd>北京-海淀区</dd>
-                        </dl>
-                    </div>
-                    <div class="hhr_nr">
-                        <div class="hhr_hr_mc"><h3>奋斗者-创始人-有项目-已在全职创业</h3><span><a href="#">在线</a></span></div>
-                        <div class="hhr_hr_dj"><h3>80%&nbsp;&nbsp;靠谱</h3></div>
-                        <div class="hhr_hr_bq"><a href="#">电商</a> | <a href="#">产品经历</a> | <a href="#">3年创业经历</a> | <a href="#">天使投资人</a> | <a href="#">移动互联网</a> | <a href="#">有人脉有资源</a> | <a href="#">擅长提炼商业模式</a></div>
-                        <div class="hhr_hr_ms">从曾经的记者、创业者到投资人，多年关注互联网和移动互联网、IT服
-                            务领域，为多家创业公司和风险投资机构服务，2010开...</div>
-                        <div class="hhr_hr_tp">
-                            <ul>
-                                <li><img src="img/tx.gif" width="51" height="51" /></li>
-                                <li><img src="img/tx.gif" width="51" height="51" /></li>
-                                <li><img src="img/tx.gif" width="51" height="51" /></li>
-                                <li><img src="img/tx.gif" width="51" height="51" /></li><li><img src="img/tx.gif" width="51" height="51" /></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="hhr_ty">
-                        <ul>
-                            <li><a href="#">约谈</a></li>
-                            <li><a href="#">关注</a></li>
-                            <li><a href="#">屏蔽</a></li>
-                        </ul>
-                    </div>
-                    <div class="clear"></div>
-                </div>
+
             </div>
             <div class="fy">
+                <!--
                 <div class="fy_l">每页显示：  
-                    <select name="select" class="venture_1">
-                        <option>10</option>
-                    </select>
+                <select name="select" class="venture_1">
+                <option>10</option>
+                </select>
                 </div>
+                -->
                 <div class="fy_r">
                     <ul>
                         <li><a href="#">1</a></li>
@@ -221,7 +110,7 @@
                         <li><a href="#">5</a></li>
                         <li><a href="#">下一页</a></li>
                     </ul>
-                    <span>跳转到&nbsp;&nbsp;<input name="" type="text" />&nbsp;&nbsp;页</span>
+                    <!-- <span>跳转到&nbsp;&nbsp;<input name="" type="text" />&nbsp;&nbsp;页</span>-->
                 </div>
                 <div class="clear"></div>
             </div>

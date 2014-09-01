@@ -18,7 +18,7 @@ class UserController extends AppController {
     *
     * @var array
     */
-    public $uses = array();
+    public $uses = array('User', 'Role', 'Industry');
 
     /**
     * Displays a view
@@ -29,12 +29,35 @@ class UserController extends AppController {
     *    or MissingViewException in debug mode.
     */
     public function index() {
-
+        $user_id = 1;//$this->userInfo['id'];
+        $conditions = array('id'=>$user_id);
+        if(isset($_POST['dosubmit'])){
+            $params = array(
+            'name' => '"'.$_POST['name'].'"',
+            'nickname' => "'".$_POST['nickname']."'",
+            'role' => intval($_POST['role']),
+            'gender' => intval($_POST['gender']),
+            'agerange' => intval($_POST['agerange']),
+            'workyears' => intval($_POST['workyears']),
+            );
+            $this->User->updateUser($params, $conditions);
+            $this->redirect('/user/index');
+        }
+        $userinfo = $this->User->getUserInfo($conditions);
+        $this->set('userinfo', $userinfo);
+        #获取角色
+        $roleList = $this->Role->getList();
+        $this->set('roleList', $roleList);
     }
 
 
     public function detail(){
-
+        $user_id = 1;//$this->userInfo['id'];
+        $conditions = array('id'=>$user_id);
+        $userinfo = $this->User->getUserInfo($conditions);
+        $this->set('userinfo', $userinfo);
+        $industry = $this->Industry->getList();
+        $this->set('industry', $industry);
     }
 
     public function tag(){
@@ -47,7 +70,12 @@ class UserController extends AppController {
 
     public function auth(){
 
-    }    
+    } 
+
+    public function companyauth(){
+
+    } 
+
 
     public function background(){
 
@@ -56,13 +84,13 @@ class UserController extends AppController {
     public function password(){
 
     }
-    
+
     /**
     * 创业话题
     * 
     */
     public function topic(){
-        
+
     }
 
     /**
@@ -70,11 +98,11 @@ class UserController extends AppController {
     * 
     */
     public function project(){
-        
+
     }
-    
+
     public function addproject(){
-        
+
     }
- 
+
 }
