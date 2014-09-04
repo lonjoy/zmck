@@ -417,7 +417,6 @@
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/common.js"></script>    
-    <script type="text/javascript" data-main="page/login" src="js/login.js"></script>
     <script src="js/js.js"></script>
 </body>
 </html>

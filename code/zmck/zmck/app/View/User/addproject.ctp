@@ -9,11 +9,14 @@
                 </div>
             </div>
             <div class="gsgk_bd">
+            <form action="/user/addproject" name="addproject" method="post" enctype="multipart/form-data">
                 <table width="650" border="0" cellpadding="0" cellspacing="0">
+                <!--
                     <tr>
                         <td width="170" height="152"><span>上传项目LOGO：</span></td>
                         <td class="pro_a23_2"><a class="pro_a23_21"></a><a class="pro_a23_22"><input type="button" value="上传" /><br />没有上传LOGO项目不显示在推荐页<br />宽度比请按照1:1上传</a></td>
                     </tr>
+                    -->
                     <tr>
                         <td width="170" height="40"><span>项目名称：</span></td>
                         <td><input type="text" name="textfield" class="td" /></td>

@@ -107,6 +107,7 @@
                     data: "content="+suggest_content+"&dosubmit=1",
                     success: function(data){
                         alert(data.msg);
+                        window.location.reload();
                     }
                 });
             }
