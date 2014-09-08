@@ -68,7 +68,7 @@
                     <div class="hhr_nr">
                         <div class="hhr_hr_mc"><h3><a href="/partner/detail?id=1">奋斗者-创始人-有项目-已在全职创业</a></h3><span><a href="#">在线</a></span></div>
                         <div class="hhr_hr_dj"><h3>80%&nbsp;&nbsp;靠谱</h3></div>
-                        <div class="hhr_hr_bq"><span href="#">电商</span> | <a href="#">产品经历</a> | <a href="#">3年创业经历</a> | <a href="#">天使投资人</a> | <a href="#">移动互联网</a> | <a href="#">有人脉有资源</a> | <a href="#">擅长提炼商业模式</a></div>
+                        <div class="hhr_hr_bq"><span href="#">电商</span> | </div>
                         <div class="hhr_hr_ms">从曾经的记者、创业者到投资人，多年关注互联网和移动互联网、IT服
                             务领域，为多家创业公司和风险投资机构服务，2010开...</div>
                         <!--
@@ -120,21 +120,11 @@
 
 
     <div class="con_r">
-        <div class="grxx">
-            <div class="grxx_nr">
-                <div class="grxx_nr1"><img src="img/tx.gif" height="60" width="60" /></div>
-                <div class="grxx_nr2">
-                    <div class="grxx_nr_bj"><a href="#">编辑</a></div>
-                    <div class="grxx_nr2_c"><a href="#">奋斗者</a></div>
-                    <div class="grxx_dj"><h3>80%&nbsp;&nbsp;靠谱</h3></div>
-                </div>
-                </dd>
-            </div>
-            <div class="gz_bgz">
-                <div class="gz_bgz_gz">关注：&nbsp;&nbsp;&nbsp;<span>1580</span>人</div>
-                <div class="gz_bgz_bgz">被关注：&nbsp;&nbsp;&nbsp;<span>1580</span>人</div>
-            </div>
-        </div>
+        <?php 
+            if(!empty($userInfo)){
+                echo $this->element('user_block');
+            } 
+        ?>
         <div class="box">
             <div class="title">
                 <h3>推荐合伙人</h3>

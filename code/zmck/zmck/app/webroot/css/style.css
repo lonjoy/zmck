@@ -86,7 +86,7 @@
 .tag_dd{ border:solid 1px #eee; width:190px;padding:5px 5px;}
 .tag_2{ float:left; }
 .tag_2 a{ background-color:#4cbbd9; padding:0px 0px 0px 15px;display:block; line-height:26px; color:#fff;float:left; }
-.tag_2_l{ float:left; width:110px; height:26px; text-align:center;}
+.tag_2_l{ float:left; height:26px; text-align:center;margin-left:5px;margin-top:3px;}/* width:110px;*/
 .tag_2_l img{padding:9px 10px 9px 0px;}
 
 /*20评价管理*/
@@ -177,6 +177,7 @@
 .fy_r ul li{ float:left;}
 .fy_r ul li a{ display:block; padding:4px 8px; margin-right:10px; background:#eee;color:#999;}
 .fy_r ul li a:hover{ background:#4cbbd9; color:#fff;}
+.current{ background:#4cbbd9; color:#fff;}
 .fy_r span{ float:left; padding-left:5px;}
 .fy_r input{ width:20px; height:20px; border:solid 1px #eee; text-align:center; line-height:20px;}
 .grxx{ background:#fff; height:173px; padding:20px 20px 0 20px; border:solid 1px #eee; margin-bottom:20px;} 
@@ -557,9 +558,9 @@
 .form-notice{color: #54546b;font-size: 18px;}
 .login-box .form-input-wrapper {border: 0;}
 .login-box input{border: 1px solid #D1D1D1;width: 337px;padding-left: 30px;}
-.login-box .js-username{background: url(pic/input1.png) no-repeat 10px 10px;}
+.login-box .js-username{background: url(./pic/input1.png) no-repeat 10px 10px;}
 .js-usernameLabel, .js-passwordLabel{padding-left: 25px;}
-.login-box .js-password{background: url(pic/input2.png) no-repeat 10px 10px;}
+.login-box .js-password{background: url(./pic/input2.png) no-repeat 10px 10px;}
 .login-box input:focus{border: 1px solid #4cbbd9;}
 .list-other{margin-top: 20px;}
 .list-other li{float: left;padding-right: 20px;}

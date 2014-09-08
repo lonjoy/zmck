@@ -18,7 +18,7 @@ class ForumThreads extends AppModel {
     * 查询记录
     * @return array
     */
-    public function getList($conditions=array(), $limit=30, $order='', $fields = array())
+    public function getList($conditions=array(), $offset=0, $limit=30, $order='', $fields = array())
     {
         return $this->find('all', array(
         'conditions' => $conditions,
@@ -30,6 +30,10 @@ class ForumThreads extends AppModel {
 
     public function getOne($conditions=array(), $fields=array()){
         return $this->find('first', array('conditions'=>$conditions, 'fields'=>$fields));
+    }
+
+    public function getCount($conditions=array()){
+        return $this->find('count', array('conditions'=>$conditions));
     }
 
     public function addinfo($params=array()){
@@ -49,12 +53,12 @@ class ForumThreads extends AppModel {
         $ret = $this->updateAll($params, $conditions);
         return $ret;
     }
-    
+
     public function delinfo($conditions=array()){
         if(empty($conditions)){
             return false;
         }
-        
+
         $ret = $this->deleteAll($conditions);
         return $ret;
     }

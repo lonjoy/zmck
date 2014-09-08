@@ -49,4 +49,12 @@ class MessageController extends AppController {
     public function index() {
         
     }
+    
+    public function ban(){
+        
+    }
+    
+    public function jianli(){
+        
+    }
 }

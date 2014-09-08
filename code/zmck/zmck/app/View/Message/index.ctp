@@ -1,15 +1,5 @@
 <div class="mid" id="box">
-<div class="yhzx">
-    <h3>站内信</h3>
-    <div class="yhzx_c">
-        <ul>
-            <li><a href="30care.html">合伙人信息</a></li>
-            <li><a href="#">屏蔽信息</a></li>
-            <li><a href="39care_jianli.html">简历信息</a></li>
-            <li><a href="#">系统信息</a></li>
-        </ul>
-    </div>
-</div>
+<?php echo $this->element('message_left'); ?>
 <div class="gszy">
     <div class="title">
         <h3>合伙人信息</h3>

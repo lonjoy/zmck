@@ -42,7 +42,7 @@ class UserController extends AppController {
     */
     public function index() {
 
-        $data = $this->User->userList();
+        $data = $this->User->userList(array(), 30);
 
         $this->set('data', $data);
     }

@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+*{padding:0;margin:0;list-style:none;}
+body{font-family:Microsoft YaHei;}
+.success{background:#ffffff;margin-top:-10px;}
+.success p{height:320px;background:#ffffff;font-size:30px;color:#156ca8;text-align:center;padding:150px 0 0 0;}
+.success p span{display:block;font-size:16px;}
+.success p span a {display:block;text-align:center;}
+.failure{background:#ffffff;margin-top:-10px;}
+.failure p{height:270px;background:#ffffff;font-size:32px;color:#000;text-align:center;padding:150px 0 0 0;}
+.failure p span{display:block;font-size:16px;}
+.failure p span a {display:block;text-align:center;}

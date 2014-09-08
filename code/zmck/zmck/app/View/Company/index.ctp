@@ -334,21 +334,11 @@
         </div>
     </div>
     <div class="con_r">
-        <div class="grxx">
-            <div class="grxx_nr">
-                <div class="grxx_nr1"><img src="../images/tx.gif" height="60" width="60" /></div>
-                <div class="grxx_nr2">
-                    <div class="grxx_nr_bj"><a href="#">编辑</a></div>
-                    <div class="grxx_nr2_c"><a href="#">奋斗者</a></div>
-                    <div class="grxx_dj"><h3>80%&nbsp;&nbsp;靠谱</h3></div>
-                </div>
-                </dd>
-            </div>
-            <div class="gz_bgz">
-                <div class="gz_bgz_gz">关注：&nbsp;&nbsp;&nbsp;<span>1580</span>人</div>
-                <div class="gz_bgz_bgz">被关注：&nbsp;&nbsp;&nbsp;<span>1580</span>人</div>
-            </div>
-        </div>
+        <?php 
+            if(!empty($userInfo)){
+                echo $this->element('user_block');
+            } 
+        ?>
         <div class="box">
             <div class="title">
                 <h3>热门话题</h3>

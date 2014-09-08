@@ -1,5 +1,10 @@
 <?php
     define('ZMCK_DOMAIN', '.zmckr.com');
+
+    define('AVATAR_PATH', WWW_ROOT.'img'.DS.'data'.DS.'avatar'.DS);
+    define('HOMEPIC_PATH', WWW_ROOT.'img'.DS.'data'.DS.'homepic'.DS);
+
+
     Configure::write('meta', array(
     'title' => '众梦创客',
     'desc'  => '',
@@ -41,5 +46,50 @@
     '8年到12年',
     '12年到20年',
     '20年+',
+    ));
+
+    Configure::write('xintai', array(
+    1=>'找项目参与创业',
+    2=>'有项目主导创业',
+    3=>'开放心态',
+    ));
+    
+    
+    Configure::write('nowstatus', array(
+    1=>'已在全职创业',
+    2=>'已在兼职创业',
+    3=>'准备全职创业',
+    4=>'准备兼职创业',
+    5=>'准备兼职创业',
+    6=>'认识朋友为主',
+    ));  
+      
+    Configure::write('startupExperience', array(
+    1=>'能纸上谈兵',
+    2=>'尝试过',
+    3=>'正在创业',
+    4=>'多次，有所斩获',
+    5=>'多次，并且很成功',
+    ));    
+      
+    Configure::write('startupMoney', array(
+    1=>'没有资金',
+    2=>'只投入我的时间',
+    3=>'少出一点可以',
+    4=>'力所能及',
+    5=>'愿意大力出资',
+    )); 
+         
+    Configure::write('spenttime', array(
+    1=>'很少（5小时以下/周）',
+    2=>'不多（5-15小时/周）',
+    3=>'业余部分时间（15-25小时/周）',
+    4=>'业余全部时间（25小时以上）',
+    5=>'全部时间参与创业',
+    ));
+         
+    Configure::write('startupArea', array(
+    1=>'我所处的城市',
+    2=>'外地也可考虑',
     ));
 ?>

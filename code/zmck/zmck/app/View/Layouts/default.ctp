@@ -46,6 +46,9 @@
                         <li><a href="<?php echo $dm['www'];?>bbs">创业圈</a></li>
                     </ul>
                 </div>
+                <?php 
+                if(!empty($userInfo)){
+                ?>
                 <div class="grzx">
                     <ul>
                         <li class="grzx_l"><a href="/message/">站内信</a></li>
@@ -62,6 +65,7 @@
 
                     </ul>
                 </div>
+                <?php } ?>
             </div>
         </div>
         <?php echo $this->fetch('content'); ?>

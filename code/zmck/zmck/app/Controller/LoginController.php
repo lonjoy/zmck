@@ -11,7 +11,7 @@
 
 App::uses('AppController', 'Controller');
 
-class RegController extends AppController {
+class LoginController extends AppController {
 
     /**
     * This controller does not use a model
@@ -29,29 +29,21 @@ class RegController extends AppController {
     *    or MissingViewException in debug mode.
     */
     public function index() {
-        $email = isset($_POST['username']) ? addslashes($_POST['username']) : '';
+        $email = isset($_POST['email']) ? addslashes($_POST['email']) : '';
         $password = isset($_POST['password']) ? $_POST['password'] : '';
-        $xintai = isset($_POST['xintai']) ? intval($_POST['xintai']) : 0;
 
         if(!$email || !$password){
             $this->goMsg('用户名密码必须填写', $this->dm['www']);
         }
-        if(!$xintai){
-            $this->goMsg('请选择你的创业心态', $this->dm['www']);
-        }
-        $user = $this->User->getUserInfo(array('email'=>$email));
+
+        $user = $this->User->getUserInfo(array('email'=>$email, 'password'=>md5($password)));
         if(!empty($user)){
-            $this->goMsg('该邮箱已被注册，请重新输入', $this->dm['www']);
-        }
-        $params = array('email'=>$email, 'password'=>md5($password), 'xintai'=>$xintai);
-        $id = $this->User->addUser($params);
-        if($id){
-            $_SESSION['user_id'] = $id;
-            $_SESSION['email'] = $email; 
-            $_SESSION['xintai'] = $xintai; 
-            $this->goMsg('恭喜！注册成功，请完善个人资料', $this->dm['www'].'user');
+            $_SESSION['user_id'] = $user['id'];
+            $_SESSION['email'] = $user['email']; 
+            $_SESSION['xintai'] = $user['xintai'];
+            $this->goMsg('恭喜！登录成功', $this->dm['www'].'default');
         }else{
-            $this->goMsg('注册失败！请重新注册', $this->dm['www']);
+            $this->goMsg('用户名密码错误，请重新输入', $this->dm['www']);
         }
     }
 }

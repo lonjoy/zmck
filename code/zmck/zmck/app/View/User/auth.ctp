@@ -6,7 +6,7 @@
 <?php echo $this->element('user_info_left'); ?>
 <div class="gszy">
     <div class="title_35">
-        <h3>个人认证&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="36rzxx_qy.html">企业认证</a></h3>
+        <h3>个人认证&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/user/companyauth">企业认证</a></h3>
     </div>
     <div class="gsgk_bd">
         <table width="750" border="0" cellpadding="0" cellspacing="0">

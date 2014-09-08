@@ -29,6 +29,10 @@ class QaController extends AppController {
     *    or MissingViewException in debug mode.
     */
     public function index() {
+        if(empty($this->userInfo)){
+            $this->goMsg('请登录后进行操作', '/');
+        }
+        $user_id = $this->userInfo['id'];
         $data = $this->Survey->getList();
         if(!empty($data)){
             foreach($data as $key=>$val){
@@ -36,16 +40,23 @@ class QaController extends AppController {
                 $data[$key]['options'] = $options;
             }
         }
-
         $this->set('data', $data);
+        #获取用户答案
+        $userdata = $this->Surveydata->getOne(array('user_id'=>$user_id));
+        $user_qa_data = json_decode($userdata['data'], true);
+        $this->set('user_qa_data', $user_qa_data);
+        
     }
 
     public function add(){
+        if(empty($this->userInfo)){
+            $this->goMsg('请登录后进行操作', '/');
+        }
+        $user_id = $this->userInfo['id'];
         if(isset($_POST['dosubmit'])){
             $options = isset($_POST['options']) ? $_POST['options'] : array();
             $subject_id = intval($_POST['subject_id']);
-            #查询用户
-            $user_id = 1;
+
             $odata = $this->Surveydata->getOne(array('user_id'=>$user_id));
             if(empty($odata)){
                 $data = array($subject_id=>$options[$subject_id]);
@@ -59,8 +70,8 @@ class QaController extends AppController {
                 $id = $this->Surveydata->addinfo($params);
             }else{
                 $odata_field = json_decode($odata['data'], true);
-                $data[$subject_id] = $options[$subject_id];
-                $data = "'".json_encode($data)."'";
+                $odata_field[$subject_id] = $options[$subject_id];
+                $data = "'".json_encode($odata_field)."'";
                 $params = array(
                 'data' => $data,
                 );
