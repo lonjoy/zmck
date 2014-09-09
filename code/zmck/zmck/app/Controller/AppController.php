@@ -35,7 +35,7 @@ class AppController extends Controller {
     public $layout = 'default';
 
     public $components = array();
-    public $uses = array('User');
+    public $uses = array('User', 'Site');
 
     public $userInfo=array();
     //初始化设置
@@ -64,6 +64,16 @@ class AppController extends Controller {
         $this->set('startupMoney', $this->startupMoney);
         $this->set('spenttime', $this->spenttime);
         $this->set('startupArea', $this->startupArea);
+        
+        #站点基本信息
+        $siteinfo = $this->Site->getList();
+        $sitesetting = array();
+        if(!empty($siteinfo)){
+            foreach($siteinfo as $val){
+                $sitesetting[$val['name']] = $val['value'];
+            }
+        }
+        $this->set('sitesetting', $sitesetting);
 
         /*初始化登录状态*/
         $user_info=array();

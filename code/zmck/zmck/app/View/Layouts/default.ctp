@@ -29,8 +29,8 @@
     <body>
         <div id="xg">
             <ul>
-                <li><a href="#" class="bg1">微博</a></li>
-                <li><a href="#" class="bg2">微信</a></li>
+                <li><a href="<?php echo isset($sitesetting['weibo'])?$sitesetting['weibo']:'#'?>" class="bg1" target="_blank">微博</a></li>
+                <li><a href="<?php echo isset($sitesetting['wexin'])?$sitesetting['wexin']:'#'?>" class="bg2">微信</a></li>
                 <li><a href="javascript:void(0);" class="bg3" onclick="suggest();">建议</a></li>
                 <li><a href="#" class="bg4"></a></li>
             </ul>
@@ -47,25 +47,25 @@
                     </ul>
                 </div>
                 <?php 
-                if(!empty($userInfo)){
-                ?>
-                <div class="grzx">
-                    <ul>
-                        <li class="grzx_l"><a href="/message/">站内信</a></li>
-                        <li class="grzx_r"><div class="grzx_r_xl">
-                                <ul>
-                                    <li><a href="/user">个人资料</a></li>
-                                    <li><a href="/qa">创业问答</a></li>
-                                    <li><a href="/comment">评价管理</a></li>
-                                    <li><a href="/user/topic">我的创业话题</a></li>
-                                    <li><a href="/user/project">我的创业项目</a></li>
-                                    <li><a href="/follow/">我的联系人</a></li>
-                                </ul>
-                            </div><a class="bg">个人中心</a></li>
+                    if(!empty($userInfo)){
+                    ?>
+                    <div class="grzx">
+                        <ul>
+                            <li class="grzx_l"><a href="/message/">站内信</a></li>
+                            <li class="grzx_r"><div class="grzx_r_xl">
+                                    <ul>
+                                        <li><a href="/user">个人资料</a></li>
+                                        <li><a href="/qa">创业问答</a></li>
+                                        <li><a href="/comment">评价管理</a></li>
+                                        <li><a href="/user/topic">我的创业话题</a></li>
+                                        <li><a href="/user/project">我的创业项目</a></li>
+                                        <li><a href="/follow/">我的联系人</a></li>
+                                    </ul>
+                                </div><a class="bg">个人中心</a></li>
 
-                    </ul>
-                </div>
-                <?php } ?>
+                        </ul>
+                    </div>
+                    <?php } ?>
             </div>
         </div>
         <?php echo $this->fetch('content'); ?>
@@ -126,7 +126,13 @@
                 <div class="foot_jr">加入我们，成就所有人的梦想！</div>
                 <div class="foot_zc"><a href="<?php echo $dm['www'];?>">立即注册</a></div>
                 <div class="foot_db">
-                    <div class="foot_db_l"><a href="#">关于众梦创客</a> | <a href="#">联系我们</a> | <a href="#">招贤纳士</a> | <a href="#">移动客户端</a> | <a href="#">官方微博</a> </div>
+                    <div class="foot_db_l">
+                        <a href="/default/aboutus">关于众梦创客</a> | 
+                        <a href="/default/contactus" target="_blank">联系我们</a> | 
+                        <a href="/default/zhaopin" target="_blank">招贤纳士</a> | 
+                        <a href="/default/#mobile" target="_blank">移动客户端</a> | 
+                        <a href="<?php echo isset($sitesetting['weibo'])?$sitesetting['weibo']:'#'?>" target="_blank">官方微博</a> 
+                    </div>
                     <div class="foot_db_r">众梦创客版权所有  @2014-2019  某ICP备00000000号 </div>
                 </div>
             </div>

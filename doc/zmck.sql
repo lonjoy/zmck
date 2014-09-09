@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50528
 File Encoding         : 65001
 
-Date: 2014-09-09 00:11:36
+Date: 2014-09-10 01:37:04
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -126,8 +126,8 @@ INSERT INTO `zm_forum_posts` VALUES ('9', '2', '的萨芬的', 'aa', '11', '1410
 INSERT INTO `zm_forum_posts` VALUES ('10', '2', '的萨芬的', 'aa', '11', '1410183046', '多撒范德萨', '0', '0', '0', '0');
 INSERT INTO `zm_forum_posts` VALUES ('11', '2', '啦啦啦', 'aa', '11', '1410183133', '打分', '5', '3', '1410190740', '0');
 INSERT INTO `zm_forum_posts` VALUES ('12', '2', '222', 'aa', '11', '1410183478', '大幅度', '1', '0', '0', '0');
-INSERT INTO `zm_forum_posts` VALUES ('13', '3', 'didi', 'aa', '11', '1410189560', 'diyige ', '0', '0', '0', '0');
-INSERT INTO `zm_forum_posts` VALUES ('14', '2', '222', 'aa', '11', '1410190072', 'dasfdfds', '1', '0', '0', '0');
+INSERT INTO `zm_forum_posts` VALUES ('13', '3', 'didi', 'aa', '11', '1410189560', 'diyige ', '1', '0', '0', '0');
+INSERT INTO `zm_forum_posts` VALUES ('14', '2', '222', 'aa', '11', '1410190072', 'dasfdfds', '12', '4', '1410283382', '0');
 
 -- ----------------------------
 -- Table structure for `zm_forum_threads`
@@ -145,7 +145,7 @@ CREATE TABLE `zm_forum_threads` (
   `floor` int(10) NOT NULL,
   `ismaster` tinyint(1) NOT NULL,
   PRIMARY KEY (`tid`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of zm_forum_threads
@@ -158,6 +158,10 @@ INSERT INTO `zm_forum_threads` VALUES ('5', '14', '2', '222', 'dasfdfds', '14101
 INSERT INTO `zm_forum_threads` VALUES ('6', '11', '2', '啦啦啦', 'dsafdsaf', '1410190524', '11', 'aa', '0', '0');
 INSERT INTO `zm_forum_threads` VALUES ('7', '11', '2', '啦啦啦', 'dasfdsaf', '1410190566', '11', 'aa', '0', '0');
 INSERT INTO `zm_forum_threads` VALUES ('8', '11', '2', '啦啦啦', 'dsafdsafdsafd', '1410190740', '11', 'aa', '0', '0');
+INSERT INTO `zm_forum_threads` VALUES ('9', '14', '2', '222', 'dsafsdafdsa', '1410283233', '11', 'aa', '0', '0');
+INSERT INTO `zm_forum_threads` VALUES ('10', '14', '2', '222', 'xxx', '1410283244', '11', 'aa', '0', '0');
+INSERT INTO `zm_forum_threads` VALUES ('11', '14', '2', '222', 'afdsfafdsaf太好了', '1410283348', '11', 'aa', '0', '0');
+INSERT INTO `zm_forum_threads` VALUES ('12', '14', '2', '222', '真是太好了', '1410283382', '11', 'aa', '0', '0');
 
 -- ----------------------------
 -- Table structure for `zm_industries`
@@ -212,11 +216,11 @@ CREATE TABLE `zm_site_settings` (
 -- ----------------------------
 -- Records of zm_site_settings
 -- ----------------------------
-INSERT INTO `zm_site_settings` VALUES ('1', 'weibo', 'tt');
-INSERT INTO `zm_site_settings` VALUES ('2', 'wexin', '天天');
-INSERT INTO `zm_site_settings` VALUES ('3', 'aboutus', '天天唐甜甜');
-INSERT INTO `zm_site_settings` VALUES ('4', 'contactus', 'kkk');
-INSERT INTO `zm_site_settings` VALUES ('5', 'joinus', '谁打分的萨菲司法所');
+INSERT INTO `zm_site_settings` VALUES ('1', 'weibo', 'http://weibo.com/sitrn');
+INSERT INTO `zm_site_settings` VALUES ('2', 'wexin', 'http://weibo.com/sitrn');
+INSERT INTO `zm_site_settings` VALUES ('3', 'aboutus', '      联招网是北京联招教育文化有限公司旗下的品牌网站，是国内领先的教育招生咨询类服务平台，努力打 造成为中国最权威、专业、实效的教育招生咨询和课程学习网络平台。联招网以\"服务需求、服务学生、服务 机构\"为宗旨，为求学者提供最适合的好学校、好专业和好课程，先行赔付的协议保障，做到省心、省时、省 力、省钱！ \"联招在手，求学无忧\"。\r\n\r\n\r\n        北京联招教育文化有限公司（\"联招教育\"），创立于2002年，是一家从事教育招生信息咨询服务的专业 机构。公司是国内最早建立教育咨询连锁机构的领跑者，至2006年在全国建立了近800家连锁加盟咨询中心， 为几十万学生和求学者提供了优质招生咨询和报名服务。2014年全新改版\"联招网\"，打造成招生咨询和课程 学习o2o服务平台，中国教育招生类下一个\"携程\"。');
+INSERT INTO `zm_site_settings` VALUES ('4', 'contactus', '        联招网是北京联招教育文化有限公司旗下的品牌网站，是国内领先的教育招生咨询类服务平台，努力打 造成为中国最权威、专业、实效的教育招生咨询和课程学习网络平台。联招网以\"服务需求、服务学生、服务 机构\"为宗旨，为求学者提供最适合的好学校、好专业和好课程，先行赔付的协议保障，做到省心、省时、省 力、省钱！ \"联招在手，求学无忧\"。\r\n        北京联招教育文化有限公司（\"联招教育\"），创立于2002年，是一家从事教育招生信息咨询服务的专业 机构。公司是国内最早建立教育咨询连锁机构的领跑者，至2006年在全国建立了近800家连锁加盟咨询中心， 为几十万学生和求学者提供了优质招生咨询和报名服务。2014年全新改版\"联招网\"，打造成招生咨询和课程 学习o2o服务平台，中国教育招生类下一个\"携程\"。');
+INSERT INTO `zm_site_settings` VALUES ('5', 'joinus', '      联招网是北京联招教育文化有限公司旗下的品牌网站，是国内领先的教育招生咨询类服务平台，努力打 造成为中国最权威、专业、实效的教育招生咨询和课程学习网络平台。联招网以\"服务需求、服务学生、服务 机构\"为宗旨，为求学者提供最适合的好学校、好专业和好课程，先行赔付的协议保障，做到省心、省时、省 力、省钱！ \"联招在手，求学无忧\"。\r\n        北京联招教育文化有限公司（\"联招教育\"），创立于2002年，是一家从事教育招生信息咨询服务的专业 机构。公司是国内最早建立教育咨询连锁机构的领跑者，至2006年在全国建立了近800家连锁加盟咨询中心， 为几十万学生和求学者提供了优质招生咨询和报名服务。2014年全新改版\"联招网\"，打造成招生咨询和课程 学习o2o服务平台，中国教育招生类下一个\"携程\"。');
 
 -- ----------------------------
 -- Table structure for `zm_suggest`

@@ -50,9 +50,9 @@ class SiteController extends AppController {
                     $conditions = array('name'=>$key);
                     $ret = $this->Site->getOne($conditions);
                     if($ret){
-                        $this->Site->updateinfo(array('value'=>"'".$value."'"), $conditions);
+                        $this->Site->updateinfo(array('value'=>"'".$this->replaceTextarea1($value)."'"), $conditions);
                     }else{
-                        $this->Site->addinfo(array('name'=>$key, 'value'=>$value));
+                        $this->Site->addinfo(array('name'=>$key, 'value'=>$this->replaceTextarea1($value)));
                     }
                 }
             }
@@ -67,6 +67,11 @@ class SiteController extends AppController {
         $this->set('data', $data);
     }
 
+    public function replaceTextarea1($str){
+        $reg=preg_replace("/\r\n/","<br>", $str);
+        $reg1=preg_replace("/\s+/","<p>", $str);
+        return $str;
+    }
     public function aboutus(){
 
     }

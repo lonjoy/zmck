@@ -22,20 +22,20 @@
             <tr>
                 <th width="200">关于我们：</th>
                 <td>
-                    <textarea class="aboutus" name="aboutus"><?php echo isset($data['aboutus']) ? $data['aboutus'] : '';?></textarea>
+                    <textarea class="aboutus" name="aboutus" rows="15" cols="100"><?php echo isset($data['aboutus']) ? $data['aboutus'] : '';?></textarea>
                 </td>
             </tr>            
             <tr>
                 <th width="200">联系我们：</th>
                 <td>
-                    <textarea class="contactus" name="contactus"><?php echo isset($data['contactus']) ? $data['contactus'] : '';?></textarea>
+                    <textarea class="contactus" name="contactus" rows="15" cols="100"><?php echo isset($data['contactus']) ? $data['contactus'] : '';?></textarea>
                 </td>
             </tr>            
             
             <tr>
                 <th width="200">加入我们：</th>
                 <td>
-                    <textarea class="joinus" name="joinus"><?php echo isset($data['joinus']) ? $data['joinus'] : '';?></textarea>
+                    <textarea class="joinus" name="joinus" rows="15" cols="100"><?php echo isset($data['joinus']) ? $data['joinus'] : '';?></textarea>
                 </td>
             </tr>
 

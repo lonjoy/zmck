@@ -56,6 +56,8 @@ class BbsController extends AppController {
         }
         */
         $this->set('data', $data);
+        $hot_topic = $this->hotTopic();
+        $this->set('hot_topic', $hot_topic);
     }
 
     public function subject(){
@@ -97,6 +99,9 @@ class BbsController extends AppController {
         $this->set('pagehtml', $pagehtml);
         $this->set('data', $data);
         $this->set('fid', $fid);
+        
+        $hot_topic = $this->hotTopic();
+        $this->set('hot_topic', $hot_topic);
     }
 
     public function threads(){
@@ -141,6 +146,9 @@ class BbsController extends AppController {
         }
         $this->set('pagehtml', $pagehtml);
         $this->ForumPost->updateinfo(array('clicknum'=>'`clicknum`+1'), array('pid'=>$pid));
+        
+        $hot_topic = $this->hotTopic();
+        $this->set('hot_topic', $hot_topic);
     }
 
     public function reply(){
@@ -154,7 +162,7 @@ class BbsController extends AppController {
             $fid = isset($_POST['fid']) ? intval($_POST['fid']) : 0;
             $pid = isset($_POST['pid']) ? intval($_POST['pid']) : 0;
             if(!$subject || !$content){
-                $this->goMsg('请填写完整信息', '/bbs/subject?fid='.$fid);
+                $this->goMsg('请填写完整信息', '/bbs/threads?fid='.$fid.'&pid='.$pid);
             }
             $now = time();
             $params = array(
@@ -170,9 +178,9 @@ class BbsController extends AppController {
             if($tid){
                 #添加圈子数量
                 $this->ForumPost->updateinfo(array('replynum'=>'`replynum`+1', 'replytime'=>$now), array('pid'=>$pid));
-                $this->goMsg('回复成功！', '/bbs/subject?fid='.$fid);
+                $this->goMsg('回复成功！', '/bbs/threads?fid='.$fid.'&pid='.$pid);
             }else{
-                $this->goMsg('回复失败！', '/bbs/subject?fid='.$fid);
+                $this->goMsg('回复失败！', '/bbs/threads?fid='.$fid.'&pid='.$pid);
             }
         }
     }
@@ -210,5 +218,11 @@ class BbsController extends AppController {
                 $this->goMsg('发布失败！', '/bbs/subject?fid='.$fid);
             }
         }
+    }
+
+
+    public function hotTopic(){
+        $data = $this->ForumPost->getList(array(), 0, 6, 'replynum DESC');
+        return $data;
     }
 }
