@@ -29,6 +29,7 @@ class PartnerController extends AppController {
     * @var array
     */
     public $uses = array('User', 'Role');
+    public $components = array('ListPage');
 
     /**
     * Displays a view
@@ -42,6 +43,30 @@ class PartnerController extends AppController {
         #获取角色
         $roleList = $this->Role->getList();
         $this->set('roleList', $roleList);
+
+        $pagesize = 10;
+        $p = isset($_GET['p'])?intval($_GET['p']):1;
+        $offset = ($p-1) * $pagesize;
+        $conditions = array();
+        $userList = $this->User->userList($conditions, $offset, $pagesize);
+        $total = $this->User->getCount($conditions);
+        $this->set('userList', $userList);
+        //分页html
+        $pagehtml = '';
+        if($total>$pagesize){
+            //可以显示分页
+            $pageHtmlObj = $this->ListPage;
+            $param = array(
+            'total_rows' => $total,
+            'method' => 'html',
+            'parameter' => $this->dm['www'].'partner/?p=*',
+            'now_page' => $p,
+            'list_rows' => $pagesize
+            );
+            $pageHtmlObj->init($param);
+            $pagehtml = $pageHtmlObj->show(1);
+        }
+        $this->set('pagehtml', $pagehtml);
     }
 
     public function detail(){

@@ -5,7 +5,7 @@
                 <h3 style=" font-size:16px;"><?php echo $postinfo['subject'];?></h3>
                 <div class="tz_title">
                     <ul>
-                        <li><a href="#">只看楼主</a></li>
+                        <li><a href="/bbs/viewthread?tid=<?php echo 1;?>&author_id=<?php echo $postinfo['userinfo']['id']; ?>">只看楼主</a></li>
                         <li><a href="#">收藏</a></li>
                         <li><a href="#replyform">回复</a></li>
                     </ul>

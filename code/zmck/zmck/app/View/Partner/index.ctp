@@ -59,40 +59,38 @@
                     </ul>
                 </div>
             </div>
-            <div class="hhr">
-                <div class="hhr_c">
-                    <div class="hhr_tx">
-                        <dl><dt><a href="/partner/detail?id=1"><img src="img/tx.gif" width="90" height="90" /></a></dt><dd>北京-海淀区</dd>
-                        </dl>
-                    </div>
-                    <div class="hhr_nr">
-                        <div class="hhr_hr_mc"><h3><a href="/partner/detail?id=1">奋斗者-创始人-有项目-已在全职创业</a></h3><span><a href="#">在线</a></span></div>
-                        <div class="hhr_hr_dj"><h3>80%&nbsp;&nbsp;靠谱</h3></div>
-                        <div class="hhr_hr_bq"><span href="#">电商</span> | </div>
-                        <div class="hhr_hr_ms">从曾经的记者、创业者到投资人，多年关注互联网和移动互联网、IT服
-                            务领域，为多家创业公司和风险投资机构服务，2010开...</div>
-                        <!--
-                        <div class="hhr_hr_tp">
-                        <ul>
-                        <li><img src="img/tx.gif" width="51" height="51" /></li>
-                        <li><img src="img/tx.gif" width="51" height="51" /></li>
-                        <li><img src="img/tx.gif" width="51" height="51" /></li>
-                        <li><img src="img/tx.gif" width="51" height="51" /></li><li><img src="img/tx.gif" width="51" height="51" /></li>
-                        </ul>
+            <?php 
+                if(!empty($userList)){
+                    foreach($userList as $val){
+                    ?>
+                    <div class="hhr">
+                        <div class="hhr_c">
+                            <div class="hhr_tx">
+                                <dl><dt><a href="/partner/detail?id=1"><img src="<?php echo Url::getUserPic(array('uid'=>$val['id'], 'tp'=>'b'));?>" width="90" height="90" /></a></dt><dd>北京-海淀区</dd>
+                                </dl>
+                            </div>
+                            <div class="hhr_nr">
+                                <div class="hhr_hr_mc"><h3><a href="/partner/detail?id=1">奋斗者-创始人-有项目-已在全职创业</a></h3><span><a href="#">在线</a></span></div>
+                                <div class="hhr_hr_dj"><h3>80%&nbsp;&nbsp;靠谱</h3></div>
+                                <div class="hhr_hr_bq"><span href="#">电商</span> | </div>
+                                <div class="hhr_hr_ms">从曾经的记者、创业者到投资人，多年关注互联网和移动互联网、IT服
+                                    务领域，为多家创业公司和风险投资机构服务，2010开...</div>
+                            </div>
+                            <div class="hhr_ty">
+                                <ul>
+                                    <li><a href="#">约谈</a></li>
+                                    <li id="care_<?php echo $val['id'];?>"><a href="javascript:void(0);" onclick="followme(<?php echo $val['id'];?>);">关注</a></li>
+                                    <li><a href="#">屏蔽</a></li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
                         </div>
-                        -->
                     </div>
-                    <div class="hhr_ty">
-                        <ul>
-                            <li><a href="#">约谈</a></li>
-                            <li><a href="#">关注</a></li>
-                            <li><a href="#">屏蔽</a></li>
-                        </ul>
-                    </div>
-                    <div class="clear"></div>
-                </div>
+                    <?php
+                    }
+                }
+            ?>
 
-            </div>
             <div class="fy">
                 <!--
                 <div class="fy_l">每页显示：  
@@ -103,12 +101,7 @@
                 -->
                 <div class="fy_r">
                     <ul>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">下一页</a></li>
+                        <?php echo $pagehtml;?>
                     </ul>
                     <!-- <span>跳转到&nbsp;&nbsp;<input name="" type="text" />&nbsp;&nbsp;页</span>-->
                 </div>
@@ -124,33 +117,24 @@
             if(!empty($userInfo)){
                 echo $this->element('user_block');
             } 
+            echo $this->element('recommend_partner');
         ?>
-        <div class="box">
-            <div class="title">
-                <h3>推荐合伙人</h3>
-            </div>
-            <div class="project_1">
-                <ul>
-                    <li>
-                        <div><a href="#"><img src="img/project_1.jpg" /></a></div>
-                        <div class="pro_t">
-                            <div class="pro_t1"><img src="img/project_2.gif" /><a href="#">皖青年-创始人</a></div>
-                            <div class="pro_t2"><img src="img/project_3.gif" /><a>广东-东莞市</a></div>
-                            <div class="pro_t3">2012年7月在河南新华任职创立A时代网络...</div>  
-                        </div>
-                    </li>
-                    <li>
-                        <div><a href="#"><img src="img/project_1.jpg" /></a></div>
-                        <div class="pro_t">
-                            <div class="pro_t1"><img src="img/project_2.gif" /><a href="#">皖青年-创始人</a></div>
-                            <div class="pro_t2"><img src="img/project_3.gif" /><a>广东-东莞市</a></div>
-                            <div class="pro_t3">2012年7月在河南新华任职创立A时代网络...</div>  
-                        </div>
-                    </li>
-                </ul>
-                <div class="clear"></div>
-            </div>
-        </div>
     </div>
-        </div>
+</div>
+<script type="text/javascript">
+    function followme(uid){
+        $.ajax({
+            url:'/follow/ajaxcare',
+            type: 'POST',
+            data: "follower_id="+uid,
+            dataType: 'json',
+            success: function(data){
+                if(data.errCode=='0'){
+                    $('#care_'+uid).html('<span>已关注</span>');
+                }
+                alert(data.msg)
+            }
+        });
+    }
+</script>
 

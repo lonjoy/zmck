@@ -56,5 +56,9 @@ class MessageController extends AppController {
     
     public function jianli(){
         
+    }    
+    
+    public function sys(){
+        
     }
 }

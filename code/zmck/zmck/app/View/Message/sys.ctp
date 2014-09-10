@@ -2,7 +2,7 @@
 <?php echo $this->element('message_left'); ?>
 <div class="gszy">
     <div class="title">
-        <h3>屏蔽信息</h3>
+        <h3>系统信息</h3>
     </div>
     <div class="care">
         <div class="care_1">发信人</div>

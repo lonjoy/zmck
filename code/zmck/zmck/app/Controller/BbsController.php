@@ -225,4 +225,8 @@ class BbsController extends AppController {
         $data = $this->ForumPost->getList(array(), 0, 6, 'replynum DESC');
         return $data;
     }
+    
+    public function viewthread(){
+        
+    }
 }

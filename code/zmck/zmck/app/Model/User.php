@@ -18,21 +18,26 @@ class User extends AppModel {
     * 查询记录
     * @return array
     */
-    public function userList($conditions=array(), $limit=10, $order='', $fields = array())
+    public function userList($conditions=array(), $offset=0, $limit=10, $order='', $fields = array())
     {
         return $this->find('all', array(
         'conditions' => $conditions,
         'fields'    => $fields,
+        'offset' =>$offset,
         'limit' => $limit,
         'order' => $order,
         ));
     }
-    
+
     public function getUserInfo($conditions=array(), $fields=array()){
         return $this->find('first', array(
         'conditions' => $conditions,
         'fields'    => $fields
         ));
+    }
+
+    public function getCount($conditions=array()){
+        return $this->find('count', array('conditions'=>$conditions));
     }
 
     public function addUser($params=array()){
@@ -43,7 +48,7 @@ class User extends AppModel {
         $this->save($params);
         return $this->id;
     }    
-    
+
     public function updateUser($params=array(), $conditions=array()){
         if(empty($conditions)){
             return false;

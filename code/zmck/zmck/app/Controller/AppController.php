@@ -35,7 +35,7 @@ class AppController extends Controller {
     public $layout = 'default';
 
     public $components = array();
-    public $uses = array('User', 'Site');
+    public $uses = array('User', 'Site', 'Follow');
 
     public $userInfo=array();
     //初始化设置
@@ -83,6 +83,9 @@ class AppController extends Controller {
             $useravater = Url::getUserPic(array('uid'=>$user_id, 'tp'=>'b'));
             $user_info = $this->User->getUserInfo(array('id'=>$user_id));
             unset($user_info['password']);
+            #
+            $user_info['follows'] = $this->Follow->getCount(array('user_id'=>$user_id)); //我关注的的
+            $user_info['followed'] = $this->Follow->getCount(array('follower_id'=>$user_id)); //被关注的的
             $this->userInfo = $user_info;
             $this->userInfo['useravater'] = $useravater;
         }
@@ -106,5 +109,14 @@ class AppController extends Controller {
         $this->set('page_title', $message);
         echo $this->render('/Layouts/'.$layout);
         exit();
+    }
+    
+     /**
+     * 输出json数据，终止程序
+     */
+    public function outputJson($array)
+    {
+        header ( "Content-Type: application/json; charset=utf-8" );
+        exit(json_encode($array));
     }
 }
