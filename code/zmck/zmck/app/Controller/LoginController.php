@@ -46,4 +46,10 @@ class LoginController extends AppController {
             $this->goMsg('用户名密码错误，请重新输入', $this->dm['www']);
         }
     }
+    
+    
+    public function loginout(){
+        session_destroy();
+        $this->goMsg('恭喜！登录成功', $this->dm['www']);
+    }
 }

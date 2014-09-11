@@ -28,7 +28,7 @@ class PartnerController extends AppController {
     *
     * @var array
     */
-    public $uses = array('User', 'Role');
+    public $uses = array('User', 'Role', 'UserProfile','UserTags');
     public $components = array('ListPage');
 
     /**
@@ -49,6 +49,17 @@ class PartnerController extends AppController {
         $offset = ($p-1) * $pagesize;
         $conditions = array();
         $userList = $this->User->userList($conditions, $offset, $pagesize);
+        if(!empty($userList)){
+            foreach($userList as &$val){
+                $val['base'] = $this->UserProfile->getOne(array('user_id'=>$val['id']));
+                if(isset($val['base']['role']) && $val['base']['role'] && !empty($val['base'])){
+                    $roleinfo = $this->Role->getRole(array('id'=>$val['base']['role']));
+                    $val['rolename'] = isset($roleinfo['name']) ? $roleinfo['name'] : '';
+                }
+                #tag
+                $val['tags'] = $this->UserTags->getUserTags(array('user_id'=>$val['id']));
+            }
+        }
         $total = $this->User->getCount($conditions);
         $this->set('userList', $userList);
         //分页html
@@ -70,6 +81,17 @@ class PartnerController extends AppController {
     }
 
     public function detail(){
-
+        $user_id = intval($_GET['id']);
+        if(!$user_id){
+            $this->redirect("/partner");
+        }
+        $user = $this->User->getUserInfo(array('id'=>$user_id));
+        $base_info = $this->UserProfile->getOne(array('user_id'=>$user_id));
+        $user_info = array_merge($user, $base_info);
+        $this->set('user_info', $user_info);
+        #tag
+        $user_tags = $this->UserTags->getUserTags(array('user_id'=>$user_id));
+        //var_dump($user_info);
+        $this->set('user_tags', $user_tags);
     }
 }

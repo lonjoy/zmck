@@ -35,7 +35,7 @@ class AppController extends Controller {
     public $layout = 'default';
 
     public $components = array();
-    public $uses = array('User', 'Site', 'Follow');
+    public $uses = array('User', 'Site', 'Follow', 'UserProfile');
 
     public $userInfo=array();
     //初始化设置
@@ -80,9 +80,16 @@ class AppController extends Controller {
         $useravater = $this->dm['www'].'img/basic_infor_1.jpg';
         if(isset($_SESSION['user_id'])){
             $user_id = intval($_SESSION['user_id']);
+            if($user_id && $this->request->params['controller']=='home'){
+                $this->redirect("/default");
+            }
             $useravater = Url::getUserPic(array('uid'=>$user_id, 'tp'=>'b'));
-            $user_info = $this->User->getUserInfo(array('id'=>$user_id));
+            $user = $this->User->getUserInfo(array('id'=>$user_id));
+            #baseinfo
+            $base_info = $this->UserProfile->getOne(array('user_id'=>$user_id));
             unset($user_info['password']);
+            
+            $user_info = array_merge($user, $base_info);
             #
             $user_info['follows'] = $this->Follow->getCount(array('user_id'=>$user_id)); //我关注的的
             $user_info['followed'] = $this->Follow->getCount(array('follower_id'=>$user_id)); //被关注的的

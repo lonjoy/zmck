@@ -33,7 +33,7 @@ class UserController extends AppController {
             $this->goMsg('请登录后进行操作', '/');
         }
         $user_id = $_SESSION['user_id'];
-        $conditions = array('id'=>$user_id);
+        $conditions = array('user_id'=>$user_id);
         if(isset($_POST['dosubmit'])){
             $params = array(
             'name' => '"'.$_POST['name'].'"',
@@ -43,13 +43,12 @@ class UserController extends AppController {
             'agerange' => intval($_POST['agerange']),
             'workyears' => intval($_POST['workyears']),
             );
-            $res = $this->User->updateUser($params, $conditions);
+            $res = $this->UserProfile->updateinfo($params, $conditions);
             if($res){
                 $this->goMsg('修改成功', '/user/index');
             }
-            //$this->redirect('/user/index');
         }
-        $userinfo = $this->User->getUserInfo($conditions);
+        $userinfo = $this->UserProfile->getOne($conditions);
         $this->set('userinfo', $userinfo);
         #获取角色
         $roleList = $this->Role->getList();

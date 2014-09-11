@@ -18,7 +18,7 @@ class BbsController extends AppController {
     *
     * @var array
     */
-    public $uses = array('User', 'Forum', 'ForumPost', 'ForumThreads');
+    public $uses = array('User', 'Forum', 'ForumPost', 'ForumThreads', 'UserProfile');
     public $components = array('ListPage');
 
     /**
@@ -108,7 +108,8 @@ class BbsController extends AppController {
         $fid = isset($_GET['fid']) ? intval($_GET['fid']) : 0;
         $pid = isset($_GET['pid']) ? intval($_GET['pid']) : 0;
         $postinfo = $this->ForumPost->getOne(array('fid'=>$fid, 'pid'=>$pid));
-        $postinfo['userinfo'] = $this->User->getUserInfo(array('id'=>$postinfo['author_id']));
+        $postinfo['userinfo'] = $this->UserProfile->getOne(array('user_id'=>$postinfo['author_id']));
+        $postinfo['userinfo']['id'] = $postinfo['author_id'];
         $postinfo['userinfo']['avater'] = Url::getUserPic(array('uid'=>$postinfo['author_id'], 'tp'=>'b'));
         $this->set('postinfo', $postinfo);
 
@@ -122,7 +123,9 @@ class BbsController extends AppController {
         if(!empty($reply_list)){
             foreach($reply_list as &$val){
                 #user
-                $val['userinfo'] = $this->User->getUserInfo(array('id'=>$val['author_id']));
+                $base_info = $this->UserProfile->getOne(array('user_id'=>$val['author_id']));
+                $user = $this->User->getUserInfo(array('id'=>$val['author_id']));
+                $val['userinfo'] = array_merge($user, $base_info);
                 $val['userinfo']['avater'] = Url::getUserPic(array('uid'=>$val['author_id'], 'tp'=>'b'));
             }
         }

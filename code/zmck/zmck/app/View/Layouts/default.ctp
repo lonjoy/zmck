@@ -60,6 +60,7 @@
                                         <li><a href="/user/topic">我的创业话题</a></li>
                                         <li><a href="/user/project">我的创业项目</a></li>
                                         <li><a href="/follow/">我的联系人</a></li>
+                                        <li><a href="/login/loginout">退出</a></li>
                                     </ul>
                                 </div><a class="bg">个人中心</a></li>
 

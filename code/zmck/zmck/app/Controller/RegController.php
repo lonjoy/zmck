@@ -18,7 +18,7 @@ class RegController extends AppController {
     *
     * @var array
     */
-    public $uses = array('User');
+    public $uses = array('User', 'UserProfile');
 
     /**
     * Displays a view
@@ -45,6 +45,9 @@ class RegController extends AppController {
         }
         $params = array('email'=>$email, 'password'=>md5($password), 'xintai'=>$xintai);
         $id = $this->User->addUser($params);
+        #创建随机昵称
+        $profiles = array('nickname' => '创客-'.$id, 'user_id'=>$id);
+        $this->UserProfile->addinfo($profiles);
         if($id){
             $_SESSION['user_id'] = $id;
             $_SESSION['email'] = $email; 

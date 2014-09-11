@@ -66,13 +66,25 @@
                     <div class="hhr">
                         <div class="hhr_c">
                             <div class="hhr_tx">
-                                <dl><dt><a href="/partner/detail?id=1"><img src="<?php echo Url::getUserPic(array('uid'=>$val['id'], 'tp'=>'b'));?>" width="90" height="90" /></a></dt><dd>北京-海淀区</dd>
+                                <dl><dt><a href="/partner/detail?id=<?php echo $val['id'];?>"><img src="<?php echo Url::getUserPic(array('uid'=>$val['id'], 'tp'=>'b'));?>" width="90" height="90" /></a></dt><!--<dd>北京-海淀区</dd>-->
                                 </dl>
                             </div>
                             <div class="hhr_nr">
-                                <div class="hhr_hr_mc"><h3><a href="/partner/detail?id=1">奋斗者-创始人-有项目-已在全职创业</a></h3><span><a href="#">在线</a></span></div>
+                                <div class="hhr_hr_mc"><h3><a href="/partner/detail?id=<?php echo $val['id'];?>"><?php echo isset($val['base']['nickname'])?$val['base']['nickname'].'-':'';?><?php echo isset($val['rolename'])?$val['rolename'].'-':'';?>有项目-已在全职创业</a></h3><span><a href="#">在线</a></span></div>
                                 <div class="hhr_hr_dj"><h3>80%&nbsp;&nbsp;靠谱</h3></div>
-                                <div class="hhr_hr_bq"><span href="#">电商</span> | </div>
+                                <div class="hhr_hr_bq">
+                                    <?php 
+                                    
+                                    if(!empty($val['tags']['tags'])){
+                                        $ts = unserialize($val['tags']['tags']);
+                                            foreach($ts as $vt){
+                                            ?>
+                                            <span href="#"><?php echo $vt;?></span> | 
+                                            <?php
+                                            }
+                                        }
+                                    ?>
+                                </div>
                                 <div class="hhr_hr_ms">从曾经的记者、创业者到投资人，多年关注互联网和移动互联网、IT服
                                     务领域，为多家创业公司和风险投资机构服务，2010开...</div>
                             </div>

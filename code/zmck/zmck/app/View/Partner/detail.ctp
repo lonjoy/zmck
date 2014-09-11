@@ -2,28 +2,41 @@
     <div class="con_l">
         <div class="hhr_js">
             <div class="tz_list_tx">
-                <div class="tz_tx_img"><img src="../images/tx.gif" width="125" height="125" /></div>
+                <div class="tz_tx_img"><img src="<?php echo Url::getUserPic(array('uid'=>$user_info['id'], 'tp'=>'b'));?>" width="125" height="125" /></div>
                 <div class="tz_tx_gz"><a href="#" >关注</a><a href="#">约谈</a></div>
             </div>
             <div class="hhr_xq">
-                <div class="hhr_hr_mc"><h3>奋斗者</h3><span><a href="#">在线</a></span></div>
+                <div class="hhr_hr_mc"><h3><?php echo $user_info['nickname'];?></h3><span><a href="#">在线</a></span></div>
                 <div class="xq_dj_xm">
                     <div class="xq_dj"><h3>80%&nbsp;&nbsp;靠谱</h3></div>
                     <div class="xq_xm">有项目 - 已在全职创业</div>
                 </div>
                 <div class="xq_cydw">
                     <h3 class="bg1">创业定位：</h3>
-                    <div class="xq_cydw_c">创始人</div>
+                    <div class="xq_cydw_c"><?php echo $user_info['role'];?></div>
 
                 </div>
+                <!--
                 <div class="xq_cydw">
-                    <h3 class="bg2">回复率：</h3>
-                    <div class="xq_cydw_c">100%</div>
+                <h3 class="bg2">回复率：</h3>
+                <div class="xq_cydw_c">100%</div>
                 </div>
+                -->
                 <div class="xq_bq">
                     <h3>个人标签<span class="bg2">：</span></h3>
-                    <div class="xq_bg_c"><a href="#">电商</a> | <a href="#">产品经历</a> | <a href="#">3年创业经历</a> | <a href="#">天使投资人</a> | <a href="#">移动互联网</a><br />
-                        <a href="#">有人脉有资源</a> | <a href="#">擅长提炼商业模式</a></div>
+                    <div class="xq_bg_c">
+                        <?php 
+
+                            if(!empty($user_tags)){
+                                $ts = unserialize($user_tags['tags']);
+                                foreach($ts as $vt){
+                                ?>
+                                <a href="#"><?php echo $vt;?></a> | 
+                                <?php
+                                }
+                            }
+                        ?>
+                    </div>
                 </div>
             </div>
         </div>
@@ -34,7 +47,7 @@
             <div class="tdzl">
                 <div class="tdzl_div">
                     <h3>年龄：</h3>
-                    <div class="tdzl_div_c">20-30</div>
+                    <div class="tdzl_div_c"><?php echo isset($age[$user_info['agerange']])?$age[$user_info['agerange']]:'未填';?></div>
                     <div class="clear"></div>
                 </div>
                 <div class="tdzl_div">
@@ -152,87 +165,89 @@
                 找合伙人。我认为创业核心资源最重要的是<br />
                 商业运作能力。</div>
         </div>
+        <!--
         <div class="box">
-            <div class="title">
-                <h3>用户评价</h3>
-            <span class="wysjj"><a href="#">我也说几句</a></span>  </div>
-            <div class="yhpj">
-                <div class="yhpj_list">
-                    <dl>
-                        <dt><img src="../images/tx.gif" width="50" height="50" /></dt>
-                        <dd>非常不错的合伙人，大家可以尽情<br />
-                            合作，一路成长，好伙伴！</dd>
-                    </dl>
-                    <div class="yhpj_mc_sj">
-                        <ul>
-                            <li class="bg1">苏北地区帅小伙</li>
-                            <li class="bg2">2014-07-15  08:00</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="yhpj_list">
-                    <dl>
-                        <dt><img src="../images/tx.gif" width="50" height="50" /></dt>
-                        <dd>非常不错的合伙人，大家可以尽情<br />
-                            合作，一路成长，好伙伴！</dd>
-                    </dl>
-                    <div class="yhpj_mc_sj">
-                        <ul>
-                            <li class="bg1">苏北地区帅小伙</li>
-                            <li class="bg2">2014-07-15  08:00</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="yhpj_list">
-                    <dl>
-                        <dt><img src="../images/tx.gif" width="50" height="50" /></dt>
-                        <dd>非常不错的合伙人，大家可以尽情<br />
-                            合作，一路成长，好伙伴！</dd>
-                    </dl>
-                    <div class="yhpj_mc_sj">
-                        <ul>
-                            <li class="bg1">苏北地区帅小伙</li>
-                            <li class="bg2">2014-07-15  08:00</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="yhpj_list">
-                    <dl>
-                        <dt><img src="../images/tx.gif" width="50" height="50" /></dt>
-                        <dd>非常不错的合伙人，大家可以尽情<br />
-                            合作，一路成长，好伙伴！</dd>
-                    </dl>
-                    <div class="yhpj_mc_sj">
-                        <ul>
-                            <li class="bg1">苏北地区帅小伙</li>
-                            <li class="bg2">2014-07-15  08:00</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="yhpj_list">
-                    <dl>
-                        <dt><img src="../images/tx.gif" width="50" height="50" /></dt>
-                        <dd>非常不错的合伙人，大家可以尽情<br />
-                            合作，一路成长，好伙伴！</dd>
-                    </dl>
-                    <div class="yhpj_mc_sj">
-                        <ul>
-                            <li class="bg1">苏北地区帅小伙</li>
-                            <li class="bg2">2014-07-15  08:00</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="yhpj_an">
-                    <ul>
-                        <li><a href="#">上一页</a></li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">下一页</a></li>
-                    </ul>
-                    <div class="clear"></div>
-                </div>
-            </div>
+        <div class="title">
+        <h3>用户评价</h3>
+        <span class="wysjj"><a href="#">我也说几句</a></span>  </div>
+        <div class="yhpj">
+        <div class="yhpj_list">
+        <dl>
+        <dt><img src="../images/tx.gif" width="50" height="50" /></dt>
+        <dd>非常不错的合伙人，大家可以尽情<br />
+        合作，一路成长，好伙伴！</dd>
+        </dl>
+        <div class="yhpj_mc_sj">
+        <ul>
+        <li class="bg1">苏北地区帅小伙</li>
+        <li class="bg2">2014-07-15  08:00</li>
+        </ul>
         </div>
+        </div>
+        <div class="yhpj_list">
+        <dl>
+        <dt><img src="../images/tx.gif" width="50" height="50" /></dt>
+        <dd>非常不错的合伙人，大家可以尽情<br />
+        合作，一路成长，好伙伴！</dd>
+        </dl>
+        <div class="yhpj_mc_sj">
+        <ul>
+        <li class="bg1">苏北地区帅小伙</li>
+        <li class="bg2">2014-07-15  08:00</li>
+        </ul>
+        </div>
+        </div>
+        <div class="yhpj_list">
+        <dl>
+        <dt><img src="../images/tx.gif" width="50" height="50" /></dt>
+        <dd>非常不错的合伙人，大家可以尽情<br />
+        合作，一路成长，好伙伴！</dd>
+        </dl>
+        <div class="yhpj_mc_sj">
+        <ul>
+        <li class="bg1">苏北地区帅小伙</li>
+        <li class="bg2">2014-07-15  08:00</li>
+        </ul>
+        </div>
+        </div>
+        <div class="yhpj_list">
+        <dl>
+        <dt><img src="../images/tx.gif" width="50" height="50" /></dt>
+        <dd>非常不错的合伙人，大家可以尽情<br />
+        合作，一路成长，好伙伴！</dd>
+        </dl>
+        <div class="yhpj_mc_sj">
+        <ul>
+        <li class="bg1">苏北地区帅小伙</li>
+        <li class="bg2">2014-07-15  08:00</li>
+        </ul>
+        </div>
+        </div>
+        <div class="yhpj_list">
+        <dl>
+        <dt><img src="../images/tx.gif" width="50" height="50" /></dt>
+        <dd>非常不错的合伙人，大家可以尽情<br />
+        合作，一路成长，好伙伴！</dd>
+        </dl>
+        <div class="yhpj_mc_sj">
+        <ul>
+        <li class="bg1">苏北地区帅小伙</li>
+        <li class="bg2">2014-07-15  08:00</li>
+        </ul>
+        </div>
+        </div>
+        <div class="yhpj_an">
+        <ul>
+        <li><a href="#">上一页</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">下一页</a></li>
+        </ul>
+        <div class="clear"></div>
+        </div>
+        </div>
+        </div>
+        -->
     </div>
 </div>

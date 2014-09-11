@@ -15,7 +15,7 @@
                 <div class="tz_list">
                     <div class="tz_list_tx">
                         <div class="tz_tx_img"><img src="<?php echo $postinfo['userinfo']['avater'];?>" width="125" height="125" /></div>
-                        <div class="tz_tx_bt"><?php echo $postinfo['userinfo']['nickname'];?></div>
+                        <div class="tz_tx_bt"><?php echo isset($postinfo['userinfo']['nickname'])?$postinfo['userinfo']['nickname']:'';?></div>
                         <div class="tz_tx_gz"><a href="#" class="bg">关注</a><a href="#">发信息</a></div>
                     </div>
                     <div class="ht_nr">
@@ -37,8 +37,8 @@
                         <div class="tz_list">
                             <div class="tz_list_tx">
                                 <div class="tz_tx_img"><img src="<?php echo $val['userinfo']['avater'];?>" width="125" height="125" /></div>
-                                <div class="tz_tx_bt"><?php echo $val['userinfo']['nickname'];?></div>
-                                <div class="tz_tx_gz"><a href="#" class="bg">关注</a><a href="#">发信息</a></div>
+                                <div class="tz_tx_bt"><?php echo isset($postinfo['userinfo']['nickname'])?$postinfo['userinfo']['nickname']:'';?></div>
+                                <div class="tz_tx_gz"><a href="javascript:void(0);" class="bg" onclick="followme(<?php echo $val['userinfo']['id'];?>);">关注</a><a href="#">发信息</a></div>
                             </div>
                             <div class="ht_nr">
                                 <div class="ht_nr_c"><?php echo $val['content'];?></div>
@@ -156,3 +156,19 @@
         ?>
     </div>
 </div>
+<script type="text/javascript">
+    function followme(uid){
+        $.ajax({
+            url:'/follow/ajaxcare',
+            type: 'POST',
+            data: "follower_id="+uid,
+            dataType: 'json',
+            success: function(data){
+                if(data.errCode=='0'){
+                    $('#care_'+uid).html('<span>已关注</span>');
+                }
+                alert(data.msg)
+            }
+        });
+    }
+</script>
