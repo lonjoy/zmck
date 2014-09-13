@@ -28,7 +28,7 @@ class PartnerController extends AppController {
     *
     * @var array
     */
-    public $uses = array('User', 'Role', 'UserProfile','UserTags');
+    public $uses = array('User', 'Role', 'UserProfile','UserTags', 'Industry', 'UserDetail');
     public $components = array('ListPage');
 
     /**
@@ -87,8 +87,18 @@ class PartnerController extends AppController {
         }
         $user = $this->User->getUserInfo(array('id'=>$user_id));
         $base_info = $this->UserProfile->getOne(array('user_id'=>$user_id));
-        $user_info = array_merge($user, $base_info);
+        $detail_info = $this->UserDetail->getUserDetail(array('user_id'=>$user_id));
+        $user_info = array_merge($user, $base_info, $detail_info);
         $this->set('user_info', $user_info);
+        #industry
+        $industryList = $this->Industry->getList();
+        $industryRs = array();
+        if(!empty($industryList)){
+            foreach($industryList as $val){
+                $industryRs[$val['id']] = $val['name'];
+            }
+        }
+        $this->set('industryRs', $industryRs);
         #tag
         $user_tags = $this->UserTags->getUserTags(array('user_id'=>$user_id));
         //var_dump($user_info);

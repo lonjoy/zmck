@@ -38,19 +38,29 @@ class UserController extends AppController {
         $this->set('userinfo', $userinfo);
         if(isset($_POST['dosubmit'])){
             $gender = isset($_POST['gender']) ? intval($_POST['gender']) : 0;
+            if(empty($userinfo)){
             $params = array(
-            'name' => '"'.$_POST['name'].'"',
-            'nickname' => "'".$_POST['nickname']."'",
-            'role' => intval($_POST['role']),
-            'gender' => $gender,
-            'agerange' => intval($_POST['agerange']),
-            'workyears' => intval($_POST['workyears']),
-            );
-            if(!empty($userinfo)){
-                $res = $this->UserProfile->updateinfo($params, $conditions);
-            }else{
-                $params['user_id'] = $this->userInfo['user_id'];
+                'user_id' => $this->userInfo['id'],
+                'name' => addslashes($_POST['name']),
+                'nickname' => addslashes($_POST['nickname']),
+                'role' => intval($_POST['role']),
+                'gender' => $gender,
+                'agerange' => intval($_POST['agerange']),
+                'workyears' => intval($_POST['workyears']),
+                );
                 $res = $this->UserProfile->addinfo($params);
+                
+            }else{
+                $params = array(
+                'user_id' => $this->userInfo['user_id'],
+                'name' => '"'.$_POST['name'].'"',
+                'nickname' => "'".$_POST['nickname']."'",
+                'role' => intval($_POST['role']),
+                'gender' => $gender,
+                'agerange' => intval($_POST['agerange']),
+                'workyears' => intval($_POST['workyears']),
+                );
+                $res = $this->UserProfile->updateinfo($params, $conditions);
             }
             if($res){
                 $this->goMsg('修改成功', '/user/index');
@@ -67,6 +77,7 @@ class UserController extends AppController {
         $user_id = $_SESSION['user_id'];
         $conditions = array('user_id'=>$user_id);
         $userdetail = $this->UserDetail->getUserDetail($conditions);
+        $userinfo = $this->UserProfile->getOne($conditions);
 
         if(isset($_POST['dosubmit'])){
             $industry_id = intval($_POST['industry_id']);

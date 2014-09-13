@@ -8,8 +8,8 @@
 
 App::uses('AppModel', 'Model');
 
-class Industry extends AppModel {
-    public $useTable = 'industries';
+class Datacarousel extends AppModel {
+    public $useTable = 'datacarousels';
 
     public $primaryKey = 'id';
 
@@ -18,7 +18,7 @@ class Industry extends AppModel {
     * 查询记录
     * @return array
     */
-    public function getList($conditions=array(), $offset=0, $limit=30, $order='', $fields = array())
+    public function getList($conditions=array(), $offset=0, $limit=3, $order='', $fields = array())
     {
         return $this->find('all', array(
         'conditions' => $conditions,
@@ -38,8 +38,9 @@ class Industry extends AppModel {
             return false;
         }
         //$params = $this->filterData($params);
+        $this->create();
         $this->save($params);
-        return true;
+        return $this->id;
     }
 
     public function updateinfo($params=array(), $conditions=array()){
@@ -47,6 +48,15 @@ class Industry extends AppModel {
             return false;
         }
         $ret = $this->updateAll($params, $conditions);
+        return $ret;
+    }
+    
+    public function delinfo($conditions=array()){
+        if(empty($conditions)){
+            return false;
+        }
+        
+        $ret = $this->deleteAll($conditions);
         return $ret;
     }
 

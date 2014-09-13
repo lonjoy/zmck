@@ -19,6 +19,7 @@ App::uses('AppController', 'Controller');
 * @package       app.Controller
 * @link http://book.cakephp.org/2.0/en/controllers/pages-controller.html
 */
+App::uses('Url', 'Utility');
 class DefaultController extends AppController {
 
     /**
@@ -26,7 +27,7 @@ class DefaultController extends AppController {
     *
     * @var array
     */
-    public $uses = array();
+    public $uses = array('User', 'Datacarousel');
 
     /**
     * Displays a view
@@ -37,6 +38,17 @@ class DefaultController extends AppController {
     *    or MissingViewException in debug mode.
     */
     public function index() {
+        $data = $this->Datacarousel->getList(array(), 0, 3, 'id DESC, order ASC');
+        $this->set('data', $data);
+        
+        #最新合伙人
+        $userList = $this->User->userList(array(), 0, 10, 'id DESC');
+        if(!empty($userList)){
+            foreach($userList as $k=>&$v){
+                $v['baseinfo'] = $this->UserProfile->getOne(array('user_id'=>$v['id']));
+            }
+        }
+        $this->set('userList', $userList);
 
     }
 

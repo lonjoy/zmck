@@ -13,7 +13,7 @@
                 <div class="login-wrap-title clearfix">
                     <p class="form-notice " style="color: #54546b; ">使用邮箱/手机登录</p>
                 </div>
-                <form data-log="ursLogin" action="#" method="POST" id="Form1" name="Form1" autocomplete="off" target="_self">
+                <form data-log="ursLogin" action="/login" method="POST" name="Form1" autocomplete="off" target="_self">
                     <div>
                         <ul class="login-box">
                             <li class="login-error">
@@ -22,7 +22,7 @@
                             <li class="login-input2 js-row">
                                 <div class="form-input-wrapper js-inputItem">
                                     <label class="text-gray js-usernameLabel" >账号</label>
-                                    <input type="text" class="js-username" name="username" value="" tabindex="1" autocomplete="off" disableautocomplete />
+                                    <input type="text" class="js-username" name="email" value="" tabindex="1" autocomplete="off" disableautocomplete />
                                 </div>
                             </li>
                             <li class="login-input2 js-row">
@@ -35,7 +35,7 @@
                                 <input id="loginCallBack" type="hidden" value="http://love.163.com/" name="url">
                                 <input type="hidden" name="product" value="ht">
                                 <input type="hidden" value="1" name="type">
-                                <a class="login-btn submit-trigger" onClick="return false;" href="javascript:;">登 录</a>
+                                <input type="submit" class="login-btn submit-trigger" value="登 录" />
                             </li>
 
                             <li class="login-extend2 clearfix">
@@ -43,7 +43,7 @@
                                 <span class="login-checkbox js-login">
                                     <span class="saveLogin-trigger" style="display: block;">
                                         <em class="icon-checkbox"></em><span style="color: #54546b">记住密码</span>
-                                        <input type="checkbox" hidefocus="true" style="opacity: 0; filter: alpha(opacity=0);" tabindex="3" value="1" name="savelogin" checked="checked">
+                                        <input type="checkbox" tabindex="3" value="1" name="savelogin">
                                     </span>
                                 </span>
                             </li>

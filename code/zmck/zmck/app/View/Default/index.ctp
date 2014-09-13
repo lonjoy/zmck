@@ -1,14 +1,14 @@
 <style type="text/css">
-.index_banner1{position:relative;height:548px;margin-top:-30px;}
-.index_banner1 li{position:absolute;top:0;left:0;overflow:hidden;width:100%;height:548px;}
-.index_banner1 li.first{background:url(<?php echo $dm['img'];?>data/homepic/1.jpg) center top no-repeat;}
-.index_banner1 li.second{background:url(<?php echo $dm['img'];?>data/homepic/2.jpg) center top no-repeat;}
-.index_banner1 li.third{background:url(<?php echo $dm['img'];?>data/homepic/3.jpg) center top no-repeat;}
-.index_banner1 li a{display:block;margin:0 auto;width:1000px;height:548px;}
-.index_banner1 cite{position:absolute;bottom:10px;left:50%;z-index:999;display:block;margin-left:-34px;width:288px;height:15px;_display:none;}
-.index_banner1 cite span{float:left;display:block;margin:0 4px;width:17px;height:15px;background:url(<?php echo $dm['www'];?>img/ico81.png) no-repeat;text-indent:-999em;opacity:.8;cursor:pointer;}
-.index_banner1 cite span:hover{background:url(<?php echo $dm['www'];?>img/ico82.png) no-repeat;}
-.index_banner1 cite span.cur{background:url(<?php echo $dm['www'];?>img/ico82.png) no-repeat;cursor:default;}
+    .index_banner1{position:relative;height:548px;margin-top:-30px;}
+    .index_banner1 li{position:absolute;top:0;left:0;overflow:hidden;width:100%;height:548px;}
+    .index_banner1 li.first{background:url(<?php echo $dm['img'];?>data/homepic/1.jpg) center top no-repeat;}
+    .index_banner1 li.second{background:url(<?php echo $dm['img'];?>data/homepic/2.jpg) center top no-repeat;}
+    .index_banner1 li.third{background:url(<?php echo $dm['img'];?>data/homepic/3.jpg) center top no-repeat;}
+    .index_banner1 li a{display:block;margin:0 auto;width:1000px;height:548px;}
+    .index_banner1 cite{position:absolute;bottom:10px;left:50%;z-index:999;display:block;margin-left:-34px;width:288px;height:15px;_display:none;}
+    .index_banner1 cite span{float:left;display:block;margin:0 4px;width:17px;height:15px;background:url(<?php echo $dm['www'];?>img/ico81.png) no-repeat;text-indent:-999em;opacity:.8;cursor:pointer;}
+    .index_banner1 cite span:hover{background:url(<?php echo $dm['www'];?>img/ico82.png) no-repeat;}
+    .index_banner1 cite span.cur{background:url(<?php echo $dm['www'];?>img/ico82.png) no-repeat;cursor:default;}
 </style>
 <div id="banner">
     <script type="text/javascript" src="<?php echo $dm['www'];?>js/jcarousellite_index.js"></script>
@@ -104,60 +104,36 @@
     </script>
 
 </div>
+<?php if(!empty($userList)){ ?>
 <div id="zxhhr">
     <div class="zxhhr mid">
         <div class="zxhhr_t">
             <h3>最新合伙人</h3><span><a href="/partner">查看更多>></a></span>
         </div>
         <div class="zxhhr_list">
-            <dl>
-                <dt><img src="img/tx.gif" width="100"  height="100"/></dt>
-                <dd><a href="#">我你他</a></dd>
+            <?php
+            foreach($userList as $key=>$val){
+            ?>
+            <dl <?if($key==4|| $key==9){echo 'style="margin-right:0;"';}?>>
+                <dt><img src="<?php echo Url::getUserPic(array('uid'=>$val['id'], 'tp'=>'b'))?>" width="100"  height="100"/></dt>
+                <dd><a href="#"><?php echo !empty($val['baseinfo']['nickname'])?$val['baseinfo']['nickname']:'&nbsp;';?></a></dd>
             </dl>
-            <dl>
-                <dt><img src="img/tx.gif" width="100"  height="100"/></dt>
-                <dd><a href="#">我你他</a></dd>
-            </dl>
-            <dl>
-                <dt><img src="img/tx.gif" width="100"  height="100"/></dt>
-                <dd><a href="#">我你他</a></dd>
-            </dl>
-            <dl>
-                <dt><img src="img/tx.gif" width="100"  height="100"/></dt>
-                <dd><a href="#">我你他</a></dd>
-            </dl>
-            <dl style="margin-right:0;">
-                <dt><img src="img/tx.gif" width="100"  height="100"/></dt>
-                <dd><a href="#">我你他</a></dd>
-            </dl>
-        </div>
-        <div class="diqu">&nbsp;&nbsp;&nbsp;&nbsp;2011年创立WL工作室2002年7月
+            <?php
+            }
+            ?>
+            <!--
+            </div>
+            <div class="diqu">&nbsp;&nbsp;&nbsp;&nbsp;2011年创立WL工作室2002年7月
             在河南新华任职创立A...
             <h3>北京-海淀区</h3>
+            </div>
+
+            <div class="zxhhr_list">
+            -->
         </div>
-        <div class="zxhhr_list">
-            <dl>
-                <dt><img src="img/tx.gif" width="100"  height="100"/></dt>
-                <dd><a href="#">我你他</a></dd>
-            </dl>
-            <dl>
-                <dt><img src="img/tx.gif" width="100"  height="100"/></dt>
-                <dd><a href="#">我你他</a></dd>
-            </dl>
-            <dl>
-                <dt><img src="img/tx.gif" width="100"  height="100"/></dt>
-                <dd><a href="#">我你他</a></dd>
-            </dl>
-            <dl>
-                <dt><img src="img/tx.gif" width="100"  height="100"/></dt>
-                <dd><a href="#">我你他</a></dd>
-            </dl>
-            <dl style="margin-right:0;">
-                <dt><img src="img/tx.gif" width="100"  height="100"/></dt>
-                <dd><a href="#">我你他</a></dd>
-            </dl>
-        </div>
-    </div></div>
+    </div>
+</div>
+<?php } ?>
 <div id="sy_cygs">
     <div class="mid sy_cygs">
         <div class="zxhhr_t">

@@ -3,17 +3,17 @@
         <div class="hhr_js">
             <div class="tz_list_tx">
                 <div class="tz_tx_img"><img src="<?php echo Url::getUserPic(array('uid'=>$user_info['id'], 'tp'=>'b'));?>" width="125" height="125" /></div>
-                <div class="tz_tx_gz"><a href="#" >关注</a><a href="#">约谈</a></div>
+                <div class="tz_tx_gz"><a href="javascript:;" onclick="followme(<?php echo $user_info['id'];?>);">关注</a><a href="#">约谈</a></div>
             </div>
             <div class="hhr_xq">
-                <div class="hhr_hr_mc"><h3><?php echo $user_info['nickname'];?></h3><span><a href="#">在线</a></span></div>
+                <div class="hhr_hr_mc"><h3><?php echo isset($user_info['nickname'])?$user_info['nickname']:'';?></h3><span><a href="#">在线</a></span></div>
                 <div class="xq_dj_xm">
                     <div class="xq_dj"><h3>80%&nbsp;&nbsp;靠谱</h3></div>
                     <div class="xq_xm">有项目 - 已在全职创业</div>
                 </div>
                 <div class="xq_cydw">
                     <h3 class="bg1">创业定位：</h3>
-                    <div class="xq_cydw_c"><?php echo $user_info['role'];?></div>
+                    <div class="xq_cydw_c"><?php echo isset($user_info['role'])?$user_info['role']:'';?></div>
 
                 </div>
                 <!--
@@ -47,41 +47,27 @@
             <div class="tdzl">
                 <div class="tdzl_div">
                     <h3>年龄：</h3>
-                    <div class="tdzl_div_c"><?php echo isset($age[$user_info['agerange']])?$age[$user_info['agerange']]:'未填';?></div>
+                    <div class="tdzl_div_c"><?php echo isset($user_info['agerange'])?$age[$user_info['agerange']]:'未填';?></div>
                     <div class="clear"></div>
                 </div>
                 <div class="tdzl_div">
                     <h3>关注领域：</h3>
-                    <div class="tdzl_div_c">电子商务、教育、社交</div>
+                    <div class="tdzl_div_c"><?php echo isset($user_info['industry']) && $user_info['industry']!=0 && !empty($industryRs)?$industryRs[$user_info['industry']]:'未填';?></div>
                     <div class="clear"></div>
                 </div>
                 <div class="tdzl_div">
                     <h3>个人简介：</h3>
-                    <div class="tdzl_div_c">5年开发经验，软硬通吃，熟悉单片机开发、OpenWRT系统移植修改、<br />
-                        Android开发、Java和PHP服务器开发，有一定的运营管理经验。曾经带领原<br />
-                        公司团队完成中国移动手机二维码客户端的开发、华为手机定制阅读客户端；<br />
-                        公司是中国移动手机二维码、咪咕音乐的官方合作伙伴。</div>
+                    <div class="tdzl_div_c"><?php echo isset($user_info['intro'])?'<pre style="word-wrap:break-word">'.$user_info['intro'].'</pre>':'未填';?></div>
                     <div class="clear"></div>
                 </div>
                 <div class="tdzl_div">
                     <h3>学习经历：</h3>
-                    <div class="tdzl_div_c">本科-电子信息与工程<br />
-                        研究生-IC设计、软件工程</div>
+                    <div class="tdzl_div_c"><?php echo isset($user_info['study_experience'])?'<pre style="word-wrap:break-word">'.$user_info['study_experience'].'</pre>':'';?></div>
                     <div class="clear"></div>
                 </div>
                 <div class="tdzl_div">
                     <h3>工作经历：</h3>
-                    <div class="tdzl_div_c">2011年，中国pinterest迷尚网，安卓开发工程师<br />
-                        2012-2013年，方正移动，高级安卓开发工程师<br />
-                        2013-今，北京初创未来科技，总工程师</div>
-                    <div class="clear"></div>
-                </div>
-                <div class="tdzl_div">
-                    <h3>工作经历：</h3>
-                    <div class="tdzl_div_c">创业经验    多次    有回报<br />
-                        创业资金   原大力投资<br />
-                        投入时间   全部时间参与创业<br />
-                        创业地点   我所在的城市</div>
+                    <div class="tdzl_div_c"><?php echo isset($user_info['work_experience'])?'<pre style="word-wrap:break-word">'.$user_info['work_experience'].'</pre>':'';?></div>
                     <div class="clear"></div>
                 </div>
             </div>
@@ -126,35 +112,38 @@
                 </div>
             </div>
         </div>
+        <!--
         <div class="box">
-            <div class="title">
-                <h3>同类合伙人</h3>
-            </div>
-            <div class="tlhhr">
-                <dl>
-                    <dt><img src="../images/tx.gif" width="100" height="100" /></dt>
-                    <dd>情侣玻璃人</dd>
-                </dl>
-                <dl>
-                    <dt><img src="../images/tx.gif" width="100" height="100" /></dt>
-                    <dd>情侣玻璃人</dd>
-                </dl>
-                <dl>
-                    <dt><img src="../images/tx.gif" width="100" height="100" /></dt>
-                    <dd>情侣玻璃人</dd>
-                </dl>
-                <dl>
-                    <dt><img src="../images/tx.gif" width="100" height="100" /></dt>
-                    <dd>情侣玻璃人</dd>
-                </dl>
-                <dl style="margin-right:0;">
-                    <dt><img src="../images/tx.gif" width="100" height="100" /></dt>
-                    <dd>情侣玻璃人</dd>
-                </dl>
-                <div class="clear"></div>
-            </div>
+        <div class="title">
+        <h3>同类合伙人</h3>
         </div>
+        <div class="tlhhr">
+        <dl>
+        <dt><img src="../images/tx.gif" width="100" height="100" /></dt>
+        <dd>情侣玻璃人</dd>
+        </dl>
+        <dl>
+        <dt><img src="../images/tx.gif" width="100" height="100" /></dt>
+        <dd>情侣玻璃人</dd>
+        </dl>
+        <dl>
+        <dt><img src="../images/tx.gif" width="100" height="100" /></dt>
+        <dd>情侣玻璃人</dd>
+        </dl>
+        <dl>
+        <dt><img src="../images/tx.gif" width="100" height="100" /></dt>
+        <dd>情侣玻璃人</dd>
+        </dl>
+        <dl style="margin-right:0;">
+        <dt><img src="../images/tx.gif" width="100" height="100" /></dt>
+        <dd>情侣玻璃人</dd>
+        </dl>
+        <div class="clear"></div>
+        </div>
+        </div>
+        -->
     </div>
+
     <div class="con_r">
         <div class="box cywd">
             <div class="title">
@@ -165,89 +154,27 @@
                 找合伙人。我认为创业核心资源最重要的是<br />
                 商业运作能力。</div>
         </div>
-        <!--
-        <div class="box">
-        <div class="title">
-        <h3>用户评价</h3>
-        <span class="wysjj"><a href="#">我也说几句</a></span>  </div>
-        <div class="yhpj">
-        <div class="yhpj_list">
-        <dl>
-        <dt><img src="../images/tx.gif" width="50" height="50" /></dt>
-        <dd>非常不错的合伙人，大家可以尽情<br />
-        合作，一路成长，好伙伴！</dd>
-        </dl>
-        <div class="yhpj_mc_sj">
-        <ul>
-        <li class="bg1">苏北地区帅小伙</li>
-        <li class="bg2">2014-07-15  08:00</li>
-        </ul>
-        </div>
-        </div>
-        <div class="yhpj_list">
-        <dl>
-        <dt><img src="../images/tx.gif" width="50" height="50" /></dt>
-        <dd>非常不错的合伙人，大家可以尽情<br />
-        合作，一路成长，好伙伴！</dd>
-        </dl>
-        <div class="yhpj_mc_sj">
-        <ul>
-        <li class="bg1">苏北地区帅小伙</li>
-        <li class="bg2">2014-07-15  08:00</li>
-        </ul>
-        </div>
-        </div>
-        <div class="yhpj_list">
-        <dl>
-        <dt><img src="../images/tx.gif" width="50" height="50" /></dt>
-        <dd>非常不错的合伙人，大家可以尽情<br />
-        合作，一路成长，好伙伴！</dd>
-        </dl>
-        <div class="yhpj_mc_sj">
-        <ul>
-        <li class="bg1">苏北地区帅小伙</li>
-        <li class="bg2">2014-07-15  08:00</li>
-        </ul>
-        </div>
-        </div>
-        <div class="yhpj_list">
-        <dl>
-        <dt><img src="../images/tx.gif" width="50" height="50" /></dt>
-        <dd>非常不错的合伙人，大家可以尽情<br />
-        合作，一路成长，好伙伴！</dd>
-        </dl>
-        <div class="yhpj_mc_sj">
-        <ul>
-        <li class="bg1">苏北地区帅小伙</li>
-        <li class="bg2">2014-07-15  08:00</li>
-        </ul>
-        </div>
-        </div>
-        <div class="yhpj_list">
-        <dl>
-        <dt><img src="../images/tx.gif" width="50" height="50" /></dt>
-        <dd>非常不错的合伙人，大家可以尽情<br />
-        合作，一路成长，好伙伴！</dd>
-        </dl>
-        <div class="yhpj_mc_sj">
-        <ul>
-        <li class="bg1">苏北地区帅小伙</li>
-        <li class="bg2">2014-07-15  08:00</li>
-        </ul>
-        </div>
-        </div>
-        <div class="yhpj_an">
-        <ul>
-        <li><a href="#">上一页</a></li>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">下一页</a></li>
-        </ul>
-        <div class="clear"></div>
-        </div>
-        </div>
-        </div>
-        -->
+
+        <?php 
+            if(!empty($user_comment)){
+                echo $this->element('user_comment');
+            } 
+        ?>       
     </div>
 </div>
+<script type="text/javascript">
+    function followme(uid){
+        $.ajax({
+            url:'/follow/ajaxcare',
+            type: 'POST',
+            data: "follower_id="+uid,
+            dataType: 'json',
+            success: function(data){
+                if(data.errCode=='0'){
+                    $('#care_'+uid).html('<span>已关注</span>');
+                }
+                alert(data.msg)
+            }
+        });
+    }
+</script>
