@@ -3993,6 +3993,10 @@ html.pPhoto {
     border: 1px solid #B7B7B7;
 }
 
+.invite-loginGroup .form-input-wrapper2 {
+    border: 1px solid #B7B7B7;
+}
+
 .invite-login-btn {
     background-color: rgb(200,60,52);
     background-image: -webkit-linear-gradient(rgb(221,80,73),rgb(200,60,52));
@@ -4278,7 +4282,7 @@ html.pPhoto {
 }
 
 .login-logo {
-    background: transparent url("../img/logo.png") no-repeat left top scroll;
+    background: transparent url("../images/logo.png") no-repeat left top scroll;
     height: 150px;
     margin: 0 auto;
     width: 317px;
@@ -4476,6 +4480,9 @@ html.pPhoto {
 .login-input {
     margin-bottom: 20px;
 }
+.login-input2 {
+    margin-bottom: 20px;
+}
 
 .login-error {
     position: absolute;
@@ -4487,6 +4494,9 @@ html.pPhoto {
         white-space: nowrap;
     }
 
+
+
+
 .login-input .form-input-wrapper {
     background: #FFF;
     border: 1px solid #D1D1D1;
@@ -4494,6 +4504,10 @@ html.pPhoto {
     margin-right: 0;
     padding: 0;
 }
+
+
+
+
 
 .login-input label {
     color: #CCC;
@@ -4523,6 +4537,50 @@ html.pPhoto {
     right: 16px;
     top: 16px;
 }
+
+
+
+
+.login-input2 .form-input-wrapper {
+    background: #FFF;
+    border: 1px solid #D1D1D1;
+    height: 42px;
+    margin-right: 0;
+    padding: 0;
+}
+
+.login-input2 label {
+    color: #CCC;
+    cursor: text;
+    font-size: 14px;
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    *top: 10px;
+}
+
+.login-input2 input {
+    background: #FFF;
+    border: none;
+    color: #333;
+    font-size: 16px;
+    height: 38px;
+    line-height: 38px;
+    margin: 0px 36px 1px 0px;
+    outline: none;
+    padding-left: 68px;
+    padding-bottom:2px;
+    width: 300px;
+}
+
+.login-input2 .icon-close {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+
+
+
 
 .login-wrap-title a, .login-wrap-title a:hover, .login-extend a, .login-extend a:hover {
     color: #A8A8AA;

@@ -23,6 +23,8 @@
         <title><?php if(isset($title)){ echo $title;}?> <?php echo SITE_NAME;?></title>
         <link href="<?php echo $dm['www'];?>css/global.css" rel="stylesheet" type="text/css" />
         <link href="<?php echo $dm['www'];?>css/style.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo $dm['www'];?>css/main.min.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo $dm['www'];?>css/page.min.css" rel="stylesheet" type="text/css" />
         <link href="<?php echo $dm['www'];?>css/lanrenzhijia.css" rel="stylesheet" type="text/css" />
         <script src="<?php echo $dm['www'];?>js/jquery.min.js"></script>
     </head>
@@ -46,11 +48,12 @@
                         <li><a href="<?php echo $dm['www'];?>bbs">创业圈</a></li>
                     </ul>
                 </div>
-                <?php 
-                    if(!empty($userInfo)){
-                    ?>
-                    <div class="grzx">
-                        <ul>
+
+                <div class="grzx">
+                    <ul>
+                        <?php 
+                            if(!empty($userInfo)){
+                            ?>
                             <li class="grzx_l"><a href="/message/">站内信</a></li>
                             <li class="grzx_r"><div class="grzx_r_xl">
                                     <ul>
@@ -63,10 +66,12 @@
                                         <li><a href="/login/loginout">退出</a></li>
                                     </ul>
                                 </div><a class="bg">个人中心</a></li>
+                            <?php }else{ ?>
+                            <li class="grzx_r"><a class="theme-logind bg2" href="javascript:;">登录</a></li>
+                            <?php } ?>
+                    </ul>
+                </div>
 
-                        </ul>
-                    </div>
-                    <?php } ?>
             </div>
         </div>
         <?php echo $this->fetch('content'); ?>
@@ -91,6 +96,10 @@
             </div>
         </div>
         <div class="theme-popover-mask"></div>
+        <?php 
+            echo $this->element('pop_reg');
+            echo $this->element('pop_login');
+        ?>
         <script>
             function suggest(){
                 $('.theme-popover-mask').fadeIn(100);
@@ -119,13 +128,37 @@
             function resetsuggest(){
                 $("#suggest_content").val('');
             }
+
+            jQuery(document).ready(function($) {
+                $('.theme-loginx').click(function(){
+                    $('.theme-popover-maskx').fadeIn(100);
+                    $('.theme-popoverx').slideDown(200);
+                })
+                $('.theme-poptitx .close').click(function(){
+                    $('.theme-popover-maskx').fadeOut(100);
+                    $('.theme-popoverx').slideUp(200);
+                })
+
+            })
+            jQuery(document).ready(function($) {
+                $('.theme-logind').click(function(){
+                    $('.theme-popover-maskd').fadeIn(100);
+                    $('.theme-popoverd').slideDown(200);
+                })
+                $('.theme-poptitd .close').click(function(){
+                    $('.theme-popover-maskd').fadeOut(100);
+                    $('.theme-popoverd').slideUp(200);
+                })
+
+            })
+
         </script>
         <div class="clear"></div>
         </div>
         <div id="foot">
             <div class="mid foot">
                 <div class="foot_jr">加入我们，成就所有人的梦想！</div>
-                <div class="foot_zc"><a href="<?php echo $dm['www'];?>">立即注册</a></div>
+                <div class="foot_zc"><a class="theme-loginx" href="javascript:; ">立即注册</a></div>
                 <div class="foot_db">
                     <div class="foot_db_l">
                         <a href="/default/aboutus">关于众梦创客</a> | 

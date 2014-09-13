@@ -34,22 +34,29 @@ class UserController extends AppController {
         }
         $user_id = $_SESSION['user_id'];
         $conditions = array('user_id'=>$user_id);
+        $userinfo = $this->UserProfile->getOne($conditions);
+        $this->set('userinfo', $userinfo);
         if(isset($_POST['dosubmit'])){
+            $gender = isset($_POST['gender']) ? intval($_POST['gender']) : 0;
             $params = array(
             'name' => '"'.$_POST['name'].'"',
             'nickname' => "'".$_POST['nickname']."'",
             'role' => intval($_POST['role']),
-            'gender' => intval($_POST['gender']),
+            'gender' => $gender,
             'agerange' => intval($_POST['agerange']),
             'workyears' => intval($_POST['workyears']),
             );
-            $res = $this->UserProfile->updateinfo($params, $conditions);
+            if(!empty($userinfo)){
+                $res = $this->UserProfile->updateinfo($params, $conditions);
+            }else{
+                $params['user_id'] = $this->userInfo['user_id'];
+                $res = $this->UserProfile->addinfo($params);
+            }
             if($res){
                 $this->goMsg('修改成功', '/user/index');
             }
         }
-        $userinfo = $this->UserProfile->getOne($conditions);
-        $this->set('userinfo', $userinfo);
+
         #获取角色
         $roleList = $this->Role->getList();
         $this->set('roleList', $roleList);
