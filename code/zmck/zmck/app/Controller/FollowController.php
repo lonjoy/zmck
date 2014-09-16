@@ -10,7 +10,7 @@
 */
 
 App::uses('AppController', 'Controller');
-
+App::uses('Url', 'Utility');
 class FollowController extends AppController {
 
     /**
@@ -18,7 +18,7 @@ class FollowController extends AppController {
     *
     * @var array
     */
-    public $uses = array('Follow');
+    public $uses = array('Follow', 'User', 'UserTags', 'Role');
 
     /**
     * Displays a view
@@ -29,7 +29,27 @@ class FollowController extends AppController {
     *    or MissingViewException in debug mode.
     */
     public function index() {
+        $data = $this->Follow->getList(array('user_id'=>$this->userInfo['id'])); //我关注的的
+        if(!empty($data)){
+            foreach($data as &$val){
+                #user
+                $user = $this->User->getUserInfo(array('id'=>$val['follower_id']));
+                #baseinfo
+                $base_info = $this->UserProfile->getOne(array('user_id'=>$val['follower_id']));
+                $user_info = array_merge($user, $base_info);
+                $val['userinfo'] = $user_info;
+                #tag
+                $user_tags = $this->UserTags->getUserTags(array('user_id'=>$val['follower_id']));
+                $val['userinfo']['tags'] = !empty($user_tags['tags'])?$user_tags['tags']:'';
+                #role
+                if(isset($val['userinfo']['role']) && $val['userinfo']['role'] && !empty($val['userinfo'])){
+                    $roleinfo = $this->Role->getRole(array('id'=>$val['userinfo']['role']));
+                    $val['rolename'] = isset($roleinfo['name']) ? $roleinfo['name'] : '';
+                }
+            }
+        }
 
+        $this->set('data', $data);
     }
 
 
@@ -38,7 +58,27 @@ class FollowController extends AppController {
     }
 
     public function care(){
+        $data = $this->Follow->getList(array('follower_id'=>$this->userInfo['id'])); //我关注的的
+        if(!empty($data)){
+            foreach($data as &$val){
+                #user
+                $user = $this->User->getUserInfo(array('id'=>$val['user_id']));
+                #baseinfo
+                $base_info = $this->UserProfile->getOne(array('user_id'=>$val['user_id']));
+                $user_info = array_merge($user, $base_info);
+                $val['userinfo'] = $user_info;
+                #tag
+                $user_tags = $this->UserTags->getUserTags(array('user_id'=>$val['user_id']));
+                $val['userinfo']['tags'] = !empty($user_tags['tags'])?$user_tags['tags']:'';
+                #role
+                if(isset($val['userinfo']['role']) && $val['userinfo']['role'] && !empty($val['userinfo'])){
+                    $roleinfo = $this->Role->getRole(array('id'=>$val['userinfo']['role']));
+                    $val['rolename'] = isset($roleinfo['name']) ? $roleinfo['name'] : '';
+                }
+            }
+        }
 
+        $this->set('data', $data);
     }
 
     public function ban(){

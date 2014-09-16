@@ -90,7 +90,7 @@
                             </div>
                             <div class="hhr_ty">
                                 <ul>
-                                    <li><a href="#">约谈</a></li>
+                                    <li><a href="/partner/interview?user_id=<?php echo $val['id'];?>">约谈</a></li>
                                     <li id="care_<?php echo $val['id'];?>"><a href="javascript:void(0);" onclick="followme(<?php echo $val['id'];?>);">关注</a></li>
                                     <li><a href="#">屏蔽</a></li>
                                 </ul>

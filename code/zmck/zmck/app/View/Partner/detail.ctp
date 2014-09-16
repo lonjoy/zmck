@@ -3,17 +3,21 @@
         <div class="hhr_js">
             <div class="tz_list_tx">
                 <div class="tz_tx_img"><img src="<?php echo Url::getUserPic(array('uid'=>$user_info['id'], 'tp'=>'b'));?>" width="125" height="125" /></div>
-                <div class="tz_tx_gz"><a href="javascript:;" onclick="followme(<?php echo $user_info['id'];?>);">关注</a><a href="#">约谈</a></div>
+                <div class="tz_tx_gz"><a href="javascript:;" onclick="followme(<?php echo $user_info['id'];?>);">关注</a><a href="/partner/interview?user_id=<?php echo $user_info['id'];?>">约谈</a></div>
             </div>
             <div class="hhr_xq">
-                <div class="hhr_hr_mc"><h3><?php echo isset($user_info['nickname'])?$user_info['nickname']:'';?></h3><span><a href="#">在线</a></span></div>
+                <div class="hhr_hr_mc"><h3><?php echo isset($user_info['nickname'])?$user_info['nickname']:'';?></h3>
+                <?php if($user_info['status']){ ?>
+                <span><a href="#">在线</a></span>
+                <?php } ?>
+                </div>
                 <div class="xq_dj_xm">
                     <div class="xq_dj"><h3>80%&nbsp;&nbsp;靠谱</h3></div>
                     <div class="xq_xm">有项目 - 已在全职创业</div>
                 </div>
                 <div class="xq_cydw">
                     <h3 class="bg1">创业定位：</h3>
-                    <div class="xq_cydw_c"><?php echo isset($user_info['role'])?$user_info['role']:'';?></div>
+                    <div class="xq_cydw_c"><?php echo isset($user_info['role']) && $user_info['role']!=0 && !empty($roleRs)?$roleRs[$user_info['role']]:'未填';?></div>
 
                 </div>
                 <!--
@@ -47,7 +51,7 @@
             <div class="tdzl">
                 <div class="tdzl_div">
                     <h3>年龄：</h3>
-                    <div class="tdzl_div_c"><?php echo isset($user_info['agerange'])?$age[$user_info['agerange']]:'未填';?></div>
+                    <div class="tdzl_div_c"><?php echo isset($user_info['agerange'])&&$user_info['agerange']!=0?$age[$user_info['agerange']]:'未填';?></div>
                     <div class="clear"></div>
                 </div>
                 <div class="tdzl_div">

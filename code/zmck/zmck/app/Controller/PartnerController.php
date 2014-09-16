@@ -28,7 +28,7 @@ class PartnerController extends AppController {
     *
     * @var array
     */
-    public $uses = array('User', 'Role', 'UserProfile','UserTags', 'Industry', 'UserDetail');
+    public $uses = array('User', 'Role', 'UserProfile','UserTags', 'Industry', 'UserDetail', 'Interview');
     public $components = array('ListPage');
 
     /**
@@ -103,5 +103,55 @@ class PartnerController extends AppController {
         $user_tags = $this->UserTags->getUserTags(array('user_id'=>$user_id));
         //var_dump($user_info);
         $this->set('user_tags', $user_tags);
+
+        #获取角色
+        $roleList = $this->Role->getList();
+        $roleRs = array();
+        if(!empty($roleList)){
+            foreach($roleList as $val){
+                $roleRs[$val['id']] = $val['name'];
+            }
+        }
+        $this->set('roleRs', $roleRs);
+    }
+
+    public function interview(){
+        if(empty($this->userInfo)){
+            $this->goMsg('请登录后进行操作', '/');
+        }
+        $user_id = intval($_GET['user_id']);
+        $user = $this->User->getUserInfo(array('id'=>$user_id));
+        $base_info = $this->UserProfile->getOne(array('user_id'=>$user_id));
+        $detail_info = $this->UserDetail->getUserDetail(array('user_id'=>$user_id));
+        $user_info = array_merge($user, $base_info, $detail_info);
+        $this->set('user_info', $user_info);
+
+        $conditions = array('or'=>array(array('fromuser_id'=>$user_id, 'touser_id'=>$this->userInfo['id']), array('touser_id'=>$user_id, 'fromuser_id'=>$this->userInfo['id'])) );
+        $message = $this->Interview->getList($conditions);
+        $this->set('message', $message);
+
+    }
+
+    public function ajaxinterview(){
+        $touser_id = intval($_POST['touser_id']);
+        $fromuser_id = intval($_POST['fromuser_id']);
+        $message = addslashes(trim($_POST['message']));
+        #add
+        $time = time();
+        $params = array(
+        'fromuser_id' => $fromuser_id,
+        'touser_id' => $touser_id,
+        'message' => $message,
+        'ctime' => $time
+        );
+        $rs = $this->Interview->addinfo($params);
+        if($rs){
+            $params['ctime'] = date('m月d日 H:i', $time);
+            $params['avater'] = Url::getUserPic(array('uid'=>$fromuser_id, 'tp'=>'b'));
+            $return = array('errCode'=>0, 'msg'=>$params);
+        }else{
+            $return = array('errCode'=>1, 'msg'=>'发送失败');
+        }
+        $this->outputJson($return);
     }
 }

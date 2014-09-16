@@ -242,5 +242,11 @@ class UserController extends AppController {
     public function addproject(){
 
     }
+    
+    
+    public function uploadavater(){
+        error_log('xx', 3, 'xx');
+        echo 'http://www.baidu.com/img/baidu_jgylogo3.gif';die;
+    }
 
 }
