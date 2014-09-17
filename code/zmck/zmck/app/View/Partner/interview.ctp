@@ -5,7 +5,7 @@
                 <h3>对话</h3>
                 <!--
                 <div class="title_circle5">
-                    <a class="btn btn-large theme-login"  href="javascript:;">我要约见</a>
+                <a class="btn btn-large theme-login"  href="javascript:;">我要约见</a>
                 </div>
                 -->
             </div>
@@ -40,12 +40,21 @@
                                 ?>
                                 <div class="dh_c_list">
                                     <div class="dh_div<?php echo $userInfo['id']==$val['fromuser_id']?1:2;?>">
-                                        <div class="dh_wz">
-                                            <div class="dh_wz_sjx<?php echo $userInfo['id']==$val['fromuser_id']?'':2;?>"></div>
-                                            <h3><?php echo date('m月n日 H:i', $val['ctime']);?></h3>
-                                            <div class="dh_wz_c"><?php echo $val['message'];?></div>
-                                        </div>
-                                        <div class="dh_tx"><img src="<?php echo Url::getUserPic(array('uid'=>$val['fromuser_id'], 'tp'=>'b'));?>" width="50" height="50" /></div>
+                                        <?php if($userInfo['id']==$val['fromuser_id']){ ?>
+                                            <div class="dh_wz">
+                                                <div class="dh_wz_sjx<?php echo $userInfo['id']==$val['fromuser_id']?'':2;?>"></div>
+                                                <h3><?php echo date('m月n日 H:i', $val['ctime']);?></h3>
+                                                <div class="dh_wz_c"><?php echo $val['message'];?></div>
+                                            </div>
+                                            <div class="dh_tx"><img src="<?php echo Url::getUserPic(array('uid'=>$val['fromuser_id'], 'tp'=>'b'));?>" width="50" height="50" /></div>
+                                            <?php }else{ ?>
+                                            <div class="dh_tx2"><img src="<?php echo Url::getUserPic(array('uid'=>$val['fromuser_id'], 'tp'=>'b'));?>" width="50" height="50" /></div>
+                                            <div class="dh_wz">
+                                                <div class="dh_wz_sjx<?php echo $userInfo['id']==$val['fromuser_id']?'':2;?>"></div>
+                                                <h3><?php echo date('m月n日 H:i', $val['ctime']);?></h3>
+                                                <div class="dh_wz_c"><?php echo $val['message'];?></div>
+                                            </div>
+                                            <?php } ?>
                                     </div>
                                     <div class="clear"></div>
                                 </div>
@@ -55,18 +64,18 @@
                         ?>
                         <!--
                         <div class="dh_c_list">
-                            <div class="dh_div2"><div class="dh_tx2"><img src="../images/tx.gif" width="50" height="50" /></div>
-                                <div class="dh_wz">
-                                    <div class="dh_wz_sjx2"></div>
-                                    <h3>6月14日  20：00</h3>
-                                    <div class="dh_wz_c">您好！我这有个项目找PHP技术合伙人，不知道有
-                                        没有兴趣聊下。</div>
-                                </div>
-
-                            </div>
-                            <div class="clear"></div>
+                        <div class="dh_div2"><div class="dh_tx2"><img src="../images/tx.gif" width="50" height="50" /></div>
+                        <div class="dh_wz">
+                        <div class="dh_wz_sjx2"></div>
+                        <h3>6月14日  20：00</h3>
+                        <div class="dh_wz_c">您好！我这有个项目找PHP技术合伙人，不知道有
+                        没有兴趣聊下。</div>
                         </div>
--->
+
+                        </div>
+                        <div class="clear"></div>
+                        </div>
+                        -->
                         <div class="clear"></div>
                     </div>
                     <div class="hf">
@@ -94,7 +103,7 @@
 
 <div class="theme-popover">
     <div class="theme-poptit">
-        <a href="javascript:;" title="关闭" class="close"><img src="../images/ring_1.gif" /></a>
+        <a href="javascript:;" title="关闭" class="close"><img src="####" /></a>
         <h3>约见</h3>
     </div>
     <div class="yuejian">

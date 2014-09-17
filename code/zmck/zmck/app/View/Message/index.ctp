@@ -11,42 +11,26 @@
     </div>
     <div class="care_2_1">
         <ul>
-            <li>
-                <table>
-                    <tr>
-                        <td class="care_11"><a href="#"><img src="../images/eva_1.jpg" /></a><br /><a href="#">中国风</a></td>
-                        <td class="care_22">您好，看到您的项目，请问可以了解下吗？</td>
-                        <td class="care_33"><input type="button" value="约谈" /><input type="button" value="屏蔽" /></td>
-                    </tr>
-                </table>
-            </li>
-            <li>
-                <table>
-                    <tr>
-                        <td class="care_11"><a href="#"><img src="../images/eva_1.jpg" /></a><br /><a href="#">中国风</a></td>
-                        <td class="care_22">您好，看到您的项目，请问可以了解下吗？</td>
-                        <td class="care_33"><input type="button" value="约谈" /><input type="button" value="屏蔽" /></td>
-                    </tr>
-                </table>
-            </li>
-            <li>
-                <table>
-                    <tr>
-                        <td class="care_11"><a href="#"><img src="../images/eva_1.jpg" /></a><br /><a href="#">中国风</a></td>
-                        <td class="care_22">您好，看到您的项目，请问可以了解下吗？</td>
-                        <td class="care_33"><input type="button" value="约谈" /><input type="button" value="屏蔽" /></td>
-                    </tr>
-                </table>
-            </li>
-            <li>
-                <table>
-                    <tr>
-                        <td class="care_11"><a href="#"><img src="../images/eva_1.jpg" /></a><br /><a href="#">中国风</a></td>
-                        <td class="care_22">您好，看到您的项目，请问可以了解下吗？</td>
-                        <td class="care_33"><input type="button" value="约谈" /><input type="button" value="屏蔽" /></td>
-                    </tr>
-                </table>
-            </li>
+            <?php 
+                if(!empty($data)){ 
+                    foreach($data as $val){
+                    ?>
+                    <li>
+                        <table>
+                            <tr>
+                                <td class="care_11"><a target="_blank" href="/partner/detail?id=<?php echo $val['fromuser_id'];?>"><img src="<?php echo Url::getUserPic(array('uid'=>$val['fromuser_id'], 'tp'=>'b'));?>" width="50" height="50"/></a><br /><a href="#"><?php echo $val['userinfo']['nickname'];?></a></td>
+                                <td class="care_22"><?php echo $val['message']?></td>
+                                <td class="care_33">
+                                <input type="button" value="查看" onclick="window.location.href='<?php echo $dm['www']?>partner/interview?user_id=<?php echo $val['fromuser_id'];?>'" />
+                                <!--<input type="button" value="屏蔽" />-->
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                    <?php
+                    }
+                }
+            ?>
         </ul>
     </div>
 </div>

@@ -19,6 +19,7 @@ class UserController extends AppController {
     * @var array
     */
     public $uses = array('User', 'Role', 'Industry', 'UserDetail', 'UserTags');
+    public $components = array('Upload');
 
     /**
     * Displays a view
@@ -39,7 +40,7 @@ class UserController extends AppController {
         if(isset($_POST['dosubmit'])){
             $gender = isset($_POST['gender']) ? intval($_POST['gender']) : 0;
             if(empty($userinfo)){
-            $params = array(
+                $params = array(
                 'user_id' => $this->userInfo['id'],
                 'name' => addslashes($_POST['name']),
                 'nickname' => addslashes($_POST['nickname']),
@@ -49,7 +50,7 @@ class UserController extends AppController {
                 'workyears' => intval($_POST['workyears']),
                 );
                 $res = $this->UserProfile->addinfo($params);
-                
+
             }else{
                 $params = array(
                 'user_id' => $this->userInfo['user_id'],
@@ -242,11 +243,30 @@ class UserController extends AppController {
     public function addproject(){
 
     }
-    
-    
+
+
     public function uploadavater(){
-        error_log('xx', 3, 'xx');
-        echo 'http://www.baidu.com/img/baidu_jgylogo3.gif';die;
+        if(empty($this->userInfo)){
+            $this->goMsg('请登录后进行操作', '/');
+        }
+        $user_id = $this->userInfo['id'];
+        if(isset($_FILES['avatar']) && !empty($_FILES['avatar'])){
+            $id = str_pad($user_id,9,0,STR_PAD_LEFT);
+            $tmp=preg_replace("/^(\d{3})(\d{2})(\d{2})(\d{2,})/i","\\1/\\2/\\3/\\4", $id);
+            $ret = $this->Upload->uploadedFile($_FILES['avatar'], AVATAR_PATH.$tmp.'_b'); //大
+            #$ret = $this->Upload->uploadedFile($_FILES['avatar'], AVATAR_PATH.$tmp.'_m'); //中
+            #$ret = $this->Upload->uploadedFile($_FILES['avatar'], AVATAR_PATH.$tmp.'_s'); //小的
+            if($ret['errCode']==0){
+                $rs = array(
+                'errCode' => 0,
+                'msg' => 'ok',
+                'url' => Url::getUserPic(array('uid'=>$user_id, 'tp'=>'b'))
+                );
+            }else{
+                $rs = $ret;
+            }
+            $this->outputJson($rs);
+        }  
     }
 
 }

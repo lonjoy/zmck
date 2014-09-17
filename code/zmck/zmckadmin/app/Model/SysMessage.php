@@ -8,8 +8,8 @@
 
 App::uses('AppModel', 'Model');
 
-class Interview extends AppModel {
-    public $useTable = 'user_interview';
+class SysMessage extends AppModel {
+    public $useTable = 'sys_message';
 
     public $primaryKey = 'id';
 
@@ -18,14 +18,13 @@ class Interview extends AppModel {
     * 查询记录
     * @return array
     */
-    public function getList($conditions=array(), $offset=0, $limit=30, $order='', $group=array(), $fields = array())
+    public function getList($conditions=array(), $offset=0, $limit=30, $order='', $fields = array())
     {
         return $this->find('all', array(
         'conditions' => $conditions,
         'fields'    => $fields,
         'offset' => $offset,
         'limit' => $limit,
-        'group' => $group,
         'order' => $order,
         ));
     }
@@ -34,18 +33,13 @@ class Interview extends AppModel {
         return $this->find('first', array('conditions'=>$conditions, 'fields'=>$fields));
     }
 
-    public function getCount($conditions=array(), $group=array()){
-        return $this->find('count', array('conditions'=>$conditions, 'group'=>$group));
-    }
-    
     public function addinfo($params=array()){
         if(empty($params)){
             return false;
         }
         //$params = $this->filterData($params);
-        $this->create();
         $this->save($params);
-        return $this->id;
+        return true;
     }
 
     public function updateinfo($params=array(), $conditions=array()){
@@ -53,15 +47,6 @@ class Interview extends AppModel {
             return false;
         }
         $ret = $this->updateAll($params, $conditions);
-        return $ret;
-    }
-    
-    public function delinfo($conditions=array()){
-        if(empty($conditions)){
-            return false;
-        }
-        
-        $ret = $this->deleteAll($conditions);
         return $ret;
     }
 
