@@ -62,6 +62,7 @@ class MenuController extends AppController {
         array('id'=>18, 'url'=>'/suggest/index', 'name'=>'意见建议', 'sub'=>array()),
         array('id'=>19, 'url'=>'/systemTag/index', 'name'=>'系统标签配置', 'sub'=>array()),
         array('id'=>20, 'url'=>'/message/sys', 'name'=>'系统消息', 'sub'=>array()),
+        array('id'=>21, 'url'=>'/area/index', 'name'=>'地域设置', 'sub'=>array()),
         )),
         array('id'=>12, 'url'=>'', 'name'=>'企业管理', 'sub'=>array(
         array('id'=>13, 'url'=>'/user/roles', 'name'=>'企业信息', 'sub'=>array()),

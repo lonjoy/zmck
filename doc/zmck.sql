@@ -10,10 +10,29 @@ Target Server Type    : MYSQL
 Target Server Version : 50528
 File Encoding         : 65001
 
-Date: 2014-09-18 01:11:44
+Date: 2014-09-19 00:56:18
 */
 
 SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for `zm_area`
+-- ----------------------------
+DROP TABLE IF EXISTS `zm_area`;
+CREATE TABLE `zm_area` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` char(20) NOT NULL DEFAULT '',
+  `parentid` int(10) NOT NULL DEFAULT '0',
+  `isdel` tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`,`isdel`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of zm_area
+-- ----------------------------
+INSERT INTO `zm_area` VALUES ('1', '北京', '0', '0');
+INSERT INTO `zm_area` VALUES ('2', '别经', '0', '0');
+INSERT INTO `zm_area` VALUES ('3', '广东', '0', '0');
 
 -- ----------------------------
 -- Table structure for `zm_company`
@@ -189,7 +208,7 @@ CREATE TABLE `zm_industries` (
 -- ----------------------------
 INSERT INTO `zm_industries` VALUES ('1', '44444444444444', '0');
 INSERT INTO `zm_industries` VALUES ('2', '餐饮', '0');
-INSERT INTO `zm_industries` VALUES ('3', '医疗', '0');
+INSERT INTO `zm_industries` VALUES ('3', '的萨菲', '0');
 INSERT INTO `zm_industries` VALUES ('4', '阿什顿', '0');
 INSERT INTO `zm_industries` VALUES ('5', '天天', '0');
 
@@ -339,7 +358,7 @@ CREATE TABLE `zm_sys_message` (
 -- ----------------------------
 -- Records of zm_sys_message
 -- ----------------------------
-INSERT INTO `zm_sys_message` VALUES ('1', 'ttttttttttttt', '0ttttttttttttttttttttt', '1410973228', '0');
+INSERT INTO `zm_sys_message` VALUES ('1', '您好，看到您的项目，请问可以了解下吗？', '0ttttttttttttttttttttt', '1410973228', '0');
 
 -- ----------------------------
 -- Table structure for `zm_system_tags`

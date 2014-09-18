@@ -309,7 +309,7 @@
                                                     <input id="loginCallBack" type="hidden" value="http://love.163.com/" name="url">
                                                     <input type="hidden" name="product" value="ht">
                                                     <input type="hidden" value="1" name="type">
-                                                    <input type="submit" class="login-btn submit-trigger" value="登 录">
+                                                    <input type="submit" class="login-btn submit-trigger" style="padding-left:0;width:350px;" value="登 录">
                                                 </li>
 
                                                 <li class="login-extend clearfix">

@@ -561,7 +561,7 @@
 .login-extend.clearfix{margin-top: 15px;}
 .form-notice{color: #54546b;font-size: 18px;}
 .login-box .form-input-wrapper {border: 0;}
-.login-box input{border: 1px solid #D1D1D1;width: 337px;padding-left: 30px;}
+.login-box input{border: 1px solid #D1D1D1;width: 277px;padding-left: 70px;}
 .login-box .js-username{background: url(pic/input1.png) no-repeat 10px 10px;}
 .js-usernameLabel, .js-passwordLabel{padding-left: 25px;}
 .login-box .js-password{background: url(pic/input2.png) no-repeat 10px 10px;}

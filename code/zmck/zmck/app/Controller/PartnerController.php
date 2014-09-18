@@ -28,7 +28,7 @@ class PartnerController extends AppController {
     *
     * @var array
     */
-    public $uses = array('User', 'Role', 'UserProfile','UserTags', 'Industry', 'UserDetail', 'Interview');
+    public $uses = array('User', 'Role', 'UserProfile','UserTags', 'Industry', 'UserDetail', 'Interview', 'Area');
     public $components = array('ListPage');
 
     /**
@@ -48,9 +48,19 @@ class PartnerController extends AppController {
         $p = isset($_GET['p'])?intval($_GET['p']):1;
         $offset = ($p-1) * $pagesize;
         $conditions = array();
-        $userList = $this->User->userList($conditions, $offset, $pagesize);
+        if(isset($_GET['searchname'])){
+            $conditions = array('nickname LIKE '=>'%'.$_GET['searchname'].'%');
+            $userList = $this->UserProfile->getList($conditions,$offset, $pagesize);
+            $total = $this->UserProfile->getCount($conditions);
+        }else{
+            $userList = $this->User->userList($conditions, $offset, $pagesize);
+            $total = $this->User->getCount($conditions);
+        }
         if(!empty($userList)){
             foreach($userList as &$val){
+                if(isset($val['user_id'])){
+                    $val['id'] = $val['user_id']; 
+                }
                 $val['base'] = $this->UserProfile->getOne(array('user_id'=>$val['id']));
                 if(isset($val['base']['role']) && $val['base']['role'] && !empty($val['base'])){
                     $roleinfo = $this->Role->getRole(array('id'=>$val['base']['role']));
@@ -60,7 +70,7 @@ class PartnerController extends AppController {
                 $val['tags'] = $this->UserTags->getUserTags(array('user_id'=>$val['id']));
             }
         }
-        $total = $this->User->getCount($conditions);
+        
         $this->set('userList', $userList);
         //分页html
         $pagehtml = '';
@@ -78,6 +88,9 @@ class PartnerController extends AppController {
             $pagehtml = $pageHtmlObj->show(1);
         }
         $this->set('pagehtml', $pagehtml);
+        #area
+        $arealist = $this->Area->getList(array(),0, 100);
+        $this->set('arealist', $arealist);
     }
 
     public function detail(){
@@ -113,6 +126,8 @@ class PartnerController extends AppController {
             }
         }
         $this->set('roleRs', $roleRs);
+        #area
+
     }
 
     public function interview(){

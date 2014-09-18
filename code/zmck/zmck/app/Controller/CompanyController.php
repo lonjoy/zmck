@@ -19,6 +19,7 @@ class CompanyController extends AppController {
     * @var array
     */
     public $uses = array();
+    public $components = array('Forum');
 
     /**
     * Displays a view
@@ -29,10 +30,11 @@ class CompanyController extends AppController {
     *    or MissingViewException in debug mode.
     */
     public function index() {
-
+        $hot_topic = $this->Forum->hotTopic();
+        $this->set('hot_topic', $hot_topic);
     }
-    
+
     public function detail(){
-        
+
     }
 }

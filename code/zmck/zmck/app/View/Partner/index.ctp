@@ -2,12 +2,14 @@
     <div class="con_l">
         <div class="search">
             <div class="ssk">
-                <div class="s1">
-                    <input name="" type="text" />
-                </div>
-                <div class="s2">
-                    <input type="submit" name="Submit" value="提交" />
-                </div>
+                <form action="/partner" method="get" >
+                    <div class="s1">
+                        <input name="searchname" type="text" />
+                    </div>
+                    <div class="s2">
+                        <input type="submit" name="dosubmit" value="提交" />
+                    </div>
+                </form>
             </div>
             <div class="sx">
                 <?php if(!empty($roleList)){ ?>
@@ -15,7 +17,7 @@
                         <h3 class="bg">条件:</h3>
                         <ul>
                             <?php foreach($roleList as $val){ ?>
-                                <li><a href="<?php echo $val['id'];?>"><?php echo $val['name'];?></a></li>
+                                <li><a href="/partner/?ptype=<?php echo $val['id'];?>"><?php echo $val['name'];?></a></li>
                                 <?php } ?>
                         </ul>
                     </div>
@@ -24,20 +26,48 @@
                     <h3 class="bg">条件:</h3>
                     <ul>
                         <li><select name="" class="xl">
-                                <option>地理位置</option>
+                                <option value="0">地理位置</option>
+                                <?php 
+                                    if(!empty($arealist)){
+                                        foreach($arealist as $area){
+                                            echo '<option value="'.$area['id'].'">'.$area['name'].'</option>';
+                                        }
+                                    }
+                                ?>
                             </select></li>
                         <li><select name="" class="xl">
                                 <option>方向</option>
                             </select></li>
-                        <li><select name="" class="xl">
+                        <li><select name="" class="xl" style="width:115px;">
                                 <option>心态</option>
+                                <?php 
+                                    if(!empty($xintai)){
+                                        foreach($xintai as $key=>$val){
+                                            echo '<option value="'.$key.'">'.$val.'</option>';
+                                        }
+                                    }
+                                ?>
                             </select></li>
-                        <li><select name="" class="xl">
+                        <li><select name="" class="xl" style="width:98px;margin-left: 30px;">
                                 <option>状态</option>
+                                <?php 
+                                    if(!empty($nowstatus)){
+                                        foreach($nowstatus as $key=>$val){
+                                            echo '<option value="'.$key.'">'.$val.'</option>';
+                                        }
+                                    }
+                                ?>
                             </select></li>
                         <li>
-                            <select name="" class="xl">
+                            <select name="" class="xl" style="margin-left: 40px;">
                                 <option>年龄</option>
+                                <?php 
+                                    if(!empty($age)){
+                                        foreach($age as $key=>$val){
+                                            echo '<option value="'.$key.'">'.$val.'</option>';
+                                        }
+                                    }
+                                ?>
                             </select>
                         </li>
                     </ul>
@@ -74,9 +104,9 @@
                                 <div class="hhr_hr_dj"><h3>80%&nbsp;&nbsp;靠谱</h3></div>
                                 <div class="hhr_hr_bq">
                                     <?php 
-                                    
-                                    if(!empty($val['tags']['tags'])){
-                                        $ts = unserialize($val['tags']['tags']);
+
+                                        if(!empty($val['tags']['tags'])){
+                                            $ts = unserialize($val['tags']['tags']);
                                             foreach($ts as $vt){
                                             ?>
                                             <span href="#"><?php echo $vt;?></span> | 

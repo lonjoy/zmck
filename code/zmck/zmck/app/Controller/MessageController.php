@@ -35,7 +35,7 @@ class MessageController extends AppController {
     *
     * @var array
     */
-    public $uses = array('Interview', 'User', 'UserProfile');
+    public $uses = array('Interview', 'User', 'UserProfile', 'SysMessage');
     public $layout = 'default';
 
     /**
@@ -99,6 +99,8 @@ class MessageController extends AppController {
     }    
 
     public function sys(){
+        $data = $this->SysMessage->getList(array(), 0, 30, $order='ctime DESC');
 
+        $this->set('data', $data);
     }
 }

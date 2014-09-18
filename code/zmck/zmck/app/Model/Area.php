@@ -8,8 +8,8 @@
 
 App::uses('AppModel', 'Model');
 
-class Industry extends AppModel {
-    public $useTable = 'industries';
+class Area extends AppModel {
+    public $useTable = 'area';
 
     public $primaryKey = 'id';
 

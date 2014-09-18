@@ -8,8 +8,8 @@
 
 App::uses('AppModel', 'Model');
 
-class Industry extends AppModel {
-    public $useTable = 'industries';
+class SysMessage extends AppModel {
+    public $useTable = 'sys_message';
 
     public $primaryKey = 'id';
 
@@ -23,6 +23,7 @@ class Industry extends AppModel {
         return $this->find('all', array(
         'conditions' => $conditions,
         'fields'    => $fields,
+        'offset' => $offset,
         'limit' => $limit,
         'order' => $order,
         ));
