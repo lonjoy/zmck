@@ -7,7 +7,7 @@
                         <input name="searchname" type="text" />
                     </div>
                     <div class="s2">
-                        <input type="submit" name="dosubmit" value="提交" />
+                        <input type="submit"  value="提交" />
                     </div>
                 </form>
             </div>
@@ -25,7 +25,7 @@
                 <div class="sx_tt">
                     <h3 class="bg">条件:</h3>
                     <ul>
-                        <li><select name="" class="xl">
+                        <li><select name="" class="xl"  onchange="selectp('area', this.value);">
                                 <option value="0">地理位置</option>
                                 <?php 
                                     if(!empty($arealist)){
@@ -35,10 +35,13 @@
                                     }
                                 ?>
                             </select></li>
+                        <!--
                         <li><select name="" class="xl">
-                                <option>方向</option>
-                            </select></li>
-                        <li><select name="" class="xl" style="width:115px;">
+                        <option>方向</option>
+                        </select>
+                        </li>
+                        -->
+                        <li><select name="xintai" class="xl" onchange="selectp('xintai',this.value);">
                                 <option>心态</option>
                                 <?php 
                                     if(!empty($xintai)){
@@ -48,7 +51,7 @@
                                     }
                                 ?>
                             </select></li>
-                        <li><select name="" class="xl" style="width:98px;margin-left: 30px;">
+                        <li><select name="" class="xl" onchange="selectp('status', this.value);">
                                 <option>状态</option>
                                 <?php 
                                     if(!empty($nowstatus)){
@@ -59,7 +62,7 @@
                                 ?>
                             </select></li>
                         <li>
-                            <select name="" class="xl" style="margin-left: 40px;">
+                            <select name="" class="xl" onchange="selectp('age', this.value);">
                                 <option>年龄</option>
                                 <?php 
                                     if(!empty($age)){
@@ -177,6 +180,12 @@
                 alert(data.msg)
             }
         });
+    }
+    function selectp(t, val){
+        var url = window.location.href;
+        var tag = url.indexOf('?')=='-1' ? '?' : '&';
+        url = url+tag+t+'='+val
+        window.location.href=url;
     }
 </script>
 
