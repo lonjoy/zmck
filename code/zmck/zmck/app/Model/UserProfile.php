@@ -52,6 +52,15 @@ class UserProfile extends AppModel {
         if(empty($conditions)){
             return false;
         }
+        /*
+        if(!empty($params)){
+            foreach($params  as &$val){
+                if(is_string($val)){
+                   $val = mysql_real_escape_string($val);
+                }
+            }
+        }
+        */
         $ret = $this->updateAll($params, $conditions);
         return $ret;
     }

@@ -2,9 +2,9 @@
     <div class="con_l">
         <div class="search">
             <div class="ssk">
-                <form action="/partner" method="get" >
+                <form action="/partner" method="get" onsubmit="return checkform();">
                     <div class="s1">
-                        <input name="searchname" type="text" />
+                        <input name="searchname" type="text" id="searchname"/>
                     </div>
                     <div class="s2">
                         <input type="submit"  value="提交" />
@@ -17,7 +17,7 @@
                         <h3 class="bg">条件:</h3>
                         <ul>
                             <?php foreach($roleList as $val){ ?>
-                                <li><a href="/partner/?ptype=<?php echo $val['id'];?>"><?php echo $val['name'];?></a></li>
+                                <li><a href="javascript:;" onclick="selectp('prole', <?php echo $val['id'];?>)"><?php echo $val['name'];?></a></li>
                                 <?php } ?>
                         </ul>
                     </div>
@@ -25,12 +25,17 @@
                 <div class="sx_tt">
                     <h3 class="bg">条件:</h3>
                     <ul>
-                        <li><select name="" class="xl"  onchange="selectp('area', this.value);">
+                        <li><select name="" class="xl"  onchange="selectp('ta', this.value);">
                                 <option value="0">地理位置</option>
                                 <?php 
                                     if(!empty($arealist)){
                                         foreach($arealist as $area){
-                                            echo '<option value="'.$area['id'].'">'.$area['name'].'</option>';
+                                            $str = '<option value="'.$area['id'].'" ';
+                                            if($ta==$area['id']){
+                                                $str .= 'selected="selected"';
+                                            }
+                                            $str .= '>'.$area['name'].'</option>';
+                                            echo $str;
                                         }
                                     }
                                 ?>
@@ -41,33 +46,48 @@
                         </select>
                         </li>
                         -->
-                        <li><select name="xintai" class="xl" onchange="selectp('xintai',this.value);">
-                                <option>心态</option>
+                        <li><select name="xintai" class="xl" onchange="selectp('xt',this.value);">
+                                <option value="0">心态</option>
                                 <?php 
                                     if(!empty($xintai)){
                                         foreach($xintai as $key=>$val){
-                                            echo '<option value="'.$key.'">'.$val.'</option>';
+                                            $str = '<option value="'.$key.'" ';
+                                            if($xt==$key){
+                                                $str .= 'selected="selected"';
+                                            }
+                                            $str .= '>'.$val.'</option>';
+                                            echo $str;
                                         }
                                     }
                                 ?>
                             </select></li>
-                        <li><select name="" class="xl" onchange="selectp('status', this.value);">
-                                <option>状态</option>
+                        <li><select name="" class="xl" onchange="selectp('ts', this.value);">
+                                <option value="0">状态</option>
                                 <?php 
                                     if(!empty($nowstatus)){
                                         foreach($nowstatus as $key=>$val){
-                                            echo '<option value="'.$key.'">'.$val.'</option>';
+                                            $str = '<option value="'.$key.'" ';
+                                            if($ts==$key){
+                                                $str .= 'selected="selected"';
+                                            }
+                                            $str .='>'.$val.'</option>';
+                                            echo $str;
                                         }
                                     }
                                 ?>
                             </select></li>
                         <li>
-                            <select name="" class="xl" onchange="selectp('age', this.value);">
-                                <option>年龄</option>
+                            <select name="" class="xl" onchange="selectp('tage', this.value);">
+                                <option value="0">年龄</option>
                                 <?php 
                                     if(!empty($age)){
                                         foreach($age as $key=>$val){
-                                            echo '<option value="'.$key.'">'.$val.'</option>';
+                                            $str = '<option value="'.$key.'" ';
+                                            if($tage==$key){
+                                                $str .= 'selected="selected"';
+                                            }
+                                            $str .= '>'.$val.'</option>';
+                                            echo $str;
                                         }
                                     }
                                 ?>
@@ -103,7 +123,10 @@
                                 </dl>
                             </div>
                             <div class="hhr_nr">
-                                <div class="hhr_hr_mc"><h3><a href="/partner/detail?id=<?php echo $val['id'];?>"><?php echo isset($val['base']['nickname'])?$val['base']['nickname'].'-':'';?><?php echo isset($val['rolename'])?$val['rolename'].'-':'';?>有项目-已在全职创业</a></h3><span><a href="#">在线</a></span></div>
+                                <div class="hhr_hr_mc">
+                                    <h3><a href="/partner/detail?id=<?php echo $val['id'];?>"><?php echo isset($val['nickname'])?$val['nickname'].'-':'';?><?php echo isset($val['rolename'])?$val['rolename'].'-':'';?><?php echo isset($val['xintai']) && $val['xintai']!=0?$xintai[$val['xintai']]:'';?></a></h3>
+                                    <span><a href="#">在线</a></span>
+                                </div>
                                 <div class="hhr_hr_dj"><h3>80%&nbsp;&nbsp;靠谱</h3></div>
                                 <div class="hhr_hr_bq">
                                     <?php 
@@ -118,14 +141,13 @@
                                         }
                                     ?>
                                 </div>
-                                <div class="hhr_hr_ms">从曾经的记者、创业者到投资人，多年关注互联网和移动互联网、IT服
-                                    务领域，为多家创业公司和风险投资机构服务，2010开...</div>
+                                <div class="hhr_hr_ms"><?php echo isset($val['detail_info']['intro'])?$val['detail_info']['intro']:'';?></div>
                             </div>
                             <div class="hhr_ty">
                                 <ul>
                                     <li><a href="/partner/interview?user_id=<?php echo $val['id'];?>">约谈</a></li>
                                     <li id="care_<?php echo $val['id'];?>"><a href="javascript:void(0);" onclick="followme(<?php echo $val['id'];?>);">关注</a></li>
-                                    <li><a href="#">屏蔽</a></li>
+                                    <!--<li><a href="#">屏蔽</a></li>-->
                                 </ul>
                             </div>
                             <div class="clear"></div>
@@ -184,8 +206,51 @@
     function selectp(t, val){
         var url = window.location.href;
         var tag = url.indexOf('?')=='-1' ? '?' : '&';
-        url = url+tag+t+'='+val
+        var params='';
+        if(tag=='&'){
+            var params=url.substring(parseInt(url.indexOf('?'))+1);
+            var position_url=url.substring(0,parseInt(url.indexOf('?')))
+        }else{
+            var position_url=url;
+        }
+        var p=params.split('&');
+        var j=0;
+        for(i in p){
+            v=p[i].split('=');
+            if(t==v[0]){
+                v[1]=val;
+                p[i] = t+'='+val;
+                j=1;
+            }
+        }
+        if(j==0){
+            var s=t+'='+val;
+            p.push(s);
+        }
+        if(tag=='?'){
+            url = position_url+'?'+p.join('');
+        }else{
+            url = position_url+'?'+p.join('&');
+        }
         window.location.href=url;
     }
+    function checkform(){
+        if($('#searchname').val().trim()==''){
+            alert('请输入关键词进行搜索');
+            return false;
+        }
+        return true;
+    }
+
+    function in_array(stringToSearch, arrayToSearch) {
+        for (s = 0; s < arrayToSearch.length; s++) {
+            thisEntry = arrayToSearch[s].toString();
+            if (thisEntry == stringToSearch) {
+                return true;
+            }
+        }
+        return false;
+    }
+
 </script>
 

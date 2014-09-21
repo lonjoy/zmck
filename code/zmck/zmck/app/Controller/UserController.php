@@ -50,18 +50,19 @@ class UserController extends AppController {
                 'workyears' => intval($_POST['workyears']),
                 );
                 $res = $this->UserProfile->addinfo($params);
-
+                $this->User->updateUser(array('nickname' => "'".addslashes($_POST['nickname'])."'",'role' => intval($_POST['role']),'agerange' => intval($_POST['agerange']),'workyears' => intval($_POST['workyears']),),array('id'=>$user_id));
             }else{
                 $params = array(
                 'user_id' => $this->userInfo['user_id'],
-                'name' => '"'.$_POST['name'].'"',
-                'nickname' => "'".$_POST['nickname']."'",
+                'name' => '"'.addslashes($_POST['name']).'"',
+                'nickname' => "'".addslashes($_POST['nickname'])."'",
                 'role' => intval($_POST['role']),
                 'gender' => $gender,
                 'agerange' => intval($_POST['agerange']),
                 'workyears' => intval($_POST['workyears']),
                 );
                 $res = $this->UserProfile->updateinfo($params, $conditions);
+                $this->User->updateUser(array('nickname' => "'".addslashes($_POST['nickname'])."'",'role' => intval($_POST['role']),'agerange' => intval($_POST['agerange']),'workyears' => intval($_POST['workyears']),),array('id'=>$user_id));
             }
             if($res){
                 $this->goMsg('修改成功', '/user/index');

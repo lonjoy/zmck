@@ -134,7 +134,7 @@
 .sx_tt h3{ float:left; line-height:40px; font-size:14px; color:#4cbbd9; width:50px; padding-left:33px;}
 .sx_tt h3.bg{ background:url(../img/tt_bg.gif) no-repeat 10px 14px;}
 .sx_tt ul li{ float:left; padding-top:9px; margin-left:5px;}
-.sx_tt ul li .xl{ width:80px; height:20px; border:solid 1px #EEE;}
+.sx_tt ul li .xl{ height:20px; border:solid 1px #EEE;}
 .sx_xc{ height:40px;}
 .sx_xc h3{ float:left; line-height:40px; font-size:14px; color:#4cbbd9; width:74px; padding-left:33px;}
 .sx_xc h3.bg{ background:url(../img/xc_bg.gif) no-repeat 10px 13px;}

@@ -24,8 +24,8 @@
 <script type="text/javascript" src="<?php echo $dm['www'];?>js/handlers.js"></script>
 <script type="text/javascript">
  var settings = {
-        flash_url : "js/swfupload.swf",
-        upload_url: '/user/uploadavater', 
+        flash_url : "<?php echo $dm['www'];?>js/swfupload.swf",
+        upload_url: '<?php echo $dm['www'];?>user/uploadavater', 
         post_params: {},
         file_post_name: 'avatar',
         file_size_limit : "100 MB",

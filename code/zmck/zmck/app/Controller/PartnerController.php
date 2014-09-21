@@ -40,6 +40,18 @@ class PartnerController extends AppController {
     *    or MissingViewException in debug mode.
     */
     public function index() {
+        $xt = isset($_GET['xt']) ? intval($_GET['xt']) : 0;
+        $ta = isset($_GET['ta']) ? intval($_GET['ta']) : 0;
+        $ts = isset($_GET['ts']) ? intval($_GET['ts']) : 0;
+        $tage = isset($_GET['tage']) ? intval($_GET['tage']) : 0;
+        $prole = isset($_GET['prole']) ? intval($_GET['prole']) : 0;
+
+        $this->set('xt', $xt);
+        $this->set('ta', $ta);
+        $this->set('ts', $ts);
+        $this->set('tage', $tage);
+        $this->set('prole', $prole);
+
         #获取角色
         $roleList = $this->Role->getList();
         $this->set('roleList', $roleList);
@@ -49,28 +61,67 @@ class PartnerController extends AppController {
         $offset = ($p-1) * $pagesize;
         $conditions = array();
         if(isset($_GET['searchname'])){
+            $conditions['nickname LIKE '] = '%'.$_GET['searchname'].'%';
+            /*
             $conditions = array('nickname LIKE '=>'%'.$_GET['searchname'].'%');
             $userList = $this->UserProfile->getList($conditions,$offset, $pagesize);
             $total = $this->UserProfile->getCount($conditions);
-        }else{
-            $userList = $this->User->userList($conditions, $offset, $pagesize);
-            $total = $this->User->getCount($conditions);
+            */
         }
+        //else{
+            if($ta){
+                $conditions['area'] = $ta;
+            }
+            if($xt){
+                $conditions['xintai'] = $xt;
+            }
+            if($ts){
+                $conditions['nowstatus'] = $ts;
+            }            
+            if($tage){
+                $conditions['age'] = $tage;
+            }            
+            if($prole){
+                $conditions['role'] = $prole;
+            }
+        //}
+        $userList = $this->User->userList($conditions, $offset, $pagesize);
+        $total = $this->User->getCount($conditions);
         if(!empty($userList)){
-            foreach($userList as &$val){
+            foreach($userList as $key=>&$val){
                 if(isset($val['user_id'])){
                     $val['id'] = $val['user_id']; 
                 }
-                $val['base'] = $this->UserProfile->getOne(array('user_id'=>$val['id']));
+                if(isset($_GET['searchname'])){
+                    $base = array();
+                    $user = $this->User->getUserInfo(array('id'=>$val['id']));
+                    if($ta && $user['area'] != $ta){
+                        unset($userList[$key]);continue;
+                    }
+                    if($xt && $user['xintai'] != $xt){
+                        unset($userList[$key]);continue;
+                    }
+                    if($ts && $user['nowstatus'] != $ts){
+                        unset($userList[$key]);continue;
+                    }            
+                    if($tage && $user['age'] != $tage){
+                        unset($userList[$key]);continue;
+                    }
+                }else{
+                    $user = array();
+                    $base = $this->UserProfile->getOne(array('user_id'=>$val['id']));
+                }
                 if(isset($val['base']['role']) && $val['base']['role'] && !empty($val['base'])){
                     $roleinfo = $this->Role->getRole(array('id'=>$val['base']['role']));
                     $val['rolename'] = isset($roleinfo['name']) ? $roleinfo['name'] : '';
                 }
+                $val['detail_info'] = $this->UserDetail->getUserDetail(array('user_id'=>$val['id']));
                 #tag
                 $val['tags'] = $this->UserTags->getUserTags(array('user_id'=>$val['id']));
+                $userList[$key] = array_merge($val, $user, $base);
             }
         }
-        
+
         $this->set('userList', $userList);
         //分页html
         $pagehtml = '';
