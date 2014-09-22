@@ -44,6 +44,23 @@ class AppController extends Controller {
         $this->set('dm', $this->dm);
         $this->set('meta', $this->meta);
 
+        $this->age = Configure::read('age');
+        $this->xintai = Configure::read('xintai');
+        $this->workyears   = Configure::read('workyears');
+        $this->nowstatus   = Configure::read('nowstatus');
+        $this->startupExperience   = Configure::read('startupExperience');
+        $this->startupMoney   = Configure::read('startupMoney');
+        $this->spenttime   = Configure::read('spenttime');
+        $this->startupArea   = Configure::read('startupArea');
+
+        $this->set('age', $this->age);
+        $this->set('xintai', $this->xintai);
+        $this->set('workyears', $this->workyears);
+        $this->set('nowstatus', $this->nowstatus);
+        $this->set('startupExperience', $this->startupExperience);
+        $this->set('startupMoney', $this->startupMoney);
+        $this->set('spenttime', $this->spenttime);
+        $this->set('startupArea', $this->startupArea);
 
     }
 }

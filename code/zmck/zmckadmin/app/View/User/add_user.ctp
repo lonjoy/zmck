@@ -31,6 +31,12 @@
                     <input type="radio" name="gender" value="1" checked="checked">男
                     <input type="radio" name="gender" value="2">女
                 </td>
+            </tr>            <tr>
+                <th width="200">性别：</th>
+                <td>
+                    <input type="radio" name="gender" value="1" checked="checked">男
+                    <input type="radio" name="gender" value="2">女
+                </td>
             </tr>
             <tr>
                 <th width="200">个人介绍：</th>
@@ -64,8 +70,10 @@
                 <th width="200">年龄范围</th>
                 <td>
                     <select name="agerange">
-                        <option value="1">0-10</option>
-                        <option value="2">20-30</option>
+                        <option value="0">请选择年龄</option>
+                        <?php foreach($age as $key=>$val){ ?>
+                            <option value="<?php echo $key;?>" <?php echo isset($userinfo['agerange'])?($userinfo['agerange']==$key ? 'selected="selected"' : ''):'';?>><?php echo $val; ?></option>
+                            <?php } ?>>
                     </select>
                 </td>
             </tr>
@@ -73,9 +81,32 @@
                 <th width="200">工作年限</th>
                 <td>
                     <select name="workyears">
-                        <option value="1">0-10</option>
-                        <option value="2">20-30</option>
+                        <?php foreach($workyears as $key=>$val){ ?>
+                            <option value="<?php echo $key;?>" <?php echo isset($userinfo['workyears'])?($userinfo['workyears']==$key ? 'selected="selected"' : ''):'';?>><?php echo $val; ?></option>
+                            <?php } ?>
                     </select>
+                </td>
+            </tr>           
+            <tr>
+                <th width="200">关注领域</th>
+                <td>
+                    <select name="industry_id">
+                        <?php foreach($industry as $key=>$val){ ?>
+                            <option value="<?php echo $val['id'];?>" ><?php echo $val['name']; ?></option>
+                            <?php } ?>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th width="200">学习经验</th>
+                <td>
+                    <textarea cols="60" rows="10" name="study_experience"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th width="200">工作经历：</th>
+                <td>
+                    <textarea cols="60" rows="10" name="work_experience"></textarea>
                 </td>
             </tr>
         </table>

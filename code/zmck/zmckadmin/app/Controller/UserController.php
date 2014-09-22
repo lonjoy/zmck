@@ -29,7 +29,7 @@ class UserController extends AppController {
     * @var array
     */
     public $layout='layout';
-    public $uses = array('User', 'Role');
+    public $uses = array('User', 'Role', 'UserProfile','UserTags', 'UserDetail', 'Industry');
     public $components = array('Upload');
 
     /**
@@ -50,17 +50,44 @@ class UserController extends AppController {
 
     public function addUser(){
         if(isset($_POST['dosubmit'])){
-
+            $email = isset($_POST['email']) ? addslashes($_POST['email']) : '';
+            $password = !empty($_POST['password']) ? $_POST['password'] : '';
+            $nickname = !empty($_POST['nickname']) ? addslashes($_POST['nickname']) : '';
+            $role = !empty($_POST['role']) ?intval($_POST['role']) : 0;
+            $gender = intval($_POST['gender']);
+            $agerange = !empty($_POST['agerange']) ? intval($_POST['agerange']) : 0;
+            $workyears = !empty($_POST['workyears']) ? intval($_POST['workyears']) : 0;
+            $nowstatus = !empty($_POST['nowstatus']) ? intval($_POST['nowstatus']) : 0; //目前状态
+            
+            $xintai = isset($_POST['xintai']) ? intval($_POST['xintai']) : 0;
+            
+            $intro = !empty($_POST['intro']) ? addslashes($_POST['intro']) : '';
+            $industry_id = isset($_POST['industry_id']) ? intval($_POST['industry_id']) : 0; //关注领域
+            $study_experience = !empty($_POST['study_experience']) ? addslashes($_POST['study_experience']) : '';
+            $work_experience = !empty($_POST['work_experience']) ? addslashes($_POST['work_experience']) : '';
+            
+            if(!$email || !$password){
+                return false;
+            }
             $params = array(
-            'email' => $_POST['email'],
-            'password' => md5($_POST['password']),
-            'nickname' => addslashes($_POST['nickname']),
-            'role' => intval($_POST['role']),
-            'gender' => intval($_POST['gender']),
-            'intro' => addslashes($_POST['intro']),
-            'agerange' => intval($_POST['agerange']),
-            'workyears' => intval($_POST['workyears']),
+            'email' => $email,
+            'password' => md5($password),
+            'nickname' => $nickname,
+            'role' => $role,
+            'gender' => $gender,
+            'agerange' => $agerange,
+            'workyears' => $workyears,
             'regtime' => time(),
+            'xintai' => $xintai,
+            'nowstatus'=> $nowstatus,
+            );
+            
+            $detail_params = array(
+            'intro' => $intro,
+            'industry_id' => $industry_id,
+            'study_experience' => $study_experience,
+            'work_experience' => $work_experience,
+            'ctime' => time(),
             );
 
             $id = $this->User->addUser($params);
@@ -76,6 +103,9 @@ class UserController extends AppController {
         //
         $roles = $this->Role->getList();
         $this->set('roles', $roles);
+        
+        $industry = $this->Industry->getList();
+        $this->set('industry', $industry);
     }
 
     public function editUser(){
