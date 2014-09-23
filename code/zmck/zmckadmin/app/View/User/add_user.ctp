@@ -19,6 +19,9 @@
                     <input type="text" name="password" value="">
                 </td>
             </tr>
+            <tr style="">
+                <td colspan="2"><h2>基本资料</h2></td>
+            </tr>
             <tr>
                 <th width="200">昵称：</th>
                 <td>
@@ -26,24 +29,18 @@
                 </td>
             </tr>
             <tr>
-                <th width="200">性别：</th>
+                <th width="200">姓名：</th>
                 <td>
-                    <input type="radio" name="gender" value="1" checked="checked">男
-                    <input type="radio" name="gender" value="2">女
-                </td>
-            </tr>            <tr>
-                <th width="200">性别：</th>
-                <td>
-                    <input type="radio" name="gender" value="1" checked="checked">男
-                    <input type="radio" name="gender" value="2">女
+                    <input type="text" name="name" value="">
                 </td>
             </tr>
             <tr>
-                <th width="200">个人介绍：</th>
+                <th width="200">性别：</th>
                 <td>
-                    <textarea cols="50" rows="5" name="intro"></textarea>
+                    <input type="radio" name="gender" value="1" checked="checked">男
+                    <input type="radio" name="gender" value="2">女
                 </td>
-            </tr>
+            </tr>            
             <tr>
                 <th width="200">个人头像：</th>
                 <td>
@@ -51,7 +48,7 @@
                 </td>
             </tr>
             <tr>
-                <th width="200">用户角色：</th>
+                <th width="200">个人定位：</th>
                 <td>
                     <select name="role">
                         <?php 
@@ -67,7 +64,7 @@
                 </td>
             </tr>            
             <tr>
-                <th width="200">年龄范围</th>
+                <th width="200">年龄范围：</th>
                 <td>
                     <select name="agerange">
                         <option value="0">请选择年龄</option>
@@ -78,7 +75,7 @@
                 </td>
             </tr>
             <tr>
-                <th width="200">工作年限</th>
+                <th width="200">工作年限：</th>
                 <td>
                     <select name="workyears">
                         <?php foreach($workyears as $key=>$val){ ?>
@@ -86,7 +83,10 @@
                             <?php } ?>
                     </select>
                 </td>
-            </tr>           
+            </tr> 
+            <tr style="">
+                <td colspan="2"><h2>详细资料</h2></td>
+            </tr>          
             <tr>
                 <th width="200">关注领域</th>
                 <td>
@@ -98,7 +98,13 @@
                 </td>
             </tr>
             <tr>
-                <th width="200">学习经验</th>
+                <th width="200">个人介绍：</th>
+                <td>
+                    <textarea cols="50" rows="5" name="intro"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th width="200">学习经历：</th>
                 <td>
                     <textarea cols="60" rows="10" name="study_experience"></textarea>
                 </td>
@@ -107,6 +113,96 @@
                 <th width="200">工作经历：</th>
                 <td>
                     <textarea cols="60" rows="10" name="work_experience"></textarea>
+                </td>
+            </tr>
+            <tr style="">
+                <td colspan="2"><h2>创业状态</h2></td>
+            </tr>
+            <tr>
+                <th width="200"><span>创业心态：</span></th>
+                <td><select name="xintai" class="ly">
+                        <?php 
+                            if($xintai){
+                                foreach($xintai as $key=>$val){
+                                ?>
+                                <option value="<?php echo $key;?>" ><?php echo $val;?></option>
+                                <?php
+                                }
+                            }
+                        ?>
+                    </select></td>
+            </tr>
+
+            <tr>
+                <th width="200"><span>目前状态：</span></th>
+                <td><select name="nowstatus" class="ly">
+                        <option value="0">全部</option>
+                        <?php 
+                            if($nowstatus){
+                                foreach($nowstatus as $key=>$val){
+                                ?>
+                                <option value="<?php echo $key;?>"><?php echo $val;?></option>
+                                <?php
+                                }
+                            }
+                        ?>
+                    </select></td>
+            </tr>
+
+            <tr style="">
+                <td colspan="2"><h2>创业背景</h2></td>
+            </tr>
+            <tr>
+                <th width="200">创业经验：</th>
+                <td>
+                    <select name="startupExperience">
+                        <?php foreach($startupExperience as $key=>$val){ ?>
+                            <option value="<?php echo $key;?>" <?php echo isset($userinfo['workyears'])?($userinfo['workyears']==$key ? 'selected="selected"' : ''):'';?>><?php echo $val; ?></option>
+                            <?php } ?>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th width="200">创业资金：</th>
+                <td>
+                    <select name="startupMoney">
+                        <?php foreach($startupMoney as $key=>$val){ ?>
+                            <option value="<?php echo $key;?>" <?php echo isset($userinfo['workyears'])?($userinfo['workyears']==$key ? 'selected="selected"' : ''):'';?>><?php echo $val; ?></option>
+                            <?php } ?>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th width="200">投入时间：</th>
+                <td>
+                    <select name="spenttime">
+                        <?php foreach($spenttime as $key=>$val){ ?>
+                            <option value="<?php echo $key;?>" <?php echo isset($userinfo['workyears'])?($userinfo['workyears']==$key ? 'selected="selected"' : ''):'';?>><?php echo $val; ?></option>
+                            <?php } ?>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th width="200">创业地点：</th>
+                <td>
+                    <?php
+                        if($startupArea){
+                            foreach($startupArea as $key=>$val){
+                            ?>
+                            <label>
+                                <input type="radio" name="startupArea" value="<?php echo $key;?>" <?php echo $key==1?'checked="checked"':'';?>/>
+                                <?php echo $val?>
+                            </label>
+                            <?php
+                            }
+                        }
+                    ?>
+                </td>
+            </tr>
+            <tr>
+                <th width="200">设置：</th>
+                <td>
+                   首页推荐<input type="checkbox" value="1" name="homeshow"> <span>|</span> 推荐用户<input type="checkbox" value="1" name="recommend">
                 </td>
             </tr>
         </table>

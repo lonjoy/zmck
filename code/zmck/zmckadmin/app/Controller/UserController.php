@@ -42,7 +42,7 @@ class UserController extends AppController {
     */
     public function index() {
 
-        $data = $this->User->userList(array(), 30);
+        $data = $this->User->userList(array(), 0, 30, 'id desc');
 
         $this->set('data', $data);
     }
@@ -50,22 +50,31 @@ class UserController extends AppController {
 
     public function addUser(){
         if(isset($_POST['dosubmit'])){
+
             $email = isset($_POST['email']) ? addslashes($_POST['email']) : '';
             $password = !empty($_POST['password']) ? $_POST['password'] : '';
+
             $nickname = !empty($_POST['nickname']) ? addslashes($_POST['nickname']) : '';
-            $role = !empty($_POST['role']) ?intval($_POST['role']) : 0;
+            $name = !empty($_POST['name']) ? addslashes($_POST['name']) : '';
             $gender = intval($_POST['gender']);
+            $role = !empty($_POST['role']) ?intval($_POST['role']) : 0;
             $agerange = !empty($_POST['agerange']) ? intval($_POST['agerange']) : 0;
             $workyears = !empty($_POST['workyears']) ? intval($_POST['workyears']) : 0;
-            $nowstatus = !empty($_POST['nowstatus']) ? intval($_POST['nowstatus']) : 0; //目前状态
-            
+
+
             $xintai = isset($_POST['xintai']) ? intval($_POST['xintai']) : 0;
-            
-            $intro = !empty($_POST['intro']) ? addslashes($_POST['intro']) : '';
+            $nowstatus = !empty($_POST['nowstatus']) ? intval($_POST['nowstatus']) : 0; //目前状态
+
             $industry_id = isset($_POST['industry_id']) ? intval($_POST['industry_id']) : 0; //关注领域
+            $intro = !empty($_POST['intro']) ? addslashes($_POST['intro']) : '';
             $study_experience = !empty($_POST['study_experience']) ? addslashes($_POST['study_experience']) : '';
             $work_experience = !empty($_POST['work_experience']) ? addslashes($_POST['work_experience']) : '';
-            
+
+            $startupExperience = !empty($_POST['startupExperience']) ? intval($_POST['startupExperience']) : 0;
+            $startupMoney = !empty($_POST['startupMoney']) ? intval($_POST['startupMoney']) : 0;
+            $spenttime = !empty($_POST['spenttime']) ? intval($_POST['spenttime']) : 0;
+            $startupArea = !empty($_POST['startupArea']) ? intval($_POST['startupArea']) : 0;
+
             if(!$email || !$password){
                 return false;
             }
@@ -80,17 +89,36 @@ class UserController extends AppController {
             'regtime' => time(),
             'xintai' => $xintai,
             'nowstatus'=> $nowstatus,
+            'startupMoney'=> $startupMoney,
+            'startupExperience'=> $startupExperience,
+            'spenttime'=> $spenttime,
+            'startupArea'=> $startupArea,
+            'baseinfo' => 1,
             );
-            
+            $id = $this->User->addUser($params);
+
             $detail_params = array(
+            'user_id' => $id,
             'intro' => $intro,
             'industry_id' => $industry_id,
             'study_experience' => $study_experience,
             'work_experience' => $work_experience,
             'ctime' => time(),
             );
+            $this->UserDetail->addUserDetail($detail_params);
 
-            $id = $this->User->addUser($params);
+            $profile_params = array(
+            'user_id' => $id,
+            'nickname' => $nickname,
+            'name' => $name,
+            'gender' => $gender,
+            'agerange' => $agerange,
+            'workyears' => $workyears,
+            'role' => $role,
+            );
+            $this->UserProfile->addinfo($profile_params);
+
+
             if(isset($_FILES['avatar']) && !empty($_FILES['avatar'])){
                 $id = str_pad($id,9,0,STR_PAD_LEFT);
                 $tmp=preg_replace("/^(\d{3})(\d{2})(\d{2})(\d{2,})/i","\\1/\\2/\\3/\\4",$id);
@@ -103,26 +131,74 @@ class UserController extends AppController {
         //
         $roles = $this->Role->getList();
         $this->set('roles', $roles);
-        
+
         $industry = $this->Industry->getList();
         $this->set('industry', $industry);
     }
 
     public function editUser(){
         if(isset($_POST['dosubmit'])){
-            extract($_POST);
+            $email = isset($_POST['email']) ? "'".addslashes($_POST['email'])."'" : '';
+            $password = '';//!empty($_POST['password']) ? $_POST['password'] : '';
 
-            $params = array(
-            'email' => '"'.$_POST['email'].'"',
-            'nickname' => "'".$_POST['nickname']."'",
-            'role' => intval($role),
-            'gender' => intval($gender),
-            'intro' => "'".addslashes($intro)."'",
-            'agerange' => intval($agerange),
-            'workyears' => intval($workyears),
-            );
-            
+            $nickname = !empty($_POST['nickname']) ? "'".addslashes($_POST['nickname'])."'" : '';
+            $name = !empty($_POST['name']) ? "'".addslashes($_POST['name'])."'" : '';
+            $gender = intval($_POST['gender']);
+            $role = !empty($_POST['role']) ?intval($_POST['role']) : 0;
+            $agerange = !empty($_POST['agerange']) ? intval($_POST['agerange']) : 0;
+            $workyears = !empty($_POST['workyears']) ? intval($_POST['workyears']) : 0;
+
+
+            $xintai = isset($_POST['xintai']) ? intval($_POST['xintai']) : 0;
+            $nowstatus = !empty($_POST['nowstatus']) ? intval($_POST['nowstatus']) : 0; //目前状态
+
+            $industry_id = isset($_POST['industry_id']) ? intval($_POST['industry_id']) : 0; //关注领域
+            $intro = !empty($_POST['intro']) ? "'".addslashes($_POST['intro'])."'" : '';
+            $study_experience = !empty($_POST['study_experience']) ? "'".addslashes($_POST['study_experience'])."'" : '';
+            $work_experience = !empty($_POST['work_experience']) ? "'".addslashes($_POST['work_experience'])."'" : '';
+
+            $startupExperience = !empty($_POST['startupExperience']) ? intval($_POST['startupExperience']) : 0;
+            $startupMoney = !empty($_POST['startupMoney']) ? intval($_POST['startupMoney']) : 0;
+            $spenttime = !empty($_POST['spenttime']) ? intval($_POST['spenttime']) : 0;
+            $startupArea = !empty($_POST['startupArea']) ? intval($_POST['startupArea']) : 0;
+
             $id = intval($_POST['id']);
+            
+            $params = array(
+            'email' => $email,
+            //'password' => md5($password),
+            'nickname' => $nickname,
+            'role' => $role,
+            //'gender' => $gender,
+            'agerange' => $agerange,
+            'workyears' => $workyears,
+            'xintai' => $xintai,
+            'nowstatus'=> $nowstatus,
+            'startupMoney'=> $startupMoney,
+            'startupExperience'=> $startupExperience,
+            'spenttime'=> $spenttime,
+            'startupArea'=> $startupArea,
+            );
+            $this->User->updateUser($params, array('id'=>$id));
+
+            $detail_params = array(
+            'intro' => $intro,
+            'industry_id' => $industry_id,
+            'study_experience' => $study_experience,
+            'work_experience' => $work_experience,
+            );
+            $this->UserDetail->updateUserDetail($detail_params, array('user_id'=>$id));
+
+            $profile_params = array(
+            'nickname' => $nickname,
+            'name' => $name,
+            'gender' => $gender,
+            'agerange' => $agerange,
+            'workyears' => $workyears,
+            'role' => $role,
+            );
+            $this->UserProfile->updateinfo($profile_params, array('user_id' => $id));
+            
             if(isset($_FILES['avatar']) && !empty($_FILES['avatar'])){
                 $file = $_FILES['avatar'];
                 $id = str_pad($id,9,0,STR_PAD_LEFT);
@@ -131,8 +207,7 @@ class UserController extends AppController {
                 #$ret = $this->Upload->uploadedFile($file, AVATAR_PATH.$tmp.'_s'); //小的
                 #$ret = $this->Upload->uploadedFile($file, AVATAR_PATH.$tmp.'_m'); //中的
             }
-            $conditions = array('id'=>$id);
-            $this->User->updateUser($params, $conditions);
+        
             $this->redirect('/user/editUser?id='.$id);
         }else{
             $id = intval($_GET['id']);
@@ -143,9 +218,16 @@ class UserController extends AppController {
             $this->set('roles', $roles);
 
             $con = array('id' => $id);
-            $data = $this->User->getUserInfo($con);
+            $base_user = $this->User->getUserInfo($con);
+            $detail_user = $this->UserDetail->getUserDetail(array('user_id'=>$id));
+            $profile_user = $this->UserProfile->getOne(array('user_id'=>$id));
+            $data = array_merge($base_user, $detail_user, $profile_user);
+
             $this->set('data', $data);
             $this->set('id', $id);
+
+            $industry = $this->Industry->getList();
+            $this->set('industry', $industry);
         }
     }
 
@@ -184,6 +266,6 @@ class UserController extends AppController {
         $data =  $this->Role->getRole($conditions);
         $this->set('id', $id);
         $this->set('data', $data);
-        
+
     }
 }
