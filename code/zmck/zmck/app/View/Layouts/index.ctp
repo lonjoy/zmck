@@ -23,234 +23,38 @@
         <div class="login-wrapper js-wrapper">
             <div class="login-userBox" id="sliderUserbox">
                 <ul class="login-user-list js-userList">
-                    <li>
-                        <div class="login-user-item js-userItem">
-                            <img src="<?php echo $dm['www'];?>img/p1.jpg" class="js-preview-img" data-src="<?php echo $dm['www'];?>img/p1.jpg" />
-                            <i class="login-user-mask"></i>
-                            <a class="login-user-target" href="#" target="_blank"></a>
-                            <div class="login-user-info">
-                                <p class="login-user-nickname"><span title="蓬莱少女-创始人">蓬莱少女-创始人</span></p>
-                                <p>山东-青岛市</p>
-                            </div>
-                            <div class="login-user-down">
-                                <div class="down-title">
-                                    蓬莱少女-创始人
+                    <?php 
+                        if(!empty($data)){
+                            foreach($data as $val){
+                            ?>
+                            <li>
+                                <div class="login-user-item js-userItem">
+                                    <img src="<?php echo Url::getUserPic(array('uid'=>$val['id'], 'tp'=>'b'));?>" class="js-preview-img" data-src="<?php echo Url::getUserPic(array('uid'=>$val['id'], 'tp'=>'b'));?>" />
+                                    <i class="login-user-mask"></i>
+                                    <a class="login-user-target" href="#" target="_blank"></a>
+                                    <div class="login-user-info">
+                                        <p class="login-user-nickname">
+                                            <span title="<?php echo !empty($val['nickname'])?$val['nickname'].'-':''?>
+                                                <?php echo $val['role']?$roles[$val['role']]:'';?>">
+                                                <?php echo !empty($val['nickname'])?$val['nickname'].'-':''?><?php echo $val['role']?$roles[$val['role']]:'';?>
+                                            </span>
+                                        </p>
+                                        <p><span class="cy_prov" cy="<?php echo $val['province'];?>"></span>-<span class="cy_city" cy="<?php echo $val['city'];?>"></span></p>
+                                    </div>
+                                    <div class="login-user-down">
+                                        <div class="down-title">
+                                            <?php echo !empty($val['nickname'])?$val['nickname'].'-':''?><?php echo $val['role']?$roles[$val['role']]:'';?>
+                                        </div>
+                                        <div class="down-area">
+                                            <span class="cy_prov" cy="<?php echo $val['province'];?>"></span>-<span class="cy_city" cy="<?php echo $val['city'];?>"></span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="down-area">
-                                    山东-青岛市
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="login-user-item js-userItem">
-                            <img src="<?php echo $dm['www'];?>img/p4.jpg" class="js-preview-img" data-src="<?php echo $dm['www'];?>img/p4.jpg" />
-                            <i class="login-user-mask"></i>
-                            <a class="login-user-target" href="#" target="_blank"></a>
-                            <div class="login-user-info">
-                                <p class="login-user-nickname"><span title="我行我素-创始人">我行我素-创始人</span></p>
-                                <p>北京-海淀区</p>
-                            </div>
-                            <div class="login-user-down">
-                                <div class="down-title">
-                                    我行我素-创始人
-                                </div>
-                                <div class="down-area">
-                                    北京-海淀区
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="login-user-item js-userItem">
-                            <img src="<?php echo $dm['www'];?>img/p2.jpg" class="js-preview-img" data-src="<?php echo $dm['www'];?>img/p2.jpg" />
-                            <i class="login-user-mask"></i>
-                            <a class="login-user-target" href="/147240" target="_blank"></a>
-                            <div class="login-user-info">
-                                <p class="login-user-nickname"><span title="皖青年-创始人">皖青年-创始人</span></p>
-                                <p>广东-东莞市</p>
-                            </div>
-                            <div class="login-user-down">
-                                <div class="down-title">
-                                    皖青年-创始人
-                                </div>
-                                <div class="down-area">
-                                    广东-东莞市
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="login-user-item js-userItem">
-                            <img src="<?php echo $dm['www'];?>img/p5.jpg" class="js-preview-img" data-src="<?php echo $dm['www'];?>img/p5.jpg" />
-                            <i class="login-user-mask"></i>
-                            <a class="login-user-target" href="#" target="_blank"></a>
-                            <div class="login-user-info">
-                                <p class="login-user-nickname"><span title="蜀女-创始人">蜀女-创始人</span></p>
-                                <p>四川-宜宾市</p>
-                            </div>
-                            <div class="login-user-down">
-                                <div class="down-title">
-                                    蜀女-创始人
-                                </div>
-                                <div class="down-area">
-                                    四川-宜宾市
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="login-user-item js-userItem">
-                            <img src="<?php echo $dm['www'];?>img/p3.jpg" class="js-preview-img" data-src="<?php echo $dm['www'];?>img/p3.jpg" />
-                            <i class="login-user-mask"></i>
-                            <a class="login-user-target" href="/147240" target="_blank"></a>
-                            <div class="login-user-info">
-                                <p class="login-user-nickname"><span title="遥望远方-创始人">遥望远方-创始人</span></p>
-                                <p>海南-珠海市</p>
-                            </div>
-                            <div class="login-user-down">
-                                <div class="down-title">
-                                    遥望远方-创始人
-                                </div>
-                                <div class="down-area">
-                                    海南-珠海市
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="login-user-item js-userItem">
-                            <img src="<?php echo $dm['www'];?>img/p6.jpg" class="js-preview-img" data-src="<?php echo $dm['www'];?>img/p6.jpg" />
-                            <i class="login-user-mask"></i>
-                            <a class="login-user-target" href="/147240" target="_blank"></a>
-                            <div class="login-user-info">
-                                <p class="login-user-nickname"><span title="大西北-创始人">大西北-创始人</span></p>
-                                <p>新疆-石河子</p>
-                            </div>
-                            <div class="login-user-down">
-                                <div class="down-title">
-                                    大西北-创始人
-                                </div>
-                                <div class="down-area">
-                                    新疆-石河子
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="login-user-item js-userItem">
-                            <img src="<?php echo $dm['www'];?>img/p1.jpg" class="js-preview-img" data-src="<?php echo $dm['www'];?>img/p1.jpg" />
-                            <i class="login-user-mask"></i>
-                            <a class="login-user-target" href="#" target="_blank"></a>
-                            <div class="login-user-info">
-                                <p class="login-user-nickname"><span title="蓬莱少女-创始人">蓬莱少女-创始人</span></p>
-                                <p>山东-青岛市</p>
-                            </div>
-                            <div class="login-user-down">
-                                <div class="down-title">
-                                    蓬莱少女-创始人
-                                </div>
-                                <div class="down-area">
-                                    山东-青岛市
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="login-user-item js-userItem">
-                            <img src="<?php echo $dm['www'];?>img/p4.jpg" class="js-preview-img" data-src="<?php echo $dm['www'];?>img/p4.jpg" />
-                            <i class="login-user-mask"></i>
-                            <a class="login-user-target" href="#" target="_blank"></a>
-                            <div class="login-user-info">
-                                <p class="login-user-nickname"><span title="我行我素-创始人">我行我素-创始人</span></p>
-                                <p>北京-海淀区</p>
-                            </div>
-                            <div class="login-user-down">
-                                <div class="down-title">
-                                    我行我素-创始人
-                                </div>
-                                <div class="down-area">
-                                    北京-海淀区
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="login-user-item js-userItem">
-                            <img src="<?php echo $dm['www'];?>img/p2.jpg" class="js-preview-img" data-src="<?php echo $dm['www'];?>img/p2.jpg" />
-                            <i class="login-user-mask"></i>
-                            <a class="login-user-target" href="/147240" target="_blank"></a>
-                            <div class="login-user-info">
-                                <p class="login-user-nickname"><span title="皖青年-创始人">皖青年-创始人</span></p>
-                                <p>广东-东莞市</p>
-                            </div>
-                            <div class="login-user-down">
-                                <div class="down-title">
-                                    皖青年-创始人
-                                </div>
-                                <div class="down-area">
-                                    广东-东莞市
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="login-user-item js-userItem">
-                            <img src="<?php echo $dm['www'];?>img/p5.jpg" class="js-preview-img" data-src="<?php echo $dm['www'];?>img/p5.jpg" />
-                            <i class="login-user-mask"></i>
-                            <a class="login-user-target" href="#" target="_blank"></a>
-                            <div class="login-user-info">
-                                <p class="login-user-nickname"><span title="蜀女-创始人">蜀女-创始人</span></p>
-                                <p>四川-宜宾市</p>
-                            </div>
-                            <div class="login-user-down">
-                                <div class="down-title">
-                                    蜀女-创始人
-                                </div>
-                                <div class="down-area">
-                                    四川-宜宾市
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="login-user-item js-userItem">
-                            <img src="<?php echo $dm['www'];?>img/p3.jpg" class="js-preview-img" data-src="<?php echo $dm['www'];?>img/p3.jpg" />
-                            <i class="login-user-mask"></i>
-                            <a class="login-user-target" href="/147240" target="_blank"></a>
-                            <div class="login-user-info">
-                                <p class="login-user-nickname"><span title="遥望远方-创始人">遥望远方-创始人</span></p>
-                                <p>海南-珠海市</p>
-                            </div>
-                            <div class="login-user-down">
-                                <div class="down-title">
-                                    遥望远方-创始人
-                                </div>
-                                <div class="down-area">
-                                    海南-珠海市
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="login-user-item js-userItem">
-                            <img src="<?php echo $dm['www'];?>img/p6.jpg" class="js-preview-img" data-src="<?php echo $dm['www'];?>img/p6.jpg" />
-                            <i class="login-user-mask"></i>
-                            <a class="login-user-target" href="/147240" target="_blank"></a>
-                            <div class="login-user-info">
-                                <p class="login-user-nickname"><span title="大西北-创始人">大西北-创始人</span></p>
-                                <p>新疆-石河子</p>
-                            </div>
-                            <div class="login-user-down">
-                                <div class="down-title">
-                                    大西北-创始人
-                                </div>
-                                <div class="down-area">
-                                    新疆-石河子
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+                            </li>
+                            <?php 
+                            }
+                        }
+                    ?>
                 </ul>
                 <div class="login-user-prev js-prev-navbar hidden">
                     <a href="javascript:;" class="prev-trigger"><em></em></a>
@@ -416,5 +220,28 @@
         </div>
         <script src="<?php echo $dm['www'];?>js/common.js"></script>    
         <script src="<?php echo $dm['www'];?>js/js.js"></script>
+        <script type="text/javascript" src="<?php echo $dm['www'];?>js/procity.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                var prov=$('.cy_prov').attr('cy');
+                var city=$('.cy_city').attr('cy');
+                console.log(city);
+                var _city=[];
+                for (P in arrCity) {
+                    if(P==0) continue;
+                    if(arrCity[P].id==prov){
+                        $('.cy_prov').html(arrCity[P].name);
+                        _city=arrCity[P].sub;
+                    }
+                }
+                for(C in _city){
+                    if(C==0)continue;
+                    if(_city[C].id==city){
+                        $('.cy_city').html(_city[C].name);
+                    }
+                }
+                
+            });
+        </script>
     </body>
 </html>

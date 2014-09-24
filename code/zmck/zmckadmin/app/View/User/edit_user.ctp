@@ -21,6 +21,12 @@
                     <input type="text" name="password" value="">
                 </td>
             </tr>
+            <tr>
+                <th width="200"></th>
+                <td>
+                    首页推荐<input type="checkbox" value="1" name="homeshow" <?php if($data['homeshow']==1){echo 'checked="checked"';}?>>  推荐用户<input type="checkbox" value="1" name="recommend" <?php if($data['recommend']==1){echo 'checked="checked"';}?>>
+                </td>
+            </tr>
             <tr style="">
                 <td colspan="2"><h2>基本资料</h2></td>
             </tr>
@@ -34,6 +40,17 @@
                 <th width="200">姓名：</th>
                 <td>
                     <input type="text" name="name" value="<?php echo $data['name'];?>">
+                </td>
+            </tr>
+            <tr>
+                <th width="200">所在地：</th>
+                <td>
+                    <select id="cn_pid" cy="<?php echo $data['province'];?>" name="cy_prov" class="input-small">
+                        <option value="0">请选择</option>
+                    </select>
+                    <select id="cn_cid"  cy="<?php echo $data['city'];?>" class="input-small" name="cy_city">
+                        <option value="0">请选择</option>
+                    </select>
                 </td>
             </tr>
             <tr>
@@ -207,3 +224,15 @@
     <div class="bk15"></div>
     <input name="dosubmit" type="submit" value="提交" class="button">
 </form>
+<script type="text/javascript" src="<?php echo $dm['www'];?>js/web_city.js?v=<?php echo time();?>"></script>
+<script type="text/javascript">
+    //城市设置
+    //$.CYinit({ prov:'cn_pid',city:'cn_cid',name:'cy_', linkGrade:false });
+    $(function(){
+        $.CYinit({
+            prov:'cn_pid',
+            city:'cn_cid',
+            name:'cy_'
+        });
+    });
+</script>

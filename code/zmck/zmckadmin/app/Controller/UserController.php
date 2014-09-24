@@ -53,6 +53,10 @@ class UserController extends AppController {
 
             $email = isset($_POST['email']) ? addslashes($_POST['email']) : '';
             $password = !empty($_POST['password']) ? $_POST['password'] : '';
+            $homeshow = isset($_POST['homeshow']) ? intval($_POST['homeshow']) : 0;
+            $recommend = isset($_POST['recommend']) ? intval($_POST['recommend']) : 0;
+            $province = isset($_POST['cy_prov']) ? intval($_POST['cy_prov']) : 0;
+            $city = isset($_POST['cy_city']) ? intval($_POST['cy_city']) : 0;
 
             $nickname = !empty($_POST['nickname']) ? addslashes($_POST['nickname']) : '';
             $name = !empty($_POST['name']) ? addslashes($_POST['name']) : '';
@@ -93,7 +97,11 @@ class UserController extends AppController {
             'startupExperience'=> $startupExperience,
             'spenttime'=> $spenttime,
             'startupArea'=> $startupArea,
+            'province'=> $province,
+            'city'=> $city,
             'baseinfo' => 1,
+            'homeshow' => $homeshow,
+            'recommend' => $recommend,
             );
             $id = $this->User->addUser($params);
 
@@ -140,6 +148,10 @@ class UserController extends AppController {
         if(isset($_POST['dosubmit'])){
             $email = isset($_POST['email']) ? "'".addslashes($_POST['email'])."'" : '';
             $password = '';//!empty($_POST['password']) ? $_POST['password'] : '';
+            $homeshow = isset($_POST['homeshow']) ? intval($_POST['homeshow']) : 0;
+            $recommend = isset($_POST['recommend']) ? intval($_POST['recommend']) : 0;
+            $province = isset($_POST['cy_prov']) ? intval($_POST['cy_prov']) : 0;
+            $city = isset($_POST['cy_city']) ? intval($_POST['cy_city']) : 0;
 
             $nickname = !empty($_POST['nickname']) ? "'".addslashes($_POST['nickname'])."'" : '';
             $name = !empty($_POST['name']) ? "'".addslashes($_POST['name'])."'" : '';
@@ -163,7 +175,7 @@ class UserController extends AppController {
             $startupArea = !empty($_POST['startupArea']) ? intval($_POST['startupArea']) : 0;
 
             $id = intval($_POST['id']);
-            
+
             $params = array(
             'email' => $email,
             //'password' => md5($password),
@@ -178,6 +190,10 @@ class UserController extends AppController {
             'startupExperience'=> $startupExperience,
             'spenttime'=> $spenttime,
             'startupArea'=> $startupArea,
+            'province'=> $province,
+            'city'=> $city,
+            'homeshow' => $homeshow,
+            'recommend' => $recommend,
             );
             $this->User->updateUser($params, array('id'=>$id));
 
@@ -198,7 +214,7 @@ class UserController extends AppController {
             'role' => $role,
             );
             $this->UserProfile->updateinfo($profile_params, array('user_id' => $id));
-            
+
             if(isset($_FILES['avatar']) && !empty($_FILES['avatar'])){
                 $file = $_FILES['avatar'];
                 $id = str_pad($id,9,0,STR_PAD_LEFT);
@@ -207,7 +223,7 @@ class UserController extends AppController {
                 #$ret = $this->Upload->uploadedFile($file, AVATAR_PATH.$tmp.'_s'); //小的
                 #$ret = $this->Upload->uploadedFile($file, AVATAR_PATH.$tmp.'_m'); //中的
             }
-        
+
             $this->redirect('/user/editUser?id='.$id);
         }else{
             $id = intval($_GET['id']);

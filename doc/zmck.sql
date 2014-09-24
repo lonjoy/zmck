@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50528
 File Encoding         : 65001
 
-Date: 2014-09-24 01:24:11
+Date: 2014-09-25 01:12:25
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -400,6 +400,7 @@ CREATE TABLE `zm_user_details` (
 INSERT INTO `zm_user_details` VALUES ('11', '1', '    5年开发经验，软硬通吃，熟悉单片机开发、OpenWRT系统移植修改、Android开发、Java和PHP服务器开发，有一定的运营管理经验。曾经带领原\r\n    公司团队完成中国移动手机二维码客户端的开发、华为手机定制阅读客户端；\r\n    公司是中国移动手机二维码、咪咕音乐的官方合作伙伴。', 'asdfdsafd', '创业经验 多次 有回报\r\n\r\n创业资金 原大力投资\r\n\r\n投入时间 全部时间参与创业\r\n\r\n创业地点 我所在的城市', '1410071849');
 INSERT INTO `zm_user_details` VALUES ('13', '0', '的萨菲大', '的萨芬的萨菲', '撒旦飞达撒\r\n<script>alert(111);</script>', '1410017349');
 INSERT INTO `zm_user_details` VALUES ('16', '3', '多撒范德萨', '的萨菲大4444444444444', '的撒发大水法的', '1411489188');
+INSERT INTO `zm_user_details` VALUES ('17', '2', '个人介绍个人介绍个人介绍个人介绍', '学习经历学习经历学习经历学习经历学习经历学习经历', '工作经历工作经历工作经历工作经历工作经历工作经历', '1411571048');
 
 -- ----------------------------
 -- Table structure for `zm_user_interview`
@@ -457,7 +458,8 @@ CREATE TABLE `zm_user_profiles` (
 INSERT INTO `zm_user_profiles` VALUES ('1', '\'aa\'', 'aatt', '0', '1', '0', '1');
 INSERT INTO `zm_user_profiles` VALUES ('11', '太阳神', 'dsafds', '2', '2', '2', '1');
 INSERT INTO `zm_user_profiles` VALUES ('15', '创客-15', 'da', '0', '0', '0', '1');
-INSERT INTO `zm_user_profiles` VALUES ('16', '好看', '美女4', '2', '2', '1', '1');
+INSERT INTO `zm_user_profiles` VALUES ('16', '蓬莱少女', '蓬莱少女', '2', '2', '1', '5');
+INSERT INTO `zm_user_profiles` VALUES ('17', '张君雅', '詹俊呀', '1', '3', '1', '1');
 
 -- ----------------------------
 -- Table structure for `zm_user_project`
@@ -550,8 +552,8 @@ CREATE TABLE `zm_users` (
   `nickname` varchar(50) NOT NULL DEFAULT '',
   `role` tinyint(2) NOT NULL DEFAULT '0',
   `area` tinyint(3) NOT NULL DEFAULT '0',
-  `province` tinyint(3) NOT NULL DEFAULT '0',
-  `city` tinyint(3) NOT NULL DEFAULT '0',
+  `province` smallint(6) NOT NULL DEFAULT '0',
+  `city` smallint(6) NOT NULL DEFAULT '0',
   `startupMoney` tinyint(3) NOT NULL DEFAULT '0' COMMENT '创业资金',
   `startupExperience` tinyint(3) NOT NULL DEFAULT '0' COMMENT '创业经验',
   `spenttime` tinyint(3) NOT NULL,
@@ -560,7 +562,7 @@ CREATE TABLE `zm_users` (
   `recommend` tinyint(1) NOT NULL DEFAULT '0',
   `homeshow` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of zm_users
@@ -580,4 +582,5 @@ INSERT INTO `zm_users` VALUES ('12', 'bb@bb.com', '96e79218965eb72c92a549dd5a330
 INSERT INTO `zm_users` VALUES ('13', 'cc@cc.com', '96e79218965eb72c92a549dd5a330112', '6', '0', '0', '0', '2', '0', '0', '0', '0', '0', '0', '0', '0', '', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
 INSERT INTO `zm_users` VALUES ('14', 'qqf1223@qq.com', '96e79218965eb72c92a549dd5a330112', '0', '0', '0', '0', '2', '0', '0', '0', '0', '0', '0', '0', '0', '', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
 INSERT INTO `zm_users` VALUES ('15', 'aaa@aaa.com', '96e79218965eb72c92a549dd5a330112', '0', '0', '0', '0', '2', '0', '0', '0', '0', '0', '0', '0', '0', '', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
-INSERT INTO `zm_users` VALUES ('16', 'test@test.com4', '96e79218965eb72c92a549dd5a330112', '0', '0', '0', '0', '1', '6', '0', '1411489188', '0', '0', '0', '1', '2', '好看', '1', '0', '0', '0', '2', '2', '3', '1', '0', '0', '0');
+INSERT INTO `zm_users` VALUES ('16', 'test@test.com4', '96e79218965eb72c92a549dd5a330112', '0', '0', '0', '0', '1', '6', '0', '1411489188', '0', '0', '0', '1', '2', '蓬莱少女', '5', '0', '2092', '2150', '2', '2', '3', '1', '0', '0', '1');
+INSERT INTO `zm_users` VALUES ('17', 'jj@jj.com', '96e79218965eb72c92a549dd5a330112', '1', '0', '0', '0', '1', '1', '0', '1411571048', '0', '0', '0', '1', '3', '张君雅', '1', '0', '2092', '2150', '1', '5', '5', '1', '0', '1', '1');

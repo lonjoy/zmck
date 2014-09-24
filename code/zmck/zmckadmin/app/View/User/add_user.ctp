@@ -19,6 +19,12 @@
                     <input type="text" name="password" value="">
                 </td>
             </tr>
+            <tr>
+                <th width="200"></th>
+                <td>
+                    首页推荐<input type="checkbox" value="1" name="homeshow">  推荐用户<input type="checkbox" value="1" name="recommend">
+                </td>
+            </tr>
             <tr style="">
                 <td colspan="2"><h2>基本资料</h2></td>
             </tr>
@@ -32,6 +38,17 @@
                 <th width="200">姓名：</th>
                 <td>
                     <input type="text" name="name" value="">
+                </td>
+            </tr>
+            <tr>
+                <th width="200">所在地：</th>
+                <td>
+                    <select id="cn_pid" class="input-small" name="cy_prov">
+                        <option value="0">请选择</option>
+                    </select>
+                    <select id="cn_cid" class="input-small" name="cy_city">
+                        <option value="0">请选择</option>
+                    </select>
                 </td>
             </tr>
             <tr>
@@ -199,14 +216,13 @@
                     ?>
                 </td>
             </tr>
-            <tr>
-                <th width="200">设置：</th>
-                <td>
-                   首页推荐<input type="checkbox" value="1" name="homeshow"> <span>|</span> 推荐用户<input type="checkbox" value="1" name="recommend">
-                </td>
-            </tr>
         </table>
     </div>
     <div class="bk15"></div>
     <input name="dosubmit" type="submit" value="提交" class="button">
 </form>
+<script type="text/javascript" src="<?php echo $dm['www'];?>js/web_city.js?v=<?php echo time();?>"></script>
+<script type="text/javascript">
+//城市设置
+$.CYinit({ prov:'cn_pid',city:'cn_cid',name:'cy_', linkGrade:false });
+</script>
