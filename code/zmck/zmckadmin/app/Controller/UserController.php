@@ -194,6 +194,7 @@ class UserController extends AppController {
             'city'=> $city,
             'homeshow' => $homeshow,
             'recommend' => $recommend,
+            'baseinfo' => 1,
             );
             $this->User->updateUser($params, array('id'=>$id));
 

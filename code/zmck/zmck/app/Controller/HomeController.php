@@ -47,10 +47,9 @@ class HomeController extends AppController {
     *	or MissingViewException in debug mode.
     */
     public function index() {
-        #首页推荐人
-        App::uses('Url', 'Utility');
+        
         $i = '1';
-        $conditions = array('homeshow'=>$i);
+        $conditions = array('homeshow'=>$i, 'baseinfo'=>1);
         $order = '';
         $data = $this->User->userList($conditions, 0, 16, $order);
         

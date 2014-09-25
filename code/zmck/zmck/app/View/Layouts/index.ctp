@@ -31,7 +31,7 @@
                                 <div class="login-user-item js-userItem">
                                     <img src="<?php echo Url::getUserPic(array('uid'=>$val['id'], 'tp'=>'b'));?>" class="js-preview-img" data-src="<?php echo Url::getUserPic(array('uid'=>$val['id'], 'tp'=>'b'));?>" />
                                     <i class="login-user-mask"></i>
-                                    <a class="login-user-target" href="#" target="_blank"></a>
+                                    <a class="login-user-target" href="/partner/detail?id=<?php echo $val['id'];?>" target="_blank"></a>
                                     <div class="login-user-info">
                                         <p class="login-user-nickname">
                                             <span title="<?php echo !empty($val['nickname'])?$val['nickname'].'-':''?>
@@ -46,7 +46,7 @@
                                             <?php echo !empty($val['nickname'])?$val['nickname'].'-':''?><?php echo $val['role']?$roles[$val['role']]:'';?>
                                         </div>
                                         <div class="down-area">
-                                            <span class="cy_prov" cy="<?php echo $val['province'];?>"></span>-<span class="cy_city" cy="<?php echo $val['city'];?>"></span>
+
                                         </div>
                                     </div>
                                 </div>
@@ -78,8 +78,8 @@
                 </div>
                 <div class="login-footer">
 
-                    <span>众梦版权所有©2014-2019 </span>| <a href="#">商务合作</a> <a href="#">官方博客</a> <a href="#">官方微博</a> <a href="#">
-                        <img src="<?php echo $dm['www'];?>img/add.png" /></a>
+                    <span>众梦版权所有©2014-2019 </span>| <a href="#">商务合作</a> <a href="#">官方博客</a> <a href="<?php echo isset($sitesetting['weibo'])?$sitesetting['weibo']:'javascript:;'?>">官方微博</a> 
+                    <!-- <a href="#"><img src="<?php echo $dm['www'];?>img/add.png" /></a>-->
 
                 </div>
                 <div id="wrap" class="login-wrap" style="height: 0px; overflow: hidden">
@@ -223,24 +223,26 @@
         <script type="text/javascript" src="<?php echo $dm['www'];?>js/procity.js"></script>
         <script type="text/javascript">
             $(function(){
-                var prov=$('.cy_prov').attr('cy');
-                var city=$('.cy_city').attr('cy');
-                console.log(city);
-                var _city=[];
-                for (P in arrCity) {
-                    if(P==0) continue;
-                    if(arrCity[P].id==prov){
-                        $('.cy_prov').html(arrCity[P].name);
-                        _city=arrCity[P].sub;
+                $('.js-userList li').each(function(i){
+                    var prov=$(this).find('.cy_prov').eq(0).attr('cy');
+                    var city=$(this).find('.cy_city').eq(0).attr('cy');
+                    var _city=[];
+                    for (P in arrCity) {
+                        if(P==0) continue;
+                        if(arrCity[P].id==prov){
+                            $(this).find('.cy_prov').eq(0).html(arrCity[P].name);
+                            _city=arrCity[P].sub;
+                        }
                     }
-                }
-                for(C in _city){
-                    if(C==0)continue;
-                    if(_city[C].id==city){
-                        $('.cy_city').html(_city[C].name);
+                    for(C in _city){
+                        if(C==0)continue;
+                        if(_city[C].id==city){
+                            $(this).find('.cy_city').eq(0).html(_city[C].name);
+                        }
                     }
-                }
-                
+                    $(this).find('.down-area').html($(this).find('.cy_prov').eq(0).parent().html());
+                });                
+
             });
         </script>
     </body>

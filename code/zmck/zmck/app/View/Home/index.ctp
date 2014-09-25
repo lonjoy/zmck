@@ -8,8 +8,8 @@
 <!--<![endif]-->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="#" />
-    <meta name="description" content="#" />
+    <meta name="keywords" content="众梦创客" />
+    <meta name="description" content="众梦创客" />
     <title>众梦创客</title>
     <link rel="stylesheet" href="css/main.min.css" />
     <link rel="stylesheet" href="css/page.min.css" />

@@ -35,15 +35,15 @@
                                 <input id="loginCallBack" type="hidden" value="http://love.163.com/" name="url">
                                 <input type="hidden" name="product" value="ht">
                                 <input type="hidden" value="1" name="type">
-                                <input type="submit" class="login-btn submit-trigger" value="登 录" />
+                                <input type="submit" class="login-btn submit-trigger" value="登 录" style="width: 374px;padding-left:0;" />
                             </li>
 
                             <li class="login-extend2 clearfix">
                                 <a class="login-forgot" href="#" style="color: #4cbbd9" target="_blank">找回密码?</a>
                                 <span class="login-checkbox js-login">
                                     <span class="saveLogin-trigger" style="display: block;">
-                                        <em class="icon-checkbox"></em><span style="color: #54546b">记住密码</span>
-                                        <input type="checkbox" tabindex="3" value="1" name="savelogin">
+                                        <input type="checkbox" tabindex="3" value="1" name="savelogin" style="width: auto;">
+                                        <span style="color: #54546b">记住密码</span>
                                     </span>
                                 </span>
                             </li>

@@ -29,7 +29,7 @@ class PartnerController extends AppController {
     * @var array
     */
     public $uses = array('User', 'Role', 'UserProfile','UserTags', 'Industry', 'UserDetail', 'Interview', 'Area');
-    public $components = array('ListPage');
+    public $components = array('ListPage', 'Partner');
 
     /**
     * Displays a view
@@ -62,29 +62,23 @@ class PartnerController extends AppController {
         $conditions = array();
         if(isset($_GET['searchname'])){
             $conditions['nickname LIKE '] = '%'.$_GET['searchname'].'%';
-            /*
-            $conditions = array('nickname LIKE '=>'%'.$_GET['searchname'].'%');
-            $userList = $this->UserProfile->getList($conditions,$offset, $pagesize);
-            $total = $this->UserProfile->getCount($conditions);
-            */
         }
-        //else{
-            if($ta){
-                $conditions['area'] = $ta;
-            }
-            if($xt){
-                $conditions['xintai'] = $xt;
-            }
-            if($ts){
-                $conditions['nowstatus'] = $ts;
-            }            
-            if($tage){
-                $conditions['age'] = $tage;
-            }            
-            if($prole){
-                $conditions['role'] = $prole;
-            }
-        //}
+        if($ta){
+            $conditions['area'] = $ta;
+        }
+        if($xt){
+            $conditions['xintai'] = $xt;
+        }
+        if($ts){
+            $conditions['nowstatus'] = $ts;
+        }            
+        if($tage){
+            $conditions['age'] = $tage;
+        }            
+        if($prole){
+            $conditions['role'] = $prole;
+        }
+        
         $userList = $this->User->userList($conditions, $offset, $pagesize);
         $total = $this->User->getCount($conditions);
         if(!empty($userList)){
@@ -142,6 +136,11 @@ class PartnerController extends AppController {
         #area
         $arealist = $this->Area->getList(array(),0, 100);
         $this->set('arealist', $arealist);
+        
+        //推荐合伙人
+        $recommend_user = $this->Partner->recommend();
+        $this->set('recommend_user', $recommend_user);
+        //推荐合伙人END
     }
 
     public function detail(){

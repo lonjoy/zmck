@@ -2,6 +2,7 @@
     define('ZMCK_DOMAIN', '.zmckr.com');
 
     define('AVATAR_PATH', WWW_ROOT.'img'.DS.'data'.DS.'avatar'.DS);
+    define('PROJECT_PIC_PATH', WWW_ROOT.'img'.DS.'data'.DS.'project'.DS);
     define('HOMEPIC_PATH', WWW_ROOT.'img'.DS.'data'.DS.'homepic'.DS);
 
 

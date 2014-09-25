@@ -31,8 +31,8 @@
     <body>
         <div id="xg">
             <ul>
-                <li><a href="<?php echo isset($sitesetting['weibo'])?$sitesetting['weibo']:'#'?>" class="bg1" target="_blank">微博</a></li>
-                <li><a href="<?php echo isset($sitesetting['wexin'])?$sitesetting['wexin']:'#'?>" class="bg2">微信</a></li>
+                <li><a href="<?php echo isset($sitesetting['weibo'])?$sitesetting['weibo']:'javascript:;'?>" class="bg1" target="_blank">微博</a></li>
+                <li><a href="<?php echo isset($sitesetting['wexin'])?$sitesetting['wexin']:'javascript:;'?>" class="bg2">微信</a></li>
                 <li><a href="javascript:void(0);" class="bg3" onclick="suggest();">建议</a></li>
                 <li><a href="#" class="bg4"></a></li>
             </ul>
@@ -60,7 +60,7 @@
                                         <li><a href="/user">个人资料</a></li>
                                         <li><a href="/qa">创业问答</a></li>
                                         <li><a href="/comment">评价管理</a></li>
-                                        <li><a href="/user/topic">我的创业话题</a></li>
+                                        <li><a href="/user/mytopic">我的创业话题</a></li>
                                         <li><a href="/user/project">我的创业项目</a></li>
                                         <li><a href="/follow/">我的联系人</a></li>
                                         <li><a href="/login/loginout">退出</a></li>

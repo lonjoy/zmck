@@ -19,7 +19,7 @@ class UserController extends AppController {
     * @var array
     */
     public $uses = array('User', 'Role', 'Industry', 'UserDetail', 'UserTags');
-    public $components = array('Upload');
+    public $components = array('Upload', 'Partner');
 
     /**
     * Displays a view
@@ -229,6 +229,14 @@ class UserController extends AppController {
     * 创业话题
     * 
     */
+    public function mytopic(){
+
+    }
+
+    /**
+    * 参与话题
+    * 
+    */
     public function topic(){
 
     }
@@ -238,11 +246,42 @@ class UserController extends AppController {
     * 
     */
     public function project(){
+        //推荐合伙人
+        $recommend_user = $this->Partner->recommend();
+        $this->set('recommend_user', $recommend_user);
+        //推荐合伙人END
 
     }
 
     public function addproject(){
+        //推荐合伙人
+        $recommend_user = $this->Partner->recommend();
+        $this->set('recommend_user', $recommend_user);
+        //推荐合伙人END
+    }
 
+    public function ajaxprojectpic(){
+        if(empty($this->userInfo)){
+            $this->goMsg('请登录后进行操作', '/');
+        }
+        $user_id = $this->userInfo['id'];
+        if(isset($_FILES['pic']) && !empty($_FILES['pic'])){
+            $id = str_pad($user_id,9,0,STR_PAD_LEFT);
+            $tmp=preg_replace("/^(\d{3})(\d{2})(\d{2})(\d{2,})/i","\\1/\\2/\\3/\\4", $id);
+            $ret = $this->Upload->uploadedFile($_FILES['pic'], PROJECT_PIC_PATH.$tmp.'_b'); //大
+            #$ret = $this->Upload->uploadedFile($_FILES['avatar'], AVATAR_PATH.$tmp.'_m'); //中
+            #$ret = $this->Upload->uploadedFile($_FILES['avatar'], AVATAR_PATH.$tmp.'_s'); //小的
+            if($ret['errCode']==0){
+                $rs = array(
+                'errCode' => 0,
+                'msg' => 'ok',
+                'url' => Url::getUserPic(array('uid'=>$user_id, 'tp'=>'b'))
+                );
+            }else{
+                $rs = $ret;
+            }
+            $this->outputJson($rs);
+        }
     }
 
 
