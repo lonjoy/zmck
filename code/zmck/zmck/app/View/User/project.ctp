@@ -15,24 +15,23 @@
             </div>
             <div class="pro_list">
                 <ul>
-                    <li>
-                        <table>
-                            <tr>
-                                <td class="pro_list_11">2014-06-14</td>
-                                <td class="pro_list_22">智能机器人</td>
-                                <td class="pro_list_33"><input type="button" value="编辑" /><input type="button" value="删除" /></td>
-                            </tr>
-                        </table>
-                    </li>
-                    <li>
-                        <table>
-                            <tr>
-                                <td class="pro_list_11">2014-06-14</td>
-                                <td class="pro_list_22">智能机器人</td>
-                                <td class="pro_list_33"><input type="button" value="编辑" /><input type="button" value="删除" /></td>
-                            </tr>
-                        </table>
-                    </li>
+                    <?php 
+                        if(!empty($projectList)){
+                            foreach($projectList as $val){
+                            ?>
+                            <li>
+                                <table>
+                                    <tr>
+                                        <td class="pro_list_11"><?php echo date('Y-m-d', $val['ctime']);?></td>
+                                        <td class="pro_list_22"><?php echo $val['name'];?></td>
+                                        <td class="pro_list_33"><input type="button" value="编辑" onclick="window.location.href='/user/editproject?proid=<?php echo $val['id'];?>'" /><input type="button" value="删除" onclick="" /></td>
+                                    </tr>
+                                </table>
+                            </li>
+                            <?php   
+                            }
+                        }
+                    ?>
                 </ul>
             </div>
 

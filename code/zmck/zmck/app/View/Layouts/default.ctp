@@ -32,7 +32,7 @@
         <div id="xg">
             <ul>
                 <li><a href="<?php echo isset($sitesetting['weibo'])?$sitesetting['weibo']:'javascript:;'?>" class="bg1" target="_blank">微博</a></li>
-                <li><a href="<?php echo isset($sitesetting['wexin'])?$sitesetting['wexin']:'javascript:;'?>" class="bg2">微信</a></li>
+                <li><a href="javascript:;" class="bg2" onclick="tanwexin();">微信</a></li>
                 <li><a href="javascript:void(0);" class="bg3" onclick="suggest();">建议</a></li>
                 <li><a href="#" class="bg4"></a></li>
             </ul>
@@ -96,6 +96,18 @@
             </div>
         </div>
         <div class="theme-popover-mask"></div>
+        <!--wexin-->
+        <div style="z-index:9999;position:fixed;top:40%;left:50%;width:660px;height:auto;margin:-180px 0 0 -330px;border-radius:5px;border:solid 2px #666;background-color:#fff;display:none;box-shadow: 0 0 10px #666;" id="wexin">
+            <div class="theme-poptit">
+                <a href="javascript:;" title="关闭" class="close"><img src="<?php echo $dm['www'];?>img/ring_1.gif" /></a>
+                <h3>微信</h3>
+            </div>
+            <div class="tangc" style="text-align: center;">
+                <img src="<?php echo $dm['www'];?>img/qrcode.jpg" />
+            </div>
+        </div>
+        <div class="theme-popover-mask"></div>
+        <!--wexinend-->
         <?php 
             echo $this->element('pop_reg');
             echo $this->element('pop_login');
@@ -152,6 +164,12 @@
 
             })
 
+            function tanwexin(){
+                $('#wexin').fadeIn(100);
+                $('#wexin .close').click(function(){
+                    $('#wexin').slideUp(200);
+                })
+            }
         </script>
         <div class="clear"></div>
         </div>

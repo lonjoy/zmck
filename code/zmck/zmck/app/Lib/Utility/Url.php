@@ -51,4 +51,18 @@ class Url
         $tmp= (file_exists(HOMEPIC_PATH.$tmp)?$dm['img'].'data/homepic/'.$tmp:$dm['www'].'img/data/homepic/'.$ttmp);
         return $tmp;
     }
+    
+    /**
+    * 获取项目图片地址
+    * 
+    * @param mixed $id
+    */
+    public static function getProjectPic($id){
+        $dm = Configure::read('dm');
+
+        $pic =preg_replace("/^(\w{4})(\w{4})(\w{4})(\w{4,})/i","\\1/\\2/\\3/\\4",$id).'_b.jpg';
+        
+        $tmp= (file_exists(PROJECT_PIC_PATH.$pic)?$dm['img'].'data/project/'.$pic : $dm['www'].'img/data/project/'.$pic);
+        return $tmp;
+    }
 }

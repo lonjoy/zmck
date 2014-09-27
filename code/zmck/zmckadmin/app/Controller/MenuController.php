@@ -57,7 +57,7 @@ class MenuController extends AppController {
         array('id'=>7, 'url'=>'/salary/index', 'name'=>'薪酬体系配置', 'sub'=>array()),
         #array('id'=>8, 'url'=>'/site/index', 'name'=>'站点配置', 'sub'=>array()),
         array('id'=>8, 'url'=>'/survey/index', 'name'=>'创业问答管理', 'sub'=>array()),
-        array('id'=>9, 'url'=>'/site/index', 'name'=>'项目管理', 'sub'=>array()),
+        array('id'=>9, 'url'=>'/project/direction', 'name'=>'项目方向', 'sub'=>array()),
         array('id'=>11, 'url'=>'/site/index', 'name'=>'相关配置', 'sub'=>array()),
         array('id'=>18, 'url'=>'/suggest/index', 'name'=>'意见建议', 'sub'=>array()),
         array('id'=>19, 'url'=>'/systemTag/index', 'name'=>'系统标签配置', 'sub'=>array()),

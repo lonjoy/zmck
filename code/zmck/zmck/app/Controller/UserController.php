@@ -18,7 +18,7 @@ class UserController extends AppController {
     *
     * @var array
     */
-    public $uses = array('User', 'Role', 'Industry', 'UserDetail', 'UserTags');
+    public $uses = array('User', 'Role', 'Industry', 'UserDetail', 'UserTags', 'UserProject', 'ProjectDirection');
     public $components = array('Upload', 'Partner');
 
     /**
@@ -246,18 +246,140 @@ class UserController extends AppController {
     * 
     */
     public function project(){
+        if(empty($this->userInfo)){
+            $this->goMsg('请登录后进行操作', '/');
+        }
+        $user_id = $this->userInfo['id'];
         //推荐合伙人
         $recommend_user = $this->Partner->recommend();
         $this->set('recommend_user', $recommend_user);
         //推荐合伙人END
+
+        $projectList = $this->UserProject->getList(array('user_id'=>$user_id), 0, 30, 'ctime DESC');
+        $this->set('projectList', $projectList);
 
     }
 
     public function addproject(){
+        if(empty($this->userInfo)){
+            $this->goMsg('请登录后进行操作', '/');
+        }
+        $user_id = $this->userInfo['id'];
+        if(isset($_POST['dosubmit'])){
+            $logo = !empty($_POST['logo']) ? $_POST['logo'] : '';
+            $name = !empty($_POST['name']) ? addslashes($_POST['name']) : '';
+            $direction = isset($_POST['direction']) ? intval($_POST['direction']) : 0;
+            $stage = !empty($_POST['stage']) ? intval($_POST['stage']) : 0;
+            $brief = !empty($_POST['brief']) ? addslashes($_POST['brief']) : '';
+            $advantage = !empty($_POST['advantage']) ? addslashes($_POST['advantage']) : '';
+            $teamstatus = !empty($_POST['teamstatus']) ? addslashes($_POST['teamstatus']) : '';
+            $investstatus = !empty($_POST['investstatus']) ? intval($_POST['investstatus']) : 0;
+            $investmoney = !empty($_POST['investmoney']) ? intval($_POST['investmoney']) : 0;
+            $needpartner = !empty($_POST['needpartner']) ? $_POST['needpartner'] : array();
+            $partnerduty = !empty($_POST['partnerduty']) ? addslashes($_POST['partnerduty']) : '';
+            $cooperation = isset($_POST['cooperation']) ? intval($_POST['cooperation']) : 0;
+            $huibao = !empty($_POST['huibao']) ? addslashes($_POST['huibao']) : '';
+
+            if(!$name || !$brief || !$advantage){
+                $this->goMsg('请填写完整信息后提交', '/user/addproject'); 
+            }
+            $needpartner = implode('|', $needpartner);
+
+            $params = array(
+            'user_id' => $user_id,
+            'logo' => $logo,
+            'name' => $name,
+            'direction' => $direction,
+            'stage' => $stage,
+            'brief' => $brief,
+            'advantage' => $advantage,
+            'teamstatus' => $teamstatus,
+            'investstatus' => $investstatus,
+            'investmoney' => $investmoney,
+            'needpartner'=> $needpartner,
+            'partnerduty' => $partnerduty,
+            'cooperation' => $cooperation,
+            'huibao' => $huibao,
+            'ctime' => time(),
+            );
+            $id = $this->UserProject->addinfo($params);
+            if($id){
+                $this->goMsg('添加成功', '/user/project'); 
+            }else{
+                $this->goMsg('添加失败', '/user/addproject');
+            }
+        }
         //推荐合伙人
         $recommend_user = $this->Partner->recommend();
         $this->set('recommend_user', $recommend_user);
         //推荐合伙人END
+        $prodirection = $this->ProjectDirection->getList();
+        $this->set('prodirection', $prodirection);
+        #获取角色
+        $roleList = $this->Role->getList();
+        $this->set('roleList', $roleList);
+    }
+
+    public function editproject(){
+        if(empty($this->userInfo)){
+            $this->goMsg('请登录后进行操作', '/');
+        }
+        $user_id = $this->userInfo['id'];
+
+        $id = intval($_REQUEST['proid']);
+        if(isset($_POST['dosubmit'])){
+            $logo = !empty($_POST['logo']) ? $_POST['logo'] : '';
+            $name = !empty($_POST['name']) ? addslashes($_POST['name']) : '';
+            $direction = isset($_POST['direction']) ? intval($_POST['direction']) : 0;
+            $stage = !empty($_POST['stage']) ? intval($_POST['stage']) : 0;
+            $brief = !empty($_POST['brief']) ? addslashes($_POST['brief']) : '';
+            $advantage = !empty($_POST['advantage']) ? addslashes($_POST['advantage']) : '';
+            $teamstatus = !empty($_POST['teamstatus']) ? addslashes($_POST['teamstatus']) : '';
+            $investstatus = !empty($_POST['investstatus']) ? intval($_POST['investstatus']) : 0;
+            $investmoney = !empty($_POST['investmoney']) ? intval($_POST['investmoney']) : 0;
+            $needpartner = !empty($_POST['needpartner']) ? $_POST['needpartner'] : array();
+            $partnerduty = !empty($_POST['partnerduty']) ? addslashes($_POST['partnerduty']) : '';
+            $cooperation = isset($_POST['cooperation']) ? intval($_POST['cooperation']) : 0;
+            $huibao = !empty($_POST['huibao']) ? addslashes($_POST['huibao']) : '';
+            if(!$name ||  !$brief || !$advantage){
+                $this->goMsg('请填写完整信息后提交', '/user/editproject?proid='.$id); 
+            }
+            $needpartner = implode('|', $needpartner);
+
+            $params = array(
+            'logo' => "'".$logo."'",
+            'name' => "'".$name."'",
+            'direction' => $direction,
+            'stage' => $stage,
+            'brief' => "'".$brief."'",
+            'advantage' => "'".$advantage."'",
+            'teamstatus' => "'".$teamstatus."'",
+            'investstatus' => $investstatus,
+            'investmoney' => $investmoney,
+            'needpartner'=> "'".$needpartner."'",
+            'partnerduty' => "'".$partnerduty."'",
+            'cooperation' => $cooperation,
+            'huibao' => "'".$huibao."'",
+            );
+            $proid = $this->UserProject->updateinfo($params, array('id'=>$id));
+            if($proid){
+                $this->goMsg('编辑成功', '/user/editproject?proid='.$id); 
+            }else{
+                $this->goMsg('编辑失败', '/user/editproject?proid='.$id);
+            }
+        }
+        //推荐合伙人
+        $recommend_user = $this->Partner->recommend();
+        $this->set('recommend_user', $recommend_user);
+        //推荐合伙人END
+        #获取角色
+        $roleList = $this->Role->getList();
+        $this->set('roleList', $roleList);
+        //方向
+        $prodirection = $this->ProjectDirection->getList();
+        $this->set('prodirection', $prodirection);
+        $data = $this->UserProject->getOne(array('id'=>$id));
+        $this->set('data', $data);
     }
 
     public function ajaxprojectpic(){
@@ -266,16 +388,23 @@ class UserController extends AppController {
         }
         $user_id = $this->userInfo['id'];
         if(isset($_FILES['pic']) && !empty($_FILES['pic'])){
-            $id = str_pad($user_id,9,0,STR_PAD_LEFT);
-            $tmp=preg_replace("/^(\d{3})(\d{2})(\d{2})(\d{2,})/i","\\1/\\2/\\3/\\4", $id);
+            //查询用户项目信息
+            $userproject = $this->UserProject->getList(array('user_id'=>$user_id),0,1, 'id desc');
+            if(!empty($userproject)){
+                $id = substr(md5($user_id.'_'.$userproject[0]['id']), 8, 16);
+            }else{
+                $id = substr(md5($user_id.'_1'), 8, 16);
+            }
+
+            $tmp=preg_replace("/^(\w{4})(\w{4})(\w{4})(\w{4,})/i","\\1/\\2/\\3/\\4", $id);
             $ret = $this->Upload->uploadedFile($_FILES['pic'], PROJECT_PIC_PATH.$tmp.'_b'); //大
             #$ret = $this->Upload->uploadedFile($_FILES['avatar'], AVATAR_PATH.$tmp.'_m'); //中
             #$ret = $this->Upload->uploadedFile($_FILES['avatar'], AVATAR_PATH.$tmp.'_s'); //小的
             if($ret['errCode']==0){
                 $rs = array(
                 'errCode' => 0,
-                'msg' => 'ok',
-                'url' => Url::getUserPic(array('uid'=>$user_id, 'tp'=>'b'))
+                'msg' => $id,
+                'url' => Url::getProjectPic($id)
                 );
             }else{
                 $rs = $ret;
