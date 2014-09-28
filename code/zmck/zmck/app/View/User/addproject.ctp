@@ -63,9 +63,14 @@
                     </tr>
                     <tr>
                         <td width="170" height="40"><span>投资情况：</span></td>
-                        <td><select name="investstatus" class="ly">
-                                <option>正式运营</option>
-                            </select><input type="text" name="investmoney" class="td_23" />万</td>
+                        <td>
+                            <!--
+                            <select name="investstatus" class="ly">
+                            <option>正式运营</option>
+                            </select>
+                            -->
+                            <input type="text" name="investmoney" class="td_23" />万
+                        </td>
                     </tr>
                     <tr>
                         <td width="170" height="80"><span>需要合伙人：</span></td>

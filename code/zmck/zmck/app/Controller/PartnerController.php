@@ -28,7 +28,7 @@ class PartnerController extends AppController {
     *
     * @var array
     */
-    public $uses = array('User', 'Role', 'UserProfile','UserTags', 'Industry', 'UserDetail', 'Interview', 'Area');
+    public $uses = array('User', 'Role', 'UserProfile','UserTags', 'Industry', 'UserDetail', 'Interview', 'Area', 'UserProject', 'Surveydata','Surveyoptions', 'UserComment');
     public $components = array('ListPage', 'Partner');
 
     /**
@@ -78,7 +78,7 @@ class PartnerController extends AppController {
         if($prole){
             $conditions['role'] = $prole;
         }
-        
+
         $userList = $this->User->userList($conditions, $offset, $pagesize);
         $total = $this->User->getCount($conditions);
         if(!empty($userList)){
@@ -136,7 +136,7 @@ class PartnerController extends AppController {
         #area
         $arealist = $this->Area->getList(array(),0, 100);
         $this->set('arealist', $arealist);
-        
+
         //推荐合伙人
         $recommend_user = $this->Partner->recommend();
         $this->set('recommend_user', $recommend_user);
@@ -178,6 +178,34 @@ class PartnerController extends AppController {
         $this->set('roleRs', $roleRs);
         #area
 
+        //项目
+        $conditions = array('user_id'=>$user_id);
+        $hisProject = $this->UserProject->getList($conditions, 0, 3, 'ctime DESC');
+        $this->set('hisProject', $hisProject);
+        //问答
+        $surveyData = $this->Surveydata->getOne(array('user_id'=>$user_id));
+        if(!empty($surveyData)){
+            $c = '';
+            $rs = json_decode($surveyData['data'], true);
+            if(!empty($rs)){
+                foreach($rs as $key=>$val){
+                    $s = $this->Surveyoptions->getOne(array('id'=>$val));
+                    if(!empty($s)){
+                        $c .= $s['name'];
+                    }
+                }
+            }
+            $surveyData['content'] = $c;
+        }
+        $this->set('surveyData', $surveyData);
+        //评价
+        $user_comment = $this->UserComment->getList(array('touser_id'=>$user_id), 0, 10, 'ctime DESC');
+        if(!empty($user_comment)){
+            foreach($user_comment as  $key=>$val){
+                $user_comment[$key]['user'] = $this->User->getUserInfo(array('id'=>$val['user_id']));
+            }
+        }
+        $this->set('user_comment', $user_comment);
     }
 
     public function interview(){
@@ -218,5 +246,31 @@ class PartnerController extends AppController {
             $return = array('errCode'=>1, 'msg'=>'发送失败');
         }
         $this->outputJson($return);
+    }
+
+
+    public function addcomment(){
+        if(empty($this->userInfo)){
+            $this->goMsg('请登录后进行操作', '/');
+        }
+        $user_id = $this->userInfo['id'];
+        $content = !empty($_POST['content']) ? addslashes($_POST['content']) : '';
+        $touser_id = !empty($_POST['touser_id']) ? intval($_POST['touser_id']) : 0;
+        if(empty($content)){
+            $this->goMsg('请输入评价内容', '/partner/detail?id='.$touser_id);
+        }
+        $params = array(
+        'user_id' => $user_id,
+        'comment' => $content,
+        'touser_id' => $touser_id,
+        'ctime' => time()
+        );
+        $rs = $this->UserComment->addinfo($params);
+        if($rs){
+            $this->goMsg('操作成功', '/partner/detail?id='.$touser_id);
+        }else{
+            $this->goMsg('操作失败', '/partner/detail?id='.$touser_id);
+        }
+
     }
 }

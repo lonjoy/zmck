@@ -382,6 +382,16 @@ class UserController extends AppController {
         $this->set('data', $data);
     }
 
+    public function delproject(){
+        $proid = intval($_GET['proid']);
+        $ret = $this->UserProject->delinfo(array('id'=>$proid));
+        if($ret){
+            $this->goMsg('操作成功', '/user/project');
+        }else{
+            $this->goMsg('操作失败', '/user/project');
+        }
+    }
+
     public function ajaxprojectpic(){
         if(empty($this->userInfo)){
             $this->goMsg('请登录后进行操作', '/');

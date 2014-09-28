@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50528
 File Encoding         : 65001
 
-Date: 2014-09-28 00:58:42
+Date: 2014-09-29 00:39:46
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -402,6 +402,28 @@ INSERT INTO `zm_system_tags` VALUES ('1', '啊啊333', '0');
 INSERT INTO `zm_system_tags` VALUES ('2', '天天', '0');
 
 -- ----------------------------
+-- Table structure for `zm_user_comments`
+-- ----------------------------
+DROP TABLE IF EXISTS `zm_user_comments`;
+CREATE TABLE `zm_user_comments` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `user_id` int(10) NOT NULL,
+  `touser_id` int(10) NOT NULL,
+  `comment` varchar(500) NOT NULL,
+  `ctime` int(10) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`,`user_id`,`touser_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of zm_user_comments
+-- ----------------------------
+INSERT INTO `zm_user_comments` VALUES ('1', '11', '0', '', '1411921291');
+INSERT INTO `zm_user_comments` VALUES ('2', '11', '1', '的萨菲打双方都萨菲的萨菲送达', '1411921388');
+INSERT INTO `zm_user_comments` VALUES ('3', '11', '1', '天天', '1411922157');
+INSERT INTO `zm_user_comments` VALUES ('4', '11', '1', '太热太热', '1411922233');
+INSERT INTO `zm_user_comments` VALUES ('5', '11', '1', '的萨克将费德勒卡萨\r\n', '1411922292');
+
+-- ----------------------------
 -- Table structure for `zm_user_details`
 -- ----------------------------
 DROP TABLE IF EXISTS `zm_user_details`;
@@ -506,13 +528,13 @@ CREATE TABLE `zm_user_project` (
   `ctime` int(10) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `i_uid` (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of zm_user_project
 -- ----------------------------
-INSERT INTO `zm_user_project` VALUES ('1', '11', '好卡', '836320c69161b1d7', '0', '4', '看看拉了拉拢 ', '的萨芬的萨菲', '的萨芬的萨菲', '0', '100', '1|2|3|7', '的萨芬的萨菲了', '1', '的撒开房间来得及撒', '1411835724');
-INSERT INTO `zm_user_project` VALUES ('2', '11', '大风的萨菲地方的', 'faa51aa50318851a', '2', '2', '的萨芬的了是77777777777777777777777777777777777777777777', '考虑建立的 ', '的沙拉就废了', '0', '10', '1|2', '三大看风景的撒', '2', '<script>alert(11);</script>', '1411835913');
+INSERT INTO `zm_user_project` VALUES ('4', '11', '我的创业项目', '836320c69161b1d7', '2', '1', '“蜗牛管家”是一款结合物联网、互联网的技术优势，专为家庭用户打造全\r\n                        新体验的智能安防产品。与传统安防产品不同，我们有如下特色：\r\n                        （1）免配置。正在研发的基于声波配对技术，让产品更加易用，免除传\r\n                        统安防的配置成本。\r\n                        （2）免施工安装。产品外壳采用特殊材质，配以特殊不干胶，让用户再\r\n                        也不用打洞钉钉，只需轻轻一按就能完成安装，另外这种特殊胶也能多次使\r\n                        用，墙面毫无痕迹。\r\n                        （3）云+物联网技术实现全自动控制。传统安防需要很多的人工操作，\r\n                        蜗牛管家提供了一款全自动无线钥匙，可以轻松可靠实现出门布防、回家撤\r\n                        防，用户再也不用操心家里的安防布置情况。\r\n                        （4）模块化、易扩展。蜗牛管家的所有产品采用模块化设计，有统一的\r\n                        接口和通讯协议，另外支持多种无线协议，所以可以实现无线模块扩展能力。\r\n                        目前我们还设计出了室内空气质量、灾难预警等模块。', '结束了', '3个人', '0', '100', '1|2', '干活', '0', '钱', '1411916904');
+INSERT INTO `zm_user_project` VALUES ('5', '11', '第二个项目', '777179cd3a804dcd', '2', '1', '打算范德萨', '的萨菲送达撒撒', '费打算放大', '0', '100', '3', '多撒范德萨', '0', '的萨菲', '1411917692');
 
 -- ----------------------------
 -- Table structure for `zm_user_roles`

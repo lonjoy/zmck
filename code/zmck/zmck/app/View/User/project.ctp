@@ -24,7 +24,7 @@
                                     <tr>
                                         <td class="pro_list_11"><?php echo date('Y-m-d', $val['ctime']);?></td>
                                         <td class="pro_list_22"><?php echo $val['name'];?></td>
-                                        <td class="pro_list_33"><input type="button" value="编辑" onclick="window.location.href='/user/editproject?proid=<?php echo $val['id'];?>'" /><input type="button" value="删除" onclick="" /></td>
+                                        <td class="pro_list_33"><input type="button" value="编辑" onclick="window.location.href='/user/editproject?proid=<?php echo $val['id'];?>'" /><input type="button" value="删除" onclick="if(confirm('确定要删除此项目么？')){window.location.href='/user/delproject?proid=<?php echo $val['id'];?>';}else{return false;}" /></td>
                                     </tr>
                                 </table>
                             </li>

@@ -8,8 +8,8 @@
 
 App::uses('AppModel', 'Model');
 
-class UserProject extends AppModel {
-    public $useTable = 'user_project';
+class UserComment extends AppModel {
+    public $useTable = 'user_comments';
 
     public $primaryKey = 'id';
 
@@ -18,14 +18,12 @@ class UserProject extends AppModel {
     * 查询记录
     * @return array
     */
-    public function getList($conditions=array(), $offset=0, $limit=30, $order='', $group=array(), $fields = array())
+    public function getList($conditions=array(), $offset=0, $limit=30, $order='', $fields = array())
     {
         return $this->find('all', array(
         'conditions' => $conditions,
         'fields'    => $fields,
-        'offset' => $offset,
         'limit' => $limit,
-        'group' => $group,
         'order' => $order,
         ));
     }
@@ -34,10 +32,6 @@ class UserProject extends AppModel {
         return $this->find('first', array('conditions'=>$conditions, 'fields'=>$fields));
     }
 
-    public function getCount($conditions=array(), $group=array()){
-        return $this->find('count', array('conditions'=>$conditions, 'group'=>$group));
-    }
-    
     public function addinfo($params=array()){
         if(empty($params)){
             return false;
@@ -61,7 +55,7 @@ class UserProject extends AppModel {
             return false;
         }
         
-        $ret = $this->deleteAll($conditions,false);
+        $ret = $this->deleteAll($conditions);
         return $ret;
     }
 

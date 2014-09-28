@@ -7,9 +7,9 @@
             </div>
             <div class="hhr_xq">
                 <div class="hhr_hr_mc"><h3><?php echo isset($user_info['nickname'])?$user_info['nickname']:'';?></h3>
-                <?php if($user_info['status']){ ?>
-                <span><a href="#">在线</a></span>
-                <?php } ?>
+                    <?php if($user_info['status']){ ?>
+                        <span><a href="#">在线</a></span>
+                        <?php } ?>
                 </div>
                 <div class="xq_dj_xm">
                     <div class="xq_dj"><h3>80%&nbsp;&nbsp;靠谱</h3></div>
@@ -47,6 +47,7 @@
         <div class="box hhrjs">
             <div class="title">
                 <h3>他的资料</h3>
+                <?php if(empty($user_comment)){ ?><span class="wysjj"><a href="javascript:;" onclick="showsay();">我也说几句</a></span><?php } ?>
             </div>
             <div class="tdzl">
                 <div class="tdzl_div">
@@ -75,46 +76,34 @@
                     <div class="clear"></div>
                 </div>
             </div>
-            <div class="title" style="BORDER-TOP:solid 2PX #4cbbd9;">
-                <h3>他的项目</h3>
-            </div>
-            <div class="tdzl">
-                <div class="tdzl_div">
-                    <h3>项目名称：</h3>
-                    <div class="tdzl_div_c">蜗牛管家</div>
-                    <div class="clear"></div>
+            <?php if(!empty($hisProject)){ ?>
+                <div class="title" style="BORDER-TOP:solid 2PX #4cbbd9;">
+                    <h3>他的项目</h3>
                 </div>
-                <div class="tdzl_div">
-                    <h3>项目方向：</h3>
-                    <div class="tdzl_div_c">硬件 </div>
-                    <div class="clear"></div>
-                </div>
-                <div class="tdzl_div">
-                    <h3>项目简介：</h3>
-                    <div class="tdzl_div_c">“蜗牛管家”是一款结合物联网、互联网的技术优势，专为家庭用户打造全<br />
-                        新体验的智能安防产品。与传统安防产品不同，我们有如下特色：<br />
-                        （1）免配置。正在研发的基于声波配对技术，让产品更加易用，免除传<br />
-                        统安防的配置成本。<br />
-                        （2）免施工安装。产品外壳采用特殊材质，配以特殊不干胶，让用户再<br />
-                        也不用打洞钉钉，只需轻轻一按就能完成安装，另外这种特殊胶也能多次使<br />
-                        用，墙面毫无痕迹。<br />
-                        （3）云+物联网技术实现全自动控制。传统安防需要很多的人工操作，<br />
-                        蜗牛管家提供了一款全自动无线钥匙，可以轻松可靠实现出门布防、回家撤<br />
-                        防，用户再也不用操心家里的安防布置情况。<br />
-                        （4）模块化、易扩展。蜗牛管家的所有产品采用模块化设计，有统一的<br />
-                        接口和通讯协议，另外支持多种无线协议，所以可以实现无线模块扩展能力。<br />
-                        目前我们还设计出了室内空气质量、灾难预警等模块。</div>
-                    <div class="clear"></div>
-                </div>
-                <div class="tdzl_div">
-                    <h3>项目优势：</h3>
-                    <div class="tdzl_div_c">经过将近一年的对“智能管家”产品的研发、各种技术实验和选型，积累了<br />
-                        相当多的经验，总结出了一套解决方案，成本低、技术风险小、产品灵活、<br />
-                        无供应商风险。 同时，一年多不断的对市场上产品的调研，对产品的不断自<br />
-                        我剖析，对智能家居产品有自己一些独到的看法.</div>
-                    <div class="clear"></div>
-                </div>
-            </div>
+                <?php foreach($hisProject as $val){ ?>
+                    <div class="tdzl">
+                        <div class="tdzl_div">
+                            <h3>项目名称：</h3>
+                            <div class="tdzl_div_c"><?php echo $val['name'];?></div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="tdzl_div">
+                            <h3>项目方向：</h3>
+                            <div class="tdzl_div_c"><?php echo $val['name'];?></div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="tdzl_div">
+                            <h3>项目简介：</h3>
+                            <div class="tdzl_div_c"><?php echo $val['brief'];?></div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="tdzl_div">
+                            <h3>项目优势：</h3>
+                            <div class="tdzl_div_c"><?php echo $val['advantage'];?></div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <?php }} ?>
         </div>
         <!--
         <div class="box">
@@ -149,15 +138,14 @@
     </div>
 
     <div class="con_r">
-        <div class="box cywd">
-            <div class="title">
-                <h3>创业问答</h3>
+        <?php if(!empty($surveyData)){ ?>
+            <div class="box cywd">
+                <div class="title">
+                    <h3>创业问答</h3>
+                </div>
+                <div class="cywd_c"><?php echo isset($surveyData['content'])?$surveyData['content']:'';?></div>
             </div>
-            <div class="cywd_c">我属于互联网行业技术人士。我随时关注国<br />
-                外的创业项目和报道。我又进展中项目，想<br />
-                找合伙人。我认为创业核心资源最重要的是<br />
-                商业运作能力。</div>
-        </div>
+            <?php } ?>
 
         <?php 
             if(!empty($user_comment)){
@@ -166,6 +154,24 @@
         ?>       
     </div>
 </div>
+<!--comment-->
+<div style="z-index:9999;position:fixed;top:40%;left:50%;width:660px;height:auto;margin:-180px 0 0 -330px;border-radius:5px;border:solid 2px #666;background-color:#fff;display:none;box-shadow: 0 0 10px #666;" id="user_comment">
+    <div class="theme-poptit">
+        <a href="javascript:;" title="关闭" class="close"><img src="<?php echo $dm['www'];?>img/ring_1.gif" /></a>
+        <h3>评价</h3>
+    </div>
+    <div class="tangc" style="text-align: center;">
+        <form action="/partner/addcomment" method="post" >
+            <input type="hidden" value="<?php echo $user_info['id'];?>" name="touser_id"/>
+            <textarea class="tangc_c_c_sr" style="border: 1px #e9e9e9 solid;" name="content"></textarea>
+            <div class="tangc_tj">
+                <input type="submit" value="提交" class="">
+            </div>
+        </form>
+    </div>
+</div>
+<div class="theme-popover-mask"></div>
+<!--wexinend-->
 <script type="text/javascript">
     function followme(uid){
         $.ajax({
@@ -179,6 +185,12 @@
                 }
                 alert(data.msg)
             }
+        });
+    }
+    function showsay(){
+        $('#user_comment').show();
+        $('#user_comment .close').live('click', function(){
+            $('#user_comment').hide();
         });
     }
 </script>
