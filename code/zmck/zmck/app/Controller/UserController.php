@@ -18,8 +18,8 @@ class UserController extends AppController {
     *
     * @var array
     */
-    public $uses = array('User', 'Role', 'Industry', 'UserDetail', 'UserTags', 'UserProject', 'ProjectDirection');
-    public $components = array('Upload', 'Partner');
+    public $uses = array('User', 'Role', 'Industry', 'UserDetail', 'UserTags', 'UserProject', 'ProjectDirection', 'Forum', 'ForumPost', 'ForumThreads');
+    public $components = array('Upload', 'Partner', 'ListPage');
 
     /**
     * Displays a view
@@ -230,7 +230,35 @@ class UserController extends AppController {
     * 
     */
     public function mytopic(){
-
+        if(empty($this->userInfo)){
+            $this->goMsg('请登录后进行操作', '/');
+        }
+        $user_id = $this->userInfo['id'];
+        
+        $conditions = array('author_id'=>$user_id);
+        $p = isset($_GET['p']) && intval($_GET['p']) > 0 ? $_GET['p'] : 1;
+        $limit = 20;
+        $offset = ($p -1) * $limit;
+        $order = '';
+        $data = $this->ForumPost->getList($conditions, $offset, $limit, $order);
+        $total = $this->ForumPost->getCount($conditions);
+        $this->set('data', $data);
+        //分页html
+        $pagehtml = '';
+        if($total>$pagesize){
+            //可以显示分页
+            $pageHtmlObj = $this->ListPage;
+            $param = array(
+            'total_rows' => $total,
+            'method' => 'html',
+            'parameter' => $this->dm['www'].'user/mytopic?p=*',
+            'now_page' => $p,
+            'list_rows' => $limit
+            );
+            $pageHtmlObj->init($param);
+            $pagehtml = $pageHtmlObj->show(1);
+        }
+        $this->set('pagehtml', $pagehtml);
     }
 
     /**

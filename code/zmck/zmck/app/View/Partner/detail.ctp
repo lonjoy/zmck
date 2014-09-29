@@ -138,14 +138,16 @@
     </div>
 
     <div class="con_r">
-        <?php if(!empty($surveyData)){ ?>
-            <div class="box cywd">
-                <div class="title">
-                    <h3>创业问答</h3>
-                </div>
-                <div class="cywd_c"><?php echo isset($surveyData['content'])?$surveyData['content']:'';?></div>
+        <div class="box cywd">
+            <div class="title">
+                <h3>创业问答</h3>
             </div>
-            <?php } ?>
+            <?php if(!empty($surveyData)){ ?>
+                <div class="cywd_c"><?php echo isset($surveyData['content'])?$surveyData['content']:'';?></div>
+                <?php }else{ ?>
+                <div class="cywd_c">暂无</div>
+                <?php } ?>
+        </div>
 
         <?php 
             if(!empty($user_comment)){

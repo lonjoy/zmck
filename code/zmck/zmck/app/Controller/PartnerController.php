@@ -199,12 +199,35 @@ class PartnerController extends AppController {
         }
         $this->set('surveyData', $surveyData);
         //评价
-        $user_comment = $this->UserComment->getList(array('touser_id'=>$user_id), 0, 10, 'ctime DESC');
+        $pagesize = 5;
+        $p = isset($_GET['p']) ? intval($_GET['p']) : 1;
+        $offset = ($p -1) * $pagesize;
+        
+        $user_comment = $this->UserComment->getList(array('touser_id'=>$user_id), $offset, $pagesize, 'ctime DESC');
+        $total = $this->UserComment->getCount(array('touser_id'=>$user_id));
         if(!empty($user_comment)){
             foreach($user_comment as  $key=>$val){
                 $user_comment[$key]['user'] = $this->User->getUserInfo(array('id'=>$val['user_id']));
             }
         }
+        //分页html
+        $pagehtml = '';
+        if($total>$pagesize){
+            //可以显示分页
+            $pageHtmlObj = $this->ListPage;
+            $pageHtmlObj->plus = 2;
+            $param = array(
+            'total_rows' => $total,
+            'method' => 'html',
+            'parameter' => $this->dm['www'].'partner/detail?id='.$user_id.'&p=*',
+            'now_page' => $p,
+            'list_rows' => $pagesize
+            );
+            $pageHtmlObj->init($param);
+            $pagehtml = $pageHtmlObj->show(1);
+        }
+        $this->set('pagehtml', $pagehtml);
+        
         $this->set('user_comment', $user_comment);
     }
 

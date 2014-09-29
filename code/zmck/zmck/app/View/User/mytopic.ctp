@@ -22,30 +22,26 @@
     </div>
     <div class="topicss_2">
         <ul>
-            <li>
-                <table>
-                    <tr>
-                        <td class="topics_11"><img src="<?php echo $dm['www'];?>img/topics_1.gif"  /> 创业初期，是团队人员能力重要，还是价值观重要？</td>
-                        <td class="topics_22">奋斗者</td>
-                        <td class="topics_33">1800</td>
-                        <td class="topics_44">320</td>
-                        <td class="topics_55">15:11</td>
-                        <td class="topics_66"><input type="button" value="删除" /></td>
-                    </tr>
-                </table>
-            </li>
-            <li>
-                <table>
-                    <tr>
-                        <td class="topics_11"><img src="<?php echo $dm['www'];?>img/topics_1.gif"  /> 创业初期，是团队人员能力重要，还是价值观重要？</td>
-                        <td class="topics_22">奋斗者</td>
-                        <td class="topics_33">1800</td>
-                        <td class="topics_44">320</td>
-                        <td class="topics_55">15:11</td>
-                        <td class="topics_66"><input type="button" value="删除" /></td>
-                    </tr>
-                </table>
-            </li>
+            <?php
+                if(!empty($data)){
+                    foreach($data as $val){
+                    ?>
+                    <li>
+                        <table>
+                            <tr>
+                                <td class="topics_11"><img src="<?php echo $dm['www'];?>img/topics_1.gif"  /> <?php echo $val['subject'];?></td>
+                                <td class="topics_22"><?php echo $val['author'];?></td>
+                                <td class="topics_33"><?php echo $val['clicknum'];?></td>
+                                <td class="topics_44"><?php echo $val['replynum'];?></td>
+                                <td class="topics_55"><?php echo date('H:i',$val['replytime']);?></td>
+                                <td class="topics_66"><input type="button" value="删除" onclick="if(confirm('确认删除此话题么， 删除后，话题相关的回复也会自动删除？')){window.location.href='';}else{return false;}"/></td>
+                            </tr>
+                        </table>
+                    </li>
+                    <?php 
+                    }
+                }
+            ?>
         </ul>
     </div>
 </div>

@@ -23,6 +23,7 @@ class UserComment extends AppModel {
         return $this->find('all', array(
         'conditions' => $conditions,
         'fields'    => $fields,
+        'offset' => $offset,
         'limit' => $limit,
         'order' => $order,
         ));
@@ -30,6 +31,11 @@ class UserComment extends AppModel {
 
     public function getOne($conditions=array(), $fields=array()){
         return $this->find('first', array('conditions'=>$conditions, 'fields'=>$fields));
+    }
+
+
+    public function getCount($conditions=array()){
+        return $this->find('count', array('conditions'=>$conditions));
     }
 
     public function addinfo($params=array()){
@@ -49,12 +55,12 @@ class UserComment extends AppModel {
         $ret = $this->updateAll($params, $conditions);
         return $ret;
     }
-    
+
     public function delinfo($conditions=array()){
         if(empty($conditions)){
             return false;
         }
-        
+
         $ret = $this->deleteAll($conditions);
         return $ret;
     }
