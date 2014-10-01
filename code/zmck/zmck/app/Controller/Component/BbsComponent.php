@@ -9,7 +9,7 @@
 */
 
 App::uses('Component', 'Controller');
-class ForumComponent  extends Component {
+class BbsComponent  extends Component {
     public $defaults;
     
     public $uses = array();
@@ -21,11 +21,18 @@ class ForumComponent  extends Component {
     */
     public function __construct($collection){
         $this->ForumPost = ClassRegistry::init('ForumPost');
+        $this->User = ClassRegistry::init('User');
         parent::__construct($collection);
     }
     
     public function hotTopic(){
         $data = $this->ForumPost->getList(array(), 0, 6, 'replynum DESC');
+        if(!empty($data)){
+            foreach($data as $key=>$val){
+                $user = $this->User->getUserInfo(array('id'=>$val['author_id']));
+                $data[$key]['author'] = $user['nickname'];
+            }
+        }
         return $data;
     }
 }

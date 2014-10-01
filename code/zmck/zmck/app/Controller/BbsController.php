@@ -19,7 +19,7 @@ class BbsController extends AppController {
     * @var array
     */
     public $uses = array('User', 'Forum', 'ForumPost', 'ForumThreads', 'UserProfile');
-    public $components = array('ListPage');
+    public $components = array('ListPage', 'Bbs');
 
     /**
     * Displays a view
@@ -31,6 +31,7 @@ class BbsController extends AppController {
     */
     public function index() {
         $data = $this->Forum->getList();
+
         /*
         $count = $this->Forum->getCount($conditions);
         //初始分页不用改变
@@ -56,7 +57,7 @@ class BbsController extends AppController {
         }
         */
         $this->set('data', $data);
-        $hot_topic = $this->hotTopic();
+        $hot_topic = $this->Bbs->hotTopic();
         $this->set('hot_topic', $hot_topic);
     }
 
@@ -78,6 +79,12 @@ class BbsController extends AppController {
         $offset = ($p-1) * $pagesize;
 
         $data = $this->ForumPost->getList(array('fid'=>$fid), $offset, $pagesize, $order_str);
+        if(!empty($data)){
+            foreach($data as $key=>$val){
+                $user = $this->User->getUserInfo(array('id'=>$val['author_id']));
+                $data[$key]['author'] = $user['nickname'];
+            }
+        }
         $count = $this->ForumPost->getCount(array('fid'=>$fid));
 
         //分页html
@@ -99,8 +106,8 @@ class BbsController extends AppController {
         $this->set('pagehtml', $pagehtml);
         $this->set('data', $data);
         $this->set('fid', $fid);
-        
-        $hot_topic = $this->hotTopic();
+
+        $hot_topic = $this->Bbs->hotTopic();
         $this->set('hot_topic', $hot_topic);
     }
 
@@ -149,8 +156,8 @@ class BbsController extends AppController {
         }
         $this->set('pagehtml', $pagehtml);
         $this->ForumPost->updateinfo(array('clicknum'=>'`clicknum`+1'), array('pid'=>$pid));
-        
-        $hot_topic = $this->hotTopic();
+
+        $hot_topic = $this->Bbs->hotTopic();
         $this->set('hot_topic', $hot_topic);
     }
 
@@ -223,13 +230,7 @@ class BbsController extends AppController {
         }
     }
 
-
-    public function hotTopic(){
-        $data = $this->ForumPost->getList(array(), 0, 6, 'replynum DESC');
-        return $data;
-    }
-    
     public function viewthread(){
-        
+
     }
 }
