@@ -51,4 +51,16 @@ class Url
         $tmp= (file_exists(HOMEPIC_PATH.$tmp)?$dm['img'].'data/homepic/'.$tmp:$dm['www'].'img/data/homepic/'.$ttmp);
         return $tmp;
     }
+
+
+    public static function getForum($id){
+        $dm = Configure::read('dm');
+
+        $id=str_pad($id,9,0,STR_PAD_LEFT);
+        $tmp=preg_replace("/^(\d{3})(\d{2})(\d{2})(\d{2,})/i","\\1/\\2/\\3/\\4",$id).'.jpg';
+
+        $tmp= (file_exists(BBS_PATH.$tmp)?$dm['img'].'data/bbs/'.$tmp:$dm['www'].'img/data/bbs/'.$tmp);
+        return $tmp;
+    }
+
 }

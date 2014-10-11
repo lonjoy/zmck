@@ -5,9 +5,15 @@
     </div>
 </div>
 
-<form name="adduser" method="post" action="/bbs/add" >
+<form name="adduser" method="post" action="/bbs/add" enctype="multipart/form-data">
     <div id="div_setting_1" class="contentList pad-10">
         <table width="100%" class="table_form ">
+            <tr>
+                <th width="200">圈子LOGO：</th>
+                <td>
+                    <input type="file" name="logo" value="">
+                </td>
+            </tr>            
             <tr>
                 <th width="200">圈子名称：</th>
                 <td>

@@ -2,6 +2,7 @@
     define('ZMCK_DOMAIN', '.zmckr.com:8080');
     define('AVATAR_PATH', WWW_ROOT.'img'.DS.'data'.DS.'avatar'.DS);
     define('HOMEPIC_PATH', WWW_ROOT.'img'.DS.'data'.DS.'homepic'.DS);
+    define('BBS_PATH', WWW_ROOT.'img'.DS.'data'.DS.'bbs'.DS);
 
 
     Configure::write('meta', array(

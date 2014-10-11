@@ -507,5 +507,10 @@ class UserController extends AppController {
             $this->outputJson($rs);
         }  
     }
+    
+    
+    public function sendemail(){
+        
+    }
 
 }

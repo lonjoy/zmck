@@ -10,7 +10,7 @@
 */
 
 App::uses('AppController', 'Controller');
-
+App::uses('Url', 'Utility');
 class BbsController extends AppController {
 
     /**
@@ -20,6 +20,8 @@ class BbsController extends AppController {
     */
     public $layout = 'layout';
     public $uses = array('Forum', 'ForumPost');
+
+    public $components = array('Upload');
 
     /**
     * Displays a view
@@ -46,14 +48,20 @@ class BbsController extends AppController {
             'ctime' => time(),
             );
 
-            $this->Forum->addinfo($params);
+            $id = $this->Forum->addinfo($params);
+            if(isset($_FILES['logo']) && !empty($_FILES['logo'])){
+                $file = $_FILES['logo'];
+
+                $id = str_pad($id,9,0,STR_PAD_LEFT);
+                $tmp=preg_replace("/^(\d{3})(\d{2})(\d{2})(\d{2,})/i","\\1/\\2/\\3/\\4",$id);
+                $ret = $this->Upload->uploadedFile($file, BBS_PATH.$tmp);
+            }
         }
     }
 
     public function edit(){
         if(isset($_POST['dosubmit'])){
             $id = intval($_POST['id']);
-            $options = $_POST['options'];
             $params = array(
             'user_id'=>1,//$this->userInfo['user_id'],
             'name' => "'".$_POST['name']."'",
@@ -64,7 +72,14 @@ class BbsController extends AppController {
             #update survey
             $this->Forum->updateinfo($params, array('id'=>$id));
 
-            $this->redirect('/bbs/index');
+            //上传
+            if(isset($_FILES['logo']) && !empty($_FILES['logo'])){
+                $file = $_FILES['logo'];
+                $id = str_pad($id,9,0,STR_PAD_LEFT);
+                $tmp=preg_replace("/^(\d{3})(\d{2})(\d{2})(\d{2,})/i","\\1/\\2/\\3/\\4",$id);
+                $ret = $this->Upload->uploadedFile($file, BBS_PATH.$tmp);
+            }
+            $this->redirect('/bbs/edit?id='.$id);
         }
         $id = intval($_GET['id']);
         $conditions = array('id'=>$id);
@@ -81,15 +96,15 @@ class BbsController extends AppController {
             $this->redirect('/bbs/index');
         }
     }
-    
+
     public function subject(){
         $data = array();
         $data = $this->ForumPost->getList();
         $this->set('data', $data);
     }
-    
-    
-    
+
+
+
     public function subjectdel(){
         $id = intval($_GET['pid']);
         if($id){

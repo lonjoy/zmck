@@ -16,7 +16,7 @@
                             foreach($data as $val){    
                             ?>
                             <li>
-                                <div class="circle5_1"><a href="/bbs/subject?fid=<?php echo $val['id'];?>"><img src="<?php echo $dm['www'];?>img/circle5_1.jpg" /></a></div>
+                                <div class="circle5_1"><a href="/bbs/subject?fid=<?php echo $val['id'];?>"><img src="<?php echo Url::getForum($val['id']);?>" width="57" height="57"/></a></div>
                                 <div class="circle5_2"><a href="/bbs/subject?fid=<?php echo $val['id'];?>"><?php echo $val['name'];?></a><br /><img src="<?php echo $dm['www'];?>img/circle5_2.gif" /><?php echo $val['posts'];?> 个话题</div>
                                 <div class="circle5_3"><?php echo $val['desc'];?></div>
                             </li>

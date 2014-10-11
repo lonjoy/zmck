@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50528
 File Encoding         : 65001
 
-Date: 2014-09-29 00:39:46
+Date: 2014-10-01 23:18:36
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -129,7 +129,6 @@ CREATE TABLE `zm_forum_posts` (
   `pid` int(10) NOT NULL AUTO_INCREMENT,
   `fid` int(10) NOT NULL,
   `subject` varchar(80) NOT NULL,
-  `author` varchar(15) NOT NULL,
   `author_id` int(10) NOT NULL,
   `ctime` int(10) NOT NULL,
   `content` mediumtext NOT NULL,
@@ -143,22 +142,22 @@ CREATE TABLE `zm_forum_posts` (
 -- ----------------------------
 -- Records of zm_forum_posts
 -- ----------------------------
-INSERT INTO `zm_forum_posts` VALUES ('1', '2', 'dsafdsa', 'dsaf', '2', '0', 'dsaf', '1', '0', '0', '0');
-INSERT INTO `zm_forum_posts` VALUES ('2', '2', '大的萨菲', '倒萨', '2', '0', '范德萨范德萨', '0', '0', '0', '0');
-INSERT INTO `zm_forum_posts` VALUES ('3', '2', '阿发的撒', 'aa', '11', '1410180308', '的萨菲打分', '0', '0', '0', '0');
-INSERT INTO `zm_forum_posts` VALUES ('4', '2', '测试', 'aa', '11', '1410180363', '打分打了饭的撒的拉丝粉倒萨a', '0', '0', '0', '0');
-INSERT INTO `zm_forum_posts` VALUES ('5', '3', '的萨芬的', 'aa', '11', '1410180411', '的萨芬的', '2', '0', '0', '0');
-INSERT INTO `zm_forum_posts` VALUES ('6', '2', '的萨芬的', 'aa', '11', '1410181425', '打分', '0', '0', '0', '0');
-INSERT INTO `zm_forum_posts` VALUES ('7', '2', '范德萨发', 'aa', '11', '1410181884', '大师傅', '0', '0', '0', '0');
-INSERT INTO `zm_forum_posts` VALUES ('8', '2', '浏览量', 'aa', '11', '1410182966', '大师傅', '0', '0', '0', '0');
-INSERT INTO `zm_forum_posts` VALUES ('9', '2', '的萨芬的', 'aa', '11', '1410183013', '多撒范德萨', '0', '0', '0', '0');
-INSERT INTO `zm_forum_posts` VALUES ('10', '2', '的萨芬的', 'aa', '11', '1410183046', '多撒范德萨', '0', '0', '0', '0');
-INSERT INTO `zm_forum_posts` VALUES ('11', '2', '啦啦啦', 'aa', '11', '1410183133', '打分', '5', '3', '1410190740', '0');
-INSERT INTO `zm_forum_posts` VALUES ('12', '2', '222', 'aa', '11', '1410183478', '大幅度', '1', '0', '0', '0');
-INSERT INTO `zm_forum_posts` VALUES ('13', '3', 'didi', 'aa', '11', '1410189560', 'diyige ', '21', '0', '0', '0');
-INSERT INTO `zm_forum_posts` VALUES ('14', '2', '222', 'aa', '11', '1410190072', 'dasfdfds', '34', '6', '1410450562', '0');
-INSERT INTO `zm_forum_posts` VALUES ('15', '2', 'dsafds', '创客-15', '15', '1410450701', 'dsaf', '5', '0', '0', '0');
-INSERT INTO `zm_forum_posts` VALUES ('16', '4', '搜索', '太阳神', '11', '1411805435', '搜索', '3', '1', '1411805510', '0');
+INSERT INTO `zm_forum_posts` VALUES ('1', '2', 'dsafdsa', '2', '0', 'dsaf', '1', '0', '0', '0');
+INSERT INTO `zm_forum_posts` VALUES ('2', '2', '大的萨菲', '2', '0', '范德萨范德萨', '0', '0', '0', '0');
+INSERT INTO `zm_forum_posts` VALUES ('3', '2', '阿发的撒', '11', '1410180308', '的萨菲打分', '1', '0', '0', '0');
+INSERT INTO `zm_forum_posts` VALUES ('4', '2', '测试', '11', '1410180363', '打分打了饭的撒的拉丝粉倒萨a', '1', '0', '0', '0');
+INSERT INTO `zm_forum_posts` VALUES ('5', '3', '的萨芬的', '11', '1410180411', '的萨芬的', '2', '0', '0', '0');
+INSERT INTO `zm_forum_posts` VALUES ('6', '2', '的萨芬的', '11', '1410181425', '打分', '0', '0', '0', '0');
+INSERT INTO `zm_forum_posts` VALUES ('7', '2', '范德萨发', '11', '1410181884', '大师傅', '0', '0', '0', '0');
+INSERT INTO `zm_forum_posts` VALUES ('8', '2', '浏览量', '11', '1410182966', '大师傅', '0', '0', '0', '0');
+INSERT INTO `zm_forum_posts` VALUES ('9', '2', '的萨芬的', '11', '1410183013', '多撒范德萨', '0', '0', '0', '0');
+INSERT INTO `zm_forum_posts` VALUES ('10', '2', '的萨芬的', '11', '1410183046', '多撒范德萨', '0', '0', '0', '0');
+INSERT INTO `zm_forum_posts` VALUES ('11', '2', '啦啦啦', '11', '1410183133', '打分', '5', '3', '1410190740', '0');
+INSERT INTO `zm_forum_posts` VALUES ('12', '2', '222', '11', '1410183478', '大幅度', '1', '0', '0', '0');
+INSERT INTO `zm_forum_posts` VALUES ('13', '3', 'didi', '11', '1410189560', 'diyige ', '22', '0', '0', '0');
+INSERT INTO `zm_forum_posts` VALUES ('14', '2', '222', '11', '1410190072', 'dasfdfds', '34', '6', '1410450562', '0');
+INSERT INTO `zm_forum_posts` VALUES ('15', '2', 'dsafds', '15', '1410450701', 'dsaf', '12', '0', '0', '0');
+INSERT INTO `zm_forum_posts` VALUES ('16', '4', '搜索', '11', '1411805435', '搜索', '3', '1', '1411805510', '0');
 
 -- ----------------------------
 -- Table structure for `zm_forum_threads`
@@ -172,7 +171,6 @@ CREATE TABLE `zm_forum_threads` (
   `content` text NOT NULL,
   `ctime` int(10) NOT NULL,
   `author_id` int(10) NOT NULL,
-  `author` varchar(50) NOT NULL,
   `floor` int(10) NOT NULL,
   `ismaster` tinyint(1) NOT NULL,
   PRIMARY KEY (`tid`)
@@ -181,23 +179,23 @@ CREATE TABLE `zm_forum_threads` (
 -- ----------------------------
 -- Records of zm_forum_threads
 -- ----------------------------
-INSERT INTO `zm_forum_threads` VALUES ('1', '0', '2', '的萨芬的', '多撒范德萨', '1410183046', '11', 'aa', '0', '1');
-INSERT INTO `zm_forum_threads` VALUES ('2', '11', '2', '啦啦啦', '打分', '1410183133', '11', 'aa', '0', '1');
-INSERT INTO `zm_forum_threads` VALUES ('3', '12', '2', '222', '大幅度', '1410183478', '11', 'aa', '0', '1');
-INSERT INTO `zm_forum_threads` VALUES ('4', '13', '3', 'didi', 'diyige ', '1410189560', '11', 'aa', '0', '1');
-INSERT INTO `zm_forum_threads` VALUES ('5', '14', '2', '222', 'dasfdfds', '1410190072', '11', 'aa', '0', '1');
-INSERT INTO `zm_forum_threads` VALUES ('6', '11', '2', '啦啦啦', 'dsafdsaf', '1410190524', '11', 'aa', '0', '0');
-INSERT INTO `zm_forum_threads` VALUES ('7', '11', '2', '啦啦啦', 'dasfdsaf', '1410190566', '11', 'aa', '0', '0');
-INSERT INTO `zm_forum_threads` VALUES ('8', '11', '2', '啦啦啦', 'dsafdsafdsafd', '1410190740', '11', 'aa', '0', '0');
-INSERT INTO `zm_forum_threads` VALUES ('9', '14', '2', '222', 'dsafsdafdsa', '1410283233', '11', 'aa', '0', '0');
-INSERT INTO `zm_forum_threads` VALUES ('10', '14', '2', '222', 'xxx', '1410283244', '11', 'aa', '0', '0');
-INSERT INTO `zm_forum_threads` VALUES ('11', '14', '2', '222', 'afdsfafdsaf太好了', '1410283348', '11', 'aa', '0', '0');
-INSERT INTO `zm_forum_threads` VALUES ('12', '14', '2', '222', '真是太好了', '1410283382', '11', 'aa', '0', '0');
-INSERT INTO `zm_forum_threads` VALUES ('13', '14', '2', '222', 'dsafsdaf', '1410359882', '11', 'aa', '0', '0');
-INSERT INTO `zm_forum_threads` VALUES ('14', '14', '2', '222', 'dsafsda', '1410450562', '15', '创客-15', '0', '0');
-INSERT INTO `zm_forum_threads` VALUES ('15', '15', '2', 'dsafds', 'dsaf', '1410450701', '15', '创客-15', '0', '1');
-INSERT INTO `zm_forum_threads` VALUES ('16', '16', '4', '搜索', '搜索', '1411805435', '11', '太阳神', '0', '1');
-INSERT INTO `zm_forum_threads` VALUES ('17', '16', '4', '搜索', '萨芬的了撒', '1411805510', '11', '太阳神', '0', '0');
+INSERT INTO `zm_forum_threads` VALUES ('1', '0', '2', '的萨芬的', '多撒范德萨', '1410183046', '11', '0', '1');
+INSERT INTO `zm_forum_threads` VALUES ('2', '11', '2', '啦啦啦', '打分', '1410183133', '11', '0', '1');
+INSERT INTO `zm_forum_threads` VALUES ('3', '12', '2', '222', '大幅度', '1410183478', '11', '0', '1');
+INSERT INTO `zm_forum_threads` VALUES ('4', '13', '3', 'didi', 'diyige ', '1410189560', '11', '0', '1');
+INSERT INTO `zm_forum_threads` VALUES ('5', '14', '2', '222', 'dasfdfds', '1410190072', '11', '0', '1');
+INSERT INTO `zm_forum_threads` VALUES ('6', '11', '2', '啦啦啦', 'dsafdsaf', '1410190524', '11', '0', '0');
+INSERT INTO `zm_forum_threads` VALUES ('7', '11', '2', '啦啦啦', 'dasfdsaf', '1410190566', '11', '0', '0');
+INSERT INTO `zm_forum_threads` VALUES ('8', '11', '2', '啦啦啦', 'dsafdsafdsafd', '1410190740', '11', '0', '0');
+INSERT INTO `zm_forum_threads` VALUES ('9', '14', '2', '222', 'dsafsdafdsa', '1410283233', '11', '0', '0');
+INSERT INTO `zm_forum_threads` VALUES ('10', '14', '2', '222', 'xxx', '1410283244', '11', '0', '0');
+INSERT INTO `zm_forum_threads` VALUES ('11', '14', '2', '222', 'afdsfafdsaf太好了', '1410283348', '11', '0', '0');
+INSERT INTO `zm_forum_threads` VALUES ('12', '14', '2', '222', '真是太好了', '1410283382', '11', '0', '0');
+INSERT INTO `zm_forum_threads` VALUES ('13', '14', '2', '222', 'dsafsdaf', '1410359882', '11', '0', '0');
+INSERT INTO `zm_forum_threads` VALUES ('14', '14', '2', '222', 'dsafsda', '1410450562', '15', '0', '0');
+INSERT INTO `zm_forum_threads` VALUES ('15', '15', '2', 'dsafds', 'dsaf', '1410450701', '15', '0', '1');
+INSERT INTO `zm_forum_threads` VALUES ('16', '16', '4', '搜索', '搜索', '1411805435', '11', '0', '1');
+INSERT INTO `zm_forum_threads` VALUES ('17', '16', '4', '搜索', '萨芬的了撒', '1411805510', '11', '0', '0');
 
 -- ----------------------------
 -- Table structure for `zm_industries`
@@ -402,6 +400,25 @@ INSERT INTO `zm_system_tags` VALUES ('1', '啊啊333', '0');
 INSERT INTO `zm_system_tags` VALUES ('2', '天天', '0');
 
 -- ----------------------------
+-- Table structure for `zm_user_auth`
+-- ----------------------------
+DROP TABLE IF EXISTS `zm_user_auth`;
+CREATE TABLE `zm_user_auth` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `email` varchar(50) NOT NULL,
+  `weibo` varchar(255) NOT NULL,
+  `qq` varchar(12) NOT NULL,
+  `wexin` varchar(255) NOT NULL,
+  `identitycard` varchar(32) NOT NULL,
+  `ctime` int(10) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of zm_user_auth
+-- ----------------------------
+
+-- ----------------------------
 -- Table structure for `zm_user_comments`
 -- ----------------------------
 DROP TABLE IF EXISTS `zm_user_comments`;
@@ -412,7 +429,7 @@ CREATE TABLE `zm_user_comments` (
   `comment` varchar(500) NOT NULL,
   `ctime` int(10) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`,`user_id`,`touser_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of zm_user_comments
@@ -422,6 +439,14 @@ INSERT INTO `zm_user_comments` VALUES ('2', '11', '1', '的萨菲打双方都萨
 INSERT INTO `zm_user_comments` VALUES ('3', '11', '1', '天天', '1411922157');
 INSERT INTO `zm_user_comments` VALUES ('4', '11', '1', '太热太热', '1411922233');
 INSERT INTO `zm_user_comments` VALUES ('5', '11', '1', '的萨克将费德勒卡萨\r\n', '1411922292');
+INSERT INTO `zm_user_comments` VALUES ('6', '11', '1', 'dsafsdafsdaf', '1412007665');
+INSERT INTO `zm_user_comments` VALUES ('7', '11', '1', 'dsafdsaf ', '1412007672');
+INSERT INTO `zm_user_comments` VALUES ('8', '11', '1', '好好', '1412007685');
+INSERT INTO `zm_user_comments` VALUES ('9', '11', '1', '走走\r\n', '1412007699');
+INSERT INTO `zm_user_comments` VALUES ('10', '11', '1', '的萨菲了的撒', '1412007910');
+INSERT INTO `zm_user_comments` VALUES ('11', '11', '1', '真好啊', '1412007920');
+INSERT INTO `zm_user_comments` VALUES ('12', '11', '1', '拉风的睡啦范德萨', '1412007929');
+INSERT INTO `zm_user_comments` VALUES ('13', '11', '1', '的萨芬的啦', '1412007935');
 
 -- ----------------------------
 -- Table structure for `zm_user_details`
@@ -610,26 +635,27 @@ CREATE TABLE `zm_users` (
   `companyauth` tinyint(1) NOT NULL DEFAULT '0' COMMENT '企业是否认证',
   `recommend` tinyint(1) NOT NULL DEFAULT '0',
   `homeshow` tinyint(1) NOT NULL DEFAULT '0',
+  `age` tinyint(3) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of zm_users
 -- ----------------------------
-INSERT INTO `zm_users` VALUES ('1', 'qq@qq.com', '96e79218965eb72c92a549dd5a330112', '1', '0', '0', '0', '1', '1', '0', '1408292240', '0', '0', '0', '0', '1', '\'aa\'', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
-INSERT INTO `zm_users` VALUES ('2', 'qqf1223@126.com', '96e79218965eb72c92a549dd5a330112', '1', '0', '0', '0', '0', '0', '0', '1408292762', '0', '0', '0', '0', '0', '', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
-INSERT INTO `zm_users` VALUES ('3', 'qq@qq.com', 'd41d8cd98f00b204e9800998ecf8427e', '1', '0', '0', '0', '0', '0', '0', '1408377890', '0', '0', '0', '0', '0', '', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
-INSERT INTO `zm_users` VALUES ('4', 'fsafdsa', '11ddbaf3386aea1f2974eee984542152', '1', '0', '0', '0', '0', '0', '0', '1408462328', '0', '0', '0', '0', '0', '', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
-INSERT INTO `zm_users` VALUES ('5', 'ssssssssssss', '9f6e6800cfae7749eb6c486619254b9c', '1', '0', '0', '0', '0', '0', '0', '1408462354', '0', '0', '0', '0', '0', '', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
-INSERT INTO `zm_users` VALUES ('6', 'dddddddddddd', '50f84daf3a6dfd6a9f20c9f8ef428942', '1', '0', '0', '0', '0', '0', '0', '1408462482', '0', '0', '0', '0', '0', '', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
-INSERT INTO `zm_users` VALUES ('7', 'qq@qq.com', '96e79218965eb72c92a549dd5a330112', '1', '0', '0', '0', '0', '0', '0', '1408468711', '0', '0', '0', '0', '0', '', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
-INSERT INTO `zm_users` VALUES ('8', '', 'd41d8cd98f00b204e9800998ecf8427e', '1', '0', '0', '0', '0', '0', '0', '1408468966', '0', '0', '0', '0', '0', '', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
-INSERT INTO `zm_users` VALUES ('9', 'tttt', 'accc9105df5383111407fd5b41255e23', '1', '0', '0', '0', '0', '0', '0', '1408469039', '0', '0', '0', '0', '0', '', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
-INSERT INTO `zm_users` VALUES ('10', '4', 'a87ff679a2f3e71d9181a67b7542122c', '1', '0', '0', '0', '0', '0', '0', '1408469091', '0', '0', '0', '0', '0', '', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
-INSERT INTO `zm_users` VALUES ('11', 'aa@aa.com', 'e3ceb5881a0a1fdaad01296d7554868d', '5', '0', '0', '0', '2', '6', '0', '0', '0', '0', '0', '2', '2', '太阳神', '1', '0', '0', '0', '5', '1', '1', '2', '0', '0', '0');
-INSERT INTO `zm_users` VALUES ('12', 'bb@bb.com', '96e79218965eb72c92a549dd5a330112', '0', '0', '0', '0', '2', '0', '0', '0', '0', '0', '0', '0', '0', '', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
-INSERT INTO `zm_users` VALUES ('13', 'cc@cc.com', '96e79218965eb72c92a549dd5a330112', '6', '0', '0', '0', '2', '0', '0', '0', '0', '0', '0', '0', '0', '', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
-INSERT INTO `zm_users` VALUES ('14', 'qqf1223@qq.com', '96e79218965eb72c92a549dd5a330112', '0', '0', '0', '0', '2', '0', '0', '0', '0', '0', '0', '0', '0', '', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
-INSERT INTO `zm_users` VALUES ('15', 'aaa@aaa.com', '96e79218965eb72c92a549dd5a330112', '0', '0', '0', '0', '2', '0', '0', '0', '0', '0', '0', '0', '0', '', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
-INSERT INTO `zm_users` VALUES ('16', 'test@test.com4', '96e79218965eb72c92a549dd5a330112', '1', '0', '0', '0', '1', '6', '0', '1411489188', '0', '0', '0', '1', '2', '蓬莱少女', '5', '0', '2092', '2176', '2', '2', '3', '1', '0', '1', '1');
-INSERT INTO `zm_users` VALUES ('17', 'jj@jj.com', '96e79218965eb72c92a549dd5a330112', '1', '0', '0', '0', '1', '1', '0', '1411571048', '0', '0', '0', '1', '3', '张君雅', '1', '0', '2092', '2122', '1', '5', '5', '1', '0', '1', '1');
+INSERT INTO `zm_users` VALUES ('1', 'qq@qq.com', '96e79218965eb72c92a549dd5a330112', '1', '0', '0', '0', '1', '1', '0', '1408292240', '0', '0', '0', '0', '1', '\'aa\'', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
+INSERT INTO `zm_users` VALUES ('2', 'qqf1223@126.com', '96e79218965eb72c92a549dd5a330112', '1', '0', '0', '0', '0', '0', '0', '1408292762', '0', '0', '0', '0', '0', '', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
+INSERT INTO `zm_users` VALUES ('3', 'qq@qq.com', 'd41d8cd98f00b204e9800998ecf8427e', '1', '0', '0', '0', '0', '0', '0', '1408377890', '0', '0', '0', '0', '0', '', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
+INSERT INTO `zm_users` VALUES ('4', 'fsafdsa', '11ddbaf3386aea1f2974eee984542152', '1', '0', '0', '0', '0', '0', '0', '1408462328', '0', '0', '0', '0', '0', '', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
+INSERT INTO `zm_users` VALUES ('5', 'ssssssssssss', '9f6e6800cfae7749eb6c486619254b9c', '1', '0', '0', '0', '0', '0', '0', '1408462354', '0', '0', '0', '0', '0', '', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
+INSERT INTO `zm_users` VALUES ('6', 'dddddddddddd', '50f84daf3a6dfd6a9f20c9f8ef428942', '1', '0', '0', '0', '0', '0', '0', '1408462482', '0', '0', '0', '0', '0', '', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
+INSERT INTO `zm_users` VALUES ('7', 'qq@qq.com', '96e79218965eb72c92a549dd5a330112', '1', '0', '0', '0', '0', '0', '0', '1408468711', '0', '0', '0', '0', '0', '', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
+INSERT INTO `zm_users` VALUES ('8', '', 'd41d8cd98f00b204e9800998ecf8427e', '1', '0', '0', '0', '0', '0', '0', '1408468966', '0', '0', '0', '0', '0', '', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
+INSERT INTO `zm_users` VALUES ('9', 'tttt', 'accc9105df5383111407fd5b41255e23', '1', '0', '0', '0', '0', '0', '0', '1408469039', '0', '0', '0', '0', '0', '', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
+INSERT INTO `zm_users` VALUES ('10', '4', 'a87ff679a2f3e71d9181a67b7542122c', '1', '0', '0', '0', '0', '0', '0', '1408469091', '0', '0', '0', '0', '0', '', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
+INSERT INTO `zm_users` VALUES ('11', 'aa@aa.com', 'e3ceb5881a0a1fdaad01296d7554868d', '5', '0', '0', '0', '2', '6', '0', '0', '0', '0', '0', '2', '2', '太阳神', '1', '0', '0', '0', '5', '1', '1', '2', '0', '0', '0', '0');
+INSERT INTO `zm_users` VALUES ('12', 'bb@bb.com', '96e79218965eb72c92a549dd5a330112', '0', '0', '0', '0', '2', '0', '0', '0', '0', '0', '0', '0', '0', '', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
+INSERT INTO `zm_users` VALUES ('13', 'cc@cc.com', '96e79218965eb72c92a549dd5a330112', '6', '0', '0', '0', '2', '0', '0', '0', '0', '0', '0', '0', '0', '', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
+INSERT INTO `zm_users` VALUES ('14', 'qqf1223@qq.com', '96e79218965eb72c92a549dd5a330112', '0', '0', '0', '0', '2', '0', '0', '0', '0', '0', '0', '0', '0', '', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
+INSERT INTO `zm_users` VALUES ('15', 'aaa@aaa.com', '96e79218965eb72c92a549dd5a330112', '0', '0', '0', '0', '2', '0', '0', '0', '0', '0', '0', '0', '0', '', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
+INSERT INTO `zm_users` VALUES ('16', 'test@test.com4', '96e79218965eb72c92a549dd5a330112', '1', '0', '0', '0', '1', '6', '0', '1411489188', '0', '0', '0', '1', '2', '蓬莱少女', '5', '0', '2092', '2176', '2', '2', '3', '1', '0', '1', '1', '0');
+INSERT INTO `zm_users` VALUES ('17', 'jj@jj.com', '96e79218965eb72c92a549dd5a330112', '1', '0', '0', '0', '1', '1', '0', '1411571048', '0', '0', '0', '1', '3', '张君雅', '1', '0', '2092', '2122', '1', '5', '5', '1', '0', '1', '1', '0');

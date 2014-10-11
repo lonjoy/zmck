@@ -6,10 +6,17 @@
     </div>
 </div>
 
-<form name="adduser" method="post" action="/bbs/edit" >
+<form name="adduser" method="post" action="/bbs/edit" enctype="multipart/form-data">
     <input type="hidden" name="id" value="<?php echo $id;?>">
     <div id="div_setting_1" class="contentList pad-10">
         <table width="100%" class="table_form ">
+            <tr>
+                <th width="200">圈子LOGO：</th>
+                <td>
+                    <img src="<?php echo Url::getForum($id);?>" alt="xx" width="57" height="57">
+                    <input type="file" name="logo" value="">
+                </td>
+            </tr> 
             <tr>
                 <th width="200">圈子名称：</th>
                 <td>
